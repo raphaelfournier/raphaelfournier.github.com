@@ -1,6 +1,7 @@
 ---
 title: About
 layout: page
+date: 2011-12-16
 slug: about
 description: "What is this place and who are you?"
 ---

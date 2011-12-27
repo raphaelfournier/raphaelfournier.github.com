@@ -89,7 +89,7 @@ h1{
   margin-bottom: .25em;
 }
 
-#header{
+#navigation{
 	position: fixed;
 	left: 0px;
 	top: 0px;
@@ -100,64 +100,67 @@ h1{
   border-bottom-right-radius: 25px;
 }
 
-#header .avatar{
+#navigation .avatar{
 	border: 1px solid #fff;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	-webkit-box-shadow: 0px 0px 4px #555;
 }
 
-#header a{
+#navigation a{
 	text-decoration: none;
 }
 
-#header #me{
+#navigation #me{
 	text-transform: uppercase;
 	margin: 10px 0 20px 0;
 }
 
-#header #surname{
+#navigation #surname{
 	font-size: 30px;
 	letter-spacing: 5px;
 	color: #666;
 }
 
-#header #surname:hover {
+#navigation #surname:hover {
 	color: #000;
 }
 
-#header #name{
+#navigation #name{
 	font-size: 14px;
 	font-weight: bold;
 	letter-spacing: 1px;
 	color: #000;
 }
 
-#header .site{
+#navigation .site{
 }
 
-#header .site img{
+#navigation .site img{
 	padding: 0 3px;
 	border: 0;
 }
-#header #mousing{
+#navigation #mousing{
 	font-size: 12px;
 	color: #999;
 	padding-left: 2px;
 	letter-spacing: 1px;
 }
 
-#header #sections{
-  margin: 25px 0 0 0px;
+#navigation #sections{
+  margin: 25px -50px;
 }
-#header .presentation{
+#navigation #sections ul{
+  list-style: none;
+}
+#navigation #sections li .active{
+  background-color:red;
+}
+#navigation .presentation{
   font-size: 12px;
   padding:0px 2px;
 }
-#header #sections {
-  margin-bottom: 17px;
-}
-#header #sections a{
+#navigation #sections a{
   padding: 3px 5px;
   padding-left: 20px;
   color: #ccc;
@@ -166,7 +169,7 @@ h1{
   line-height:200%;
   border-bottom:1px solid #ccc;
 }
-#header #sections a:hover {
+#navigation #sections a:hover {
   color: #3F3F3F;
   background-color: #87af87;
 }
@@ -238,7 +241,7 @@ color:red;
 }
 
 
-#header #icons{
+#navigation #icons{
 	text-align: center;
 	margin-top: 80px;
 }
