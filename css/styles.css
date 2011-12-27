@@ -45,8 +45,8 @@ hr{
 .firstpost {
 border-bottom:2px solid #3F3F3F;
 }
-.firstpost h2 {
-color:#f0afaf;
+.firstpost h2 a {
+color:red;
 }
 .firstpost li{
 	list-style: none;
@@ -159,8 +159,9 @@ h1{
 #navigation #sections ul{
   list-style: none;
 }
-#navigation #sections li .active{
+#navigation #sections .active {
   background-color:red;
+  color:yellow;
 }
 #navigation .presentation{
   font-size: 12px;
