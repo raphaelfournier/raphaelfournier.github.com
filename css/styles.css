@@ -45,6 +45,12 @@ hr{
 .firstpost {
 border-bottom:2px solid #3F3F3F;
 }
+.firstpost h2 {
+color:#f0afaf;
+}
+.firstpost li{
+	list-style: none;
+}
 .related{
 	margin-top: 10px;
 }
