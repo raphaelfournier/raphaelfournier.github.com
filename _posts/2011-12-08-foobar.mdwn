@@ -1,0 +1,17 @@
+---
+title: This is a title
+layout: post
+categories: 
+- rails
+- rapidrails
+- ruby
+---
+The blog entry follows here in markdown. You can use *italic*, **bold**, [Link](http://google.com), 
+
+#header1 
+
+##header2 
+
+etc.
+
+For more markdown details, visit its [official page](http://daringfireball.net/projects/markdown/syntax#autolink]).
