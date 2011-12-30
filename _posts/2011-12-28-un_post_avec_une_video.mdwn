@@ -1,0 +1,15 @@
+---
+layout: post
+title: un post avec une video
+date: 2011-12-28 19:15:29
+tags: 
+ - tagshere
+ - another one
+---
+
+# voici une video
+
+black warrior !
+
+<iframe width="420" height="315" src="http://www.youtube.com/embed/PEoxYI5LrRA"
+frameborder="0" allowfullscreen></iframe>

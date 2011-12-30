@@ -6,8 +6,6 @@ slug: about
 description: "What is this place and who are you?"
 ---
 
-# About
-
 Normally, people click on the **About** link on a site's navigation bar to find out more about it. I generally attempt to uphold an aura of mystery when I post online, and this is surely no exception. 
 
 In other words, I am too lazy to write a long biography about myself, and am far too unmotivated to write what the purpose of this site is.  

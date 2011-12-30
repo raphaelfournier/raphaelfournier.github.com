@@ -5,6 +5,5 @@ date: 2011-12-16
 slug: archives
 description: "Old posts"
 ---
-# Archives : old stuff!
 
 {% include monthlyarchives.html %}

@@ -159,9 +159,9 @@ h1{
 #navigation #sections ul{
   list-style: none;
 }
-#navigation #sections .active {
-  background-color:red;
-  color:yellow;
+#navigation #sections li.active a {
+  color: #3F3F3F;
+  background-color: #87af87;
 }
 #navigation .presentation{
   font-size: 12px;

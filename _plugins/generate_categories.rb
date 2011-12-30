@@ -129,19 +129,17 @@ module Jekyll
     # Returns string
     def category_links(categories)
       categories = categories.sort!.map do |item|
-        '<li><a href="/blog/category/'+item+'/">'+item+'</a></li>'
+        '<a href="/categories/'+item+'/">'+item+'</a>'
       end
       
-      connector = "and"
+      connector = ", "
       case categories.length
       when 0
         ""
       when 1
         categories[0].to_s
-      when 2
-        "#{categories[0]} #{connector} #{categories[1]}"
       else
-        "#{categories[0...-1].join(', ')}, #{connector} #{categories[-1]}"
+        "#{categories.join("#{connector}")}"
       end
     end
     
@@ -151,8 +149,8 @@ module Jekyll
     #
     # Returns string
     def date_to_html_string(date)
-      result = '<span class="month">' + date.strftime('%b').upcase + '</span> '
-      result += date.strftime('<span class="day">%d</span> ')
+      result = date.strftime('<span class="day">%d</span> ')
+      result += '<span class="month">' + date.strftime('%b').upcase + '</span> '
       result += date.strftime('<span class="year">%Y</span> ')
       result
     end

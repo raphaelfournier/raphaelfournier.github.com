@@ -46,7 +46,7 @@ kramdown:
     coderay_css: style
 
 project_dir: projects
-category_dir: 'tags'
-category_title_prefix: 'tag: '
+category_dir: 'categories'
+#category_title_prefix: 'tag: '
 
 #disqus_short_name: kismetik
