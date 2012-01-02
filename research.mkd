@@ -1,3 +1,10 @@
+---
+title: Research
+layout: page
+date: 2011-12-26
+slug: research
+description: "What is this place and who are you?"
+---
 <h2 class="annee">Antipaedo</h2>
 
 <div class="cours">

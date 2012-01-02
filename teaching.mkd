@@ -1,0 +1,21 @@
+---
+title: Teaching
+layout: page
+date: 2011-12-26
+slug: teaching
+---
+<h2 class="annee">2009-2010 and 2010-2011</h2>
+<div class="cours">
+<h3 class="intitule"><span class="niveau">Master</span>Multimedia applications (40 hours)</h3>
+<p class="contenu">
+For students in the Computer Networks Master, a course to overview several steps of processing multimedia data: encoding/decoding, compression, standards, etc. 
+Text and image coding (Huffmann, DCT and jpeg), video presentations with SMILE, FEC. 
+</p>
+</div>
+<div class="cours">
+<h3 class="intitule"><span class="niveau">Undergraduate</span>Web programming (30 hours)</h3>
+<p class="contenu">
+Computer science introductory courses on web programming: html, php, css and SQL. Small project of a fake videoclub website.<br/>
+Internship supervision of 4 students.
+</p>
+</div>

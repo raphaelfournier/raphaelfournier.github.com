@@ -2,8 +2,8 @@
 layout: post
 title: "bootstrapping: a brand-new jekyll-powered blog"
 date: 2011-12-30 10:59:28
-categories: 
- - jekyll
+tags: 
+- jekyll
 ---
 
 ## Jekyll, qu'est-ce que c'est ?
@@ -12,6 +12,8 @@ Hébergement github, absence de bd, etc. souplesse, légereté.
 Tout en texte ? (cf ikiwiki)
 
 ## Les liens utiles et le fork : kevin, stammy, sp4ce pour les langues
+
+http://www.ksornberger.com
 
 Dapibus quis, imperdiet id, commodo a, lacus. Cras sit amet erat et nulla varius
 aliquet. Aliquam erat volutpat. Praesent feugiat vehicula pede. Suspendisse

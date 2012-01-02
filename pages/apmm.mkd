@@ -1,0 +1,18 @@
+---
+title: APMM
+layout: page
+date: 2011-12-26
+slug: apmm
+---
+<h2 class="annee">APMM<span class="backtotop"><span class="mask">&nbsp;</span><?php echo '<a href="index.php?lang='.$lang.'&amp;cat='.$cat.'&amp;color='.$color.'">'.$back.'</a>'; ?>
+</span></h2>
+
+<div class="cours">
+  <h3 class="intitule"><span class="niveau">Documents</span>2010-2011</h3>
+  <ul class="puces">
+      <li><span class="text"><a href="me/files/APMM_Cours.pdf">Cours</a></span></li>
+      <li><span class="text"><a href="me/files/APMM_TD.pdf">Sujets TD et TME</a></span></li>
+      <li><span class="text"><a href="me/files/APMM_TD_correction.pdf">Correction du TD</a></span></li>
+Ces documents sont proviennent de <a href="http://jlguillaume.free.fr">J.-L. Guillaume</a>.
+  </ul>
+</div>

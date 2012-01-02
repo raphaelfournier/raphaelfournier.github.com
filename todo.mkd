@@ -1,0 +1,38 @@
+---
+title: Todo
+layout: page
+date: 2011-12-16
+slug: todo
+---
+
+## catégories
+- tags
+- folder structure (tous les posts dans l'année + les posts dans le dossier
+  tags)
+
+## hébergement de fichiers ? sur tibre ? (pérennité)
+
+## cname pour rfnet
+
+## table des matières sur les posts longs ?
+
+## markdown
+- liens
+- reference dans un coin (cf plugins de jekyll)
+
+## design
+- couleurs
+- titres
+
+## double langue
+cf drivemeup et sp4ce.net
+
+## divers
+- flux rss / atom (par catégorie ?)
+- sitemap.xml
+- analytics
+- disqus (pour le moment warning et mail)
+
+## améliorations
+- "bits" à la stamatiou > dans twitter ? ou linkblog comme winer ?
+

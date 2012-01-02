@@ -2,9 +2,10 @@
 layout: post
 title: anewblog
 date: 2011-12-27 16:42:42
-categories: 
- - tagshere
- - anotherone
+tags: 
+- tagshere
+- anotherone
+
 ---
 
 # dawning of a new era

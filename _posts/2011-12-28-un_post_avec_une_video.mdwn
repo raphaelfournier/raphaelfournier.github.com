@@ -2,9 +2,11 @@
 layout: post
 title: un post avec une video
 date: 2011-12-28 19:15:29
-categories: 
- - tagshere
- - another one
+sticky: 1
+tags: 
+- tagshere
+- another one
+
 ---
 
 # voici une video

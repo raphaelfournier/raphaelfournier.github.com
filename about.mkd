@@ -3,25 +3,26 @@ title: About
 layout: page
 date: 2011-12-16
 slug: about
-description: "What is this place and who are you?"
 ---
 
-<ul id="abouttext">
-  <li><a href="http://www.twitter.com/fournier_r">Follow me on twitter</a></li>
-  <li><a href="http://www.facebook.com/raphael.fournier">My facebook page</a></li>
-</ul>
+Hello, I'm Raphaël, a twenty-six years old Ph.D student from Paris, France. I
+work in the LIP6 laboratory with the ComplexNetworks team. My research interests
+are related to P2P networks and Internet measurement.
 
+This website is my personal homepage. I intend to improve this page in the
+future, but for now I just leave an electronic version of my vitae (last update:
+15/11/2010).
 
-Last update: 15/11/2010
-<a name="top">
 <ul class="sections">
-<li><a href="#exp">Work experience</a></li>
-<li><a href="#edu">Education</a></li>
-<li><a href="#lang">Languages</a></li>
-<li><a href="#ict">ICT skills</a></li>
-<li><a href="#hobbies">Interests and Activities</a></li>
+  <li><a href="#exp">Work experience</a></li>
+  <li><a href="#edu">Education</a></li>
+  <li><a href="#lang">Languages</a></li>
+  <li><a href="#ict">ICT skills</a></li>
+  <li><a href="#hobbies">Interests and Activities</a></li>
 </ul>
+
 <hr/>
+
 <h2 class="annee"><a name="exp"></a>Work experience<span class="backtotop"><span class="mask">&nbsp;</span>
 <a href="#top">top</a>
 </span></h2>
@@ -53,19 +54,6 @@ conversions. Java programming and regular expressions.
 <p class="contenu">
 Air show association webmaster. Use of Html/PHP. Active committee membership.
 <span class="lieu">Air Expo, Toulouse</span>
-</p> </div>
-
-<div class="cours">
-<h3 class="intitule"><span class="niveau">August 2006</span><span class="mask">&nbsp;</span>Classical music festival in La Chaise-Dieu (France)</h3>
-<p class="contenu">
-Volunteered as doorman and helped preparing rooms for the concerts (scaffolding, sound and lighting, etc.).
-<span class="lieu">La Chaise-Dieu (43)</span>
-</p> </div>
-
-<div class="cours">
-<h3 class="intitule"><span class="niveau">July 2004 - July 2003</span><span class="mask">&nbsp;</span>Directory enquiries (call-center)</h3>
-<p class="contenu">
-<span class="lieu">France Télécom, Clermont-Ferrand</span> 
 </p> </div>
 
 <h2 class="annee"><a name="edu"></a>Education<span class="backtotop"><span class="mask">&nbsp;</span>
@@ -107,7 +95,7 @@ French equivalent to GCE A-levels (Maths, Physics, Chemistry, Biology).
 </p> </div>
 
 <div class="cours">
-<h3 class="intitule"><span class="niveau">Anglais</span><span class="mask">&nbsp;</span>Good working knowledge</h3>
+<h3 class="intitule"><span class="niveau">English</span><span class="mask">&nbsp;</span>Good working knowledge</h3>
 <p class="contenu">
 University of Cambridge degree: Certificate in Advanced English (2007, grade B, 
 proficient user). Previously passed KET (1998), PET(1999) and First Certificate 
@@ -124,10 +112,11 @@ Canada (Edmonton), Wales (Cardiff).
 <a href="#top">top</a>
 </span></h2>
  
+
 <div class="cours">
 <h3 class="intitule"><span class="niveau">Programming</span><span class="mask">&nbsp;</span></h3>
 <p class="contenu">
-Java, Python, UML. HTML, PHP/CSS, MySQL (database). Regular expressions.
+Java, Python, Shell, UML. HTML, PHP, CSS, MySQL (database). Regular expressions.
 </p> </div>
 
 <div class="cours">
@@ -139,7 +128,7 @@ Matlab, Maple, Microsoft Office / OpenOffice.
 <div class="cours">
 <h3 class="intitule"><span class="niveau">Systems</span><span class="mask">&nbsp;</span></h3>
 <p class="contenu">
-GNU/Linux (daily use), Microsoft Windows (98, XP and Vista).
+GNU/Linux, Microsoft Windows (98, XP and Vista).
 </p> </div>
 
 <h2 class="annee"><a name="hobbies"></a>Interests and Activities<span class="backtotop"><span class="mask">&nbsp;</span>

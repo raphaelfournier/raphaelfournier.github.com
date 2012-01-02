@@ -145,18 +145,21 @@ color:red;
 #navigation #surname{
 	font-size: 30px;
 	letter-spacing: 5px;
-	color: #666;
+	color: #dcdccc;
 }
 
 #navigation #surname:hover {
-	color: #000;
+	color: #1E2320;
+}
+#navigation #personalbranling {
+padding:0 20px;
+text-align:center;
 }
 
 #navigation #name{
-	font-size: 14px;
-	font-weight: bold;
-	letter-spacing: 1px;
-	color: #000;
+	font-size: 20px;
+	letter-spacing: 5px;
+	color: #1E2320;
 }
 
 #navigation .site{
