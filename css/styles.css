@@ -41,15 +41,22 @@ hr{
 	margin-left: 180px;
 	width: 800px;
 	margin-bottom: 50px;
+  text-align:justify;
 }
 .firstpost {
 border-bottom:2px solid #3F3F3F;
-}
-.firstpost h2 a {
-color:red;
+margin:0px;
 }
 .firstpost li{
 	list-style: none;
+  padding-left:0px;
+}
+.postdate {
+margin:0;
+color:red;
+}
+ul.taglist li{
+display:inline;
 }
 .related{
 	margin-top: 10px;
@@ -93,6 +100,19 @@ h1{
   font-size: 32px;
   border-bottom: 1px solid #eee;
   margin-bottom: .25em;
+}
+h2{
+  font-size: 24px;
+  margin-bottom: .25em;
+}
+h3{
+  font-size: 16px;
+  margin-bottom: .25em;
+}
+.categlink,
+.categlink a {
+color:red;
+  font-size: 70%;
 }
 
 #navigation{

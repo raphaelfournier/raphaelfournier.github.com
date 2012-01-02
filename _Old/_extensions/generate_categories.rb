@@ -109,7 +109,7 @@ module Jekyll
   # Jekyll hook - the generate method is called by jekyll, and generates all of the category pages.
   class GenerateCategories < Generator
     safe true
-    priority :low
+#    priority :low
 
     def generate(site)
       site.write_category_indexes
@@ -129,7 +129,7 @@ module Jekyll
     # Returns string
     def category_links(categories)
       categories = categories.sort!.map do |item|
-        '<a href="/categories/'+item+'/">'+item+'</a>'
+        '<a href="/tags/'+item+'/">'+item+'</a>'
       end
       
       connector = ", "

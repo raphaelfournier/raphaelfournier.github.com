@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Blogging With Jekyll and Github
-tags:
+categories:
   - rugby
   - foot
   - rails

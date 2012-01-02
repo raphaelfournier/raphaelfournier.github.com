@@ -1,10 +1,10 @@
 ---
 title: This is a title
 layout: post
-tags: 
-- rails
-- rapidrails
-- ruby
+categories: 
+  - rails
+  - rapidrails
+  - ruby
 ---
 The blog entry follows here in markdown. You can use *italic*, **bold**, [Link](http://google.com), 
 

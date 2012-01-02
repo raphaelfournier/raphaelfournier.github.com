@@ -1,0 +1,8 @@
+<h2 id="tagindex">Tags</h2>
+<ul class="taglist">
+{% for category in site.categories %}
+  <li>
+    <a href="/tags/{{ category[0] }}">{{ category[0] }}</a>
+  </li>
+{% endfor %}
+</ul>

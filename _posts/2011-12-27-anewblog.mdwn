@@ -2,7 +2,7 @@
 layout: post
 title: anewblog
 date: 2011-12-27 16:42:42
-tags: 
+categories: 
  - tagshere
  - anotherone
 ---

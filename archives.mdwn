@@ -6,4 +6,6 @@ slug: archives
 description: "Old posts"
 ---
 
-{% include monthlyarchives.html %}
+{% include taglist.html %}
+<hr>
+{% include yearlyarchives.html %}

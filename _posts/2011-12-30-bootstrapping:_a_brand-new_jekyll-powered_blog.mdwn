@@ -2,7 +2,7 @@
 layout: post
 title: "bootstrapping: a brand-new jekyll-powered blog"
 date: 2011-12-30 10:59:28
-tags: 
+categories: 
  - jekyll
 ---
 
@@ -19,3 +19,21 @@ pulvinar, orci in sollicitudin venenatis, nibh libero hendrerit sem, eu tempor
 nisi felis et metus. Etiam gravida sem ut mi. Integer volutpat, enim eu varius
 gravida, risus urna.
 
+### Tiens on peut afficher du code aussi
+
+{% highlight python %}
+for f in files:
+  if f.name == "foo":
+    continue
+  else:
+    print(f.name)
+{% endhighlight %}
+
+Tiens, avec un peu de Lua aussi :
+
+{% highlight lua %}
+function dmenu_mpd() 
+  numsong = awful.util.pread("mpc playlist | nl -s ' ' | tr -s \" \" | dmenu " .. dmenuopts .. "| cut -d \" \" -f2")
+  awful.util.spawn(numsong ~= "" and "mpc play " .. numsong or nil) 
+end 
+{% endhighlight %}
