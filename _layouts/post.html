@@ -7,9 +7,11 @@ layout: default
   {{ content }}
 </div>
 
-<hr>
-
-Related posts<br/>
+<h2 class="annee">Related posts</h2>
+  <ul class="related">
   {% for post in site.related_posts %}
-  <a href="{{ post.url }}">{{ post.title }}</a><br />
-{% endfor %}
+    <li>
+      {% include post_item.html %}
+    </li>
+  {% endfor %}
+  </ul>
