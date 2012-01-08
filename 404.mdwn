@@ -1,0 +1,7 @@
+---
+title: 404
+layout: page
+---
+
+This page does not exist. Try the menu to visit another page. Sorry for the
+inconvenience.

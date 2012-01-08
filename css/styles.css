@@ -1,17 +1,18 @@
 body{
-	font-family: Georgia, serif;
+	font-family: arial, sans;
 	margin: 0;
 	-webkit-font-smoothing: antialiased;
   background-color:#fff;
 }
 
 a{
-	color: #d78787;
+	color: #008;
 }
 
 a:hover {
 	text-decoration: none;
-	color: #506070;
+	color: #dcdccc;
+	background-color: #008;
 }
 
 p code, li code{
@@ -24,9 +25,8 @@ p code, li code{
 }
 hr{
 	border: 0;
-	height: 1px;
-	background-color: #ccc;
-	margin: 2em 1em;
+	height: 2px;
+	background-color: #3F3F3F;
 }
 .hey {
 	margin-bottom: 30px;
@@ -34,36 +34,32 @@ hr{
   width:800px;
 	padding:5px;
 	border:2px solid black;
-  background-color:#f0afaf;
+  background-color:#fbffd3;	
   color:#3f3f3f;
+  border-radius: 10px;
 }
 .content{
-	margin-left: 180px;
+	margin-left: 190px;
 	width: 800px;
 	margin-bottom: 50px;
   text-align:justify;
 }
-.firstpost {
-border-bottom:2px solid #3F3F3F;
-margin:0px;
-}
-.firstpost li{
-	list-style: none;
-  padding-left:0px;
-}
 .postdate {
 margin:0;
-color:red;
+}
+ul.taglist {
+padding:0;
 }
 ul.taglist li{
 display:inline;
+text-align:left;
 }
-.related{
-	margin-top: 10px;
+ul.archives{
+padding:0;
 }
-.related ul{
+ul.related {
 	margin: 0;
-	padding: 0;
+	padding: 0px;
 }
 .related li{
 	font-size: 14px;
@@ -76,6 +72,7 @@ display:inline;
 
 .related li span{
 	float:right;
+  margin-left:10px;
 }
 
 .related a{
@@ -101,6 +98,9 @@ h1{
   border-bottom: 1px solid #eee;
   margin-bottom: .25em;
 }
+h2.section {
+  text-decoration:underline overline;
+}
 h2{
   font-size: 24px;
   margin-bottom: .25em;
@@ -111,8 +111,20 @@ h3{
 }
 .categlink,
 .categlink a {
-color:red;
-  font-size: 70%;
+	text-transform: lowercase;
+}
+.categlink:before {
+  content:"[";
+}
+.categlink:after {
+  content:"]";
+}
+.zspam{
+  float:right;
+  font-size:.001px;
+  color:transparent;
+  display:inline-block;
+  width:0px;
 }
 
 #navigation{
@@ -121,8 +133,10 @@ color:red;
 	top: 0px;
 	width: 170px;
 	font-family: Helvetica, sans-serif;
-  background-color:#3f3f3f;	
+  background-color:#14568a;	
   color:#dcdccc;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
   border-bottom-right-radius: 25px;
 }
 
@@ -139,27 +153,22 @@ color:red;
 
 #navigation #me{
 	text-transform: uppercase;
-	margin: 10px 0 20px 0;
+	font-size: 120%;
+	margin: 10px;
+	padding: 5px;
 }
-
-#navigation #surname{
-	font-size: 30px;
-	letter-spacing: 5px;
+#navigation #me a{
 	color: #dcdccc;
 }
 
-#navigation #surname:hover {
-	color: #1E2320;
-}
-#navigation #personalbranling {
-padding:0 20px;
-text-align:center;
+#navigation #surname{
+	font-size: 20px;
+	letter-spacing: 5px;
 }
 
 #navigation #name{
 	font-size: 20px;
 	letter-spacing: 5px;
-	color: #1E2320;
 }
 
 #navigation .site{
@@ -181,10 +190,14 @@ text-align:center;
 }
 #navigation #sections ul{
   list-style: none;
+  margin-bottom: 25px;
+}
+#navigation #sections ul.secondlevel {
+  padding: 0px;
 }
 #navigation #sections li.active a {
-  color: #3F3F3F;
-  background-color: #87af87;
+  color: #ffffff;
+  background-color: #008;
 }
 #navigation .presentation{
   font-size: 12px;
@@ -192,7 +205,7 @@ text-align:center;
 }
 #navigation #sections a{
   padding: 3px 5px;
-  padding-left: 20px;
+  padding-left: 30px;
   color: #ccc;
   font-weight: bold;
   font-size: 12px;
@@ -200,8 +213,8 @@ text-align:center;
   border-bottom:1px solid #ccc;
 }
 #navigation #sections a:hover {
-  color: #3F3F3F;
-  background-color: #87af87;
+  color: #ffffff;
+  background-color: #008;
 }
 
 .abouttext {
@@ -209,6 +222,7 @@ font-size:small;
 color:red;
 }
 
+#firstpost,
 #post{
   padding-bottom: 15px;
   border-bottom: 1px solid #eee;
@@ -220,7 +234,6 @@ color:red;
   line-height: 1.25em;
   margin-bottom: .75em;
   color: #222;
-  list-style-type: square;
 }
 #post li code{
   border: 1px solid #ccc;
@@ -262,7 +275,7 @@ color:red;
   color: #444;
 }
 #post blockquote cite:before{
-  content: 'Ñ ';
+  content: '> ';
 }
 #post blockquote cite{
   text-align: right;

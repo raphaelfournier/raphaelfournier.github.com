@@ -1,6 +1,8 @@
-name: "Raphael Fournier's feed"
-description: "French CS phd"
-url: http://raphaelfournier.github.com
+name: "Raphaël Fournier : blog"
+description: "Raphael Fournier : blog"
+url: http://www.raphaelfournier.net
+title:              Raphaël Fournier
+author:             Raphaël Fournier
 
 safe:        false
 auto:        true
@@ -13,12 +15,27 @@ plugins:     ./_plugins
 
 exclude: Rakefile
 
+# plugins
+category_dir:       categories
+code_dir:           code
+post_types:
+  - portfolio
+index_pages:
+  category:
+    do_related:     false
+    title_prefix:   'Category: '
+  tag:
+    do_related:     true
+    title_prefix:   'Tag: '
+############################    
+
 future:      true
 lsi:         false
 markdown: rdiscount
 pygments: true
-permalink:   pretty
 paginate: 6
+#permalink: /:year/:month/:day/:title
+permalink: pretty
 rdiscount:
   extensions: [smart]
 
@@ -50,3 +67,13 @@ kramdown:
 #project_dir: projects
 category_dir: 'tags'
 category_title_prefix: 'Posts tagged '
+archive_yearly: true
+archive_monthly: true
+archive_daily: true
+
+# indextank settings
+indextank_index: my_index
+indextank_api_url: http://:myapikey@myapi.api.indextank.com
+
+# these values are applied as regular expressions
+indextank_excludes: [index.html, 404.html, ^/secret/]

@@ -1,0 +1,13 @@
+---
+layout: post
+title: Say no to ACTA
+date: 2012-01-08 17:15:08
+sticky: 1
+tags: 
+ - quadrature
+ - acta
+---
+
+<iframe src="http://mediakit.laquadrature.net/embed/716?size=medium" 
+style="width: 650px; height: 600px; border: 0; overflow: hidden" scrolling="no"
+frameborder="0"></iframe>

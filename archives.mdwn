@@ -3,9 +3,6 @@ title: Archives
 layout: page
 date: 2011-12-16
 slug: archives
-description: "Old posts"
 ---
 
-{% include taglist.html %}
-<hr>
 {% include yearlyarchives.html %}

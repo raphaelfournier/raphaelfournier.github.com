@@ -1,0 +1,5 @@
+<span class="postdate">{{ post.date | date: "%d-%m-%Y" }}</span>
+<a class="posturl" href="{{ post.url }}">{{ post.title }}</a>
+{% if post.tags[0] %}
+<span class="categlink">{{ post.tags | category_links }}</span>
+{% endif %}

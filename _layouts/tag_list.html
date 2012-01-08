@@ -1,0 +1,17 @@
+---
+layout: page
+title: Tags
+---
+
+{% include taglist.html %}
+<hr>
+{% for tag in page.tags %}
+<h2 style="margin:0;"><a name"{{ tag | replace:' ', '-' | downcase }}"></a><a href="/tags/{{ tag | replace:' ', '-' | downcase }}" name="{{ tag | replace:' ','-' | downcase }}">{{ tag }}</a></h2>
+    <ul class="related">
+        {% for post in site.tags[tag] %}
+        <li>
+          {% include post_item.html %}
+        </li>
+        {% endfor %}
+    </ul>
+{% endfor %}

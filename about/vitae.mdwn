@@ -1,17 +1,9 @@
 ---
-title: About
+title: Resume
 layout: page
 date: 2011-12-16
-slug: about
+slug: resume
 ---
-
-Hello, I'm Raphaël, a twenty-six years old Ph.D student from Paris, France. I
-work in the LIP6 laboratory with the ComplexNetworks team. My research interests
-are related to P2P networks and Internet measurement.
-
-This website is my personal homepage. I intend to improve this page in the
-future, but for now I just leave an electronic version of my vitae (last update:
-15/11/2010).
 
 <ul class="sections">
   <li><a href="#exp">Work experience</a></li>
@@ -145,3 +137,4 @@ GNU/Linux, Microsoft Windows (98, XP and Vista).
 <p class="contenu">Active participation in squash and running.
 </p> </div>
 </div>
+

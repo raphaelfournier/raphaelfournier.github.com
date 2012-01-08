@@ -1,8 +1,7 @@
-<h2 id="tagindex">Tags</h2>
 <ul class="taglist">
-{% for category in site.categories %}
+{% for tag in page.tags %}
   <li>
-    <a href="/tags/{{ category[0] }}">{{ category[0] }}</a>
+    <a href="./index.html#{{ tag | replace:' ', '-' | downcase }}">{{ tag }}</a>
   </li>
 {% endfor %}
 </ul>

@@ -1,0 +1,11 @@
+<h2 class="annee">Recent posts</h2>
+  <ul class="related">
+  {% for post in site.posts limit: 3 %}
+    {% if forloop.index > 1 %}
+      <li>
+    {% include post_item.html %}
+      </li>
+    {% endif %}
+  {% endfor %}
+  </ul>
+

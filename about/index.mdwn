@@ -1,0 +1,30 @@
+---
+title: About
+layout: page
+date: 2011-12-16
+slug: about
+---
+
+Hello, I'm Raphaël, a twenty-six years old Ph.D student from Paris, France. I
+work in the LIP6 laboratory with the ComplexNetworks team. My research interests
+are related to P2P networks and Internet measurement. For more information, you
+may want to have a look at my [resume](/about/vitae).
+
+For professional matters, contact me at `raphael.fournier@lip6.fr`. My office is
+located at:
+
+    LIP6 (UPMC/CNRS)
+    Office 25-26 311
+    4, place Jussieu
+    75 005 Paris FRANCE
+    (+33) 1 44 27 70 19
+
+For personal matters, contact me at `raphael@raphaelfournier.net`.
+
+## Colophon
+
+This site uses [jekyll](http://www.jekyll.org), a blog-aware static html generator. It is hosted on
+[github](http://www.github.com). Pages are written in [vim](http://www.vim.org)
+on my [archlinux](http://www.archlinux.org)-powered laptop.
+
+

@@ -9,19 +9,17 @@
 	<link rel="stylesheet" href="/css/styles.css" />
 	<link rel="stylesheet" href="/css/highlight.css" />
 	<link rel="stylesheet" href="/css/vitae.css" />
+  <link rel="stylesheet" type="text/css" href="/css/mobile.css" media="handheld" />
+  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" /><!-- pour IE -->
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico" /><!-- pour les navigateurs standards -->
 	
 </head>
-
-
 <body>
-
 	<div id="navigation">
     {% include nav.html %}
-	</div>
-
-	{{ content }}
-
-
+  </div> <!-- end navigation --!>
+  <div class="content">
+    {{ content }}
+	</div> <!-- end content --!>
 </body>
-
 </html>

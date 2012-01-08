@@ -1,20 +1,40 @@
 	<div id="me">
 		<a href="/">
-			<span id="surname">raphael</span>
+			<span id="surname">rapha&euml;l</span>
 			<span id="name">fournier</span>
 		</a>
 	</div>
-  <div id="personalbranling">
-    <a href="http://www.twitter.com/fournier_r">@fournier_r</a>
-	</div>
+
 	<div id="sections">
+    
   <ul>
-    <li{% if page.slug == 'home' %} class="active"{% endif %}><a rel="home page" title="home sweet home" href="/">home</a></li>
-    <li{% if page.slug == 'about' %} class="active"{% endif %}><a rel="about this" title="what do you want to know?" href="/about/">about</a></li>
-    <li{% if page.slug == 'research' %} class="active"{% endif %}><a rel="research this" title="what do you want to know?" href="/research/">research</a></li>
-    <li{% if page.slug == 'archives' %} class="active"{% endif %}><a rel="browse" title="browse the archives" href="/archives/">archives</a></li>
-    <li{% if page.slug == 'todo' %} class="active"{% endif %}><a rel="browse" title="browse the todo" href="/todo/">todo</a></li>
+
+    <li></li>
+    
+    <ul class="secondlevel">
+      <li{% if page.slug == 'home' %} class="active"{% endif %}><a rel="home page" title="homepage" href="/">home</a></li>
+      <li{% if page.slug == 'archives' %} class="active"{% endif %}><a rel="browse" title="browse the archives" href="/archives/">archives</a></li>
+      <li{% if page.slug == 'tags' %} class="active"{% endif %}><a rel="browse" title="browse by tags" href="/tags/">tags</a></li>
+      <li{% if page.slug == 'todo' %} class="active"{% endif %}><a rel="todo" title="todo" href="/todo/">todo</a></li>
+    </ul>
+    
+    <li></li>
+    
+    <ul class="secondlevel">
+      <li{% if page.slug == 'about' %} class="active"{% endif %}><a rel="about me" title="about" href="/about/">about</a></li>
+      <li{% if page.slug == 'research' %} class="active"{% endif %}><a rel="research this" title="research" href="/research/">research</a></li>
+      <li{% if page.slug == 'teaching' %} class="active"{% endif %}><a rel="teaching this" title="teaching" href="/teaching/">teaching</a></li>
+    </ul>
+
+    <li></li>
+
+    <ul class="secondlevel">
+      <li><a rel="twitter" title="follow me on twitter!" href="http://www.twitter.com/fournier_r">@fournier_r</a></li>
+      <li>
+      <a rel="rss feed" title="receive update via rss" href="/feed/rss.xml">rss</a>
+      </li>
+    </ul>
+
   </ul>
-	</div>
 
-
+</div>

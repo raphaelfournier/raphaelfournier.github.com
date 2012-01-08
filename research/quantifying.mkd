@@ -3,9 +3,9 @@ title: Quantifying paedophile activity in a large P2P network
 layout: page
 date: 2011-12-26
 slug: quantifying
+categories:
+- research
 ---
-<h2 class="annee">Quantifying Paedophile Activity in a Large P2P Network<span class="backtotop"><span class="mask">&nbsp;</span><?php echo '<a href="index.php?lang='.$lang.'&amp;cat='.$cat.'&amp;color='.$color.'">'.$back.'</a>'; ?>
-</span></h2>
 
 <div class="cours">
   <h3 class="intitule"><span class="niveau">Rationale</span></h3>
