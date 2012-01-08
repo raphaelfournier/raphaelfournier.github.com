@@ -30,6 +30,6 @@ categories:
 Quantifying paedophile queries in a large P2P system</h3>
 <p class="contenu">
 Accepted for the <a href="http://www.ieee-infocom.org/">IEEE Infocom Mini-Conference 2011</a>, Shanghaï, (acceptance rate : 23,42%). <br/>
-<a href="me/files/InfocomMC11_LatapyMagnienFournier_QuantifyingPaedophileQueriesP2P.pdf">PDF version</a> <br/>
+<a href="http://www-complexnetworks.lip6.fr/~fournier/me/files/InfocomMC11_LatapyMagnienFournier_QuantifyingPaedophileQueriesP2P.pdf">PDF version</a> <br/>
 </p>
 </div>

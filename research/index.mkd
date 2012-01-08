@@ -15,9 +15,9 @@ description: "What is this place and who are you?"
 <p class="contenu">
 Prepared for the "Online Child Protection Conference: Future Technologies for Policing the Internet" 
 (<a href="www.comp.lancs.ac.uk/isis">website</a>, London, 27/10/2010).<br/>
-<a href="me/files/poster_PaedophileActivityInALargeP2PSystem.pdf">PDF Version (DIN-A0)</a>
+<a href="http://www-complexnetworks.lip6.fr/~fournier/me/files/poster_PaedophileActivityInALargeP2PSystem.pdf">PDF Version (DIN-A0)</a>
 <br/>
-<a href="me/files/poster_PaedophileActivityInALargeP2PSystem_A4.pdf">PDF Version (A4)</a>
+<a href="http://www-complexnetworks.lip6.fr/~fournier/me/files/poster_PaedophileActivityInALargeP2PSystem_A4.pdf">PDF Version (A4)</a>
 </p>
 </li>
 
@@ -27,7 +27,7 @@ Prepared for the "Online Child Protection Conference: Future Technologies for Po
 <span class="postdate">2011</span>
 <p class="contenu">
 Accepted for the <a href="http://www.ieee-infocom.org/">IEEE Infocom Mini-Conference 2011</a>, Shanghai, (acceptance rate : 23,42%). <br/>
-<a href="me/files/InfocomMC11_LatapyMagnienFournier_QuantifyingPaedophileQueriesP2P.pdf">PDF version</a> <br/>
+<a href="http://www-complexnetworks.lip6.fr/~fournier/me/files/InfocomMC11_LatapyMagnienFournier_QuantifyingPaedophileQueriesP2P.pdf">PDF version</a> <br/>
 <a href="./quantifying">Dedicated web page</a>
 </p>
 </li>
@@ -38,7 +38,7 @@ Accepted for the <a href="http://www.ieee-infocom.org/">IEEE Infocom Mini-Confer
 <p class="contenu">
 Special Group: Internet-facilitated crimes against children<br/>
 INTERPOL World Headquarters, Lyon <br/>
-<a href="me/files/QuantifyingPaedoP2P_Interpol_Fournier.pdf">PDF available</a>.
+<a href="http://www-complexnetworks.lip6.fr/~fournier/me/files/QuantifyingPaedoP2P_Interpol_Fournier.pdf">PDF available</a>.
 </p>
 </li>
 
@@ -47,7 +47,7 @@ INTERPOL World Headquarters, Lyon <br/>
 <span class="postdate">2009</span>
 <p class="contenu">
 Antipaedo Conference. LIP6, Paris.<br/>
-<a href="me/files/poster_TracingPaedoUsersEDonkeyKeywords.pdf">PDF available</a>
+<a href="http://www-complexnetworks.lip6.fr/~fournier/me/files/poster_TracingPaedoUsersEDonkeyKeywords.pdf">PDF available</a>
 </p>
 </li>
 

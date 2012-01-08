@@ -12,9 +12,9 @@ categories:
 <div class="cours">
   <h3 class="intitule"><span class="niveau">Documents</span>2010-2011</h3>
   <ul class="puces">
-      <li><span class="text"><a href="me/files/APMM_Cours.pdf">Cours</a></span></li>
-      <li><span class="text"><a href="me/files/APMM_TD.pdf">Sujets TD et TME</a></span></li>
-      <li><span class="text"><a href="me/files/APMM_TD_correction.pdf">Correction du TD</a></span></li>
+      <li><span class="text"><a href="http://www-complexnetworks.lip6.fr/~fournier/me/files/APMM_Cours.pdf">Cours</a></span></li>
+      <li><span class="text"><a href="http://www-complexnetworks.lip6.fr/~fournier/me/files/APMM_TD.pdf">Sujets TD et TME</a></span></li>
+      <li><span class="text"><a href="http://www-complexnetworks.lip6.fr/~fournier/me/files/APMM_TD_correction.pdf">Correction du TD</a></span></li>
 Ces documents sont proviennent de <a href="http://jlguillaume.free.fr">J.-L. Guillaume</a>.
   </ul>
 </div>
