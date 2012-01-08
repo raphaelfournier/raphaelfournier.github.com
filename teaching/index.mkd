@@ -11,7 +11,7 @@ slug: teaching
 <p class="contenu">
 For students in the Computer Networks Master, a course to overview several steps of processing multimedia data: encoding/decoding, compression, standards, etc. 
 Text and image coding (Huffmann, DCT and jpeg), video presentations with SMILE, FEC. 
-<br/><br/><a href⁼"./apmm/">Course documents</a>
+<br/><br/><a href="./apmm/">Course documents</a>
 </p>
 </li>
 <li>
