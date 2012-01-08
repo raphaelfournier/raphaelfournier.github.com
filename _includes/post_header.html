@@ -2,9 +2,9 @@
   <a href="{{ page.url }}">{{ page.title }}</a>
 </h1>
 <div class="authoring">
-  Publi&eacute; le {{ page.date | date: "%d %m %Y" }} 
+  Published on {{ page.date | date: "%d-%m-%Y" }} 
   {% if page.tags[0] %}
-  dans {{ page.tags | category_links }}
+  in {{ page.tags | category_links }}
   {% endif %}
   
 </div>

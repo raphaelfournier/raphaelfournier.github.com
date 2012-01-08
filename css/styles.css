@@ -6,13 +6,13 @@ body{
 }
 
 a{
-	color: #008;
+	color: #448;
 }
 
 a:hover {
 	text-decoration: none;
 	color: #dcdccc;
-	background-color: #008;
+	background-color: #448;
 }
 
 p code, li code{
@@ -263,7 +263,7 @@ color:red;
   padding: 0;
 }
 #post .authoring a:hover {
-  color: #555;
+  color: #dcdccc;
   border-color: #555;
 }
 #post blockquote{

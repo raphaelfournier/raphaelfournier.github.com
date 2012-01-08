@@ -28,3 +28,11 @@ this site:
 You may also have a look at other static html generators, such as pelican,
 nanoblogger or hyde. I have tested the first two, they were great but jekyll is
 better (in terms of plugins, community and the bonus of github hosting).
+
+The only issue I still have to figure out is how to neatly publish post in
+French and English. The authors of
+[sp4ce.net](http://www.sp4ce.net/site/2011/01/15/how-to-have-a-multilingual-website-with-jekyll.html)
+and [drivemeup](http://drivemeup.github.com/) have kind of succeeded in doing
+this, but I need some time to see how I can adapt there solutions to this blog.
+
+However, jekyll and github are really great!
