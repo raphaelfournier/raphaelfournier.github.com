@@ -7,29 +7,32 @@ categories:
 - research
 ---
 
-<div class="cours">
-  <h3 class="intitule"><span class="niveau">Rationale</span></h3>
-  <ul class="puces">
-      <li><span class="text">Many offenders / interested users</span></li>
-      <li><span class="text">Danger for innocent users</span></li>
-      <li><span class="text">Correlation between viewing and acting out</span></li>
-      <li><span class="text">Policy making issues</span></li>
+  <ul class="related">
+<li>  <h3 class="intitule">Rationale</h3>
+<p class="contenu">
+  <ul class="normal">
+      <li>Many offenders / interested users</li>
+      <li>Danger for innocent users</li>
+      <li>Correlation between viewing and acting out</li>
+      <li>Policy making issues</li>
   </ul>
-</div>
+</p>
+  </li>
 
-<div class="cours">
-  <h3 class="intitule"><span class="niveau">Links</span></h3>
-  <ul class="puces">
+  <li><h3 class="intitule">Links</h3>
+<p class="contenu">
+  <ul class="normal">
     <li><a href="http://antipaedo.lip6.fr">Project page on the LIP6 (our CS laboratory)</a></li>
     <li><a href="http://www-rp.lip6.fr/~latapy/antipaedo/">Supplementary material page</a> <span class="text">detailing our methods and providing source codes and samples of our datasets</span></li>
   </ul>
-</div>
+</p>
+  </li>
 
-<div class="cours">
-<h3 class="intitule"><span class="niveau">Article</span>
+<li><h3 class="intitule"><span class="categlink">Article</span>
 Quantifying paedophile queries in a large P2P system</h3>
 <p class="contenu">
 Accepted for the <a href="http://www.ieee-infocom.org/">IEEE Infocom Mini-Conference 2011</a>, Shanghaï, (acceptance rate : 23,42%). <br/>
 <a href="http://www-complexnetworks.lip6.fr/~fournier/me/files/InfocomMC11_LatapyMagnienFournier_QuantifyingPaedophileQueriesP2P.pdf">PDF version</a> <br/>
 </p>
-</div>
+  </li>
+  </ul>

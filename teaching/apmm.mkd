@@ -16,4 +16,5 @@ slug: apmm
       <li><a href="http://www-complexnetworks.lip6.fr/~fournier/me/files/APMM_TD_correction.pdf">Correction du TD</a></span></li>
   </ul>
 Ces documents sont proviennent de <a href="http://jlguillaume.free.fr">J.-L. Guillaume</a>.
+</p>
   </ul>
