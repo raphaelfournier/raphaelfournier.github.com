@@ -1,11 +1,57 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
+        <loc>
+            http://raphaelfournier.github.com/blog/2011/12/30/bootstrapping%3A_a_brand-new_jekyll-powered_blog/
+        </loc>
+        <lastmod>2012-04-13T10:37:39+02:00</lastmod>
+    </url>
+    <url>
+        <loc>http://raphaelfournier.github.com/blog/2012/01/08/say_no_to_acta/</loc>
+        <lastmod>2012-04-13T10:10:24+02:00</lastmod>
+    </url>
+    <url>
+        <loc>http://raphaelfournier.github.com/blog/</loc>
+        <lastmod>2012-04-13T10:37:39+02:00</lastmod>
+    </url>
+    <url>
         <loc>http://raphaelfournier.github.com/blog/archives/</loc>
-        <lastmod>2012-04-12T17:25:02+02:00</lastmod>
+        <lastmod>2012-04-13T10:37:39+02:00</lastmod>
+    </url>
+    <url>
+        <loc>http://raphaelfournier.github.com/research/</loc>
+        <lastmod>2012-04-13T10:30:03+02:00</lastmod>
+    </url>
+    <url>
+        <loc>http://raphaelfournier.github.com/research/quantifying/</loc>
+        <lastmod>2012-04-13T10:30:40+02:00</lastmod>
+    </url>
+    <url>
+        <loc>http://raphaelfournier.github.com/projects/</loc>
+        <lastmod>2012-04-13T10:37:39+02:00</lastmod>
+    </url>
+    <url>
+        <loc>http://raphaelfournier.github.com/about/vitae.html</loc>
+        <lastmod>2012-04-13T10:21:44+02:00</lastmod>
+    </url>
+    <url>
+        <loc>http://raphaelfournier.github.com/about/</loc>
+        <lastmod>2012-04-13T10:52:03+02:00</lastmod>
     </url>
     <url>
         <loc>http://raphaelfournier.github.com/</loc>
-        <lastmod>2012-04-12T17:25:02+02:00</lastmod>
+        <lastmod>2012-04-13T10:45:08+02:00</lastmod>
+    </url>
+    <url>
+        <loc>http://raphaelfournier.github.com/colophon/</loc>
+        <lastmod>2012-04-13T10:52:03+02:00</lastmod>
+    </url>
+    <url>
+        <loc>http://raphaelfournier.github.com/teaching/</loc>
+        <lastmod>2012-04-13T10:31:28+02:00</lastmod>
+    </url>
+    <url>
+        <loc>http://raphaelfournier.github.com/teaching/apmm/</loc>
+        <lastmod>2012-04-13T10:32:00+02:00</lastmod>
     </url>
 </urlset>

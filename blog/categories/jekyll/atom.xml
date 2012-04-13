@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Raphaël Fournier]]></title>
-  <link href="http://raphaelfournier.github.com/atom.xml" rel="self"/>
+  <title><![CDATA[Category: jekyll | Raphaël Fournier]]></title>
+  <link href="http://raphaelfournier.github.com/blog/categories/jekyll/atom.xml" rel="self"/>
   <link href="http://raphaelfournier.github.com/"/>
   <updated>2012-04-13T10:52:14+02:00</updated>
   <id>http://raphaelfournier.github.com/</id>
@@ -14,25 +14,13 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Say no to ACTA!]]></title>
-    <link href="http://raphaelfournier.github.com/blog/2012/01/08/say_no_to_acta/"/>
-    <updated>2012-01-08T18:15:08+01:00</updated>
-    <id>http://raphaelfournier.github.com/blog/2012/01/08/say_no_to_acta</id>
-    <content type="html"><![CDATA[<iframe src="http://mediakit.laquadrature.net/embed/716?size=medium" 
-style="width: 650px; height: 600px; border: 0; overflow: hidden" scrolling="no"
-frameborder="0"></iframe>
-
-]]></content>
-  </entry>
-  
-  <entry>
     <title type="html"><![CDATA[bootstrapping: a brand-new jekyll-powered blog]]></title>
     <link href="http://raphaelfournier.github.com/blog/2011/12/30/bootstrapping%3A_a_brand-new_jekyll-powered_blog/"/>
     <updated>2011-12-30T11:59:28+01:00</updated>
     <id>http://raphaelfournier.github.com/blog/2011/12/30/bootstrapping:_a_brand-new_jekyll-powered_blog</id>
     <content type="html"><![CDATA[<p>I recently decided to move my custom-made personal homepage and my
 blogger-powered blog onto a single website. I stumbled upon
-<a href="http://jekyllrb.com">jekyll</a>, a &#8220;blog aware, static site generator&#8221;. It can be
+<a href="http://jekyllrb.com">jekyll</a>, a "blog aware, static site generator". It can be
 freely hosted on <a href="http://github.com">github</a>, via github-pages. There is no
 database and every page and post are written in markdown (or another outlining
 language). The source is located in a folder on my site and are controlled via
