@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: jekyll | Raphaël Fournier]]></title>
+  <link href="http://raphaelfournier.github.com/blog/categories/jekyll/atom.xml" rel="self"/>
+  <link href="http://raphaelfournier.github.com/"/>
+  <updated>2012-04-13T14:26:50+02:00</updated>
+  <id>http://raphaelfournier.github.com/</id>
+  <author>
+    <name><![CDATA[Raphaël Fournier]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[bootstrapping: a brand-new jekyll-powered blog]]></title>
+    <link href="http://raphaelfournier.github.com/blog/2011/12/30/bootstrapping%3A_a_brand-new_jekyll-powered_blog/"/>
+    <updated>2011-12-30T11:59:28+01:00</updated>
+    <id>http://raphaelfournier.github.com/blog/2011/12/30/bootstrapping:_a_brand-new_jekyll-powered_blog</id>
+    <content type="html"><![CDATA[<p>I recently decided to move my custom-made personal homepage and my
+blogger-powered blog onto a single website. I stumbled upon
+<a href="http://jekyllrb.com">jekyll</a>, a "blog aware, static site generator". It can be
+freely hosted on <a href="http://github.com">github</a>, via github-pages. There is no
+database and every page and post are written in markdown (or another outlining
+language). The source is located in a folder on my site and are controlled via
+git. If you want a similar website, you can clone the
+<a href="https://github.com/raphaelfournier/raphaelfournier.github.com">repo</a> and look
+for the user-contributed
+<a href="https://github.com/mojombo/jekyll/wiki/Plugins">plugins</a>.</p>
+
+<p>Three jekyll bloggers, among the
+<a href="https://github.com/mojombo/jekyll/wiki/sites">others</a>, inspired me for building
+this site:</p>
+
+<ul>
+<li><a href="http://www.pstamatiou.com">stammy</a></li>
+<li><a href="https://github.com/josegonzalez/josediazgonzalez.com">josé diaz gonsalez</a></li>
+<li><a href="http://www.ksornberger.com">kevin sornberger</a></li>
+</ul>
+
+
+<p>You may also have a look at other static html generators, such as pelican,
+nanoblogger or hyde. I have tested the first two, they were great but jekyll is
+better (in terms of plugins, community and the bonus of github hosting).</p>
+
+<p>The only issue I still have to figure out is how to neatly publish posts in
+French and English. The authors of
+<a href="http://www.sp4ce.net/site/2011/01/15/how-to-have-a-multilingual-website-with-jekyll.html">sp4ce.net</a>
+and <a href="http://drivemeup.github.com/">drivemeup</a> have kind of succeeded in doing
+this, but I need some time to see how I can adapt their solutions to this blog.</p>
+
+<p>However, jekyll and github are really great!</p>
+]]></content>
+  </entry>
+  
+</feed>
