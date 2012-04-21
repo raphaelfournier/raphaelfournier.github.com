@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+  <title>coyled.com</title>
+  <link href="http://coyled.com/"/>
+  <link type="application/atom+xml" rel="self" href="http://coyled.com/atom.xml"/>
+  <updated>2012-01-09T10:04:56+01:00</updated>
+  <id>http://coyled.com/</id>
+  <author>
+    <name>Dave Coyle</name>
+    <email>coyled@coyled.com</email>
+  </author>
+
+  
+  <entry>
+    <id>http://coyled.com/2012/01/08/say_no_to_acta</id>
+    <link type="text/html" rel="alternate" href="http://coyled.com/2012/01/08/say_no_to_acta/"/>
+    <title>Say no to ACTA!</title>
+    <updated>2012-01-08T18:15:08+01:00</updated>
+    <author>
+      <name>Dave Coyle</name>
+      <uri>http://coyled.com/</uri>
+    </author>
+    <content type="html">&lt;iframe src=&quot;http://mediakit.laquadrature.net/embed/716?size=medium&quot; 
+style=&quot;width: 650px; height: 600px; border: 0; overflow: hidden&quot; scrolling=&quot;no&quot;
+frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://coyled.com/2011/12/30/bootstrapping:_a_brand-new_jekyll-powered_blog</id>
+    <link type="text/html" rel="alternate" href="http://coyled.com/2011/12/30/bootstrapping%3A_a_brand-new_jekyll-powered_blog/"/>
+    <title>bootstrapping: a brand-new jekyll-powered blog</title>
+    <updated>2011-12-30T11:59:28+01:00</updated>
+    <author>
+      <name>Dave Coyle</name>
+      <uri>http://coyled.com/</uri>
+    </author>
+    <content type="html">&lt;p&gt;I recently decided to move my custom-made personal homepage and my
+blogger-powered blog onto a single website. I stumbled upon
+&lt;a href=&quot;http://jekyllrb.com&quot;&gt;jekyll&lt;/a&gt;, a &quot;blog aware, static site generator&quot;. It can be
+freely hosted on &lt;a href=&quot;http://github.com&quot;&gt;github&lt;/a&gt;, via github-pages. There is no
+database and every page and post are written in markdown (or another outlining
+language). The source is located in a folder on my site and are controlled via
+git. If you want a similar website, you can clone the
+&lt;a href=&quot;https://github.com/raphaelfournier/raphaelfournier.github.com&quot;&gt;repo&lt;/a&gt; and look
+for the user-contributed
+&lt;a href=&quot;https://github.com/mojombo/jekyll/wiki/Plugins&quot;&gt;plugins&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Three jekyll bloggers, among the
+&lt;a href=&quot;https://github.com/mojombo/jekyll/wiki/sites&quot;&gt;others&lt;/a&gt;, inspired me for building
+this site:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.pstamatiou.com&quot;&gt;stammy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/josegonzalez/josediazgonzalez.com&quot;&gt;josé diaz gonsalez&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.ksornberger.com&quot;&gt;kevin sornberger&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;You may also have a look at other static html generators, such as pelican,
+nanoblogger or hyde. I have tested the first two, they were great but jekyll is
+better (in terms of plugins, community and the bonus of github hosting).&lt;/p&gt;
+
+&lt;p&gt;The only issue I still have to figure out is how to neatly publish post in
+French and English. The authors of
+&lt;a href=&quot;http://www.sp4ce.net/site/2011/01/15/how-to-have-a-multilingual-website-with-jekyll.html&quot;&gt;sp4ce.net&lt;/a&gt;
+and &lt;a href=&quot;http://drivemeup.github.com/&quot;&gt;drivemeup&lt;/a&gt; have kind of succeeded in doing
+this, but I need some time to see how I can adapt there solutions to this blog.&lt;/p&gt;
+
+&lt;p&gt;However, jekyll and github are really great!&lt;/p&gt;
+</content>
+  </entry>
+  
+ 
+</feed>
