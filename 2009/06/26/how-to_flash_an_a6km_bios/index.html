@@ -1,0 +1,255 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Sctict//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title>How-to flash an a6km bios</title>
+	<meta name="author" content="Raphael Fournier"/>
+	<link rel="stylesheet" href="/css/styles.css" />
+	<link rel="stylesheet" href="/css/highlight.css" />
+	<link rel="stylesheet" href="/css/vitae.css" />
+  <link rel="stylesheet" type="text/css" href="/css/mobile.css" media="handheld" />
+  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" /><!-- pour IE -->
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico" /><!-- pour les navigateurs standards -->
+	
+</head>
+<body>
+	<div id="navigation">
+    	<div id="me">
+		<a href="/">
+			<span id="surname">rapha&euml;l</span>
+			<span id="name">fournier</span>
+		</a>
+  </div> <!-- end of div me --!> 
+
+	<div id="sections">
+    
+  <ul>
+    <li>
+    <ul class="secondlevel">
+      <li><a rel="about me" title="about" href="/about/">about</a></li>
+      <li><a rel="research this" title="research" href="/research/">research</a></li>
+      <li><a rel="teaching this" title="teaching" href="/teaching/">teaching</a></li>
+    </ul>
+    </li>
+    <li>
+    
+    <ul class="secondlevel">
+      <li><a rel="home page" title="homepage" href="/">blog home</a></li>
+      <li><a rel="browse" title="browse the archives" href="/archives.html">archives</a></li>
+      <li><a rel="browse" title="browse by tags" href="/tags/">tags</a></li>
+    </ul>
+    
+    </li>
+    <li>
+
+    <ul class="secondlevel">
+      <li><a rel="twitter" title="follow me on twitter!" href="http://www.twitter.com/fournier_r">@fournier_r</a></li>
+      <li>
+      <a rel="rss feed" title="receive update via rss" href="/feed/rss.xml">rss</a>
+      </li>
+    </ul>
+
+    </li>
+
+  </ul>
+
+</div> <!-- end of div sections --!> 
+
+  </div> <!-- end navigation --!>
+  <div class="content">
+    <div id="post">
+  <h1>
+  <a href="/2009/06/26/how-to_flash_an_a6km_bios/">How-to flash an a6km bios</a>
+</h1>
+<div class="authoring">
+  Published on 26-06-2009 
+  
+  in <a href="/tags/astuce/">astuce</a>, <a href="/tags/asus/">asus</a>
+  
+  
+</div>
+
+  <p>I'm the owner, for three years now, of
+an Asus laptop (ref : A6km Q007h). It came with Windows XP, which I kept until
+May 2007 or so, when I decided that the dual-boot time was over and I could only
+use Ubuntu Linux. I tried Ubuntu Dapper Drake first, then I upgraded directly to
+Feisty Fawn (good version). I followed the release cycle, upgrading to Gutsy
+Gibbon and Hardy Heron. Then, for different reasons, I installed an ArchLinux,
+which is still my only distro at the moment.</p>
+
+
+<p> <p>The main problem when you
+use Linux on non-evolutive hardware such as a my laptop is that you are
+compelled to "tell yourself that you don't really need [some] features" (<a
+href="http://linuxhaters.blogspot.com/2008/06/how-to-be-linux-user.html">Linux
+hater's blog</a>). In May 2007, for example, the webcam on my model was not
+working (it now works, due to clever reverse-engineering from users, not thanks
+to Asus...). And, more annoying, if any USB device was plugged at startup, the
+boot process hanged with no error message. It means that you have to unplug your
+USB mouse or hard-disk at powering down, or check it when switching the laptop
+on. </p> <p>The problem lies in the buggy bios version. DSDT tables may be
+used to correct it -- at least, some users claim it worked for them -- or one
+should downgrade its BIOS. I have only figured out today how to do it -- yes,
+shame on me. My difficulty was to know how to have the file visible from the
+bios : CD/DVD were not solutions (since they are not recognize by the BIOS for
+flash), floppy was not present (it's a laptop). My previous attempts with hard
+disk FAT partitions failed, probably because I used FAT 16 (?). As far as USB
+key are concerned, I thougt they were not appropriate on to do it with ASUS
+BIOS.</p> <p>Flashing a BIOS is dangerous, do it at your own risks, backup
+your data before.</p> <p>Here's the procedure, step by step
+:</p> <ul><li>You may use a USB key, or any other FAT32-formatted disk you
+have</li> <li>Download the correct (and old - 2005 !) version : <a
+href="http://people.bath.ac.uk/enxspd/laptop/A6Km0202AS.zip">link</a> (thanks,
+<a href="http://wiki.archlinux.org/index.php/Asus_A6km">Arch
+Wiki</a>)</li> <li>Unzip the file on the usb key</li> <li>Reboot and press
+'F2' at startup, to enter BIOS option</li> <li>Find "Easy
+Flash"</li> <li>If you're doing it right, you may see A: and C:. Choose C:
+with arrows</li> <li>Press 'Enter' and follow the
+instructions.</li> </ul> The process was quick and easy. I plugged my USB
+mouse (though I don't use it very much those days) and rebooted : it works !<br
+/><br />Note : I also discovered, while wandering my BIOS options, that a USB
+key is listed as ... harddisk drive instead of "removable device" (important
+to try a linux distro on a key).<br />","<p>I'm the owner, for three years now,
+of an Asus laptop (ref : A6km Q007h). It came with Windows XP, which I kept
+until May 2007 or so, when I decided that the dual-boot time was over and I
+could only use Ubuntu Linux. I tried Ubuntu Dapper Drake first, then I upgraded
+directly to Feisty Fawn (good version). I followed the release cycle, upgrading
+to Gutsy Gibbon and Hardy Heron. Then, for different reasons, I installed an
+ArchLinux, which is still my only distro at the moment.</p> <p>The main
+problem when you use Linux on non-evolutive hardware such as a my laptop is that
+you are compelled to "tell yourself that you don't really need [some]
+features" (<a
+href="http://linuxhaters.blogspot.com/2008/06/how-to-be-linux-user.html">Linux
+hater's blog</a>). In May 2007, for example, the webcam on my model was not
+working (it now works, due to clever reverse-engineering from users, not thanks
+to Asus...). And, more annoying, if any USB device was plugged at startup, the
+boot process hanged with no error message. It means that you have to unplug your
+USB mouse or hard-disk at powering down, or check it when switching the laptop
+on. </p> <p>The problem lies in the buggy bios version. DSDT tables may be
+used to correct it -- at least, some users claim it worked for them -- or one
+should downgrade its BIOS. I have only figured out today how to do it -- yes,
+shame on me. My difficulty was to know how to have the file visible from the
+bios : CD/DVD were not solutions (since they are not recognize by the BIOS for
+flash), floppy was not present (it's a laptop). My previous attempts with hard
+disk FAT partitions failed, probably because I used FAT 16 (?). As far as USB
+key are concerned, I thougt they were not appropriate on to do it with ASUS
+BIOS.</p> <p>Flashing a BIOS is dangerous, do it at your own risks, backup
+your data before.</p> <p>Here's the procedure, step by step
+:</p> <ul><li>You may use a USB key, or any other FAT32-formatted disk you
+have</li> <li>Download the correct (and old - 2005 !) version : <a
+href="http://people.bath.ac.uk/enxspd/laptop/A6Km0202AS.zip">link</a> (thanks,
+<a href="http://wiki.archlinux.org/index.php/Asus_A6km">Arch
+Wiki</a>)</li> <li>Unzip the file on the usb key</li> <li>Reboot and press
+'F2' at startup, to enter BIOS option</li> <li>Find "Easy
+Flash"</li> <li>If you're doing it right, you may see A: and C:. Choose C:
+with arrows</li> <li>Press 'Enter' and follow the
+instructions.</li> </ul> The process was quick and easy. I plugged my USB
+mouse (though I don't use it very much those days) and rebooted : it works !<br
+/></p>
+
+<p>Note : I also discovered, while wandering my BIOS options, that a USB
+key is listed as ... harddisk drive instead of "removable device" (important
+to try a linux distro on a key).</p>
+
+</div>
+
+<h2 class="big">Related posts</h2>
+  <ul class="related">
+  
+    <li>
+      <span class="postdate">15-10-2009</span>
+<a class="posturl" href="/2009/10/15/bash_bangs_usage/">Bash bangs usage</a>
+
+<span class="categlink"><a href="/tags/astuce/">astuce</a>, <a href="/tags/bash/">bash</a></span>
+
+
+    </li>
+  
+    <li>
+      <span class="postdate">30-12-2011</span>
+<a class="posturl" href="/2011/12/30/bootstrapping%3A_a_brand-new_jekyll-powered_blog/">bootstrapping: a brand-new jekyll-powered blog</a>
+
+<span class="categlink"><a href="/tags/jekyll/">jekyll</a></span>
+
+
+    </li>
+  
+    <li>
+      <span class="postdate">14-10-2009</span>
+<a class="posturl" href="/2009/10/14/bash_completion_after_sudo_or_man/">Bash completion after sudo or man</a>
+
+<span class="categlink"><a href="/tags/astuce/">astuce</a>, <a href="/tags/bash/">bash</a></span>
+
+
+    </li>
+  
+    <li>
+      <span class="postdate">17-10-2008</span>
+<a class="posturl" href="/2008/10/17/bavure/">Bavure ...</a>
+
+<span class="categlink"><a href="/tags/politique/">politique</a></span>
+
+
+    </li>
+  
+    <li>
+      <span class="postdate">03-08-2008</span>
+<a class="posturl" href="/2008/08/03/cuil/">Cuil</a>
+
+<span class="categlink"><a href="/tags/cuil/">cuil</a>, <a href="/tags/search/">search</a></span>
+
+
+    </li>
+  
+    <li>
+      <span class="postdate">09-07-2009</span>
+<a class="posturl" href="/2009/07/09/hadopi_resume_de_la_saga/">Hadopi : résumé de la saga</a>
+
+<span class="categlink"><a href="/tags/hadopi/">hadopi</a>, <a href="/tags/politique/">politique</a></span>
+
+
+    </li>
+  
+    <li>
+      <span class="postdate">24-06-2009</span>
+<a class="posturl" href="/2009/06/24/recuperation_de_video_sur_rutube/">Récupération de video sur Rutube</a>
+
+<span class="categlink"><a href="/tags/astuce/">astuce</a></span>
+
+
+    </li>
+  
+    <li>
+      <span class="postdate">08-10-2009</span>
+<a class="posturl" href="/2009/10/08/thank_you_finland/">Thank you, Finland!</a>
+
+<span class="categlink"><a href="/tags/internet/">internet</a>, <a href="/tags/politique/">politique</a></span>
+
+
+    </li>
+  
+    <li>
+      <span class="postdate">04-09-2009</span>
+<a class="posturl" href="/2009/09/04/conversion_dune_date_unix_en_date_lisible/">Conversion d'une date unix en date lisible</a>
+
+<span class="categlink"><a href="/tags/astuce/">astuce</a>, <a href="/tags/unix/">unix</a></span>
+
+
+    </li>
+  
+    <li>
+      <span class="postdate">05-08-2008</span>
+<a class="posturl" href="/2008/08/05/petite_blague/">Petite blague</a>
+
+<span class="categlink"><a href="/tags/humour/">humour</a></span>
+
+
+    </li>
+  
+  </ul>
+
+	</div> <!-- end content --!>
+</body>
+</html>
