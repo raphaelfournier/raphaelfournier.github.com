@@ -185,12 +185,10 @@ header h1 {
 header h1  a {
 	display:block;
 	height:40px;
-	/*background: transparent url(../img/lukenlogo.png) no-repeat center center;*/
 	color:transparent;
 }
 
 header h1  a:hover {
-	/*background: transparent url(../img/lukenlogo_hover.png) no-repeat center center;*/
 	color:transparent;
 }
 
@@ -369,6 +367,11 @@ footer {
 
 #post
 {
+	margin:0;
+  margin-bottom:25px;
+	padding:0 0 25px 0;
+	line-height: 18px;	
+  border-bottom:2px solid #252525;
 }
 
 #post h1
@@ -385,22 +388,16 @@ footer {
 	color:#777;
 }
 
-#post article
-{
-	padding:0 0 10px 0;
-	margin:0;
-	line-height: 18px;	
-	border-bottom:1px dotted #ddd;
-
-}
-
-#post article p
+#post p
 {
 	margin: 0 0 12px;
-  line-height:120%;
+  line-height:1.4;
 }
-
-#post article h3, #post article h2, #disqus_thread h3
+#post ul
+{
+  line-height:1.4;
+}
+#disqus_thread h3
 {
 	font-weight:normal;
 	font-size:26px;
@@ -409,11 +406,19 @@ footer {
 	margin:10px 0 18px 0;
 }
 
-#post article pre, #post article img
+#post pre, #post img
 {
-	margin: 20px 0;
+	margin: 20px;
 }
 
+img{
+  border: 2px solid #252525;
+  -webkit-border-radius: 8px;
+  -webkit-box-shadow: 0px 0px 10px #222;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 #share
 {
 	padding:10px 0;	
@@ -468,7 +473,8 @@ footer {
   border-radius: 10px;
 }
 #post .authoring{
-  padding-left: 3px;
+  padding-left: 30px;
+  margin-bottom: 20px;
   font-size: 14px;
   /*color: #777;*/
 }
