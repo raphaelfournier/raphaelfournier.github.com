@@ -6,63 +6,84 @@
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 	<title>Tags</title>
 	<meta name="author" content="Raphael Fournier"/>
-	<link rel="stylesheet" href="/css/styles.css" />
-	<link rel="stylesheet" href="/css/highlight.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css" type="text/css" media="screen, projection" />
+    <link rel="stylesheet" href="/css/responsive.css" type="text/css" media="screen, projection" />
+    <link rel="stylesheet" href="/css/prettify.css" type="text/css" media="screen, projection" />
+	<!--<link rel="stylesheet" href="/css/styles.css" />-->
+	<!--<link rel="stylesheet" href="/css/highlight.css" />-->
 	<link rel="stylesheet" href="/css/vitae.css" />
-  <link rel="stylesheet" type="text/css" href="/css/mobile.css" media="handheld" />
+  <!--<link rel="stylesheet" type="text/css" href="/css/mobile.css" media="handheld" />-->
   <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" /><!-- pour IE -->
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico" /><!-- pour les navigateurs standards -->
 	
+	<script src="/js/prettify.js" type="text/javascript"></script>
 </head>
-<body>
-	<div id="navigation">
-    	<div id="me">
-		<a href="/">
-			<span id="surname">rapha&euml;l</span>
-			<span id="name">fournier</span>
-		</a>
-  </div> <!-- end of div me --!> 
+<body onload="prettyPrint()">
+	<div id="header-wrap">
+    <header>
+  <hgroup>
+    <h1 class="aligncenter">
+      Raphaël Fournier
+    </h1>
+    <!--<div id="site-description">code first, ask questions later</div>-->
+  </hgroup>			
+</header>
+            
+<div id="secondary" class="widget-area">
+  <aside id="me" class="widget">
+    <div class="info">
+      <h4>Author</h4>	
+      <div class="about">
+        <!--<strong>Rapha&euml;l Fournier</strong>-->
+        <img class="grav" width="80px" src='/images/raphaelfournier.jpg' />
+        <p>Computer science Ph. D student from Paris. Geek.</p>
+        <ul>
+          <li><a rel="about me" title="about" href="/about/">about</a></li>
+          <li><a rel="research this" title="research" href="/research/">research</a></li>
+          <li><a rel="teaching this" title="teaching" href="/teaching/">teaching</a></li>
+        </ul>
+      </div>
 
-	<div id="sections">
-    
-  <ul>
-    <li>
-    <ul class="secondlevel">
-      <li><a rel="about me" title="about" href="/about/">about</a></li>
-      <li><a rel="research this" title="research" href="/research/">research</a></li>
-      <li><a rel="teaching this" title="teaching" href="/teaching/">teaching</a></li>
-    </ul>
-    </li>
-    <li>
-    
-    <ul class="secondlevel">
-      <li><a rel="home page" title="homepage" href="/">blog home</a></li>
-      <li><a rel="browse" title="browse the archives" href="/archives.html">archives</a></li>
-      <li><a rel="browse" title="browse by tags" href="/tags/">tags</a></li>
-    </ul>
-    
-    </li>
-    <li>
+      <h4>Blog</h4>	
+        <ul>
+          <li><a rel="home page" title="homepage" href="/">blog home</a></li>
+          <li><a rel="browse" title="browse the archives" href="/archives.html">archives</a></li>
+          <li><a rel="browse" title="browse by tags" href="/tags/">tags</a></li>
+        </ul>
+      <h4>Social</h4>	
+        <ul>
+          <li><a rel="twitter" title="follow me on twitter!" href="http://www.twitter.com/fournier_r">@fournier_r</a></li>
+          <li>
+          <a rel="rss feed" title="receive update via rss" href="/feed/rss.xml">rss</a>
+          </li>
+        </ul>
 
-    <ul class="secondlevel">
-      <li><a rel="twitter" title="follow me on twitter!" href="http://www.twitter.com/fournier_r">@fournier_r</a></li>
-      <li>
-      <a rel="rss feed" title="receive update via rss" href="/feed/rss.xml">rss</a>
-      </li>
-    </ul>
+    </div>
+    <div class="short-info">
+      <ul>
+        <li><a rel="about me" title="about" href="/about/">about</a></li>
+        <li><a rel="research this" title="research" href="/research/">research</a></li>
+        <li><a rel="teaching this" title="teaching" href="/teaching/">teaching</a></li>
+        <li><a rel="home page" title="homepage" href="/">blog home</a></li>
+        <li><a rel="browse" title="browse the archives" href="/archives.html">archives</a></li>
+        <li><a rel="browse" title="browse by tags" href="/tags/">tags</a></li>
+        <li><a rel="twitter" title="follow me on twitter!" href="http://www.twitter.com/fournier_r">@fournier_r</a></li>
+        <li> <a rel="rss feed" title="receive update via rss" href="/feed/rss.xml">rss</a> </li>
+      </ul>
+    </div>
+  </aside>
+</div>
 
-    </li>
-
-  </ul>
-
-</div> <!-- end of div sections --!> 
-
-  </div> <!-- end navigation --!>
-  <div class="content">
-    <a name="top"></a>
+	</div>
+	<div id="primary">
+		<div id="content">
+			<a name="top"></a>
 <h1 class="section">
   Tags
     
+</h1>
+
  <ul class="taglist">
 
   <li>
@@ -137,7 +158,8 @@
 
 <hr>
 
-<h2 style="margin:0;"><a name"ted"></a><a href="/tags/ted" name="ted">TED</a></h2>
+<h3 class="annee"><a name"ted"></a>TED</h3>
+<!--<h3 class="annee"><a name"ted"></a><a href="/tags/ted" name="ted">TED</a></h3>-->
     <ul class="related">
         
         <li>
@@ -151,7 +173,8 @@
         
     </ul>
 
-<h2 style="margin:0;"><a name"acta"></a><a href="/tags/acta" name="acta">acta</a></h2>
+<h3 class="annee"><a name"acta"></a>acta</h3>
+<!--<h3 class="annee"><a name"acta"></a><a href="/tags/acta" name="acta">acta</a></h3>-->
     <ul class="related">
         
         <li>
@@ -165,7 +188,8 @@
         
     </ul>
 
-<h2 style="margin:0;"><a name"astuce"></a><a href="/tags/astuce" name="astuce">astuce</a></h2>
+<h3 class="annee"><a name"astuce"></a>astuce</h3>
+<!--<h3 class="annee"><a name"astuce"></a><a href="/tags/astuce" name="astuce">astuce</a></h3>-->
     <ul class="related">
         
         <li>
@@ -215,7 +239,8 @@
         
     </ul>
 
-<h2 style="margin:0;"><a name"asus"></a><a href="/tags/asus" name="asus">asus</a></h2>
+<h3 class="annee"><a name"asus"></a>asus</h3>
+<!--<h3 class="annee"><a name"asus"></a><a href="/tags/asus" name="asus">asus</a></h3>-->
     <ul class="related">
         
         <li>
@@ -229,7 +254,8 @@
         
     </ul>
 
-<h2 style="margin:0;"><a name"bash"></a><a href="/tags/bash" name="bash">bash</a></h2>
+<h3 class="annee"><a name"bash"></a>bash</h3>
+<!--<h3 class="annee"><a name"bash"></a><a href="/tags/bash" name="bash">bash</a></h3>-->
     <ul class="related">
         
         <li>
@@ -252,7 +278,8 @@
         
     </ul>
 
-<h2 style="margin:0;"><a name"cinema"></a><a href="/tags/cinema" name="cinema">cinema</a></h2>
+<h3 class="annee"><a name"cinema"></a>cinema</h3>
+<!--<h3 class="annee"><a name"cinema"></a><a href="/tags/cinema" name="cinema">cinema</a></h3>-->
     <ul class="related">
         
         <li>
@@ -266,7 +293,8 @@
         
     </ul>
 
-<h2 style="margin:0;"><a name"conferences"></a><a href="/tags/conferences" name="conferences">conferences</a></h2>
+<h3 class="annee"><a name"conferences"></a>conferences</h3>
+<!--<h3 class="annee"><a name"conferences"></a><a href="/tags/conferences" name="conferences">conferences</a></h3>-->
     <ul class="related">
         
         <li>
@@ -280,7 +308,8 @@
         
     </ul>
 
-<h2 style="margin:0;"><a name"cuil"></a><a href="/tags/cuil" name="cuil">cuil</a></h2>
+<h3 class="annee"><a name"cuil"></a>cuil</h3>
+<!--<h3 class="annee"><a name"cuil"></a><a href="/tags/cuil" name="cuil">cuil</a></h3>-->
     <ul class="related">
         
         <li>
@@ -294,7 +323,8 @@
         
     </ul>
 
-<h2 style="margin:0;"><a name"hadopi"></a><a href="/tags/hadopi" name="hadopi">hadopi</a></h2>
+<h3 class="annee"><a name"hadopi"></a>hadopi</h3>
+<!--<h3 class="annee"><a name"hadopi"></a><a href="/tags/hadopi" name="hadopi">hadopi</a></h3>-->
     <ul class="related">
         
         <li>
@@ -308,7 +338,8 @@
         
     </ul>
 
-<h2 style="margin:0;"><a name"humour"></a><a href="/tags/humour" name="humour">humour</a></h2>
+<h3 class="annee"><a name"humour"></a>humour</h3>
+<!--<h3 class="annee"><a name"humour"></a><a href="/tags/humour" name="humour">humour</a></h3>-->
     <ul class="related">
         
         <li>
@@ -331,7 +362,8 @@
         
     </ul>
 
-<h2 style="margin:0;"><a name"internet"></a><a href="/tags/internet" name="internet">internet</a></h2>
+<h3 class="annee"><a name"internet"></a>internet</h3>
+<!--<h3 class="annee"><a name"internet"></a><a href="/tags/internet" name="internet">internet</a></h3>-->
     <ul class="related">
         
         <li>
@@ -345,7 +377,8 @@
         
     </ul>
 
-<h2 style="margin:0;"><a name"jekyll"></a><a href="/tags/jekyll" name="jekyll">jekyll</a></h2>
+<h3 class="annee"><a name"jekyll"></a>jekyll</h3>
+<!--<h3 class="annee"><a name"jekyll"></a><a href="/tags/jekyll" name="jekyll">jekyll</a></h3>-->
     <ul class="related">
         
         <li>
@@ -368,7 +401,8 @@
         
     </ul>
 
-<h2 style="margin:0;"><a name"politique"></a><a href="/tags/politique" name="politique">politique</a></h2>
+<h3 class="annee"><a name"politique"></a>politique</h3>
+<!--<h3 class="annee"><a name"politique"></a><a href="/tags/politique" name="politique">politique</a></h3>-->
     <ul class="related">
         
         <li>
@@ -400,7 +434,8 @@
         
     </ul>
 
-<h2 style="margin:0;"><a name"quadrature"></a><a href="/tags/quadrature" name="quadrature">quadrature</a></h2>
+<h3 class="annee"><a name"quadrature"></a>quadrature</h3>
+<!--<h3 class="annee"><a name"quadrature"></a><a href="/tags/quadrature" name="quadrature">quadrature</a></h3>-->
     <ul class="related">
         
         <li>
@@ -414,7 +449,8 @@
         
     </ul>
 
-<h2 style="margin:0;"><a name"science"></a><a href="/tags/science" name="science">science</a></h2>
+<h3 class="annee"><a name"science"></a>science</h3>
+<!--<h3 class="annee"><a name"science"></a><a href="/tags/science" name="science">science</a></h3>-->
     <ul class="related">
         
         <li>
@@ -428,7 +464,8 @@
         
     </ul>
 
-<h2 style="margin:0;"><a name"search"></a><a href="/tags/search" name="search">search</a></h2>
+<h3 class="annee"><a name"search"></a>search</h3>
+<!--<h3 class="annee"><a name"search"></a><a href="/tags/search" name="search">search</a></h3>-->
     <ul class="related">
         
         <li>
@@ -442,7 +479,8 @@
         
     </ul>
 
-<h2 style="margin:0;"><a name"unix"></a><a href="/tags/unix" name="unix">unix</a></h2>
+<h3 class="annee"><a name"unix"></a>unix</h3>
+<!--<h3 class="annee"><a name"unix"></a><a href="/tags/unix" name="unix">unix</a></h3>-->
     <ul class="related">
         
         <li>
@@ -458,6 +496,8 @@
 
  
 
-	</div> <!-- end content --!>
+		</div>				
+		<!--<footer> </footer>-->
+	</div>
 </body>
 </html>

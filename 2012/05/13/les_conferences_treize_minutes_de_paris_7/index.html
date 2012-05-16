@@ -6,60 +6,79 @@
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 	<title>Les conférences Treize minutes de Paris 7</title>
 	<meta name="author" content="Raphael Fournier"/>
-	<link rel="stylesheet" href="/css/styles.css" />
-	<link rel="stylesheet" href="/css/highlight.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css" type="text/css" media="screen, projection" />
+    <link rel="stylesheet" href="/css/responsive.css" type="text/css" media="screen, projection" />
+    <link rel="stylesheet" href="/css/prettify.css" type="text/css" media="screen, projection" />
+	<!--<link rel="stylesheet" href="/css/styles.css" />-->
+	<!--<link rel="stylesheet" href="/css/highlight.css" />-->
 	<link rel="stylesheet" href="/css/vitae.css" />
-  <link rel="stylesheet" type="text/css" href="/css/mobile.css" media="handheld" />
+  <!--<link rel="stylesheet" type="text/css" href="/css/mobile.css" media="handheld" />-->
   <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" /><!-- pour IE -->
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico" /><!-- pour les navigateurs standards -->
 	
+	<script src="/js/prettify.js" type="text/javascript"></script>
 </head>
-<body>
-	<div id="navigation">
-    	<div id="me">
-		<a href="/">
-			<span id="surname">rapha&euml;l</span>
-			<span id="name">fournier</span>
-		</a>
-  </div> <!-- end of div me --!> 
+<body onload="prettyPrint()">
+	<div id="header-wrap">
+    <header>
+  <hgroup>
+    <h1 class="aligncenter">
+      Raphaël Fournier
+    </h1>
+    <!--<div id="site-description">code first, ask questions later</div>-->
+  </hgroup>			
+</header>
+            
+<div id="secondary" class="widget-area">
+  <aside id="me" class="widget">
+    <div class="info">
+      <h4>Author</h4>	
+      <div class="about">
+        <!--<strong>Rapha&euml;l Fournier</strong>-->
+        <img class="grav" width="80px" src='/images/raphaelfournier.jpg' />
+        <p>Computer science Ph. D student from Paris. Geek.</p>
+        <ul>
+          <li><a rel="about me" title="about" href="/about/">about</a></li>
+          <li><a rel="research this" title="research" href="/research/">research</a></li>
+          <li><a rel="teaching this" title="teaching" href="/teaching/">teaching</a></li>
+        </ul>
+      </div>
 
-	<div id="sections">
-    
-  <ul>
-    <li>
-    <ul class="secondlevel">
-      <li><a rel="about me" title="about" href="/about/">about</a></li>
-      <li><a rel="research this" title="research" href="/research/">research</a></li>
-      <li><a rel="teaching this" title="teaching" href="/teaching/">teaching</a></li>
-    </ul>
-    </li>
-    <li>
-    
-    <ul class="secondlevel">
-      <li><a rel="home page" title="homepage" href="/">blog home</a></li>
-      <li><a rel="browse" title="browse the archives" href="/archives.html">archives</a></li>
-      <li><a rel="browse" title="browse by tags" href="/tags/">tags</a></li>
-    </ul>
-    
-    </li>
-    <li>
+      <h4>Blog</h4>	
+        <ul>
+          <li><a rel="home page" title="homepage" href="/">blog home</a></li>
+          <li><a rel="browse" title="browse the archives" href="/archives.html">archives</a></li>
+          <li><a rel="browse" title="browse by tags" href="/tags/">tags</a></li>
+        </ul>
+      <h4>Social</h4>	
+        <ul>
+          <li><a rel="twitter" title="follow me on twitter!" href="http://www.twitter.com/fournier_r">@fournier_r</a></li>
+          <li>
+          <a rel="rss feed" title="receive update via rss" href="/feed/rss.xml">rss</a>
+          </li>
+        </ul>
 
-    <ul class="secondlevel">
-      <li><a rel="twitter" title="follow me on twitter!" href="http://www.twitter.com/fournier_r">@fournier_r</a></li>
-      <li>
-      <a rel="rss feed" title="receive update via rss" href="/feed/rss.xml">rss</a>
-      </li>
-    </ul>
+    </div>
+    <div class="short-info">
+      <ul>
+        <li><a rel="about me" title="about" href="/about/">about</a></li>
+        <li><a rel="research this" title="research" href="/research/">research</a></li>
+        <li><a rel="teaching this" title="teaching" href="/teaching/">teaching</a></li>
+        <li><a rel="home page" title="homepage" href="/">blog home</a></li>
+        <li><a rel="browse" title="browse the archives" href="/archives.html">archives</a></li>
+        <li><a rel="browse" title="browse by tags" href="/tags/">tags</a></li>
+        <li><a rel="twitter" title="follow me on twitter!" href="http://www.twitter.com/fournier_r">@fournier_r</a></li>
+        <li> <a rel="rss feed" title="receive update via rss" href="/feed/rss.xml">rss</a> </li>
+      </ul>
+    </div>
+  </aside>
+</div>
 
-    </li>
-
-  </ul>
-
-</div> <!-- end of div sections --!> 
-
-  </div> <!-- end navigation --!>
-  <div class="content">
-    <div id="post">
+	</div>
+	<div id="primary">
+		<div id="content">
+			<div id="post">
   <h1>
   <a href="/2012/05/13/les_conferences_treize_minutes_de_paris_7/">Les conférences Treize minutes de Paris 7</a>
 </h1>
@@ -112,9 +131,9 @@ réfléchir sur le fait que moins on bouge, plus notre esprit est en réalité
 concentré, mais moins on apparaît, on n'existe plus.</p>
 
 <p>Le reste de son intervention est axée autour de variations sur ce thème, qui ont
-été présentée partiellement au Palais de la Découverte (quand ? ou ? FIXTHIS).
-Deux expériences que je trouve intéressantes, notamment dans le cadre d'un
-enseignement de science de collège :</p>
+été présentée partiellement au Palais de la Découverte il y a quelques années.
+Deux expériences que je trouve intéressantes, et pourraient servir à initier des
+collégiens à la science :</p>
 
 <ul>
 <li><p>il photographie la Tour Eiffel un matin d'été vers 6h, puis refait la même
@@ -128,11 +147,14 @@ plus).</p></li>
 </ul>
 
 
+<p>Évidemment, on est amené à réfléchir remettre en question ces certitudes : la
+Tour Eiffel, un pont, des objets "immobiles" bougent ?!</p>
+
 <p>Enfin, il nous montre quelques images sur les convois de véhicules sur les
 Champs-Elysées et leur interaction avec les piétons.</p>
 
 <p>J'ai bien aimé cette présentation, l'orateur était assez bon et les travaux
-vraiment originaux, de quoi donner des idées. Je reste un peu sceptique sur le
+vraiment originaux, de quoi donner des idées. Je reste un peu "à côté" sur le
 message lui-même (l'enrobage philosophique sur le fait qu'on n'existe plus quand
 on bouge plus), mais ce n'est pas le plus important.</p>
 
@@ -148,10 +170,10 @@ la lumière qui provient de l'espace, que ce soit en résolution angulaire, mais
 aussi en terme de formes de lumière (infra-rouge, rayons X, etc.). On parle
 d'horizon cosmologique, et du fait que les problèmes viennent du fait que
 beaucoup  d'étoiles brillent peu et peu d'étoiles qui brillent beaucoup.
-L'orateur projette de nombreuses photographies du ciel, magnifiques.
-Il termine sur ce qui reste pour moi l'idée importante : l'homme est limité pour
-construire des représentations de l'espace, parce que c'est grand et (on y pense
-moins) très long (devant l'échelle humaine), mais surtout parce qu'on est obligés de
+L'orateur projette de nombreuses photographies du ciel, magnifiques. Il termine
+sur ce qui reste pour moi l'idée importante : l'homme est limité pour construire
+des représentations de l'espace, parce que c'est grand et (on y pense moins)
+très long (devant l'échelle humaine), mais surtout parce qu'on est obligés de
 regarder l'univers depuis ici et maintenant ! (alors qu'on aurait envie de le
 voir il y a plusieurs siècles/millénaires, et depuis d'autres galaxies).</p>
 
@@ -277,7 +299,7 @@ rattraper en ligne via les vidéos sur le site officiel.</p>
 
 </div>
 
-<h2 class="big">Related posts</h2>
+<h2 class="annee">Related posts</h2>
   <ul class="related">
   
     <li>
@@ -372,6 +394,8 @@ rattraper en ligne via les vidéos sur le site officiel.</p>
   
   </ul>
 
-	</div> <!-- end content --!>
+		</div>				
+		<!--<footer> </footer>-->
+	</div>
 </body>
 </html>

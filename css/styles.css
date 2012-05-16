@@ -43,6 +43,7 @@ hr{
 	width: 800px;
 	margin-bottom: 50px;
   text-align:justify;
+  line-height:120%;
 }
 .postdate {
 margin:0;
@@ -300,16 +301,6 @@ color:red;
 #navigation #icons{
 	text-align: center;
 	margin-top: 80px;
-}
-.big {
-font-size:100%;
-letter-spacing:2px;
-margin:5px 0;
-background-color:#506070;
-color:#dcdccc;
-text-align:center;
-border-radius: 5px;
-border:1px solid black;
 }
 .lang {
 float:right;

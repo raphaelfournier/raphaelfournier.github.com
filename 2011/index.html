@@ -6,60 +6,79 @@
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 	<title></title>
 	<meta name="author" content="Raphael Fournier"/>
-	<link rel="stylesheet" href="/css/styles.css" />
-	<link rel="stylesheet" href="/css/highlight.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css" type="text/css" media="screen, projection" />
+    <link rel="stylesheet" href="/css/responsive.css" type="text/css" media="screen, projection" />
+    <link rel="stylesheet" href="/css/prettify.css" type="text/css" media="screen, projection" />
+	<!--<link rel="stylesheet" href="/css/styles.css" />-->
+	<!--<link rel="stylesheet" href="/css/highlight.css" />-->
 	<link rel="stylesheet" href="/css/vitae.css" />
-  <link rel="stylesheet" type="text/css" href="/css/mobile.css" media="handheld" />
+  <!--<link rel="stylesheet" type="text/css" href="/css/mobile.css" media="handheld" />-->
   <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" /><!-- pour IE -->
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico" /><!-- pour les navigateurs standards -->
 	
+	<script src="/js/prettify.js" type="text/javascript"></script>
 </head>
-<body>
-	<div id="navigation">
-    	<div id="me">
-		<a href="/">
-			<span id="surname">rapha&euml;l</span>
-			<span id="name">fournier</span>
-		</a>
-  </div> <!-- end of div me --!> 
+<body onload="prettyPrint()">
+	<div id="header-wrap">
+    <header>
+  <hgroup>
+    <h1 class="aligncenter">
+      Raphaël Fournier
+    </h1>
+    <!--<div id="site-description">code first, ask questions later</div>-->
+  </hgroup>			
+</header>
+            
+<div id="secondary" class="widget-area">
+  <aside id="me" class="widget">
+    <div class="info">
+      <h4>Author</h4>	
+      <div class="about">
+        <!--<strong>Rapha&euml;l Fournier</strong>-->
+        <img class="grav" width="80px" src='/images/raphaelfournier.jpg' />
+        <p>Computer science Ph. D student from Paris. Geek.</p>
+        <ul>
+          <li><a rel="about me" title="about" href="/about/">about</a></li>
+          <li><a rel="research this" title="research" href="/research/">research</a></li>
+          <li><a rel="teaching this" title="teaching" href="/teaching/">teaching</a></li>
+        </ul>
+      </div>
 
-	<div id="sections">
-    
-  <ul>
-    <li>
-    <ul class="secondlevel">
-      <li><a rel="about me" title="about" href="/about/">about</a></li>
-      <li><a rel="research this" title="research" href="/research/">research</a></li>
-      <li><a rel="teaching this" title="teaching" href="/teaching/">teaching</a></li>
-    </ul>
-    </li>
-    <li>
-    
-    <ul class="secondlevel">
-      <li><a rel="home page" title="homepage" href="/">blog home</a></li>
-      <li><a rel="browse" title="browse the archives" href="/archives.html">archives</a></li>
-      <li><a rel="browse" title="browse by tags" href="/tags/">tags</a></li>
-    </ul>
-    
-    </li>
-    <li>
+      <h4>Blog</h4>	
+        <ul>
+          <li><a rel="home page" title="homepage" href="/">blog home</a></li>
+          <li><a rel="browse" title="browse the archives" href="/archives.html">archives</a></li>
+          <li><a rel="browse" title="browse by tags" href="/tags/">tags</a></li>
+        </ul>
+      <h4>Social</h4>	
+        <ul>
+          <li><a rel="twitter" title="follow me on twitter!" href="http://www.twitter.com/fournier_r">@fournier_r</a></li>
+          <li>
+          <a rel="rss feed" title="receive update via rss" href="/feed/rss.xml">rss</a>
+          </li>
+        </ul>
 
-    <ul class="secondlevel">
-      <li><a rel="twitter" title="follow me on twitter!" href="http://www.twitter.com/fournier_r">@fournier_r</a></li>
-      <li>
-      <a rel="rss feed" title="receive update via rss" href="/feed/rss.xml">rss</a>
-      </li>
-    </ul>
+    </div>
+    <div class="short-info">
+      <ul>
+        <li><a rel="about me" title="about" href="/about/">about</a></li>
+        <li><a rel="research this" title="research" href="/research/">research</a></li>
+        <li><a rel="teaching this" title="teaching" href="/teaching/">teaching</a></li>
+        <li><a rel="home page" title="homepage" href="/">blog home</a></li>
+        <li><a rel="browse" title="browse the archives" href="/archives.html">archives</a></li>
+        <li><a rel="browse" title="browse by tags" href="/tags/">tags</a></li>
+        <li><a rel="twitter" title="follow me on twitter!" href="http://www.twitter.com/fournier_r">@fournier_r</a></li>
+        <li> <a rel="rss feed" title="receive update via rss" href="/feed/rss.xml">rss</a> </li>
+      </ul>
+    </div>
+  </aside>
+</div>
 
-    </li>
-
-  </ul>
-
-</div> <!-- end of div sections --!> 
-
-  </div> <!-- end navigation --!>
-  <div class="content">
-    <div class="post">
+	</div>
+	<div id="primary">
+		<div id="content">
+			<div class="post">
   <h1 class="post-title">2011</h1>
   <p class="lead">Posts from the year 2011</p>
   
@@ -161,6 +180,8 @@
   
 </div>
 
-	</div> <!-- end content --!>
+		</div>				
+		<!--<footer> </footer>-->
+	</div>
 </body>
 </html>
