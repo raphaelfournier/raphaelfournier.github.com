@@ -488,3 +488,10 @@ img{
   /*color: #dcdccc;*/
   /*border-color: #555;*/
 }
+ul.taglist {
+padding:0;
+}
+ul.taglist li{
+display:inline;
+text-align:left;
+}
