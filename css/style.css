@@ -397,6 +397,10 @@ footer {
 {
   line-height:1.4;
 }
+#disqus_thread
+{
+  margin-bottom:25px;
+}
 #disqus_thread h3
 {
 	font-weight:normal;
