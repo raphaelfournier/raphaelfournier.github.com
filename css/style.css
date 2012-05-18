@@ -397,9 +397,10 @@ footer {
 {
   line-height:1.4;
 }
-#disqus_thread
+#relatedposts
 {
   margin-bottom:25px;
+  margin-top:25px;
 }
 #disqus_thread h3
 {
