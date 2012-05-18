@@ -178,7 +178,8 @@ a:link { -webkit-tap-highlight-color: #FF5E99; }
 header h1 {
 	font-size: 2em;
 	font-weight: bold;
-	margin: .67em 0;
+	margin-top: .67em;
+	margin-bottom: 0;
   text-align:center;
 }
 
@@ -320,6 +321,16 @@ footer {
 	
   padding:0 0 5px 3px;
   margin:20px 0 0px 0px;
+}
+
+.widget .lang
+{
+	text-align:center;
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+  color:red;
 }
 
 
@@ -499,4 +510,10 @@ padding:0;
 ul.taglist li{
 display:inline;
 text-align:left;
+}
+.widget .aligncenter
+{
+  font-size:100%;
+  text-align:center;
+	margin-bottom: 1.5em;
 }
