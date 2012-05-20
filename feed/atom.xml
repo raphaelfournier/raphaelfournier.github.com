@@ -4,13 +4,49 @@
   <title>Raphael Fournier blog</title>
   <link href="http://raphaelfournier.net/"/>
   <link type="application/atom+xml" rel="self" href="http://raphaelfournier.net/atom.xml"/>
-  <updated>2012-05-19T14:01:38+02:00</updated>
+  <updated>2012-05-20T17:10:31+02:00</updated>
   <id>http://raphaelfournier.net/</id>
   <author>
     <name>Raphael Fournier</name>
     <email>raphael@raphaelfournier.net</email>
   </author>
 
+  
+  <entry>
+    <id>http://raphaelfournier.net/2012/05/20/revue_de_web_1</id>
+    <link type="text/html" rel="alternate" href="http://raphaelfournier.net/2012/05/20/revue_de_web_1/"/>
+    <title>Revue de Web 1</title>
+    <published>2012-05-20T18:51:20+02:00</published>
+    <updated>2012-05-20T18:51:20+02:00</updated>
+    <author>
+      <name>Raphael Fournier</name>
+      <uri>http://raphaelfournier.net/</uri>
+    </author>
+    <content type="html">&lt;p&gt;Plutôt que de stocker infiniment des tweets comme &quot;favoris&quot; ou des billets de
+blogs dans un coin, je vais poster ici les trucs que je lis. C'est en vrac,
+éventuellement avec un petit commentaire et la présence d'un lien ne signifie
+pas que je l'ai aimé ou que je sois forcément d'accord avec son propos.&lt;/p&gt;
+
+&lt;h2&gt;Liens&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://www.lemonde.fr/idees/article/2012/05/19/l-exception-francaise-de-trop_1704190_3232.html#xtor=AL-32280258&quot;&gt;L'exception française de trop, par Robert Badinter&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://www.article11.info/?Genevieve-Fioraso-TM-l-elue-et&quot;&gt;Un portrait (acide) de la nouvelle ministre de l'Enseignement Supérieur et de la Recherche&lt;/a&gt; via @clochix&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://www.openculture.com/2012/05/einstein_explains_his_famous_formula_emc_in_audio_plus_more_cultural_curiosities.html&quot;&gt;Einstein Explains His Famous Formula, E=mc², in Original Audio (Plus More Cultural Curiosities)&lt;/a&gt; via @vicnent&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h2&gt;Citations et bons mots&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&quot;A million guys walk in to a Silicon Valley bar. None of them buy anything. The
+bar is declared a rousing success.&quot;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&quot;An expert is a man who has made all the mistakes, which can be made, in
+a very narrow field&quot;. - Niels Henrik David Bohr (1885-1962) via @MyScienceWork&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+  </entry>
   
   <entry>
     <id>http://raphaelfournier.net/2012/05/13/les_conferences_treize_minutes_de_paris_7</id>
