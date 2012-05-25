@@ -6,8 +6,8 @@
     <atom:link href="http://raphaelfournier.net/rss.xml" rel="self" type="application/rss+xml" />
     <description></description>
     <language>en-us</language>
-    <pubDate>Fri, 25 May 2012 15:20:58 +0200</pubDate>
-    <lastBuildDate>Fri, 25 May 2012 15:20:58 +0200</lastBuildDate>
+    <pubDate>Fri, 25 May 2012 15:47:48 +0200</pubDate>
+    <lastBuildDate>Fri, 25 May 2012 15:47:48 +0200</lastBuildDate>
 
     
     <item>
@@ -25,7 +25,7 @@ pas que je l'ai aimé ou que je sois forcément d'accord avec son propos.&lt;/p&
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://www.lemonde.fr/idees/article/2012/05/19/l-exception-francaise-de-trop_1704190_3232.html#xtor=AL-32280258&quot;&gt;L'exception française de trop, par Robert Badinter&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://www.article11.info/?Genevieve-Fioraso-TM-l-elue-et&quot;&gt;Un portrait (acide) de la nouvelle ministre de l'Enseignement Supérieur et de la Recherche&lt;/a&gt; via @clochix&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://www.article11.info/?Genevieve-Fioraso-TM-l-elue-et&quot;&gt;Un portrait (acide) de la nouvelle ministre de l'Enseignement Supérieur et de la Recherche&lt;/a&gt; via &lt;a href=&quot;http://www.clochix.net&quot;&gt;clochix&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://www.openculture.com/2012/05/einstein_explains_his_famous_formula_emc_in_audio_plus_more_cultural_curiosities.html&quot;&gt;Einstein Explains His Famous Formula, E=mc², in Original Audio (Plus More Cultural Curiosities)&lt;/a&gt; via @vicnent&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -210,9 +210,10 @@ commentaires aurait été pas mal.&lt;/p&gt;
 
 &lt;h3&gt;Apprendre au 21e siècle par François Taddéi&lt;/h3&gt;
 
-&lt;p&gt;[&lt;em&gt;full-disclosure&lt;/em&gt;] Je connais un peu François Taddéi, avec qui j'ai eu
-l'opportunité de discuter quelques fois au &lt;a href=&quot;http://www.fabelier.org&quot; title=&quot;Fabelier&quot;&gt;Fabelier&lt;/a&gt;. Cependant,
-j'avais décidé d'aller aux Treize minutes avant de savoir qu'il serait orateur.&lt;/p&gt;
+&lt;p&gt;[&lt;em&gt;full-disclosure&lt;/em&gt;] Je connais un peu François Taddéi (&lt;a href=&quot;http://twitter.com/ftaddei&quot;&gt;@ftaddei&lt;/a&gt;), avec qui
+j'ai eu l'opportunité de discuter quelques fois au &lt;a href=&quot;http://www.fabelier.org&quot; title=&quot;Fabelier&quot;&gt;Fabelier&lt;/a&gt;.
+Cependant, j'avais décidé d'aller aux Treize minutes avant de savoir qu'il
+serait orateur.&lt;/p&gt;
 
 &lt;p&gt;La présentation de cet orateur évoque l'avenir de la transmission et de la
 production de connaissances : l'arrivée de l'informatique et de quelques autres
@@ -277,6 +278,8 @@ rattraper en ligne via les vidéos sur le &lt;a href=&quot;http://www.treizeminu
       <description>&lt;iframe src=&quot;http://mediakit.laquadrature.net/embed/716?size=medium&quot; 
 style=&quot;width: 650px; height: 600px; border: 0; overflow: hidden&quot; scrolling=&quot;no&quot;
 frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+
+
 
 </description>
     </item>
@@ -406,6 +409,8 @@ invraisemblances (pour des Russes qui n'ont pas parlé notre langue depuis 30
 ans, ils se débrouillent un peu trop bien -- mais c'est du ciné et on s'en fiche
 un peu en fait), c'est un bon film. Pas le film de l'année, mais bon quand
 même.&lt;/p&gt;
+
+
 
 </description>
     </item>
@@ -557,6 +562,8 @@ Le Sénat vient d'avaliser la loi Hadopi 2. Il est temps de faire un petit rappe
 
 
 &lt;p&gt;On parlera sous peu ici des enjeux de ces lois, du marché de la musique et des propositions alternatives au &quot;tout-répressif&quot;.&lt;/p&gt;
+
+
 
 </description>
     </item>
@@ -881,6 +888,21 @@ Chaque homme est une race, monsieur le policier.&quot;»&lt;/p&gt;
 &lt;p&gt;Patrick Mohr,
 le 28 juillet 2008.&lt;/p&gt;
 
+[www-cn]: http://www.complexnetworks.fr
+[matthieu]: http://www-rp.lip6.fr/~latapy
+[jekyll]: http://www.jekyll.org
+[github]: http://www.github.com
+[vim]: http://www.vim.org
+[archlinux]: http://www.archlinux.org
+
+[clochix]: http://www.clochix.net
+[vicnent]: http://www.vicnent.info/blog/
+
+[@clochix]: http://twitter.com/clochix
+[@vicnent]: http://twitter.com/vicnent
+[@ftaddei]: http://twitter.com/ftaddei
+[@mysciencework]: http://twitter.com/mysciencework
+
 </description>
     </item>
     
@@ -923,6 +945,8 @@ est sarkoziste et intelligent, il ne sera pas honnête,&lt;br /&gt; S'il est
 intelligent et honnête, il ne peut pas être sarkoziste ... &lt;/p&gt;&lt;/p&gt;
 
 &lt;p&gt;via &lt;a href=\&quot;http://www.labanane.org\&quot;&gt;LaBanane&lt;/a&gt;&lt;/p&gt;
+
+
 
 </description>
     </item>
