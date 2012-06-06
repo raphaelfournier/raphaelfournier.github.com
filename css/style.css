@@ -95,6 +95,14 @@ strong, th { font-weight: bold; }
 td, td img { vertical-align: top; } 
 sub { vertical-align: sub; font-size: smaller; }
 sup { vertical-align: super; font-size: smaller; }
+code {
+  color:#C215FE;
+  font-weight: bold;
+}
+pre code {
+  color:#e6e0db;
+  font-weight: normal;
+}
 pre { 
   
   background-color: #252525;
@@ -398,7 +406,8 @@ footer {
 	color:#777;
 }
 
-#post p, #firstpost p
+/*#post p, #firstpost p*/
+p
 {
 	margin: 0 0 12px;
   line-height:1.4;
