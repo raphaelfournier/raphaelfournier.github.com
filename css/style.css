@@ -486,8 +486,7 @@ img{
 	color:#505050;
 }
 
-
-.hey {
+.infobulle {
 	margin-bottom: 30px;
 	margin-top: 10px;
 	padding:10px;
@@ -496,6 +495,12 @@ img{
   color:#506070;
   border-radius: 10px;
   font-size: 1.4em;
+}
+.infobulle.hey {
+	border:2px solid #AC170E;
+  background-color:pink;
+  color:#C215FE;
+
 }
 #post .authoring{
   padding-left: 30px;
@@ -535,4 +540,7 @@ border-radius: 10px;
 }
 .big {
 font-size:150%;
+}
+.vitae {
+font-size:80%;
 }
