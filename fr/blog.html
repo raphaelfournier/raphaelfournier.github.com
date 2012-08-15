@@ -122,9 +122,9 @@ tweak.</p>
 <p>Just put a file called <code>fabfile.py</code> in the folder where your .tex files reside.
 Here is an excerpt of my fabfile :</p>
 
-<p>from fabric.api import local</p>
+<pre><code>from fabric.api import local
 
-<pre><code># variables
+# variables
 SRC = "these"
 FIGDIR = "figures"
 PDFREADER = "zathura"
@@ -177,11 +177,16 @@ compilation</li>
 <li>The <code>make()</code> function lists the sequence of operations required for a full
 compilation, using a switch whether I need to use <code>bibtex</code> to produce the list
 of references or not</li>
-<li><p>The <code>chapter1</code> function is called after one of my chapter. I can call it with</p>
+<li><p>The <code>chapter1</code> function is called after one of my chapter. I can call it with
+one of the following command:</p>
 
-<p>$ fab chapter1:bibtex=True,preview=False # full compilation but no preview
-$ fab chapter1:False,True # quick compilation and opens a pdf viewer immediately after
-$ fab chapter1 # defaults to bibtex=True and preview=True</p></li>
+<pre><code>$ fab chapter1:bibtex=True,preview=False 
+  # full compilation but no preview
+$ fab chapter1:False,True 
+  # quick compilation and opens a pdf viewer immediately after
+$ fab chapter1 
+  # defaults to bibtex=True and preview=True
+</code></pre></li>
 </ul>
 
 

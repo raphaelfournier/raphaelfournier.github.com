@@ -114,9 +114,9 @@ tweak.</p>
 <p>Just put a file called <code>fabfile.py</code> in the folder where your .tex files reside.
 Here is an excerpt of my fabfile :</p>
 
-<p>from fabric.api import local</p>
+<pre><code>from fabric.api import local
 
-<pre><code># variables
+# variables
 SRC = "these"
 FIGDIR = "figures"
 PDFREADER = "zathura"
@@ -169,11 +169,16 @@ compilation</li>
 <li>The <code>make()</code> function lists the sequence of operations required for a full
 compilation, using a switch whether I need to use <code>bibtex</code> to produce the list
 of references or not</li>
-<li><p>The <code>chapter1</code> function is called after one of my chapter. I can call it with</p>
+<li><p>The <code>chapter1</code> function is called after one of my chapter. I can call it with
+one of the following command:</p>
 
-<p>$ fab chapter1:bibtex=True,preview=False # full compilation but no preview
-$ fab chapter1:False,True # quick compilation and opens a pdf viewer immediately after
-$ fab chapter1 # defaults to bibtex=True and preview=True</p></li>
+<pre><code>$ fab chapter1:bibtex=True,preview=False 
+  # full compilation but no preview
+$ fab chapter1:False,True 
+  # quick compilation and opens a pdf viewer immediately after
+$ fab chapter1 
+  # defaults to bibtex=True and preview=True
+</code></pre></li>
 </ul>
 
 
@@ -210,16 +215,16 @@ $ fab chapter1 # defaults to bibtex=True and preview=True</p></li>
      <span class="categlink"><a href="/tags/jekyll/">jekyll</a></span> 
  </li>
     
+      <li>     <span class="postdate">14-10-2009</span><a class="posturl" href="/2009/10/14/bash_completion_after_sudo_or_man/">Bash completion after sudo or man</a>
+     <span class="categlink"><a href="/tags/astuce/">astuce</a>, <a href="/tags/bash/">bash</a></span> 
+ </li>
+    
       <li>     <span class="postdate">08-10-2009</span><a class="posturl" href="/2009/10/08/thank_you_finland/">Thank you, Finland!</a>
      <span class="categlink"><a href="/tags/internet/">internet</a>, <a href="/tags/politique/">politique</a></span> 
  </li>
     
       <li>     <span class="postdate">04-09-2009</span><a class="posturl" href="/2009/09/04/conversion_dune_date_unix_en_date_lisible/">Conversion d'une date unix en date lisible</a>
      <span class="categlink"><a href="/tags/astuce/">astuce</a>, <a href="/tags/unix/">unix</a></span> 
- </li>
-    
-      <li>     <span class="postdate">14-10-2009</span><a class="posturl" href="/2009/10/14/bash_completion_after_sudo_or_man/">Bash completion after sudo or man</a>
-     <span class="categlink"><a href="/tags/astuce/">astuce</a>, <a href="/tags/bash/">bash</a></span> 
  </li>
     
       <li>     <span class="postdate">08-01-2012</span><a class="posturl" href="/2012/01/08/say_no_to_acta/">Say no to ACTA!</a>
@@ -230,12 +235,12 @@ $ fab chapter1 # defaults to bibtex=True and preview=True</p></li>
      <span class="categlink"><a href="/tags/humour/">humour</a></span> 
  </li>
     
-      <li>     <span class="postdate">20-05-2012</span><a class="posturl" href="/2012/05/20/revue_de_web_1/">Revue de Web 1</a>
-     <span class="categlink"><a href="/tags/revue de web/">revue de web</a></span> 
- </li>
-    
       <li>     <span class="postdate">22-07-2008</span><a class="posturl" href="/2008/07/22/reprise/">Reprise</a>
      <span class="categlink"><a href="/tags/jekyll/">jekyll</a></span> 
+ </li>
+    
+      <li>     <span class="postdate">20-05-2012</span><a class="posturl" href="/2012/05/20/revue_de_web_1/">Revue de Web 1</a>
+     <span class="categlink"><a href="/tags/revue de web/">revue de web</a></span> 
  </li>
     
     </ul>
