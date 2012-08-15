@@ -6,9 +6,93 @@
     <atom:link href="http://raphaelfournier.net/rss.xml" rel="self" type="application/rss+xml" />
     <description></description>
     <language>en-us</language>
-    <pubDate>Fri, 08 Jun 2012 18:08:18 +0200</pubDate>
-    <lastBuildDate>Fri, 08 Jun 2012 18:08:18 +0200</lastBuildDate>
+    <pubDate>Wed, 15 Aug 2012 16:23:25 +0200</pubDate>
+    <lastBuildDate>Wed, 15 Aug 2012 16:23:25 +0200</lastBuildDate>
 
+    
+    <item>
+      <title>Switch from Makefile to Fabric file for Latex projects</title>
+      <link>http://raphaelfournier.net/2012/08/15/switch_from_makefile_to_fabric_file_for_latex_projects/</link>
+      <pubDate>Wed, 15 Aug 2012 13:41:52 +0200</pubDate>
+      <author>raphael@raphaelfournier.net (Raphael Fournier)</author>
+      <guid>http://raphaelfournier.net/2012/08/15/switch_from_makefile_to_fabric_file_for_latex_projects</guid>
+      <description>&lt;p&gt;While writing my Ph. D. thesis, I procrastinate by customizing my environment. I
+have managed to reuse Tikitu de Jager &lt;a href=&quot;http://www.logophile.org/LaTeX/MyThesisSetup&quot;&gt;LateX setup&lt;/a&gt; to compile
+individual chapters of the manuscript. This is very useful to obtain dated-pdf
+of a given chapter, with references, which can be send to friends/coworkers for
+reviewing, without sending the full document.&lt;/p&gt;
+
+&lt;p&gt;I also took the time to replace the Makefile I usually use by a &lt;a href=&quot;http://fabfile.org&quot;&gt;fab
+file&lt;/a&gt;, which benefits from the Python syntax and is thus easier to
+tweak.&lt;/p&gt;
+
+&lt;p&gt;Just put a file called &lt;code&gt;fabfile.py&lt;/code&gt; in the folder where your .tex files reside.
+Here is an excerpt of my fabfile :&lt;/p&gt;
+
+&lt;p&gt;from fabric.api import local&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# variables
+SRC = &quot;these&quot;
+FIGDIR = &quot;figures&quot;
+PDFREADER = &quot;zathura&quot;
+LATEXMODE = &quot;pdflatex&quot;
+BIBTEX = &quot;bibtex&quot;
+
+def execute(command):
+  local(command)
+  #local(&quot;echo %s&quot;%command)
+
+def move(output,chapter):
+  command = &quot;mv %s %s.pdf&quot;%(output,chapter)
+  execute(command)
+
+def preview(chapter):
+  print(&quot;previewing...&quot;)
+  command1 = 'echo -e &quot;awful.tag.viewmore({tags[1][6],awful.tag.selected(1)})&quot; | awesome-client'
+  command2 = PDFREADER +&quot; &quot;+ chapter+&quot;.pdf&quot;
+  execute(command1)
+  execute(command2)
+
+def clean():
+  command = &quot;rm -f *.aux *.log *.out *.ps *.toc *.nav *.snm *.dvi *.blg *.bbl *.nlo *.mtc* *.brf *.maf *.tdo&quot;
+  execute(command)
+
+def chapter1(bibtex=True,display=True):
+  chapter = &quot;chapter1&quot;
+  make(chapter,bibtex)
+  if display:
+    preview(chapter)
+
+def make(chapter,bibtex):
+  command = LATEXMODE + &quot; --output-directory=auxiliary &quot; + chapter + &quot;_wrapper.tex&quot;
+  bibtexcommand = BIBTEX + &quot; auxiliary/&quot; + chapter + &quot;_wrapper&quot;
+  output = &quot;auxiliary/&quot; + chapter + &quot;_wrapper&quot; + &quot;.pdf&quot;
+  execute(command)
+  if bibtex == True:
+    execute(command)
+    execute(bibtexcommand)
+    execute(command)
+  move(output,chapter)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Let's review the file :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The &lt;code&gt;execute()&lt;/code&gt; function is just an alias for easier readibility of the code&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;clean()&lt;/code&gt; function removes all the temporary files produced by a latex
+compilation&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;make()&lt;/code&gt; function lists the sequence of operations required for a full
+compilation, using a switch whether I need to use &lt;code&gt;bibtex&lt;/code&gt; to produce the list
+of references or not&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;The &lt;code&gt;chapter1&lt;/code&gt; function is called after one of my chapter. I can call it with&lt;/p&gt;
+
+&lt;p&gt;$ fab chapter1:bibtex=True,preview=False # full compilation but no preview
+$ fab chapter1:False,True # quick compilation and opens a pdf viewer immediately after
+$ fab chapter1 # defaults to bibtex=True and preview=True&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+    </item>
     
     <item>
       <title>Revue de Web 1</title>

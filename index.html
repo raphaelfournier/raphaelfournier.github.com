@@ -101,29 +101,80 @@
 
 <div id="firstpost">
   
-    <h1><a href="/2012/05/20/revue_de_web_1/" title="Revue de Web 1">Revue de Web 1</a></h1>
-<p>Plutôt que de stocker infiniment des tweets comme "favoris" ou des billets de
-blogs dans un coin, je vais poster ici les trucs que je lis. C'est en vrac,
-éventuellement avec un petit commentaire et la présence d'un lien ne signifie
-pas que je l'ai aimé ou que je sois forcément d'accord avec son propos.</p>
+    <h1><a href="/2012/08/15/switch_from_makefile_to_fabric_file_for_latex_projects/" title="Switch from Makefile to Fabric file for Latex projects">Switch from Makefile to Fabric file for Latex projects</a></h1>
+<p>While writing my Ph. D. thesis, I procrastinate by customizing my environment. I
+have managed to reuse Tikitu de Jager <a href="http://www.logophile.org/LaTeX/MyThesisSetup">LateX setup</a> to compile
+individual chapters of the manuscript. This is very useful to obtain dated-pdf
+of a given chapter, with references, which can be send to friends/coworkers for
+reviewing, without sending the full document.</p>
 
-<h2>Liens</h2>
+<p>I also took the time to replace the Makefile I usually use by a <a href="http://fabfile.org">fab
+file</a>, which benefits from the Python syntax and is thus easier to
+tweak.</p>
+
+<p>Just put a file called <code>fabfile.py</code> in the folder where your .tex files reside.
+Here is an excerpt of my fabfile :</p>
+
+<p>from fabric.api import local</p>
+
+<pre><code># variables
+SRC = "these"
+FIGDIR = "figures"
+PDFREADER = "zathura"
+LATEXMODE = "pdflatex"
+BIBTEX = "bibtex"
+
+def execute(command):
+  local(command)
+  #local("echo %s"%command)
+
+def move(output,chapter):
+  command = "mv %s %s.pdf"%(output,chapter)
+  execute(command)
+
+def preview(chapter):
+  print("previewing...")
+  command1 = 'echo -e "awful.tag.viewmore({tags[1][6],awful.tag.selected(1)})" | awesome-client'
+  command2 = PDFREADER +" "+ chapter+".pdf"
+  execute(command1)
+  execute(command2)
+
+def clean():
+  command = "rm -f *.aux *.log *.out *.ps *.toc *.nav *.snm *.dvi *.blg *.bbl *.nlo *.mtc* *.brf *.maf *.tdo"
+  execute(command)
+
+def chapter1(bibtex=True,display=True):
+  chapter = "chapter1"
+  make(chapter,bibtex)
+  if display:
+    preview(chapter)
+
+def make(chapter,bibtex):
+  command = LATEXMODE + " --output-directory=auxiliary " + chapter + "_wrapper.tex"
+  bibtexcommand = BIBTEX + " auxiliary/" + chapter + "_wrapper"
+  output = "auxiliary/" + chapter + "_wrapper" + ".pdf"
+  execute(command)
+  if bibtex == True:
+    execute(command)
+    execute(bibtexcommand)
+    execute(command)
+  move(output,chapter)
+</code></pre>
+
+<p>Let's review the file :</p>
 
 <ul>
-<li><p><a href="http://www.lemonde.fr/idees/article/2012/05/19/l-exception-francaise-de-trop_1704190_3232.html#xtor=AL-32280258">L'exception française de trop, par Robert Badinter</a></p></li>
-<li><p><a href="http://www.article11.info/?Genevieve-Fioraso-TM-l-elue-et">Un portrait (acide) de la nouvelle ministre de l'Enseignement Supérieur et de la Recherche</a> via <a href="http://www.clochix.net">clochix</a></p></li>
-<li><p><a href="http://www.openculture.com/2012/05/einstein_explains_his_famous_formula_emc_in_audio_plus_more_cultural_curiosities.html">Einstein Explains His Famous Formula, E=mc², in Original Audio (Plus More Cultural Curiosities)</a> via <a href="http://twitter.com/vicnent">@vicnent</a></p></li>
-</ul>
+<li>The <code>execute()</code> function is just an alias for easier readibility of the code</li>
+<li>The <code>clean()</code> function removes all the temporary files produced by a latex
+compilation</li>
+<li>The <code>make()</code> function lists the sequence of operations required for a full
+compilation, using a switch whether I need to use <code>bibtex</code> to produce the list
+of references or not</li>
+<li><p>The <code>chapter1</code> function is called after one of my chapter. I can call it with</p>
 
-
-<h2>Citations et bons mots</h2>
-
-<ul>
-<li><p>"A million guys walk in to a Silicon Valley bar. None of them buy anything. The
-bar is declared a rousing success."</p></li>
-<li><p>"An expert is a man who has made all the mistakes, which can be made, in a
-very narrow field". - Niels Henrik David Bohr (1885-1962) via
-<a href="http://twitter.com/mysciencework">@MyScienceWork</a></p></li>
+<p>$ fab chapter1:bibtex=True,preview=False # full compilation but no preview
+$ fab chapter1:False,True # quick compilation and opens a pdf viewer immediately after
+$ fab chapter1 # defaults to bibtex=True and preview=True</p></li>
 </ul>
 
 
@@ -145,14 +196,14 @@ very narrow field". - Niels Henrik David Bohr (1885-1962) via
     
   
     
-    <li>    <span class="postdate">13-05-2012</span><a class="posturl" href="/2012/05/13/les_conferences_treize_minutes_de_paris_7/">Les conférences Treize minutes de Paris 7</a>
-     <span class="categlink"><a href="/tags/TED/">TED</a>, <a href="/tags/conferences/">conferences</a>, <a href="/tags/science/">science</a></span> 
+    <li>    <span class="postdate">20-05-2012</span><a class="posturl" href="/2012/05/20/revue_de_web_1/">Revue de Web 1</a>
+     <span class="categlink"><a href="/tags/revue de web/">revue de web</a></span> 
 </li>
     
   
     
-    <li>    <span class="postdate">08-01-2012</span><a class="posturl" href="/2012/01/08/say_no_to_acta/">Say no to ACTA!</a>
-     <span class="categlink"><a href="/tags/acta/">acta</a>, <a href="/tags/quadrature/">quadrature</a></span> 
+    <li>    <span class="postdate">13-05-2012</span><a class="posturl" href="/2012/05/13/les_conferences_treize_minutes_de_paris_7/">Les conférences Treize minutes de Paris 7</a>
+     <span class="categlink"><a href="/tags/TED/">TED</a>, <a href="/tags/conferences/">conferences</a>, <a href="/tags/science/">science</a></span> 
 </li>
     
   
@@ -168,6 +219,8 @@ very narrow field". - Niels Henrik David Bohr (1885-1962) via
 
 
 <ul class="related">
+  
+    
   
     
   

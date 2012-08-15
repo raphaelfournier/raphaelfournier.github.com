@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-	<title>How-to flash an a6km bios</title>
+	<title>Switch from Makefile to Fabric file for Latex projects</title>
 	<meta name="author" content="Raphael Fournier"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://raphaelfournier.net/feed/rss" />
@@ -91,58 +91,91 @@
 		<div id="content">
 			<div id="post">
   <h1>
-  <a href="/2009/06/26/how-to_flash_an_a6km_bios/">How-to flash an a6km bios</a>
+  <a href="/2012/08/15/switch_from_makefile_to_fabric_file_for_latex_projects/">Switch from Makefile to Fabric file for Latex projects</a>
 </h1>
 <div class="authoring">
-  Published on 26-06-2009 
+  Published on 15-08-2012 
   
-  in <a href="/tags/astuce/">astuce</a>, <a href="/tags/asus/">asus</a>
+  in <a href="/tags/latex/">latex</a>, <a href="/tags/python/">python</a>
   
   
 </div>
 
-  <p>I'm the owner, for three years now, of
-an Asus laptop (ref : A6km Q007h). It came with Windows XP, which I kept until
-May 2007 or so, when I decided that the dual-boot time was over and I could only
-use Ubuntu Linux. I tried Ubuntu Dapper Drake first, then I upgraded directly to
-Feisty Fawn (good version). I followed the release cycle, upgrading to Gutsy
-Gibbon and Hardy Heron. Then, for different reasons, I installed an ArchLinux,
-which is still my only distro at the moment.</p>
+  <p>While writing my Ph. D. thesis, I procrastinate by customizing my environment. I
+have managed to reuse Tikitu de Jager <a href="http://www.logophile.org/LaTeX/MyThesisSetup">LateX setup</a> to compile
+individual chapters of the manuscript. This is very useful to obtain dated-pdf
+of a given chapter, with references, which can be send to friends/coworkers for
+reviewing, without sending the full document.</p>
 
+<p>I also took the time to replace the Makefile I usually use by a <a href="http://fabfile.org">fab
+file</a>, which benefits from the Python syntax and is thus easier to
+tweak.</p>
 
-<p> <p>The main problem when you
-use Linux on non-evolutive hardware such as a my laptop is that you are
-compelled to "tell yourself that you don't really need [some] features" (<a
-href="http://linuxhaters.blogspot.com/2008/06/how-to-be-linux-user.html">Linux
-hater's blog</a>). In May 2007, for example, the webcam on my model was not
-working (it now works, due to clever reverse-engineering from users, not thanks
-to Asus...). And, more annoying, if any USB device was plugged at startup, the
-boot process hanged with no error message. It means that you have to unplug your
-USB mouse or hard-disk at powering down, or check it when switching the laptop
-on. </p> <p>The problem lies in the buggy bios version. DSDT tables may be
-used to correct it -- at least, some users claim it worked for them -- or one
-should downgrade its BIOS. I have only figured out today how to do it -- yes,
-shame on me. My difficulty was to know how to have the file visible from the
-bios : CD/DVD were not solutions (since they are not recognize by the BIOS for
-flash), floppy was not present (it's a laptop). My previous attempts with hard
-disk FAT partitions failed, probably because I used FAT 16 (?). As far as USB
-key are concerned, I thougt they were not appropriate on to do it with ASUS
-BIOS.</p> <p>Flashing a BIOS is dangerous, do it at your own risks, backup
-your data before.</p> <p>Here's the procedure, step by step
-:</p> <ul><li>You may use a USB key, or any other FAT32-formatted disk you
-have</li> <li>Download the correct (and old - 2005 !) version : <a
-href="http://people.bath.ac.uk/enxspd/laptop/A6Km0202AS.zip">link</a> (thanks,
-<a href="http://wiki.archlinux.org/index.php/Asus_A6km">Arch
-Wiki</a>)</li> <li>Unzip the file on the usb key</li> <li>Reboot and press
-'F2' at startup, to enter BIOS option</li> <li>Find "Easy
-Flash"</li> <li>If you're doing it right, you may see A: and C:. Choose C:
-with arrows</li> <li>Press 'Enter' and follow the
-instructions.</li> </ul> The process was quick and easy. I plugged my USB
-mouse (though I don't use it very much those days) and rebooted : it works !</p>
+<p>Just put a file called <code>fabfile.py</code> in the folder where your .tex files reside.
+Here is an excerpt of my fabfile :</p>
 
-<p>Note : I also discovered, while wandering my BIOS options, that a USB
-key is listed as ... harddisk drive instead of "removable device" (important
-to try a linux distro on a key).</p>
+<p>from fabric.api import local</p>
+
+<pre><code># variables
+SRC = "these"
+FIGDIR = "figures"
+PDFREADER = "zathura"
+LATEXMODE = "pdflatex"
+BIBTEX = "bibtex"
+
+def execute(command):
+  local(command)
+  #local("echo %s"%command)
+
+def move(output,chapter):
+  command = "mv %s %s.pdf"%(output,chapter)
+  execute(command)
+
+def preview(chapter):
+  print("previewing...")
+  command1 = 'echo -e "awful.tag.viewmore({tags[1][6],awful.tag.selected(1)})" | awesome-client'
+  command2 = PDFREADER +" "+ chapter+".pdf"
+  execute(command1)
+  execute(command2)
+
+def clean():
+  command = "rm -f *.aux *.log *.out *.ps *.toc *.nav *.snm *.dvi *.blg *.bbl *.nlo *.mtc* *.brf *.maf *.tdo"
+  execute(command)
+
+def chapter1(bibtex=True,display=True):
+  chapter = "chapter1"
+  make(chapter,bibtex)
+  if display:
+    preview(chapter)
+
+def make(chapter,bibtex):
+  command = LATEXMODE + " --output-directory=auxiliary " + chapter + "_wrapper.tex"
+  bibtexcommand = BIBTEX + " auxiliary/" + chapter + "_wrapper"
+  output = "auxiliary/" + chapter + "_wrapper" + ".pdf"
+  execute(command)
+  if bibtex == True:
+    execute(command)
+    execute(bibtexcommand)
+    execute(command)
+  move(output,chapter)
+</code></pre>
+
+<p>Let's review the file :</p>
+
+<ul>
+<li>The <code>execute()</code> function is just an alias for easier readibility of the code</li>
+<li>The <code>clean()</code> function removes all the temporary files produced by a latex
+compilation</li>
+<li>The <code>make()</code> function lists the sequence of operations required for a full
+compilation, using a switch whether I need to use <code>bibtex</code> to produce the list
+of references or not</li>
+<li><p>The <code>chapter1</code> function is called after one of my chapter. I can call it with</p>
+
+<p>$ fab chapter1:bibtex=True,preview=False # full compilation but no preview
+$ fab chapter1:False,True # quick compilation and opens a pdf viewer immediately after
+$ fab chapter1 # defaults to bibtex=True and preview=True</p></li>
+</ul>
+
 
 </div>
 
@@ -169,16 +202,12 @@ to try a linux distro on a key).</p>
      <span class="categlink"><a href="/tags/astuce/">astuce</a>, <a href="/tags/bash/">bash</a></span> 
  </li>
     
-      <li>     <span class="postdate">15-08-2012</span><a class="posturl" href="/2012/08/15/switch_from_makefile_to_fabric_file_for_latex_projects/">Switch from Makefile to Fabric file for Latex projects</a>
-     <span class="categlink"><a href="/tags/latex/">latex</a>, <a href="/tags/python/">python</a></span> 
+      <li>     <span class="postdate">26-06-2009</span><a class="posturl" href="/2009/06/26/how-to_flash_an_a6km_bios/">How-to flash an a6km bios</a>
+     <span class="categlink"><a href="/tags/astuce/">astuce</a>, <a href="/tags/asus/">asus</a></span> 
  </li>
     
       <li>     <span class="postdate">30-12-2011</span><a class="posturl" href="/2011/12/30/bootstrapping%3A_a_brand-new_jekyll-powered_blog/">bootstrapping: a brand-new jekyll-powered blog</a>
      <span class="categlink"><a href="/tags/jekyll/">jekyll</a></span> 
- </li>
-    
-      <li>     <span class="postdate">14-10-2009</span><a class="posturl" href="/2009/10/14/bash_completion_after_sudo_or_man/">Bash completion after sudo or man</a>
-     <span class="categlink"><a href="/tags/astuce/">astuce</a>, <a href="/tags/bash/">bash</a></span> 
  </li>
     
       <li>     <span class="postdate">08-10-2009</span><a class="posturl" href="/2009/10/08/thank_you_finland/">Thank you, Finland!</a>
@@ -189,8 +218,16 @@ to try a linux distro on a key).</p>
      <span class="categlink"><a href="/tags/astuce/">astuce</a>, <a href="/tags/unix/">unix</a></span> 
  </li>
     
+      <li>     <span class="postdate">14-10-2009</span><a class="posturl" href="/2009/10/14/bash_completion_after_sudo_or_man/">Bash completion after sudo or man</a>
+     <span class="categlink"><a href="/tags/astuce/">astuce</a>, <a href="/tags/bash/">bash</a></span> 
+ </li>
+    
       <li>     <span class="postdate">08-01-2012</span><a class="posturl" href="/2012/01/08/say_no_to_acta/">Say no to ACTA!</a>
      <span class="categlink"><a href="/tags/acta/">acta</a>, <a href="/tags/quadrature/">quadrature</a></span> 
+ </li>
+    
+      <li>     <span class="postdate">16-10-2008</span><a class="posturl" href="/2008/10/16/quotes/">Quotes</a>
+     <span class="categlink"><a href="/tags/humour/">humour</a></span> 
  </li>
     
       <li>     <span class="postdate">20-05-2012</span><a class="posturl" href="/2012/05/20/revue_de_web_1/">Revue de Web 1</a>
@@ -199,10 +236,6 @@ to try a linux distro on a key).</p>
     
       <li>     <span class="postdate">22-07-2008</span><a class="posturl" href="/2008/07/22/reprise/">Reprise</a>
      <span class="categlink"><a href="/tags/jekyll/">jekyll</a></span> 
- </li>
-    
-      <li>     <span class="postdate">16-10-2008</span><a class="posturl" href="/2008/10/16/quotes/">Quotes</a>
-     <span class="categlink"><a href="/tags/humour/">humour</a></span> 
  </li>
     
     </ul>
