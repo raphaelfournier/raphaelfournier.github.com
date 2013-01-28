@@ -69,12 +69,12 @@ html { height:100%; }
 /*h1 { font-size: 3em; line-height: 1; margin: 0.5em 0; font-family:'Yanone Kaffeesatz'; }*/
 /*h2 { font-size: 2em; margin: 0.75em 0; font-family:'Yanone Kaffeesatz'; }*/
 /*h3 { font-size: 1.5em; line-height: 1; margin: 1em 0; font-family:'Yanone Kaffeesatz'; }*/
-h1 { font-size: 3em; line-height: 1; margin: 0.5em 0; }
-h2 { font-size: 2em; margin: 0.75em 0; }
+h1 { font-size: 2.4em; line-height: 1; margin: 0.5em 0; }
+h2 { font-size: 1.8em; line-height: 1; margin: 0.5em 0; }
 h3 { font-size: 1.5em; line-height: 1; margin: 1em 0; }
-h4 { font-size: 1.2em; line-height: 1.25; margin: 1.25em 0; }
-h5 { font-size: 1em; font-weight: bold; margin: 1.5em 0; }
-h6 { font-size: 1em; font-weight: bold; }
+h4 { font-size: 1em; line-height: 1; margin: 1em 0; }
+h5 { font-size: 0.8em; font-weight: bold; margin: 1.5em 0; }
+h6 { font-size: 0.6em; font-weight: bold; }
 
 h1 img, h2 img, h3 img,
 h4 img, h5 img, h6 img {
@@ -186,9 +186,8 @@ a:link { -webkit-tap-highlight-color: #FF5E99; }
 header h1 {
 	font-size: 2em;
 	font-weight: bold;
-	margin-top: .67em;
+	margin-top: .3em;
 	margin-bottom: 0;
-  text-align:center;
 }
 
 header h1  a {
@@ -318,7 +317,7 @@ footer {
 
 .widget  ul li a
 {
-  padding:8px;
+  padding:4px;
 }
 
 #header-wrap h4
@@ -328,7 +327,7 @@ footer {
 	text-transform: uppercase;
 	
   padding:0 0 5px 3px;
-  margin:20px 0 0px 0px;
+  margin:10px 0 0px 0px;
 }
 
 .widget .lang
@@ -486,6 +485,9 @@ img{
 	color:#505050;
 }
 
+.info h4 {
+margin-left:-5px;
+}
 .infobulle {
 	margin-bottom: 30px;
 	margin-top: 10px;
@@ -494,7 +496,7 @@ img{
   background-color:#f0dfaf;
   color:#506070;
   border-radius: 10px;
-  font-size: 1.4em;
+  font-size: 1.1em;
 }
 .infobulle.hey {
 	border:2px solid #AC170E;
@@ -539,7 +541,7 @@ border:2px solid #bbb;
 border-radius: 10px;
 }
 .big {
-font-size:150%;
+font-size:110%;
 }
 .vitae {
 font-size:80%;

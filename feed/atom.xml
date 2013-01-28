@@ -4,7 +4,7 @@
   <title>Raphael Fournier blog</title>
   <link href="http://raphaelfournier.net/"/>
   <link type="application/atom+xml" rel="self" href="http://raphaelfournier.net/atom.xml"/>
-  <updated>2012-09-21T10:50:58+02:00</updated>
+  <updated>2013-01-28T14:44:24+01:00</updated>
   <id>http://raphaelfournier.net/</id>
   <author>
     <name>Raphael Fournier</name>
@@ -1052,8 +1052,8 @@ le 28 juillet 2008.&lt;/p&gt;
 [@francoistaddei]: http://twitter.com/francoistaddei
 [@mysciencework]: http://twitter.com/mysciencework
 
-[cv-pdf-fr]: http://www-complexnetworks.lip6.fr/~fournier/me/files/FOURNIER-Raphael_CV-academique.pdf
-[cv-pdf-en]: http://www-complexnetworks.lip6.fr/~fournier/me/files/FOURNIER-Raphael_AcademicResume.pdf
+[cv-pdf-fr]: files/FOURNIER-Raphael_CV-academique.pdf
+[cv-pdf-en]: files/FOURNIER-Raphael_AcademicResume.pdf
 
 </content>
   </entry>
