@@ -6,8 +6,8 @@
     <atom:link href="http://raphaelfournier.net/rss.xml" rel="self" type="application/rss+xml" />
     <description></description>
     <language>en-us</language>
-    <pubDate>Tue, 05 Feb 2013 10:20:38 +0100</pubDate>
-    <lastBuildDate>Tue, 05 Feb 2013 10:20:38 +0100</lastBuildDate>
+    <pubDate>Thu, 07 Feb 2013 16:48:27 +0100</pubDate>
+    <lastBuildDate>Thu, 07 Feb 2013 16:48:27 +0100</lastBuildDate>
 
     
     <item>
@@ -979,8 +979,10 @@ Chaque homme est une race, monsieur le policier.&quot;»&lt;/p&gt;
 le 28 juillet 2008.&lt;/p&gt;
 
 [LIP6]: http://www.lip6.fr
+[L2TI]: http://www-l2ti.univ-paris13.fr/
 [www-cn]: http://www.complexnetworks.fr
 [matthieu]: http://www-rp.lip6.fr/~latapy
+[emmanuel]: http://www-l2ti.univ-paris13.fr/~viennet/
 [jekyll]: http://www.jekyll.org
 [github]: http://www.github.com
 [vim]: http://www.vim.org
@@ -994,8 +996,9 @@ le 28 juillet 2008.&lt;/p&gt;
 [@francoistaddei]: http://twitter.com/francoistaddei
 [@mysciencework]: http://twitter.com/mysciencework
 
-[cv-pdf-fr]: files/FOURNIER-Raphael_CV-academique.pdf
-[cv-pdf-en]: files/FOURNIER-Raphael_AcademicResume.pdf
+[cv-pdf-fr]: ../files/FOURNIER-Raphael_CV-academique.pdf
+[cv-pdf-en]: ../files/FOURNIER-Raphael_AcademicResume.pdf
+[these]: ../files/These_FournierRaphael_vfinale.pdf
 
 </description>
     </item>
