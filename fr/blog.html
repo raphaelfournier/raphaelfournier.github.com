@@ -1,131 +1,296 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Sctict//EN" 
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr-fr">
-<head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-	<title>Raphaël Fournier</title>
-	<meta name="author" content="Raphael Fournier"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://raphaelfournier.net/feed/rss" />
-  <link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="http://raphaelfournier.net/feed/atom" />
-    <link rel="stylesheet" href="/css/style.css" type="text/css" media="screen, projection" />
-    <link rel="stylesheet" href="/css/responsive.css" type="text/css" media="screen, projection" />
-    <link rel="stylesheet" href="/css/prettify.css" type="text/css" media="screen, projection" />
-	<!--<link rel="stylesheet" href="/css/styles.css" />-->
-	<!--<link rel="stylesheet" href="/css/highlight.css" />-->
-	<link rel="stylesheet" href="/css/vitae.css" />
-  <!--<link rel="stylesheet" type="text/css" href="/css/mobile.css" media="handheld" />-->
-  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" /><!-- pour IE -->
-  <link rel="icon" type="image/x-icon" href="/images/favicon.ico" /><!-- pour les navigateurs standards -->
-	
-	<script src="/js/prettify.js" type="text/javascript"></script>
-</head>
-<body onload="prettyPrint()">
-	<div id="header-wrap">
-    <header>
-  <hgroup>
-    <h2>
-      Raphaël Fournier-S'niehotta
-    </h2>
-    <!--<div id="site-description">code first, ask questions later</div>-->
-  </hgroup>			
-</header>
-            
-<div id="secondary" class="widget-area">
-  <aside id="me" class="widget">
-  <h3 class="big">
-    <a href="/fr">français</a>
-    &nbsp;/&nbsp;
-    <a href="/">english</a>
-  </h3>
-    <div class="info">
-      <h4>Pro</h4>	
-        <ul>
-          <li><a
-            rel="about me" title="about" href="/apropos/">à propos</a></li>
-          <li><a
-            title="recherche" href="/recherche/">recherche</a></li>
-          <li><a
-            title="enseignement" href="/enseignement/">enseignement</a></li>
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Quelques billets de blog</title>
+    <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://raphaelfournier.net/feed/rss" />
+    <link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="http://raphaelfournier.net/feed/atom" />
+    
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+    <link rel="stylesheet" href="/stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico" /><!-- pour IE -->
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico" /><!-- pour les navigateurs standards -->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="me">
+<img src="/images/raphaelfournier3.jpg" style="-moz-border-radius: 15px;
+border-radius: 15px; margin:auto; margin-right: 15px; float:left;" alt="profile
+pic" height="80px"/>
+<h1>Raphaël <br/>Fournier-<br/>S'niehotta</h1>
+</div>
+        <ul class="tabs">
+          <li><a rel="apropos" title="apropos" href="/apropos/">à propos</a></li>
+          <li><a rel="recherche this" title="recherche" href="/recherche/">recherche</a></li>
+          <li><a rel="enseignement" title="enseignement" href="/enseignement/">enseignement</a></li>
+          <li><a title="cv" href="../files/FOURNIER-Raphael_CV-academique.pdf">CV</a></li>
         </ul>
-      </div>
 
-      <h4>Perso</h4>	
-        <ul>
-          <li><a rel="home
-            page" title="homepage" href="/fr/blog.html">blog</a></li>
+        <ul class="tabs">
+          <li class="actuel"><a rel="accueil du blog" title="accueil du blog" href="/fr/blog">blog</a></li>
           <li> <a rel="rss feed" title="receive update via rss" href="/feed/rss.xml">rss</a> </li>
-          <li><a rel="twitter" title="follow me on twitter!" href="http://www.twitter.com/fournier_r">@fournier_r</a></li>
+          <li><a rel="twitter" title="Suivez-moi sur twitter" href="http://www.twitter.com/fournier_r">@fournier_r</a></li>
         </ul>
 
-    </div>
-    <div class="short-info">
-      <ul>
-        <li><a rel="about
-          me" title="about" href="/about/">à propos</a></li>
-        <li><a rel="recherche" title="recherche" href="/recherche/">recherche</a></li>
-        <li><a rel="enseignement" title="enseignement" href="/enseignement/">enseignement</a></li>
-      </ul>
-      <ul>
-        <li><a rel="home
-          page" title="homepage" href="/">Blog : accueil</a></li>
-        <li> <a rel="rss feed" title="receive update via rss" href="/feed/rss.xml">rss</a> </li>
-        <li><a rel="twitter" title="follow me on twitter!" href="http://www.twitter.com/fournier_r">@fournier_r</a></li>
-      </ul>
-    </div>
-  </aside>
-</div>
+<ul class="button">
+  <li>
+    
+      
+        <a class="lang" href="/blog">View in <strong>english</a>
+      
+    
+  </li>
+</ul>
 
-	</div>
-	<div id="primary">
-		<div id="content">
-			<div class="infobulle">
-  Je suis doctorant en informatique au LIP6 (UPMC/CNRS) à Paris. Cet espace me
-  sert de page personnelle et de blog. Vous pouvez en apprendre plus sur moi en lisant <a href="/apropos" title="à propos">cette page</a>, lire le dernier billet publié ci-dessous, et me suivre sur <a href="http://www.twitter.com/fournier_r">Twitter</a>.
-</div>
+      </header>
+      <section>
+        <a name="top"></a>
+
+<h1 class="section"> Quelques billets de blog </h1>
 
 
-
-
-<h2 class="annee">Dernier billet</h2>
-
-
-<div id="firstpost">
+ <ul>
   
-</div>
+    
+      <h2 class="annee">2012</h2>
+    
 
+    <li>
+          <a class="posturl" href="/2012/08/15/switch_from_makefile_to_fabric_file_for_latex_projects.html">Switch from Makefile to Fabric file for Latex projects</a> <span class="lang">(en)</span>
+    <!-- [<span class="categlink"><a href="/tags/latex/">latex</a>, <a href="/tags/python/">python</a></span> ] <span class="postdate">15 August</span>-->
 
+    </li>
+  
+    
+      
+      
+      
+    
 
+    <li>
+          <a class="posturl" href="/2012/05/20/revue_de_web_1.html">Revue de Web 1</a> <span class="lang">(fr)</span>
+    <!-- [<span class="categlink"><a href="/tags/revue de web/">revue de web</a></span> ] <span class="postdate">20 May</span>-->
 
-<hr>
+    </li>
+  
+    
+      
+      
+      
+    
 
+    <li>
+          <a class="posturl" href="/2012/05/13/les_conferences_treize_minutes_de_paris_7.html">Les conférences Treize minutes de Paris 7</a> <span class="lang">(fr)</span>
+    <!-- [<span class="categlink"><a href="/tags/TED/">TED</a>, <a href="/tags/conferences/">conferences</a>, <a href="/tags/science/">science</a></span> ] <span class="postdate">13 May</span>-->
 
-<h2 class="annee">Billets récents</h2>
+    </li>
+  
+    
+      
+      
+      
+    
 
+    <li>
+          <a class="posturl" href="/2012/01/08/say_no_to_acta.html">Say no to ACTA!</a> <span class="lang">(en)</span>
+    <!-- [<span class="categlink"><a href="/tags/acta/">acta</a>, <a href="/tags/quadrature/">quadrature</a></span> ] <span class="postdate">08 January</span>-->
 
-<ul class="related">
+    </li>
+  
+    
+      
+      
+      
+        <h2 class="annee">2011</h2>
+      
+    
+
+    <li>
+          <a class="posturl" href="/2011/12/30/bootstrapping%3A_a_brand-new_jekyll-powered_blog.html">bootstrapping: a brand-new jekyll-powered blog</a> <span class="lang">(en)</span>
+    <!-- [<span class="categlink"><a href="/tags/jekyll/">jekyll</a></span> ] <span class="postdate">30 December</span>-->
+
+    </li>
+  
+    
+      
+      
+      
+        <h2 class="annee">2010</h2>
+      
+    
+
+    <li>
+          <a class="posturl" href="/2010/01/12/la_fille_de_monaco_et_le_concert.html">La fille de Monaco et Le Concert</a> <span class="lang">(fr)</span>
+    <!-- [<span class="categlink"><a href="/tags/cinema/">cinema</a></span> ] <span class="postdate">12 January</span>-->
+
+    </li>
+  
+    
+      
+      
+      
+        <h2 class="annee">2009</h2>
+      
+    
+
+    <li>
+          <a class="posturl" href="/2009/10/15/bash_bangs_usage.html">Bash bangs usage</a> <span class="lang">(en)</span>
+    <!-- [<span class="categlink"><a href="/tags/astuce/">astuce</a>, <a href="/tags/bash/">bash</a></span> ] <span class="postdate">15 October</span>-->
+
+    </li>
+  
+    
+      
+      
+      
+    
+
+    <li>
+          <a class="posturl" href="/2009/10/14/bash_completion_after_sudo_or_man.html">Bash completion after sudo or man</a> <span class="lang">(en)</span>
+    <!-- [<span class="categlink"><a href="/tags/astuce/">astuce</a>, <a href="/tags/bash/">bash</a></span> ] <span class="postdate">14 October</span>-->
+
+    </li>
+  
+    
+      
+      
+      
+    
+
+    <li>
+          <a class="posturl" href="/2009/10/08/thank_you_finland.html">Thank you, Finland!</a> <span class="lang">(en)</span>
+    <!-- [<span class="categlink"><a href="/tags/internet/">internet</a>, <a href="/tags/politique/">politique</a></span> ] <span class="postdate">08 October</span>-->
+
+    </li>
+  
+    
+      
+      
+      
+    
+
+    <li>
+          <a class="posturl" href="/2009/09/04/conversion_dune_date_unix_en_date_lisible.html">Conversion d'une date unix en date lisible</a> <span class="lang">(fr)</span>
+    <!-- [<span class="categlink"><a href="/tags/astuce/">astuce</a>, <a href="/tags/unix/">unix</a></span> ] <span class="postdate">04 September</span>-->
+
+    </li>
+  
+    
+      
+      
+      
+    
+
+    <li>
+          <a class="posturl" href="/2009/07/09/hadopi_resume_de_la_saga.html">Hadopi : résumé de la saga</a> <span class="lang">(fr)</span>
+    <!-- [<span class="categlink"><a href="/tags/hadopi/">hadopi</a>, <a href="/tags/politique/">politique</a></span> ] <span class="postdate">09 July</span>-->
+
+    </li>
+  
+    
+      
+      
+      
+    
+
+    <li>
+          <a class="posturl" href="/2009/06/26/how-to_flash_an_a6km_bios.html">How-to flash an a6km bios</a> <span class="lang">(en)</span>
+    <!-- [<span class="categlink"><a href="/tags/astuce/">astuce</a>, <a href="/tags/asus/">asus</a></span> ] <span class="postdate">26 June</span>-->
+
+    </li>
+  
+    
+      
+      
+      
+    
+
+    <li>
+          <a class="posturl" href="/2009/06/24/recuperation_de_video_sur_rutube.html">Récupération de video sur Rutube</a> <span class="lang">(fr)</span>
+    <!-- [<span class="categlink"><a href="/tags/astuce/">astuce</a></span> ] <span class="postdate">24 June</span>-->
+
+    </li>
+  
+    
+      
+      
+      
+        <h2 class="annee">2008</h2>
+      
+    
+
+    <li>
+          <a class="posturl" href="/2008/10/17/bavure.html">Bavure ...</a> <span class="lang">(fr)</span>
+    <!-- [<span class="categlink"><a href="/tags/politique/">politique</a></span> ] <span class="postdate">17 October</span>-->
+
+    </li>
+  
+    
+      
+      
+      
+    
+
+    <li>
+          <a class="posturl" href="/2008/10/16/quotes.html">Quotes</a> <span class="lang">(fr)</span>
+    <!-- [<span class="categlink"><a href="/tags/humour/">humour</a></span> ] <span class="postdate">16 October</span>-->
+
+    </li>
+  
+    
+      
+      
+      
+    
+
+    <li>
+          <a class="posturl" href="/2008/08/05/petite_blague.html">Petite blague</a> <span class="lang">(fr)</span>
+    <!-- [<span class="categlink"><a href="/tags/humour/">humour</a></span> ] <span class="postdate">05 August</span>-->
+
+    </li>
+  
+    
+      
+      
+      
+    
+
+    <li>
+          <a class="posturl" href="/2008/08/03/cuil.html">Cuil</a> <span class="lang">(fr)</span>
+    <!-- [<span class="categlink"><a href="/tags/cuil/">cuil</a>, <a href="/tags/search/">search</a></span> ] <span class="postdate">03 August</span>-->
+
+    </li>
+  
+    
+      
+      
+      
+    
+
+    <li>
+          <a class="posturl" href="/2008/07/22/reprise.html">Reprise</a> <span class="lang">(fr)</span>
+    <!-- [<span class="categlink"><a href="/tags/jekyll/">jekyll</a></span> ] <span class="postdate">22 July</span>-->
+
+    </li>
   
 </ul>
 
 
 
+ 
 
-<hr>
+      </section>
+      <footer>
+        <small>written with <a href="http://jekyll.org">jekyll</a>. Theme by <a href="https://github.com/orderedlist">orderedlist</a></small>
 
-
-<h2 class="annee">Billets sélectionnés</h2>
-
-
-<ul class="related">
-  
-</ul>
-
-
-
-
-		</div>				
-		<!--<footer> </footer>-->
-	</div>
-</body>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+  </body>
 </html>
