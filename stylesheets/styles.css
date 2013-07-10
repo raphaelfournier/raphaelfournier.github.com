@@ -274,6 +274,13 @@ footer {
   bottom:10px;
 }
 
+footer ul {
+  list-style: none;
+}
+footer ul li {
+  display: inline;
+}
+
 .authoring {
   margin-bottom: 20px;
 }
