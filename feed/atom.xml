@@ -4,13 +4,87 @@
   <title>Raphael Fournier blog</title>
   <link href="http://raphaelfournier.net/"/>
   <link type="application/atom+xml" rel="self" href="http://raphaelfournier.net/atom.xml"/>
-  <updated>2013-07-10T11:04:23+02:00</updated>
+  <updated>2013-08-19T19:04:25+02:00</updated>
   <id>http://raphaelfournier.net/</id>
   <author>
     <name>Raphael Fournier</name>
     <email>raphael@raphaelfournier.net</email>
   </author>
 
+  
+  <entry>
+    <id>http://raphaelfournier.net/2013/08/05/awesome-dmenu-switch-apps</id>
+    <link type="text/html" rel="alternate" href="http://raphaelfournier.net/2013/08/05/awesome-dmenu-switch-apps.html"/>
+    <title>Awesome: switch apps with dmenu</title>
+    <published>2013-08-05T20:14:25+02:00</published>
+    <updated>2013-08-05T20:14:25+02:00</updated>
+    <author>
+      <name>Raphael Fournier</name>
+      <uri>http://raphaelfournier.net/</uri>
+    </author>
+    <content type="html">&lt;p&gt;I have been using &lt;a href=&quot;http://awesome.naquadah.org&quot;&gt;Awesome&lt;/a&gt; as a window manager for several years. It uses a
+tiling approach, and really &lt;em&gt;manages&lt;/em&gt; windows, maximizing available space on my
+12&quot; laptop screen. A great addition is &lt;a href=&quot;http://tools.suckless.org/dmenu/&quot;&gt;dmenu&lt;/a&gt;, created by the &lt;a href=&quot;http://suckless.org/&quot;&gt;suckless&lt;/a&gt;
+project. The first use is to pipe applications from the path, which dmenu
+presents as a horizontal/vertical list, with incremental search.&lt;/p&gt;
+
+&lt;p&gt;But dmenu is not limited to this, and wrote a small function which proposes a
+menu of currently running applications (or clients, as awesome calls them). The
+selection may be refined by typing a few character which appear in the name of
+the app or the tag. When selecting enter, the tab changes to the client and it
+is given focus.&lt;/p&gt;
+
+&lt;p&gt;Here is the code:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    local awful= require(&quot;awful&quot;)
+    local beautiful = require(&quot;beautiful&quot;)
+    local naughty   = require(&quot;naughty&quot;)
+    local client=client
+    local pairs=pairs
+    local table=table
+    local print=print
+
+    local dmenuhelpers = {}
+
+    dmenuopts = &quot;-b -i -nf &#39;&quot;..beautiful.fg_normal..&quot;&#39; -nb &#39;&quot;..beautiful.bg_normal..&quot;&#39; -sf &#39;&quot;..beautiful.bg_urgent..&quot;&#39; -sb &#39;&quot;..beautiful.bg_focus..&quot;&#39; -fn &#39;-*-dejavu sans mono-*-r-*-*-*-*-*-*-*-*-*-*&#39;&quot;
+
+    function dmenuhelpers.switchapp()
+      local allclients = client.get(mouse.screen)
+      clientsline = &quot;&quot;
+      for _,c in ipairs(allclients) do
+        clientsline = clientsline .. c:tags()[1].name .. &quot; - &quot; .. c.name .. &quot;\n&quot;
+      end
+      selected = awful.util.pread(&quot;echo &#39;&quot;.. clientsline ..&quot;&#39; | dmenu -l 10 &quot; .. dmenuopts)
+      for _,c in ipairs(allclients) do
+        a = c:tags()[1].name .. &quot; - &quot; .. c.name 
+        if a == selected:gsub(&quot;\n&quot;, &quot;&quot;) then
+          for i, v in ipairs(c:tags()) do
+            awful.tag.viewonly(v)
+            client.focus = c
+            c:raise()
+            c.minimized = false
+            return
+          end
+        end
+      end
+    end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To use it, you need to add the following in your rc.lua:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;at the top&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  local dmenuhelpers = require(&quot;dmenu-helpers&quot;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;in the key table&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  awful.key({ modkey, &quot;Control&quot; }, &quot;w&quot;, function () dmenuhelpers.switchapp()                                        end),
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+  </entry>
   
   <entry>
     <id>http://raphaelfournier.net/2012/08/15/switch_from_makefile_to_fabric_file_for_latex_projects</id>
