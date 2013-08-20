@@ -1,0 +1,456 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Useful unix commands</title>
+    <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://raphaelfournier.net/feed/rss" />
+    <link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="http://raphaelfournier.net/feed/atom" />
+    
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+    <link rel="stylesheet" href="/stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" /><!-- pour IE -->
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" /><!-- pour les navigateurs standards -->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="me">
+<img src="/images/raphaelfournier3.jpg" style="-moz-border-radius: 15px;
+border-radius: 15px; margin:auto; margin-right: 15px; float:left;" alt="profile
+pic" height="80px"/>
+<h1>Raphaël <br/>Fournier-<br/>S'niehotta</h1>
+</div>
+        <ul class="tabs">
+          <li class="about"><a rel="about me" title="about" href="/about/">about <strong>me</strong></a></li>
+          <li class="research "><a rel="research" title="research" href="/research/">I do <strong>research</strong></a></li>
+          <li class="teaching "><a rel="teaching" title="teaching" href="/teaching/">and I <strong>teach</strong></a></li>
+          <li><a title="cv"
+            href="/files/FOURNIER-Raphael_AcademicResume.pdf">read my <strong>resume</strong> (PDF)</a></li>
+        </ul>
+
+        <ul class="tabs">
+          <li class="blog actuel"><a rel="home page" title="homepage" href="/blog">read my <strong>blog</strong></a></li>
+          <li> <a rel="rss feed" title="receive update via rss"
+            href="/feed/rss.xml">subscribe by <strong>rss</strong></a> </li>
+          <li><a rel="twitter" title="follow me on twitter!" href="http://www.twitter.com/fournier_r">follow me on <strong>Twitter</strong></a></li>
+        </ul>
+
+<ul class="button">
+  <li>
+    
+      <a class="lang" href="/fr">Lire en <strong>français</a>
+    
+  </li>
+</ul>
+
+      </header>
+      <section>
+        <div id="post">
+  <h1>
+  <a href="/2013/08/20/useful-unix-commands.html">Useful unix commands</a>
+</h1>
+<div class="authoring">
+  Published on 20-08-2013 
+  
+  in <a href="/tags/unix/">unix</a>
+  
+  
+</div>
+
+  <h3>rename files with spaces</h3>
+
+<pre><code>IFS=$'\n';for file in `find . -regex ".*([0-9]).jpg"`; do new=$(echo $file | sed "s:[0-9]:0&amp;:");mv $file $new;done;unset IFS
+IFSS="$(printf '\n\t')";for f in 01*; do mv $f 0$f; done
+</code></pre>
+
+<h3>xrandr</h3>
+
+<pre><code>xrandr --output VGA1 --auto --left-of LVDS1
+</code></pre>
+
+<h3>aspirer un site web</h3>
+
+<pre><code>wget -r -k -np -E -T 15 -t 2 http://www.example.com
+-r : téléchargement sera récursif (avec les liens de la page).
+-k : les liens sont modifié pour pointer localement.
+-np : empêche de remonter dans le répertoire parent.
+-E : Transformation en HTML.
+-T 15 : Time connection. Le temps max en seconde pour aspirer un lien. Quand
+cette option est omis, un lien difficilement accessible peut ralentir
+considérablement l’aspiration du site.
+-t 2 : nombre de tentative de connexion si il y a erreur 404 (pas de lien). Ici,
+on veut qu’il n’y ait qu’une seule tentative de connexion afin d’accélérer le
+traitement d’aspiration.
+</code></pre>
+
+<h3>recuperer des images dans un swf</h3>
+
+<pre><code>1. Install swftools (http://www.swftools.org/)
+2. Get the SWF file: wget http://www.legendarybbq.com/header.swf
+3. Find the image ID (it is 0002): swfdump -D header.swf | grep JPEG
+4. Extract the image: swfextract -o secretimg.jpg -j 2 header.swf
+</code></pre>
+
+<h3>generer rapidement une dizaine de nombres aleatoires entre 1 et 2320</h3>
+
+<pre><code>for i in `seq 1 10`; do num=$RANDOM;let "num %= 2320";echo $num;done
+</code></pre>
+
+<h3>dates</h3>
+
+<pre><code>date -d "1970-01-01 UTC + 1164128484 seconds"
+date -d "2010-08-12" +%s
+</code></pre>
+
+<h3>date : changer manuellement</h3>
+
+<pre><code>sudo date -s "2010/07/15 12:59:28 CEST"
+</code></pre>
+
+<h3>files with hyphen</h3>
+
+<pre><code>mv -- -foo bar # rename -foo in bar
+</code></pre>
+
+<h3>fake busy</h3>
+
+<pre><code>for i in $(seq 0 2 100); do echo $i; sleep 1; done | zenity --progress --title "Installation" --text "Veuillez patienter, installation en cours..." 
+</code></pre>
+
+<h3>test alsa</h3>
+
+<pre><code>aplay /usr/share/sounds/alsa/Front_Center.wav
+</code></pre>
+
+<h3>ssh scp espaces</h3>
+
+<pre><code>scp raph@host:"/mnt/Data/Downloaded/Artist\\ Name\\ -\\ Albumname/" ./musique/
+</code></pre>
+
+<h3>cancel archive extraction</h3>
+
+<pre><code>for file in `tar tzf archive.tar.gz`; do rm -Rf $file; done
+</code></pre>
+
+<h3>infos systeme</h3>
+
+<ul>
+<li>Carte mère et Bios (en root) : :command:<code>dmidecode</code></li>
+<li>RAM : :command:<code>free -m</code></li>
+<li>Processeur : :command:<code>lscpu - cat /proc/cpuinfo</code></li>
+<li>Carte graphique : :command:<code>lspci | grep VGA</code></li>
+<li>Liste des périphériques du bus PCI : :command:<code>lspci</code></li>
+<li>Liste des périphériques USB : :command:<code>lsusb</code></li>
+<li>Interfaces réseau : :command:<code>ifconfig</code></li>
+<li>Espace disque et pourcentage d'occupation : :command:<code>df -h</code></li>
+<li>Partition swap : :command:<code>swapon -s</code></li>
+<li>Machine (noyau, nom de machine...) : :command:<code>uname -a</code></li>
+<li>Informations de fonctionnement : :command:<code>uptime</code>, :command:<code>top</code>, :command:<code>ps</code>, :command:<code>who</code>, :command:<code>vmstat</code> ...</li>
+</ul>
+
+
+<h3>ls full path!</h3>
+
+<pre><code>find nomdudossier -type f
+</code></pre>
+
+<h3>latex embed fonts polices</h3>
+
+<pre><code>dvips fichier
+ps2pdf14 -dPDFSETTINGS=/prepress -dEmbedAllFonts=true fichier.ps
+</code></pre>
+
+<p>Then check "embedded" via acroread, File > Properties > Fonts (all fonts should be "Embedded subset").</p>
+
+<h3>crontab : pas de mail</h3>
+
+<pre><code>MAILTO="" au début du fichier crontab -e
+ou &amp;&gt; /dev/null à la fin de la commande
+</code></pre>
+
+<h3>time date timezone : changer facilement l'heure</h3>
+
+<pre><code>sudo ln -sf /usr/share/zoneinfo/Asia/Shanghai localtime
+
+ntpd -qg
+</code></pre>
+
+<h3>opera tray icon modification de /usr/bin/opera</h3>
+
+<pre><code>exec /usr/lib/opera/opera -notrayicon "$@"
+</code></pre>
+
+<h3>find duplicates images</h3>
+
+<pre><code>find . -type f -print0 | xargs -0 file | grep 'image data' | cut -f1 -d: | tr '\012' '\000' | xargs -0 md5sum | sort | uniq -w 32 -D
+</code></pre>
+
+<h3>mettre une commande en image</h3>
+
+<pre><code>ifconfig | convert label:@- command.png
+</code></pre>
+
+<h3>find total duration for a set of *avi files</h3>
+
+<pre><code>find -type f -name "*.avi" -print0 | xargs -0  mplayer -vo dummy -ao dummy -identify 2&gt;/dev/null | perl -nle '/ID_LENGTH=([0-9\.]+)/ &amp;&amp; ($t +=$1) &amp;&amp; printf "%02d:%02d:%02d\n",$t/3600,$t/60%60,$t%60' | tail -n 1
+</code></pre>
+
+<h3>play a video faster, without modifying pitch</h3>
+
+<pre><code>mplayer -af scaletempo=scale=1.25:speed=both -fs video.avi
+</code></pre>
+
+<h3>crop pdf marges margin</h3>
+
+<pre><code>pdfcrop --margins 10 edonkeyBMS04.pdf outfile2.pdf
+</code></pre>
+
+<h3>tables de multiplications</h3>
+
+<pre><code>seq 9 | sed 'H;g' | awk -v RS='' '{for(i=1;i&lt;=NF;i++)printf("%dx%d=%d%s", i, NR, i*NR, i==NR?"\n":"\t")}' 
+</code></pre>
+
+<h3>wrap vim</h3>
+
+<pre><code>set tw=0 (lignes infinies) / set tw=80 (80 caractères)
+</code></pre>
+
+<h3>photos resize redimensionner</h3>
+
+<pre><code>find . -maxdepth 1 -name "*JPG" -exec convert -resize 50% -quality 75 {} imagemagick/{} \;
+</code></pre>
+
+<h3>font - police</h3>
+
+<pre><code>To install fonts system-wide (available for all users), move the folder to the /usr/share/fonts/ directory. To install fonts for only a single user, use ~/.fonts/ instead. Then:
+
+$ fc-cache -vf
+</code></pre>
+
+<h3>ssh new host</h3>
+
+<pre><code>Generate a key if necessary:
+
+mkdir -p ~/.ssh  If it doesn't already exist
+chmod 700 ~/.ssh
+cd ~/.ssh
+ssh-keygen -t dsa
+
+Copy the public key to the remote host:
+
+$ scp -p id_dsa.pub remoteuser@remotehost:
+
+Log into the remote host and install the public key:
+
+ssh -l remoteuser remotehost
+mkdir -p ~/.ssh If it doesn't already exist
+chmod 700 ~/.ssh
+cat id_rsa.pub &gt;&gt; ~/.ssh/authorized_keys  (Appending)
+chmod 600 ~/.ssh/authorized_keys
+mv id_rsa.pub ~/.ssh Optional, just to be organized
+logout
+</code></pre>
+
+<h3>mettre un site en developpement</h3>
+
+<pre><code>creer le dossier et recopier ça dans la config virtual host d'apache:
+
+&lt;Directory "/home/raph/public_html/drivemeup"&gt;
+    Options Indexes FollowSymLinks MultiViews
+    AllowOverride All
+    Order allow,deny
+    Allow from all
+&lt;/Directory&gt;
+&lt;VirtualHost *:80&gt;
+    ServerAdmin webmaster@dummy-host2.example.com
+    DocumentRoot "/home/raph/public_html/drivemeup"
+    ServerName drivemeup.dev
+    ErrorLog "/var/log/httpd/drivemeup-error.log"
+    CustomLog "/var/log/httpd/drivemeup-access.log" combined
+&lt;/VirtualHost&gt;
+
+Ne pas oublier de rajouter dans /etc/hosts/
+
+127.0.0.1 drivemeup.dev
+</code></pre>
+
+<h3>instagram avec imagemagick</h3>
+
+<pre><code>convert +level-colors Firebrick, me.jpg oldme.jpg
+</code></pre>
+
+<h3>match vim all lines : for all lignes (g) with pattern /url/, s[ubstitute] amazon by # fnac</h3>
+
+<pre><code>g/url/ s/amazon/fnac/
+</code></pre>
+
+<h3>mieux visualiser les csv</h3>
+
+<pre><code>column -ts, foo.csv | less -NS#2
+</code></pre>
+
+<h3>tune2fs disque space</h3>
+
+<pre><code>sudo tune2fs  -m 1 /dev/sda4 # 1% espace disque reserve au lieu de 5%
+</code></pre>
+
+<h3>imagemagick thumbnail</h3>
+
+<pre><code>mogrify -thumbnail 200x200 -format jpg -quality 75 -path thumbnail/ *.jpg &amp;
+for f in *.JPG; do convert $f -thumbnail 200x200 -format jpg -quality 75 thumbnail/TN-$f; done
+</code></pre>
+
+<h3>tester une date dans remind</h3>
+
+<pre><code>rem 2013-05-29
+</code></pre>
+
+<h3>spaces</h3>
+
+<pre><code>ls -1 | while read file; do new_file=$(echo $file | sed s/\ //g); mv "$file" "$new_file"; done
+</code></pre>
+
+<h3>faire de la place dans le cache pacman</h3>
+
+<h3>ne garde que les deux dernières versions d'un package</h3>
+
+<pre><code>cd /var/cache/pacman/pkg/
+ls -r | gawk '{a=gensub(/-[0-9].*$/,"","s"); if(a==b){c++;if(c&gt;=2){print $1;}}else{c=0;}b=a;}' | xargs rm
+</code></pre>
+
+<h3>supprimer le verrou quand pacman a été mal arrêté</h3>
+
+<pre><code>rm /var/lib/pacman/db.lck
+</code></pre>
+
+<h3>print options cli</h3>
+
+<pre><code>lpr -PHP_LaserJet_P4015 -o number-up=2 -o sides=two-sided-short-edge -o page-ranges=1-4,7,9-12 $file
+</code></pre>
+
+<h3>fold vim modeline</h3>
+
+<pre><code>% vim: set fdm=marker fmr=&lt;&lt;&lt;,&gt;&gt;&gt; fdl=0:fdc=2
+</code></pre>
+
+<h3>Force password for ssh</h3>
+
+<pre><code>ssh -o "PubkeyAuthentication no" user@server
+</code></pre>
+
+<h3>Fork github : update fork with upstream</h3>
+
+<pre><code>git remote add upstream git://url-to-original-repo
+git fetch upstream
+git merge upstream/master
+git push
+</code></pre>
+
+<h3>find filtre file size</h3>
+
+<pre><code>-type f -size +1048576 -printf "%s:%h%f\n"
+</code></pre>
+
+<h3>find print human readable</h3>
+
+<pre><code>find folder/*gz -type f -print0 -exec ls '-1Ssh' '{}' '+
+</code></pre>
+
+<h3>0pad</h3>
+
+<pre><code>for name in `ls`; do if [ ${#name} -eq 2 ]; then mv $name 0$name; fi; done
+</code></pre>
+
+<h3>CTRL right key does not work with oss keymap</h3>
+
+<pre><code>sudo vim /usr/share/X11/xkb/symbols/fr
+// include "level5(rctrl_switch)"
+</code></pre>
+
+</div>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'raphaelfournierblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+<div id="relatedposts">
+  <h2 class="annee">Related posts</h2>
+    <ul class="related">
+    
+      <li>     <a class="posturl" href="/2013/08/05/awesome-dmenu-switch-apps.html">Awesome: switch apps with dmenu</a> <span class="lang">(en)</span>
+    <!-- [<span class="categlink"><a href="/tags/awesome/">awesome</a>, <a href="/tags/dmenu/">dmenu</a></span> ] <span class="postdate">05 August</span>-->
+ </li>
+    
+      <li>     <a class="posturl" href="/2012/08/15/switch_from_makefile_to_fabric_file_for_latex_projects.html">Switch from Makefile to Fabric file for Latex projects</a> <span class="lang">(en)</span>
+    <!-- [<span class="categlink"><a href="/tags/latex/">latex</a>, <a href="/tags/python/">python</a></span> ] <span class="postdate">15 August</span>-->
+ </li>
+    
+      <li>     <a class="posturl" href="/2012/05/20/revue_de_web_1.html">Revue de Web 1</a> <span class="lang">(fr)</span>
+    <!-- [<span class="categlink"><a href="/tags/revue de web/">revue de web</a></span> ] <span class="postdate">20 May</span>-->
+ </li>
+    
+      <li>     <a class="posturl" href="/2012/05/13/les_conferences_treize_minutes_de_paris_7.html">Les conférences Treize minutes de Paris 7</a> <span class="lang">(fr)</span>
+    <!-- [<span class="categlink"><a href="/tags/TED/">TED</a>, <a href="/tags/conferences/">conferences</a>, <a href="/tags/science/">science</a></span> ] <span class="postdate">13 May</span>-->
+ </li>
+    
+      <li>     <a class="posturl" href="/2012/01/08/say_no_to_acta.html">Say no to ACTA!</a> <span class="lang">(en)</span>
+    <!-- [<span class="categlink"><a href="/tags/acta/">acta</a>, <a href="/tags/quadrature/">quadrature</a></span> ] <span class="postdate">08 January</span>-->
+ </li>
+    
+      <li>     <a class="posturl" href="/2011/12/30/bootstrapping%3A_a_brand-new_jekyll-powered_blog.html">bootstrapping: a brand-new jekyll-powered blog</a> <span class="lang">(en)</span>
+    <!-- [<span class="categlink"><a href="/tags/jekyll/">jekyll</a></span> ] <span class="postdate">30 December</span>-->
+ </li>
+    
+      <li>     <a class="posturl" href="/2010/01/12/la_fille_de_monaco_et_le_concert.html">La fille de Monaco et Le Concert</a> <span class="lang">(fr)</span>
+    <!-- [<span class="categlink"><a href="/tags/cinema/">cinema</a></span> ] <span class="postdate">12 January</span>-->
+ </li>
+    
+      <li>     <a class="posturl" href="/2009/10/15/bash_bangs_usage.html">Bash bangs usage</a> <span class="lang">(en)</span>
+    <!-- [<span class="categlink"><a href="/tags/astuce/">astuce</a>, <a href="/tags/bash/">bash</a></span> ] <span class="postdate">15 October</span>-->
+ </li>
+    
+      <li>     <a class="posturl" href="/2009/10/14/bash_completion_after_sudo_or_man.html">Bash completion after sudo or man</a> <span class="lang">(en)</span>
+    <!-- [<span class="categlink"><a href="/tags/astuce/">astuce</a>, <a href="/tags/bash/">bash</a></span> ] <span class="postdate">14 October</span>-->
+ </li>
+    
+      <li>     <a class="posturl" href="/2009/10/08/thank_you_finland.html">Thank you, Finland!</a> <span class="lang">(en)</span>
+    <!-- [<span class="categlink"><a href="/tags/internet/">internet</a>, <a href="/tags/politique/">politique</a></span> ] <span class="postdate">08 October</span>-->
+ </li>
+    
+    </ul>
+</div>
+
+      </section>
+      <footer>
+        <div align="center">
+<small>
+  <ul>
+    <li><a href="legal.html">legal</a></li>
+    <li><a href="sitemap.xml">map</a></li>
+    <li><a href="http://jekyll.org">jekyll</a></li>
+    <li><a href="https://github.com/orderedlist">theme</a></li>
+  </ul>
+</small>
+</div>
+
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+  </body>
+</html>

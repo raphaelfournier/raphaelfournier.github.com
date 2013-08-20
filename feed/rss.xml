@@ -6,9 +6,327 @@
     <atom:link href="http://raphaelfournier.net/rss.xml" rel="self" type="application/rss+xml" />
     <description></description>
     <language>en-us</language>
-    <pubDate>Tue, 20 Aug 2013 09:38:30 +0200</pubDate>
-    <lastBuildDate>Tue, 20 Aug 2013 09:38:30 +0200</lastBuildDate>
+    <pubDate>Tue, 20 Aug 2013 19:28:27 +0200</pubDate>
+    <lastBuildDate>Tue, 20 Aug 2013 19:28:27 +0200</lastBuildDate>
 
+    
+    <item>
+      <title>Useful unix commands</title>
+      <link>http://raphaelfournier.net/2013/08/20/useful-unix-commands.html</link>
+      <pubDate>Tue, 20 Aug 2013 17:34:25 +0200</pubDate>
+      <author>raphael@raphaelfournier.net (Raphael Fournier)</author>
+      <guid>http://raphaelfournier.net/2013/08/20/useful-unix-commands</guid>
+      <description>&lt;h3&gt;rename files with spaces&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;IFS=$&#39;\n&#39;;for file in `find . -regex &quot;.*([0-9]).jpg&quot;`; do new=$(echo $file | sed &quot;s:[0-9]:0&amp;amp;:&quot;);mv $file $new;done;unset IFS
+IFSS=&quot;$(printf &#39;\n\t&#39;)&quot;;for f in 01*; do mv $f 0$f; done
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;xrandr&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;xrandr --output VGA1 --auto --left-of LVDS1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;aspirer un site web&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;wget -r -k -np -E -T 15 -t 2 http://www.example.com
+-r : téléchargement sera récursif (avec les liens de la page).
+-k : les liens sont modifié pour pointer localement.
+-np : empêche de remonter dans le répertoire parent.
+-E : Transformation en HTML.
+-T 15 : Time connection. Le temps max en seconde pour aspirer un lien. Quand
+cette option est omis, un lien difficilement accessible peut ralentir
+considérablement l’aspiration du site.
+-t 2 : nombre de tentative de connexion si il y a erreur 404 (pas de lien). Ici,
+on veut qu’il n’y ait qu’une seule tentative de connexion afin d’accélérer le
+traitement d’aspiration.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;recuperer des images dans un swf&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;1. Install swftools (http://www.swftools.org/)
+2. Get the SWF file: wget http://www.legendarybbq.com/header.swf
+3. Find the image ID (it is 0002): swfdump -D header.swf | grep JPEG
+4. Extract the image: swfextract -o secretimg.jpg -j 2 header.swf
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;generer rapidement une dizaine de nombres aleatoires entre 1 et 2320&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;for i in `seq 1 10`; do num=$RANDOM;let &quot;num %= 2320&quot;;echo $num;done
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;dates&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;date -d &quot;1970-01-01 UTC + 1164128484 seconds&quot;
+date -d &quot;2010-08-12&quot; +%s
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;date : changer manuellement&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo date -s &quot;2010/07/15 12:59:28 CEST&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;files with hyphen&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;mv -- -foo bar # rename -foo in bar
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;fake busy&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;for i in $(seq 0 2 100); do echo $i; sleep 1; done | zenity --progress --title &quot;Installation&quot; --text &quot;Veuillez patienter, installation en cours...&quot; 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;test alsa&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;aplay /usr/share/sounds/alsa/Front_Center.wav
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;ssh scp espaces&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;scp raph@host:&quot;/mnt/Data/Downloaded/Artist\\ Name\\ -\\ Albumname/&quot; ./musique/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;cancel archive extraction&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;for file in `tar tzf archive.tar.gz`; do rm -Rf $file; done
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;infos systeme&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Carte mère et Bios (en root) : :command:&lt;code&gt;dmidecode&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;RAM : :command:&lt;code&gt;free -m&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Processeur : :command:&lt;code&gt;lscpu - cat /proc/cpuinfo&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Carte graphique : :command:&lt;code&gt;lspci | grep VGA&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Liste des périphériques du bus PCI : :command:&lt;code&gt;lspci&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Liste des périphériques USB : :command:&lt;code&gt;lsusb&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Interfaces réseau : :command:&lt;code&gt;ifconfig&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Espace disque et pourcentage d&#39;occupation : :command:&lt;code&gt;df -h&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Partition swap : :command:&lt;code&gt;swapon -s&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Machine (noyau, nom de machine...) : :command:&lt;code&gt;uname -a&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Informations de fonctionnement : :command:&lt;code&gt;uptime&lt;/code&gt;, :command:&lt;code&gt;top&lt;/code&gt;, :command:&lt;code&gt;ps&lt;/code&gt;, :command:&lt;code&gt;who&lt;/code&gt;, :command:&lt;code&gt;vmstat&lt;/code&gt; ...&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h3&gt;ls full path!&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;find nomdudossier -type f
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;latex embed fonts polices&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;dvips fichier
+ps2pdf14 -dPDFSETTINGS=/prepress -dEmbedAllFonts=true fichier.ps
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then check &quot;embedded&quot; via acroread, File &gt; Properties &gt; Fonts (all fonts should be &quot;Embedded subset&quot;).&lt;/p&gt;
+
+&lt;h3&gt;crontab : pas de mail&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;MAILTO=&quot;&quot; au début du fichier crontab -e
+ou &amp;amp;&amp;gt; /dev/null à la fin de la commande
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;time date timezone : changer facilement l&#39;heure&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo ln -sf /usr/share/zoneinfo/Asia/Shanghai localtime
+
+ntpd -qg
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;opera tray icon modification de /usr/bin/opera&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;exec /usr/lib/opera/opera -notrayicon &quot;$@&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;find duplicates images&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;find . -type f -print0 | xargs -0 file | grep &#39;image data&#39; | cut -f1 -d: | tr &#39;\012&#39; &#39;\000&#39; | xargs -0 md5sum | sort | uniq -w 32 -D
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;mettre une commande en image&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;ifconfig | convert label:@- command.png
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;find total duration for a set of *avi files&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;find -type f -name &quot;*.avi&quot; -print0 | xargs -0  mplayer -vo dummy -ao dummy -identify 2&amp;gt;/dev/null | perl -nle &#39;/ID_LENGTH=([0-9\.]+)/ &amp;amp;&amp;amp; ($t +=$1) &amp;amp;&amp;amp; printf &quot;%02d:%02d:%02d\n&quot;,$t/3600,$t/60%60,$t%60&#39; | tail -n 1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;play a video faster, without modifying pitch&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;mplayer -af scaletempo=scale=1.25:speed=both -fs video.avi
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;crop pdf marges margin&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;pdfcrop --margins 10 edonkeyBMS04.pdf outfile2.pdf
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;tables de multiplications&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;seq 9 | sed &#39;H;g&#39; | awk -v RS=&#39;&#39; &#39;{for(i=1;i&amp;lt;=NF;i++)printf(&quot;%dx%d=%d%s&quot;, i, NR, i*NR, i==NR?&quot;\n&quot;:&quot;\t&quot;)}&#39; 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;wrap vim&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;set tw=0 (lignes infinies) / set tw=80 (80 caractères)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;photos resize redimensionner&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;find . -maxdepth 1 -name &quot;*JPG&quot; -exec convert -resize 50% -quality 75 {} imagemagick/{} \;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;font - police&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;To install fonts system-wide (available for all users), move the folder to the /usr/share/fonts/ directory. To install fonts for only a single user, use ~/.fonts/ instead. Then:
+
+$ fc-cache -vf
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;ssh new host&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;Generate a key if necessary:
+
+mkdir -p ~/.ssh  If it doesn&#39;t already exist
+chmod 700 ~/.ssh
+cd ~/.ssh
+ssh-keygen -t dsa
+
+Copy the public key to the remote host:
+
+$ scp -p id_dsa.pub remoteuser@remotehost:
+
+Log into the remote host and install the public key:
+
+ssh -l remoteuser remotehost
+mkdir -p ~/.ssh If it doesn&#39;t already exist
+chmod 700 ~/.ssh
+cat id_rsa.pub &amp;gt;&amp;gt; ~/.ssh/authorized_keys  (Appending)
+chmod 600 ~/.ssh/authorized_keys
+mv id_rsa.pub ~/.ssh Optional, just to be organized
+logout
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;mettre un site en developpement&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;creer le dossier et recopier ça dans la config virtual host d&#39;apache:
+
+&amp;lt;Directory &quot;/home/raph/public_html/drivemeup&quot;&amp;gt;
+    Options Indexes FollowSymLinks MultiViews
+    AllowOverride All
+    Order allow,deny
+    Allow from all
+&amp;lt;/Directory&amp;gt;
+&amp;lt;VirtualHost *:80&amp;gt;
+    ServerAdmin webmaster@dummy-host2.example.com
+    DocumentRoot &quot;/home/raph/public_html/drivemeup&quot;
+    ServerName drivemeup.dev
+    ErrorLog &quot;/var/log/httpd/drivemeup-error.log&quot;
+    CustomLog &quot;/var/log/httpd/drivemeup-access.log&quot; combined
+&amp;lt;/VirtualHost&amp;gt;
+
+Ne pas oublier de rajouter dans /etc/hosts/
+
+127.0.0.1 drivemeup.dev
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;instagram avec imagemagick&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;convert +level-colors Firebrick, me.jpg oldme.jpg
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;match vim all lines : for all lignes (g) with pattern /url/, s[ubstitute] amazon by # fnac&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;g/url/ s/amazon/fnac/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;mieux visualiser les csv&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;column -ts, foo.csv | less -NS#2
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;tune2fs disque space&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo tune2fs  -m 1 /dev/sda4 # 1% espace disque reserve au lieu de 5%
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;imagemagick thumbnail&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;mogrify -thumbnail 200x200 -format jpg -quality 75 -path thumbnail/ *.jpg &amp;amp;
+for f in *.JPG; do convert $f -thumbnail 200x200 -format jpg -quality 75 thumbnail/TN-$f; done
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;tester une date dans remind&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;rem 2013-05-29
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;spaces&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;ls -1 | while read file; do new_file=$(echo $file | sed s/\ //g); mv &quot;$file&quot; &quot;$new_file&quot;; done
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;faire de la place dans le cache pacman&lt;/h3&gt;
+
+&lt;h3&gt;ne garde que les deux dernières versions d&#39;un package&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;cd /var/cache/pacman/pkg/
+ls -r | gawk &#39;{a=gensub(/-[0-9].*$/,&quot;&quot;,&quot;s&quot;); if(a==b){c++;if(c&amp;gt;=2){print $1;}}else{c=0;}b=a;}&#39; | xargs rm
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;supprimer le verrou quand pacman a été mal arrêté&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;rm /var/lib/pacman/db.lck
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;print options cli&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;lpr -PHP_LaserJet_P4015 -o number-up=2 -o sides=two-sided-short-edge -o page-ranges=1-4,7,9-12 $file
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;fold vim modeline&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;% vim: set fdm=marker fmr=&amp;lt;&amp;lt;&amp;lt;,&amp;gt;&amp;gt;&amp;gt; fdl=0:fdc=2
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;Force password for ssh&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;ssh -o &quot;PubkeyAuthentication no&quot; user@server
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;Fork github : update fork with upstream&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;git remote add upstream git://url-to-original-repo
+git fetch upstream
+git merge upstream/master
+git push
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;find filtre file size&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;-type f -size +1048576 -printf &quot;%s:%h%f\n&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;find print human readable&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;find folder/*gz -type f -print0 -exec ls &#39;-1Ssh&#39; &#39;{}&#39; &#39;+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;0pad&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;for name in `ls`; do if [ ${#name} -eq 2 ]; then mv $name 0$name; fi; done
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;CTRL right key does not work with oss keymap&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo vim /usr/share/X11/xkb/symbols/fr
+// include &quot;level5(rctrl_switch)&quot;
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>Awesome: switch apps with dmenu</title>
