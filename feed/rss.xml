@@ -6,9 +6,19 @@
     <atom:link href="http://raphaelfournier.net/rss.xml" rel="self" type="application/rss+xml" />
     <description></description>
     <language>en-us</language>
-    <pubDate>Tue, 20 Aug 2013 19:28:27 +0200</pubDate>
-    <lastBuildDate>Tue, 20 Aug 2013 19:28:27 +0200</lastBuildDate>
+    <pubDate>Fri, 04 Oct 2013 14:57:17 +0200</pubDate>
+    <lastBuildDate>Fri, 04 Oct 2013 14:57:17 +0200</lastBuildDate>
 
+    
+    <item>
+      <title>une breve</title>
+      <link>http://raphaelfournier.net/2013/08/21/breve.html</link>
+      <pubDate>Wed, 21 Aug 2013 17:39:28 +0200</pubDate>
+      <author>raphael@raphaelfournier.net (Raphael Fournier)</author>
+      <guid>http://raphaelfournier.net/2013/08/21/breve</guid>
+      <description>&lt;p&gt;coucou&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Useful unix commands</title>
