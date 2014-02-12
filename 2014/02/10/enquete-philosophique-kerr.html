@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Switch from Makefile to Fabric file for Latex projects</title>
+    <title>Une enquête philosophique, de Philippe Kerr</title>
     <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://raphaelfournier.net/feed/rss" />
     <link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="http://raphaelfournier.net/feed/atom" />
     
@@ -52,96 +52,64 @@ pic" height="80px"/>
       <section>
         <div id="post">
   <h1>
-  <a href="/2012/08/15/switch_from_makefile_to_fabric_file_for_latex_projects.html">Switch from Makefile to Fabric file for Latex projects</a>
+  <a href="/2014/02/10/enquete-philosophique-kerr.html">Une enquête philosophique, de Philippe Kerr</a>
 </h1>
 <div class="authoring">
-  Published on 15-08-2012 
+  Published on 10-02-2014 
   
-  in <a href="/tags/latex/">latex</a>, <a href="/tags/python/">python</a>
+  in <a href="/tags/unix/">unix</a>
   
   
 </div>
 
-  While writing my Ph. D. thesis, I procrastinate by customizing my environment. I
-have managed to reuse Tikitu de Jager [LateX setup][Latex-setup] to compile
-individual chapters of the manuscript. This is very useful to obtain dated-pdf
-of a given chapter, with references, which can be send to friends/coworkers for
-reviewing, without sending the full document. 
+  Je viens de lire <a target="_blank"
+href="http://www.amazon.fr/product-reviews/2253162590/?_encoding=UTF8&camp=1642&creative=19458&linkCode=ur2&showViewpoints=1&tag=geekerietbido-21">Une
+enquête philosophique</a><img
+src="https://ir-fr.amazon-adsystem.com/e/ir?t=geekerietbido-21&l=ur2&o=8"
+width="1" height="1" border="0" alt="" style="border:none !important; margin:0px
+!important;" />, de Philippe Kerr. Ce livre a été écrit au début des années 92
+mais se passe en Angleterre en 2013. Si ce n'est pas le meilleur roman policier
+que vous lirez, c'est tout de même une bonne lecture pour tout *geek* qui se
+respecte. Il y a en effet une part très intéressante d'anticipation sur la mise
+en base de données de la population, ô combien actuelle avec l'affaire Snowden.
+On pourrait évidemment s'amuser à relever ce qui a bien eu lieu comme le
+pressentait l'auteur (miniaturisation des appareils, communautarisme banalisé),
+de ce qu'il n'avait pas vu venir (omniprésence d'un réseau de communication
+comme Internet, disparition massive des disquettes et CDROM) ou de ce qui n'est
+pas encore arrivée (combinaisons de réalité virtuelle).
 
-I also took the time to replace the Makefile I usually use by a [fab
-file][Fabric], which benefits from the Python syntax and is thus easier to
-tweak.
+Je cite un extrait ci-dessous, je pense que ça devrait vous donner une idée du
+contenu (je pense qu'on aurait pu laisser le CCC s'appeler Chaos Computer Club,
+même en français) :
 
-Just put a file called `fabfile.py` in the folder where your .tex files reside.
-Here is an excerpt of my fabfile :
+    Plus j'y pensais, plus j'aurais voulu pouvoir effacer mon nom et mon numéro de
+    ces fichiers. Je n'étais pas autrement convaincu par toutes ces garanties de
+    secret qu'on m'avait données et qui, avant l'examen, me semblaient tout à fait
+    secondaires. Je me faisais un peu l'impression de celui qui aurait donné un
+    demi-litre de son sang dans l'espoir de sauver une vie humaine pour découvrir
+    que ledit sang n'était destiné qu'à un zoo soucieux de nourrir sa colonie de
+    vampires du Brésil. Lesquels, au surplus, pourraient fort bien venir m'attaquer
+    dans mon sommeil. Comment savoir de nos jours ce qu'il advient des
+    renseignements informatisés ? N'importe quelle base de données peut devenir la
+    cible d'une entrée non autorisée. Le vandalisme électronique fait rage.
 
-    from fabric.api import local
+    Supposons que quelqu'un réussisse à s'infiltrer dans la base de données du
+    programme Lumbroso et qu'après s'être procurée l'identité des NVM-négatifs, il
+    aille vendre sa liste à News of the World ? Je voyais d'ici les gros titres :
+    DÉCOUVREZ LES FUTURS DYNAMITEURS DE VOS COMMUNAUTÉS / LES ÉVENTREURS DE DEMAIN /
+    OÙ SONT LES PSYCHOPATHES / DES MESURES S'IMPOSENT POUR ÉLIMINER CETTE
+    GANGRÈNE…
 
-    # variables
-    SRC = "these"
-    FIGDIR = "figures"
-    PDFREADER = "zathura"
-    LATEXMODE = "pdflatex"
-    BIBTEX = "bibtex"
+    J'en avais assez lu sur les activités du Chaos Club Informatique de Cologne pour
+    savoir que même le système le plus sohpistiqué ne saurait résister aux
+    entreprises d'un pirate informatique déterminé.
 
-    def execute(command):
-      local(command)
-      #local("echo %s"%command)
-
-    def move(output,chapter):
-      command = "mv %s %s.pdf"%(output,chapter)
-      execute(command)
-
-    def preview(chapter):
-      print("previewing...")
-      command1 = 'echo -e "awful.tag.viewmore({tags[1][6],awful.tag.selected(1)})" | awesome-client'
-      command2 = PDFREADER +" "+ chapter+".pdf"
-      execute(command1)
-      execute(command2)
-
-    def clean():
-      command = "rm -f *.aux *.log *.out *.ps *.toc *.nav *.snm *.dvi *.blg *.bbl *.nlo *.mtc* *.brf *.maf *.tdo"
-      execute(command)
-
-    def chapter1(bibtex=True,display=True):
-      chapter = "chapter1"
-      make(chapter,bibtex)
-      if display:
-        preview(chapter)
-
-    def make(chapter,bibtex):
-      command = LATEXMODE + " --output-directory=auxiliary " + chapter + "_wrapper.tex"
-      bibtexcommand = BIBTEX + " auxiliary/" + chapter + "_wrapper"
-      output = "auxiliary/" + chapter + "_wrapper" + ".pdf"
-      execute(command)
-      if bibtex == True:
-        execute(command)
-        execute(bibtexcommand)
-        execute(command)
-      move(output,chapter)
-
-Let's review the file :
-
-* The `execute()` function is just an alias for easier readibility of the code
-* The `clean()` function removes all the temporary files produced by a latex
-  compilation
-* The `make()` function lists the sequence of operations required for a full
-  compilation, using a switch whether I need to use `bibtex` to produce the list
-  of references or not
-* The `chapter1` function is called after one of my chapter. I can call it with
-  one of the following command:
-
-      $ fab chapter1:bibtex=True,preview=False 
-        # full compilation but no preview
-      $ fab chapter1:False,True 
-        # quick compilation and opens a pdf viewer immediately after
-      $ fab chapter1 
-        # defaults to bibtex=True and preview=True
-
-
-
-[Latex-setup]: http://www.logophile.org/LaTeX/MyThesisSetup
-[Fabric]: http://fabfile.org
+Dispo ici : <a target="_blank"
+href="http://www.amazon.fr/product-reviews/2253162590/?_encoding=UTF8&camp=1642&creative=19458&linkCode=ur2&showViewpoints=1&tag=geekerietbido-21">Une
+enquête philosophique</a><img
+src="https://ir-fr.amazon-adsystem.com/e/ir?t=geekerietbido-21&l=ur2&o=8"
+width="1" height="1" border="0" alt="" style="border:none !important; margin:0px
+!important;" />
 
 </div>
 
@@ -164,10 +132,6 @@ Let's review the file :
   <h2 class="annee">Related posts</h2>
     <ul class="related">
     
-      <li>     <a class="posturl" href="/2014/02/10/enquete-philosophique-kerr.html">Une enquête philosophique, de Philippe Kerr</a> <span class="lang">(en)</span>
-    <!-- [<span class="categlink"><a href="/tags/unix/">unix</a></span> ] <span class="postdate">10 February</span>-->
- </li>
-    
       <li>     <a class="posturl" href="/2013/12/02/newsbeuter.html">Newsbeuter</a> <span class="lang">(en)</span>
     <!-- [<span class="categlink"><a href="/tags/unix/">unix</a></span> ] <span class="postdate">02 December</span>-->
  </li>
@@ -182,6 +146,10 @@ Let's review the file :
     
       <li>     <a class="posturl" href="/2013/08/05/awesome-dmenu-switch-apps.html">Awesome: switch apps with dmenu</a> <span class="lang">(en)</span>
     <!-- [<span class="categlink"><a href="/tags/awesome/">awesome</a>, <a href="/tags/dmenu/">dmenu</a></span> ] <span class="postdate">05 August</span>-->
+ </li>
+    
+      <li>     <a class="posturl" href="/2012/08/15/switch_from_makefile_to_fabric_file_for_latex_projects.html">Switch from Makefile to Fabric file for Latex projects</a> <span class="lang">(en)</span>
+    <!-- [<span class="categlink"><a href="/tags/latex/">latex</a>, <a href="/tags/python/">python</a></span> ] <span class="postdate">15 August</span>-->
  </li>
     
       <li>     <a class="posturl" href="/2012/05/20/revue_de_web_1.html">Revue de Web 1</a> <span class="lang">(fr)</span>

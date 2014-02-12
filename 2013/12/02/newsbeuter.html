@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Switch from Makefile to Fabric file for Latex projects</title>
+    <title>Newsbeuter</title>
     <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://raphaelfournier.net/feed/rss" />
     <link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="http://raphaelfournier.net/feed/atom" />
     
@@ -52,96 +52,42 @@ pic" height="80px"/>
       <section>
         <div id="post">
   <h1>
-  <a href="/2012/08/15/switch_from_makefile_to_fabric_file_for_latex_projects.html">Switch from Makefile to Fabric file for Latex projects</a>
+  <a href="/2013/12/02/newsbeuter.html">Newsbeuter</a>
 </h1>
 <div class="authoring">
-  Published on 15-08-2012 
+  Published on 02-12-2013 
   
-  in <a href="/tags/latex/">latex</a>, <a href="/tags/python/">python</a>
+  in <a href="/tags/unix/">unix</a>
   
   
 </div>
 
-  While writing my Ph. D. thesis, I procrastinate by customizing my environment. I
-have managed to reuse Tikitu de Jager [LateX setup][Latex-setup] to compile
-individual chapters of the manuscript. This is very useful to obtain dated-pdf
-of a given chapter, with references, which can be send to friends/coworkers for
-reviewing, without sending the full document. 
+  Google Reader was my news reader of choice over the last years, but it was
+stopped earlier this year. Alternatives were proposed or already existed, and I
+tried to replace the previous behaviour, which can be written as "skim through
+~100 feeds daily with a simple yet feature-rich interface" (understand :
+keyboard shortcuts). Android sync was a plus.
 
-I also took the time to replace the Makefile I usually use by a [fab
-file][Fabric], which benefits from the Python syntax and is thus easier to
-tweak.
+I tried Feedly and Digg, both with a similar interface to Google Reader
+(presentation, shortcuts). But they are slow. Very slow. Too slow. And it has
+some quirks that made me ditch them (for instance, with feedly, when in
+"headlines mode", I couldn't navigate the feeds without marking the article as
+read: if I want to keep it unread, I have to mark unread each time…).
 
-Just put a file called `fabfile.py` in the folder where your .tex files reside.
-Here is an excerpt of my fabfile :
+I have just tried newsbeuter. What a relief: it works like mutt, it is fast,
+configurable.
 
-    from fabric.api import local
+It lacks a feature however: a "view-all-unread" and a "view all articles",
+because by default articles are presented ordered under a feed hierarchy. But,
+as Newsbeuter is really configurable, it can be added. Yay!
 
-    # variables
-    SRC = "these"
-    FIGDIR = "figures"
-    PDFREADER = "zathura"
-    LATEXMODE = "pdflatex"
-    BIBTEX = "bibtex"
+I just added two "query-feeds":
 
-    def execute(command):
-      local(command)
-      #local("echo %s"%command)
+"query:Unread Articles:unread = \"yes\""
+"query:Articles:author =~ ".*"" 
 
-    def move(output,chapter):
-      command = "mv %s %s.pdf"%(output,chapter)
-      execute(command)
-
-    def preview(chapter):
-      print("previewing...")
-      command1 = 'echo -e "awful.tag.viewmore({tags[1][6],awful.tag.selected(1)})" | awesome-client'
-      command2 = PDFREADER +" "+ chapter+".pdf"
-      execute(command1)
-      execute(command2)
-
-    def clean():
-      command = "rm -f *.aux *.log *.out *.ps *.toc *.nav *.snm *.dvi *.blg *.bbl *.nlo *.mtc* *.brf *.maf *.tdo"
-      execute(command)
-
-    def chapter1(bibtex=True,display=True):
-      chapter = "chapter1"
-      make(chapter,bibtex)
-      if display:
-        preview(chapter)
-
-    def make(chapter,bibtex):
-      command = LATEXMODE + " --output-directory=auxiliary " + chapter + "_wrapper.tex"
-      bibtexcommand = BIBTEX + " auxiliary/" + chapter + "_wrapper"
-      output = "auxiliary/" + chapter + "_wrapper" + ".pdf"
-      execute(command)
-      if bibtex == True:
-        execute(command)
-        execute(bibtexcommand)
-        execute(command)
-      move(output,chapter)
-
-Let's review the file :
-
-* The `execute()` function is just an alias for easier readibility of the code
-* The `clean()` function removes all the temporary files produced by a latex
-  compilation
-* The `make()` function lists the sequence of operations required for a full
-  compilation, using a switch whether I need to use `bibtex` to produce the list
-  of references or not
-* The `chapter1` function is called after one of my chapter. I can call it with
-  one of the following command:
-
-      $ fab chapter1:bibtex=True,preview=False 
-        # full compilation but no preview
-      $ fab chapter1:False,True 
-        # quick compilation and opens a pdf viewer immediately after
-      $ fab chapter1 
-        # defaults to bibtex=True and preview=True
-
-
-
-[Latex-setup]: http://www.logophile.org/LaTeX/MyThesisSetup
-[Fabric]: http://fabfile.org
+The first one is at the top of my list of feeds, the second at the bottom (I use
+it less often).
 
 </div>
 
@@ -168,10 +114,6 @@ Let's review the file :
     <!-- [<span class="categlink"><a href="/tags/unix/">unix</a></span> ] <span class="postdate">10 February</span>-->
  </li>
     
-      <li>     <a class="posturl" href="/2013/12/02/newsbeuter.html">Newsbeuter</a> <span class="lang">(en)</span>
-    <!-- [<span class="categlink"><a href="/tags/unix/">unix</a></span> ] <span class="postdate">02 December</span>-->
- </li>
-    
       <li>     <a class="posturl" href="/2013/08/21/breve.html">une breve</a> <span class="lang">(en)</span>
     <!-- [<span class="categlink"><a href="/tags/breve/">breve</a></span> ] <span class="postdate">21 August</span>-->
  </li>
@@ -182,6 +124,10 @@ Let's review the file :
     
       <li>     <a class="posturl" href="/2013/08/05/awesome-dmenu-switch-apps.html">Awesome: switch apps with dmenu</a> <span class="lang">(en)</span>
     <!-- [<span class="categlink"><a href="/tags/awesome/">awesome</a>, <a href="/tags/dmenu/">dmenu</a></span> ] <span class="postdate">05 August</span>-->
+ </li>
+    
+      <li>     <a class="posturl" href="/2012/08/15/switch_from_makefile_to_fabric_file_for_latex_projects.html">Switch from Makefile to Fabric file for Latex projects</a> <span class="lang">(en)</span>
+    <!-- [<span class="categlink"><a href="/tags/latex/">latex</a>, <a href="/tags/python/">python</a></span> ] <span class="postdate">15 August</span>-->
  </li>
     
       <li>     <a class="posturl" href="/2012/05/20/revue_de_web_1.html">Revue de Web 1</a> <span class="lang">(fr)</span>

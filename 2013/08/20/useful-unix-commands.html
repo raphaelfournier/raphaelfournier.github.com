@@ -62,315 +62,263 @@ pic" height="80px"/>
   
 </div>
 
-  <h3>rename files with spaces</h3>
+  ### rename files with spaces
 
-<pre><code>IFS=$'\n';for file in `find . -regex ".*([0-9]).jpg"`; do new=$(echo $file | sed "s:[0-9]:0&amp;:");mv $file $new;done;unset IFS
-IFSS="$(printf '\n\t')";for f in 01*; do mv $f 0$f; done
-</code></pre>
+    IFS=$'\n';for file in `find . -regex ".*([0-9]).jpg"`; do new=$(echo $file | sed "s:[0-9]:0&:");mv $file $new;done;unset IFS
+    IFSS="$(printf '\n\t')";for f in 01*; do mv $f 0$f; done
 
-<h3>xrandr</h3>
+### xrandr 
+  
+    xrandr --output VGA1 --auto --left-of LVDS1
 
-<pre><code>xrandr --output VGA1 --auto --left-of LVDS1
-</code></pre>
+### aspirer un site web 
 
-<h3>aspirer un site web</h3>
+    wget -r -k -np -E -T 15 -t 2 http://www.example.com
+    -r : téléchargement sera récursif (avec les liens de la page).
+    -k : les liens sont modifié pour pointer localement.
+    -np : empêche de remonter dans le répertoire parent.
+    -E : Transformation en HTML.
+    -T 15 : Time connection. Le temps max en seconde pour aspirer un lien. Quand
+    cette option est omis, un lien difficilement accessible peut ralentir
+    considérablement l’aspiration du site.
+    -t 2 : nombre de tentative de connexion si il y a erreur 404 (pas de lien). Ici,
+    on veut qu’il n’y ait qu’une seule tentative de connexion afin d’accélérer le
+    traitement d’aspiration.
 
-<pre><code>wget -r -k -np -E -T 15 -t 2 http://www.example.com
--r : téléchargement sera récursif (avec les liens de la page).
--k : les liens sont modifié pour pointer localement.
--np : empêche de remonter dans le répertoire parent.
--E : Transformation en HTML.
--T 15 : Time connection. Le temps max en seconde pour aspirer un lien. Quand
-cette option est omis, un lien difficilement accessible peut ralentir
-considérablement l’aspiration du site.
--t 2 : nombre de tentative de connexion si il y a erreur 404 (pas de lien). Ici,
-on veut qu’il n’y ait qu’une seule tentative de connexion afin d’accélérer le
-traitement d’aspiration.
-</code></pre>
+### recuperer des images dans un swf 
 
-<h3>recuperer des images dans un swf</h3>
+    1. Install swftools (http://www.swftools.org/)
+    2. Get the SWF file: wget http://www.legendarybbq.com/header.swf
+    3. Find the image ID (it is 0002): swfdump -D header.swf | grep JPEG
+    4. Extract the image: swfextract -o secretimg.jpg -j 2 header.swf
 
-<pre><code>1. Install swftools (http://www.swftools.org/)
-2. Get the SWF file: wget http://www.legendarybbq.com/header.swf
-3. Find the image ID (it is 0002): swfdump -D header.swf | grep JPEG
-4. Extract the image: swfextract -o secretimg.jpg -j 2 header.swf
-</code></pre>
+### generer rapidement une dizaine de nombres aleatoires entre 1 et 2320 
 
-<h3>generer rapidement une dizaine de nombres aleatoires entre 1 et 2320</h3>
+    for i in `seq 1 10`; do num=$RANDOM;let "num %= 2320";echo $num;done
 
-<pre><code>for i in `seq 1 10`; do num=$RANDOM;let "num %= 2320";echo $num;done
-</code></pre>
+### dates 
+    date -d "1970-01-01 UTC + 1164128484 seconds"
+    date -d "2010-08-12" +%s
 
-<h3>dates</h3>
+### date : changer manuellement 
 
-<pre><code>date -d "1970-01-01 UTC + 1164128484 seconds"
-date -d "2010-08-12" +%s
-</code></pre>
+    sudo date -s "2010/07/15 12:59:28 CEST"
 
-<h3>date : changer manuellement</h3>
+### files with hyphen 
 
-<pre><code>sudo date -s "2010/07/15 12:59:28 CEST"
-</code></pre>
+    mv -- -foo bar # rename -foo in bar
 
-<h3>files with hyphen</h3>
+### fake busy 
 
-<pre><code>mv -- -foo bar # rename -foo in bar
-</code></pre>
+    for i in $(seq 0 2 100); do echo $i; sleep 1; done | zenity --progress --title "Installation" --text "Veuillez patienter, installation en cours..." 
 
-<h3>fake busy</h3>
+### test alsa 
 
-<pre><code>for i in $(seq 0 2 100); do echo $i; sleep 1; done | zenity --progress --title "Installation" --text "Veuillez patienter, installation en cours..." 
-</code></pre>
+    aplay /usr/share/sounds/alsa/Front_Center.wav
 
-<h3>test alsa</h3>
+### ssh scp espaces
 
-<pre><code>aplay /usr/share/sounds/alsa/Front_Center.wav
-</code></pre>
+    scp raph@host:"/mnt/Data/Downloaded/Artist\\ Name\\ -\\ Albumname/" ./musique/
 
-<h3>ssh scp espaces</h3>
+### cancel archive extraction
 
-<pre><code>scp raph@host:"/mnt/Data/Downloaded/Artist\\ Name\\ -\\ Albumname/" ./musique/
-</code></pre>
+    for file in `tar tzf archive.tar.gz`; do rm -Rf $file; done
 
-<h3>cancel archive extraction</h3>
+### infos systeme 
 
-<pre><code>for file in `tar tzf archive.tar.gz`; do rm -Rf $file; done
-</code></pre>
+* Carte mère et Bios (en root) : :command:`dmidecode`
+* RAM : :command:`free -m`
+* Processeur : :command:`lscpu - cat /proc/cpuinfo`
+* Carte graphique : :command:`lspci | grep VGA`
+* Liste des périphériques du bus PCI : :command:`lspci`
+* Liste des périphériques USB : :command:`lsusb`
+* Interfaces réseau : :command:`ifconfig`
+* Espace disque et pourcentage d'occupation : :command:`df -h`
+* Partition swap : :command:`swapon -s`
+* Machine (noyau, nom de machine...) : :command:`uname -a`
+* Informations de fonctionnement : :command:`uptime`, :command:`top`, :command:`ps`, :command:`who`, :command:`vmstat` ...
 
-<h3>infos systeme</h3>
+### ls full path!
 
-<ul>
-<li>Carte mère et Bios (en root) : :command:<code>dmidecode</code></li>
-<li>RAM : :command:<code>free -m</code></li>
-<li>Processeur : :command:<code>lscpu - cat /proc/cpuinfo</code></li>
-<li>Carte graphique : :command:<code>lspci | grep VGA</code></li>
-<li>Liste des périphériques du bus PCI : :command:<code>lspci</code></li>
-<li>Liste des périphériques USB : :command:<code>lsusb</code></li>
-<li>Interfaces réseau : :command:<code>ifconfig</code></li>
-<li>Espace disque et pourcentage d'occupation : :command:<code>df -h</code></li>
-<li>Partition swap : :command:<code>swapon -s</code></li>
-<li>Machine (noyau, nom de machine...) : :command:<code>uname -a</code></li>
-<li>Informations de fonctionnement : :command:<code>uptime</code>, :command:<code>top</code>, :command:<code>ps</code>, :command:<code>who</code>, :command:<code>vmstat</code> ...</li>
-</ul>
+    find nomdudossier -type f
 
+### latex embed fonts polices
 
-<h3>ls full path!</h3>
+    dvips fichier
+    ps2pdf14 -dPDFSETTINGS=/prepress -dEmbedAllFonts=true fichier.ps
 
-<pre><code>find nomdudossier -type f
-</code></pre>
+Then check "embedded" via acroread, File > Properties > Fonts (all fonts should be "Embedded subset").
 
-<h3>latex embed fonts polices</h3>
+### crontab : pas de mail 
 
-<pre><code>dvips fichier
-ps2pdf14 -dPDFSETTINGS=/prepress -dEmbedAllFonts=true fichier.ps
-</code></pre>
+    MAILTO="" au début du fichier crontab -e
+    ou &> /dev/null à la fin de la commande
 
-<p>Then check "embedded" via acroread, File > Properties > Fonts (all fonts should be "Embedded subset").</p>
+### time date timezone : changer facilement l'heure
 
-<h3>crontab : pas de mail</h3>
+    sudo ln -sf /usr/share/zoneinfo/Asia/Shanghai localtime
 
-<pre><code>MAILTO="" au début du fichier crontab -e
-ou &amp;&gt; /dev/null à la fin de la commande
-</code></pre>
+    ntpd -qg
 
-<h3>time date timezone : changer facilement l'heure</h3>
+### opera tray icon modification de /usr/bin/opera
 
-<pre><code>sudo ln -sf /usr/share/zoneinfo/Asia/Shanghai localtime
+    exec /usr/lib/opera/opera -notrayicon "$@"
 
-ntpd -qg
-</code></pre>
+### find duplicates images
 
-<h3>opera tray icon modification de /usr/bin/opera</h3>
+    find . -type f -print0 | xargs -0 file | grep 'image data' | cut -f1 -d: | tr '\012' '\000' | xargs -0 md5sum | sort | uniq -w 32 -D
 
-<pre><code>exec /usr/lib/opera/opera -notrayicon "$@"
-</code></pre>
+### mettre une commande en image 
 
-<h3>find duplicates images</h3>
+    ifconfig | convert label:@- command.png
 
-<pre><code>find . -type f -print0 | xargs -0 file | grep 'image data' | cut -f1 -d: | tr '\012' '\000' | xargs -0 md5sum | sort | uniq -w 32 -D
-</code></pre>
+### find total duration for a set of *avi files
 
-<h3>mettre une commande en image</h3>
+    find -type f -name "*.avi" -print0 | xargs -0  mplayer -vo dummy -ao dummy -identify 2>/dev/null | perl -nle '/ID_LENGTH=([0-9\.]+)/ && ($t +=$1) && printf "%02d:%02d:%02d\n",$t/3600,$t/60%60,$t%60' | tail -n 1
 
-<pre><code>ifconfig | convert label:@- command.png
-</code></pre>
+### play a video faster, without modifying pitch
 
-<h3>find total duration for a set of *avi files</h3>
+    mplayer -af scaletempo=scale=1.25:speed=both -fs video.avi
 
-<pre><code>find -type f -name "*.avi" -print0 | xargs -0  mplayer -vo dummy -ao dummy -identify 2&gt;/dev/null | perl -nle '/ID_LENGTH=([0-9\.]+)/ &amp;&amp; ($t +=$1) &amp;&amp; printf "%02d:%02d:%02d\n",$t/3600,$t/60%60,$t%60' | tail -n 1
-</code></pre>
+### crop pdf marges margin
 
-<h3>play a video faster, without modifying pitch</h3>
+    pdfcrop --margins 10 edonkeyBMS04.pdf outfile2.pdf
 
-<pre><code>mplayer -af scaletempo=scale=1.25:speed=both -fs video.avi
-</code></pre>
+### tables de multiplications
 
-<h3>crop pdf marges margin</h3>
+    seq 9 | sed 'H;g' | awk -v RS='' '{for(i=1;i<=NF;i++)printf("%dx%d=%d%s", i, NR, i*NR, i==NR?"\n":"\t")}' 
 
-<pre><code>pdfcrop --margins 10 edonkeyBMS04.pdf outfile2.pdf
-</code></pre>
+### wrap vim
 
-<h3>tables de multiplications</h3>
+    set tw=0 (lignes infinies) / set tw=80 (80 caractères)
 
-<pre><code>seq 9 | sed 'H;g' | awk -v RS='' '{for(i=1;i&lt;=NF;i++)printf("%dx%d=%d%s", i, NR, i*NR, i==NR?"\n":"\t")}' 
-</code></pre>
+### photos resize redimensionner
 
-<h3>wrap vim</h3>
+    find . -maxdepth 1 -name "*JPG" -exec convert -resize 50% -quality 75 {} imagemagick/{} \;
 
-<pre><code>set tw=0 (lignes infinies) / set tw=80 (80 caractères)
-</code></pre>
+### font - police
 
-<h3>photos resize redimensionner</h3>
+    To install fonts system-wide (available for all users), move the folder to the /usr/share/fonts/ directory. To install fonts for only a single user, use ~/.fonts/ instead. Then:
 
-<pre><code>find . -maxdepth 1 -name "*JPG" -exec convert -resize 50% -quality 75 {} imagemagick/{} \;
-</code></pre>
+    $ fc-cache -vf
 
-<h3>font - police</h3>
+### ssh new host 
 
-<pre><code>To install fonts system-wide (available for all users), move the folder to the /usr/share/fonts/ directory. To install fonts for only a single user, use ~/.fonts/ instead. Then:
+    Generate a key if necessary:
 
-$ fc-cache -vf
-</code></pre>
+    mkdir -p ~/.ssh  If it doesn't already exist
+    chmod 700 ~/.ssh
+    cd ~/.ssh
+    ssh-keygen -t dsa
 
-<h3>ssh new host</h3>
+    Copy the public key to the remote host:
 
-<pre><code>Generate a key if necessary:
+    $ scp -p id_dsa.pub remoteuser@remotehost:
 
-mkdir -p ~/.ssh  If it doesn't already exist
-chmod 700 ~/.ssh
-cd ~/.ssh
-ssh-keygen -t dsa
+    Log into the remote host and install the public key:
 
-Copy the public key to the remote host:
+    ssh -l remoteuser remotehost
+    mkdir -p ~/.ssh If it doesn't already exist
+    chmod 700 ~/.ssh
+    cat id_rsa.pub >> ~/.ssh/authorized_keys  (Appending)
+    chmod 600 ~/.ssh/authorized_keys
+    mv id_rsa.pub ~/.ssh Optional, just to be organized
+    logout
 
-$ scp -p id_dsa.pub remoteuser@remotehost:
+### mettre un site en developpement
 
-Log into the remote host and install the public key:
+    creer le dossier et recopier ça dans la config virtual host d'apache:
 
-ssh -l remoteuser remotehost
-mkdir -p ~/.ssh If it doesn't already exist
-chmod 700 ~/.ssh
-cat id_rsa.pub &gt;&gt; ~/.ssh/authorized_keys  (Appending)
-chmod 600 ~/.ssh/authorized_keys
-mv id_rsa.pub ~/.ssh Optional, just to be organized
-logout
-</code></pre>
+    <Directory "/home/raph/public_html/drivemeup">
+        Options Indexes FollowSymLinks MultiViews
+        AllowOverride All
+        Order allow,deny
+        Allow from all
+    </Directory>
+    <VirtualHost *:80>
+        ServerAdmin webmaster@dummy-host2.example.com
+        DocumentRoot "/home/raph/public_html/drivemeup"
+        ServerName drivemeup.dev
+        ErrorLog "/var/log/httpd/drivemeup-error.log"
+        CustomLog "/var/log/httpd/drivemeup-access.log" combined
+    </VirtualHost>
 
-<h3>mettre un site en developpement</h3>
+    Ne pas oublier de rajouter dans /etc/hosts/
 
-<pre><code>creer le dossier et recopier ça dans la config virtual host d'apache:
+    127.0.0.1 drivemeup.dev
 
-&lt;Directory "/home/raph/public_html/drivemeup"&gt;
-    Options Indexes FollowSymLinks MultiViews
-    AllowOverride All
-    Order allow,deny
-    Allow from all
-&lt;/Directory&gt;
-&lt;VirtualHost *:80&gt;
-    ServerAdmin webmaster@dummy-host2.example.com
-    DocumentRoot "/home/raph/public_html/drivemeup"
-    ServerName drivemeup.dev
-    ErrorLog "/var/log/httpd/drivemeup-error.log"
-    CustomLog "/var/log/httpd/drivemeup-access.log" combined
-&lt;/VirtualHost&gt;
+### instagram avec imagemagick
 
-Ne pas oublier de rajouter dans /etc/hosts/
+    convert +level-colors Firebrick, me.jpg oldme.jpg
 
-127.0.0.1 drivemeup.dev
-</code></pre>
+### match vim all lines : for all lignes (g) with pattern /url/, s[ubstitute] amazon by # fnac
 
-<h3>instagram avec imagemagick</h3>
+    g/url/ s/amazon/fnac/
 
-<pre><code>convert +level-colors Firebrick, me.jpg oldme.jpg
-</code></pre>
+### mieux visualiser les csv
 
-<h3>match vim all lines : for all lignes (g) with pattern /url/, s[ubstitute] amazon by # fnac</h3>
+    column -ts, foo.csv | less -NS#2
 
-<pre><code>g/url/ s/amazon/fnac/
-</code></pre>
+### tune2fs disque space
 
-<h3>mieux visualiser les csv</h3>
+    sudo tune2fs  -m 1 /dev/sda4 # 1% espace disque reserve au lieu de 5%
 
-<pre><code>column -ts, foo.csv | less -NS#2
-</code></pre>
+### imagemagick thumbnail
 
-<h3>tune2fs disque space</h3>
+    mogrify -thumbnail 200x200 -format jpg -quality 75 -path thumbnail/ *.jpg &
+    for f in *.JPG; do convert $f -thumbnail 200x200 -format jpg -quality 75 thumbnail/TN-$f; done
 
-<pre><code>sudo tune2fs  -m 1 /dev/sda4 # 1% espace disque reserve au lieu de 5%
-</code></pre>
+### tester une date dans remind
 
-<h3>imagemagick thumbnail</h3>
+    rem 2013-05-29
 
-<pre><code>mogrify -thumbnail 200x200 -format jpg -quality 75 -path thumbnail/ *.jpg &amp;
-for f in *.JPG; do convert $f -thumbnail 200x200 -format jpg -quality 75 thumbnail/TN-$f; done
-</code></pre>
+### spaces
 
-<h3>tester une date dans remind</h3>
+    ls -1 | while read file; do new_file=$(echo $file | sed s/\ //g); mv "$file" "$new_file"; done
 
-<pre><code>rem 2013-05-29
-</code></pre>
+### faire de la place dans le cache pacman
+### ne garde que les deux dernières versions d'un package
 
-<h3>spaces</h3>
+    cd /var/cache/pacman/pkg/
+    ls -r | gawk '{a=gensub(/-[0-9].*$/,"","s"); if(a==b){c++;if(c>=2){print $1;}}else{c=0;}b=a;}' | xargs rm
 
-<pre><code>ls -1 | while read file; do new_file=$(echo $file | sed s/\ //g); mv "$file" "$new_file"; done
-</code></pre>
+### supprimer le verrou quand pacman a été mal arrêté
 
-<h3>faire de la place dans le cache pacman</h3>
+    rm /var/lib/pacman/db.lck
 
-<h3>ne garde que les deux dernières versions d'un package</h3>
+### print options cli
 
-<pre><code>cd /var/cache/pacman/pkg/
-ls -r | gawk '{a=gensub(/-[0-9].*$/,"","s"); if(a==b){c++;if(c&gt;=2){print $1;}}else{c=0;}b=a;}' | xargs rm
-</code></pre>
+    lpr -PHP_LaserJet_P4015 -o number-up=2 -o sides=two-sided-short-edge -o page-ranges=1-4,7,9-12 $file
 
-<h3>supprimer le verrou quand pacman a été mal arrêté</h3>
+### fold vim modeline
+    % vim: set fdm=marker fmr=<<<,>>> fdl=0:fdc=2
 
-<pre><code>rm /var/lib/pacman/db.lck
-</code></pre>
+### Force password for ssh
+    ssh -o "PubkeyAuthentication no" user@server
 
-<h3>print options cli</h3>
+### Fork github : update fork with upstream
 
-<pre><code>lpr -PHP_LaserJet_P4015 -o number-up=2 -o sides=two-sided-short-edge -o page-ranges=1-4,7,9-12 $file
-</code></pre>
+    git remote add upstream git://url-to-original-repo
+    git fetch upstream
+    git merge upstream/master
+    git push
 
-<h3>fold vim modeline</h3>
+### find filtre file size
 
-<pre><code>% vim: set fdm=marker fmr=&lt;&lt;&lt;,&gt;&gt;&gt; fdl=0:fdc=2
-</code></pre>
+    -type f -size +1048576 -printf "%s:%h%f\n"
 
-<h3>Force password for ssh</h3>
+### find print human readable
+  
+    find folder/*gz -type f -print0 -exec ls '-1Ssh' '{}' '+
 
-<pre><code>ssh -o "PubkeyAuthentication no" user@server
-</code></pre>
+### 0pad 
 
-<h3>Fork github : update fork with upstream</h3>
+    for name in `ls`; do if [ ${#name} -eq 2 ]; then mv $name 0$name; fi; done
 
-<pre><code>git remote add upstream git://url-to-original-repo
-git fetch upstream
-git merge upstream/master
-git push
-</code></pre>
+### CTRL right key does not work with oss keymap
 
-<h3>find filtre file size</h3>
-
-<pre><code>-type f -size +1048576 -printf "%s:%h%f\n"
-</code></pre>
-
-<h3>find print human readable</h3>
-
-<pre><code>find folder/*gz -type f -print0 -exec ls '-1Ssh' '{}' '+
-</code></pre>
-
-<h3>0pad</h3>
-
-<pre><code>for name in `ls`; do if [ ${#name} -eq 2 ]; then mv $name 0$name; fi; done
-</code></pre>
-
-<h3>CTRL right key does not work with oss keymap</h3>
-
-<pre><code>sudo vim /usr/share/X11/xkb/symbols/fr
-// include "level5(rctrl_switch)"
-</code></pre>
+    sudo vim /usr/share/X11/xkb/symbols/fr
+    // include "level5(rctrl_switch)"
 
 </div>
 
@@ -392,6 +340,14 @@ git push
 <div id="relatedposts">
   <h2 class="annee">Related posts</h2>
     <ul class="related">
+    
+      <li>     <a class="posturl" href="/2014/02/10/enquete-philosophique-kerr.html">Une enquête philosophique, de Philippe Kerr</a> <span class="lang">(en)</span>
+    <!-- [<span class="categlink"><a href="/tags/unix/">unix</a></span> ] <span class="postdate">10 February</span>-->
+ </li>
+    
+      <li>     <a class="posturl" href="/2013/12/02/newsbeuter.html">Newsbeuter</a> <span class="lang">(en)</span>
+    <!-- [<span class="categlink"><a href="/tags/unix/">unix</a></span> ] <span class="postdate">02 December</span>-->
+ </li>
     
       <li>     <a class="posturl" href="/2013/08/21/breve.html">une breve</a> <span class="lang">(en)</span>
     <!-- [<span class="categlink"><a href="/tags/breve/">breve</a></span> ] <span class="postdate">21 August</span>-->
@@ -423,14 +379,6 @@ git push
     
       <li>     <a class="posturl" href="/2010/01/12/la_fille_de_monaco_et_le_concert.html">La fille de Monaco et Le Concert</a> <span class="lang">(fr)</span>
     <!-- [<span class="categlink"><a href="/tags/cinema/">cinema</a></span> ] <span class="postdate">12 January</span>-->
- </li>
-    
-      <li>     <a class="posturl" href="/2009/10/15/bash_bangs_usage.html">Bash bangs usage</a> <span class="lang">(en)</span>
-    <!-- [<span class="categlink"><a href="/tags/astuce/">astuce</a>, <a href="/tags/bash/">bash</a></span> ] <span class="postdate">15 October</span>-->
- </li>
-    
-      <li>     <a class="posturl" href="/2009/10/14/bash_completion_after_sudo_or_man.html">Bash completion after sudo or man</a> <span class="lang">(en)</span>
-    <!-- [<span class="categlink"><a href="/tags/astuce/">astuce</a>, <a href="/tags/bash/">bash</a></span> ] <span class="postdate">14 October</span>-->
  </li>
     
     </ul>

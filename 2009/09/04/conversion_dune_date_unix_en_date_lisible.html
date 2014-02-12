@@ -57,10 +57,9 @@ pic" height="80px"/>
    dans <a href="/tags/astuce/">astuce</a>, <a href="/tags/unix/">unix</a> 
 </div>
 
-  <p>Pour tous les fichiers d'un dossier (nommés ls[unixtime].log), en bash :</p>
+  Pour tous les fichiers d'un dossier (nommés ls[unixtime].log), en bash :
 
-<pre><code>for i in *; do bla=`echo $i | sed "s:ls::" | sed "s:\.log::"`; toto=`date -u -d "1970-01-01 UTC + $bla seconds"`; echo $i,$toto; done
-</code></pre>
+    for i in *; do bla=`echo $i | sed "s:ls::" | sed "s:\.log::"`; toto=`date -u -d "1970-01-01 UTC + $bla seconds"`; echo $i,$toto; done
 
 </div>
 
@@ -82,6 +81,14 @@ pic" height="80px"/>
 <div id="relatedposts">
   <h2 class="annee">Billets liés</h2>
     <ul class="related">
+    
+      <li>     <a class="posturl" href="/2014/02/10/enquete-philosophique-kerr.html">Une enquête philosophique, de Philippe Kerr</a> <span class="lang">(en)</span>
+    <!-- [<span class="categlink"><a href="/tags/unix/">unix</a></span> ] <span class="postdate">10 February</span>-->
+ </li>
+    
+      <li>     <a class="posturl" href="/2013/12/02/newsbeuter.html">Newsbeuter</a> <span class="lang">(en)</span>
+    <!-- [<span class="categlink"><a href="/tags/unix/">unix</a></span> ] <span class="postdate">02 December</span>-->
+ </li>
     
       <li>     <a class="posturl" href="/2013/08/21/breve.html">une breve</a> <span class="lang">(en)</span>
     <!-- [<span class="categlink"><a href="/tags/breve/">breve</a></span> ] <span class="postdate">21 August</span>-->
@@ -113,14 +120,6 @@ pic" height="80px"/>
     
       <li>     <a class="posturl" href="/2011/12/30/bootstrapping%3A_a_brand-new_jekyll-powered_blog.html">bootstrapping: a brand-new jekyll-powered blog</a> <span class="lang">(en)</span>
     <!-- [<span class="categlink"><a href="/tags/jekyll/">jekyll</a></span> ] <span class="postdate">30 December</span>-->
- </li>
-    
-      <li>     <a class="posturl" href="/2010/01/12/la_fille_de_monaco_et_le_concert.html">La fille de Monaco et Le Concert</a> <span class="lang">(fr)</span>
-    <!-- [<span class="categlink"><a href="/tags/cinema/">cinema</a></span> ] <span class="postdate">12 January</span>-->
- </li>
-    
-      <li>     <a class="posturl" href="/2009/10/15/bash_bangs_usage.html">Bash bangs usage</a> <span class="lang">(en)</span>
-    <!-- [<span class="categlink"><a href="/tags/astuce/">astuce</a>, <a href="/tags/bash/">bash</a></span> ] <span class="postdate">15 October</span>-->
  </li>
     
     </ul>
