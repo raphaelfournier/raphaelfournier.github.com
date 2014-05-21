@@ -1,0 +1,1284 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+        <title>Jekyll Bootstrap</title>
+        <description>Jekyll Bootstrap - Name Lastname</description>
+        <link>http://username.github.io</link>
+        <link>http://username.github.io</link>
+        <lastBuildDate>2014-05-21T16:01:41+02:00</lastBuildDate>
+        <pubDate>2014-05-21T16:01:41+02:00</pubDate>
+        <ttl>1800</ttl>
+
+
+        <item>
+                <title>Article avec le LORIA accepté</title>
+                <description>&lt;p&gt;L&#39;article Comparing paedophile activity in different P2P systems, coécrit avec
+l&#39;équipe du LORIA (Thibault Cholez, Isabelle Chrisment, Olivier Festor) a été
+accepté pour publication dans Social Sciences, numéro spécial &quot;Contemporary
+Developments in Child Protection&quot;.&lt;/p&gt;
+</description>
+                <link>http://username.github.io/news/2014/05/18/kad</link>
+                <guid>http://username.github.io/news/2014/05/18/kad</guid>
+                <pubDate>2014-05-18T00:00:00+02:00</pubDate>
+        </item>
+
+        <item>
+                <title>450 ans de Galilée</title>
+                <description>&lt;p&gt;Journée de vulgarisation scientifique, où le L2TI présente un stand double, sur
+la super résolution et sur la stéréoscopie. Les autres laboratoires sont
+également présents et la journée est parrainée par Jen-Pierre Haigneré.&lt;/p&gt;
+</description>
+                <link>http://username.github.io/news/2014/05/15/galilee</link>
+                <guid>http://username.github.io/news/2014/05/15/galilee</guid>
+                <pubDate>2014-05-15T00:00:00+02:00</pubDate>
+        </item>
+
+        <item>
+                <title>Audition MCF</title>
+                <description>&lt;p&gt;Je suis auditionné pour un poste MCF au CNAM (laboratoire CEDRIC).&lt;/p&gt;
+</description>
+                <link>http://username.github.io/news/2014/05/07/audition-cnam</link>
+                <guid>http://username.github.io/news/2014/05/07/audition-cnam</guid>
+                <pubDate>2014-05-07T00:00:00+02:00</pubDate>
+        </item>
+
+        <item>
+                <title>Talk</title>
+                <description>&lt;p&gt;Exposé sur le projet AMMICO.&lt;/p&gt;
+</description>
+                <link>http://username.github.io/news/2014/04/29/aafd</link>
+                <guid>http://username.github.io/news/2014/04/29/aafd</guid>
+                <pubDate>2014-04-29T00:00:00+02:00</pubDate>
+        </item>
+
+        <item>
+                <title>une premiere question</title>
+                <description>&lt;p&gt;coucou Sollicitudin eros sit amet diam. Aliquam ante. Vestibulum ante ipsum
+primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut et est.
+Donec semper nulla in ipsum. Integer elit. In pharetra lorem vel ante.&lt;/p&gt;
+
+&lt;p&gt;Sed sed justo. Curabitur consectetuer arcu. Etiam placerat est eget odio. Nulla
+facilisi. Nulla facilisi. Mauris non neque. Suspendisse et diam. Sed vestibulum
+malesuada ipsum. Cras id magna. Nunc pharetra velit vitae eros. Vivamus ac
+risus. Mauris ac pede laoreet felis pharetra ultricies. Proin et neque. Aliquam
+dignissim placerat felis. Mauris porta ante sagittis purus.&lt;/p&gt;
+
+&lt;p&gt;Pellentesque quis leo eget ante tempor cursus. Pellentesque sagittis, diam ut
+dictum accumsan, magna est viverra erat, vitae imperdiet neque mauris aliquam
+nisl. Suspendisse blandit quam quis felis. Praesent turpis nunc, vehicula in,
+bibendum vitae, blandit ac, turpis. Duis rhoncus. Vestibulum metus. Morbi
+consectetuer felis id tortor. Etiam augue leo, cursus eget, ornare et, ornare
+sagittis, tellus. Fusce felis tellus, consectetuer nec, consequat at, ornare
+non, arcu. Maecenas condimentum sodales odio. Sed eu orci.&lt;/p&gt;
+
+&lt;p&gt;Nullam adipiscing eros sit amet ante. Vestibulum ante. Sed quis ipsum non ligula
+dignissim luctus. Integer quis justo id tortor accumsan tempus. Cras vitae
+magna. Nunc bibendum lacinia tellus. Quisque porttitor ligula et pede. Nam erat
+nibh, fringilla ac, rutrum.&lt;/p&gt;
+</description>
+                <link>http://username.github.io/questions/2013/08/21/breve</link>
+                <guid>http://username.github.io/questions/2013/08/21/breve</guid>
+                <pubDate>2013-08-21T17:39:28+02:00</pubDate>
+        </item>
+
+        <item>
+                <title>Useful unix commands</title>
+                <description>&lt;p&gt;This blog contains sample posts which help stage pages and blog data.
+When you don&#39;t need the samples anymore just delete the &lt;code&gt;_posts/core-samples&lt;/code&gt; folder.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ rm -rf _posts/core-samples
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;rename files with spaces&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;IFS=$&#39;\n&#39;;for file in `find . -regex &quot;.*([0-9]).jpg&quot;`; do new=$(echo $file | sed &quot;s:[0-9]:0&amp;amp;:&quot;);mv $file $new;done;unset IFS
+IFSS=&quot;$(printf &#39;\n\t&#39;)&quot;;for f in 01*; do mv $f 0$f; done
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;xrandr&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;xrandr --output VGA1 --auto --left-of LVDS1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;CTRL right key does not work with oss keymap&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo vim /usr/share/X11/xkb/symbols/fr
+// include &quot;level5(rctrl_switch)&quot;
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+                <link>http://username.github.io/blog/2013/08/20/useful-unix-commands</link>
+                <guid>http://username.github.io/blog/2013/08/20/useful-unix-commands</guid>
+                <pubDate>2013-08-20T17:34:25+02:00</pubDate>
+        </item>
+
+        <item>
+                <title>Awesome: switch apps with dmenu</title>
+                <description>&lt;p&gt;I have been using &lt;a href=&quot;http://awesome.naquadah.org&quot;&gt;Awesome&lt;/a&gt; as a window manager for several years. It uses a
+tiling approach, and really &lt;em&gt;manages&lt;/em&gt; windows, maximizing available space on my
+12&quot; laptop screen. A great addition is &lt;a href=&quot;http://tools.suckless.org/dmenu/&quot;&gt;dmenu&lt;/a&gt;, created by the &lt;a href=&quot;http://suckless.org/&quot;&gt;suckless&lt;/a&gt;
+project. The first use is to pipe applications from the path, which dmenu
+presents as a horizontal/vertical list, with incremental search.&lt;/p&gt;
+
+&lt;p&gt;But dmenu is not limited to this, and wrote a small function which proposes a
+menu of currently running applications (or clients, as awesome calls them). The
+selection may be refined by typing a few character which appear in the name of
+the app or the tag. When selecting enter, the tab changes to the client and it
+is given focus.&lt;/p&gt;
+
+&lt;p&gt;Here is the code:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    local awful= require(&quot;awful&quot;)
+    local beautiful = require(&quot;beautiful&quot;)
+    local naughty   = require(&quot;naughty&quot;)
+    local client=client
+    local pairs=pairs
+    local table=table
+    local print=print
+
+    local dmenuhelpers = {}
+
+    dmenuopts = &quot;-b -i -nf &#39;&quot;..beautiful.fg_normal..&quot;&#39; -nb &#39;&quot;..beautiful.bg_normal..&quot;&#39; -sf &#39;&quot;..beautiful.bg_urgent..&quot;&#39; -sb &#39;&quot;..beautiful.bg_focus..&quot;&#39; -fn &#39;-*-dejavu sans mono-*-r-*-*-*-*-*-*-*-*-*-*&#39;&quot;
+
+    function dmenuhelpers.switchapp()
+      local allclients = client.get(mouse.screen)
+      clientsline = &quot;&quot;
+      for _,c in ipairs(allclients) do
+        clientsline = clientsline .. c:tags()[1].name .. &quot; - &quot; .. c.name .. &quot;\n&quot;
+      end
+      selected = awful.util.pread(&quot;echo &#39;&quot;.. clientsline ..&quot;&#39; | dmenu -l 10 &quot; .. dmenuopts)
+      for _,c in ipairs(allclients) do
+        a = c:tags()[1].name .. &quot; - &quot; .. c.name 
+        if a == selected:gsub(&quot;\n&quot;, &quot;&quot;) then
+          for i, v in ipairs(c:tags()) do
+            awful.tag.viewonly(v)
+            client.focus = c
+            c:raise()
+            c.minimized = false
+            return
+          end
+        end
+      end
+    end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To use it, you need to add the following in your rc.lua:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;at the top&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  local dmenuhelpers = require(&quot;dmenu-helpers&quot;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;in the key table&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  awful.key({ modkey, &quot;Control&quot; }, &quot;w&quot;, function () dmenuhelpers.switchapp()                                        end),
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+                <link>http://username.github.io/blog/2013/08/05/awesome-dmenu-switch-apps</link>
+                <guid>http://username.github.io/blog/2013/08/05/awesome-dmenu-switch-apps</guid>
+                <pubDate>2013-08-05T20:14:25+02:00</pubDate>
+        </item>
+
+        <item>
+                <title>Switch from Makefile to Fabric file for Latex projects</title>
+                <description>&lt;p&gt;While writing my Ph. D. thesis, I procrastinate by customizing my environment. I
+have managed to reuse Tikitu de Jager &lt;a href=&quot;http://www.logophile.org/LaTeX/MyThesisSetup&quot;&gt;LateX setup&lt;/a&gt; to compile
+individual chapters of the manuscript. This is very useful to obtain dated-pdf
+of a given chapter, with references, which can be send to friends/coworkers for
+reviewing, without sending the full document.&lt;/p&gt;
+
+&lt;p&gt;I also took the time to replace the Makefile I usually use by a &lt;a href=&quot;http://fabfile.org&quot;&gt;fab
+file&lt;/a&gt;, which benefits from the Python syntax and is thus easier to
+tweak.&lt;/p&gt;
+
+&lt;p&gt;Just put a file called &lt;code&gt;fabfile.py&lt;/code&gt; in the folder where your .tex files reside.
+Here is an excerpt of my fabfile :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;from fabric.api import local
+
+# variables
+SRC = &quot;these&quot;
+FIGDIR = &quot;figures&quot;
+PDFREADER = &quot;zathura&quot;
+LATEXMODE = &quot;pdflatex&quot;
+BIBTEX = &quot;bibtex&quot;
+
+def execute(command):
+  local(command)
+  #local(&quot;echo %s&quot;%command)
+
+def move(output,chapter):
+  command = &quot;mv %s %s.pdf&quot;%(output,chapter)
+  execute(command)
+
+def preview(chapter):
+  print(&quot;previewing...&quot;)
+  command1 = &#39;echo -e &quot;awful.tag.viewmore({tags[1][6],awful.tag.selected(1)})&quot; | awesome-client&#39;
+  command2 = PDFREADER +&quot; &quot;+ chapter+&quot;.pdf&quot;
+  execute(command1)
+  execute(command2)
+
+def clean():
+  command = &quot;rm -f *.aux *.log *.out *.ps *.toc *.nav *.snm *.dvi *.blg *.bbl *.nlo *.mtc* *.brf *.maf *.tdo&quot;
+  execute(command)
+
+def chapter1(bibtex=True,display=True):
+  chapter = &quot;chapter1&quot;
+  make(chapter,bibtex)
+  if display:
+    preview(chapter)
+
+def make(chapter,bibtex):
+  command = LATEXMODE + &quot; --output-directory=auxiliary &quot; + chapter + &quot;_wrapper.tex&quot;
+  bibtexcommand = BIBTEX + &quot; auxiliary/&quot; + chapter + &quot;_wrapper&quot;
+  output = &quot;auxiliary/&quot; + chapter + &quot;_wrapper&quot; + &quot;.pdf&quot;
+  execute(command)
+  if bibtex == True:
+    execute(command)
+    execute(bibtexcommand)
+    execute(command)
+  move(output,chapter)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Let&#39;s review the file :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The &lt;code&gt;execute()&lt;/code&gt; function is just an alias for easier readibility of the code&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;clean()&lt;/code&gt; function removes all the temporary files produced by a latex
+compilation&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;make()&lt;/code&gt; function lists the sequence of operations required for a full
+compilation, using a switch whether I need to use &lt;code&gt;bibtex&lt;/code&gt; to produce the list
+of references or not&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;The &lt;code&gt;chapter1&lt;/code&gt; function is called after one of my chapter. I can call it with
+one of the following command:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ fab chapter1:bibtex=True,preview=False 
+  # full compilation but no preview
+$ fab chapter1:False,True 
+  # quick compilation and opens a pdf viewer immediately after
+$ fab chapter1 
+  # defaults to bibtex=True and preview=True
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+                <link>http://username.github.io/blog/2012/08/15/switch_from_makefile_to_fabric_file_for_latex_projects</link>
+                <guid>http://username.github.io/blog/2012/08/15/switch_from_makefile_to_fabric_file_for_latex_projects</guid>
+                <pubDate>2012-08-15T13:41:52+02:00</pubDate>
+        </item>
+
+        <item>
+                <title>Revue de Web 1</title>
+                <description>&lt;p&gt;Plutôt que de stocker infiniment des tweets comme &quot;favoris&quot; ou des billets de
+blogs dans un coin, je vais poster ici les trucs que je lis. C&#39;est en vrac,
+éventuellement avec un petit commentaire et la présence d&#39;un lien ne signifie
+pas que je l&#39;ai aimé ou que je sois forcément d&#39;accord avec son propos.&lt;/p&gt;
+
+&lt;h2&gt;Liens&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://www.lemonde.fr/idees/article/2012/05/19/l-exception-francaise-de-trop_1704190_3232.html#xtor=AL-32280258&quot;&gt;L&#39;exception française de trop, par Robert Badinter&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://www.article11.info/?Genevieve-Fioraso-TM-l-elue-et&quot;&gt;Un portrait (acide) de la nouvelle ministre de l&#39;Enseignement Supérieur et de la Recherche&lt;/a&gt; via &lt;a href=&quot;http://www.clochix.net&quot;&gt;clochix&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://www.openculture.com/2012/05/einstein_explains_his_famous_formula_emc_in_audio_plus_more_cultural_curiosities.html&quot;&gt;Einstein Explains His Famous Formula, E=mc², in Original Audio (Plus More Cultural Curiosities)&lt;/a&gt; via &lt;a href=&quot;http://twitter.com/vicnent&quot;&gt;@vicnent&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h2&gt;Citations et bons mots&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&quot;A million guys walk in to a Silicon Valley bar. None of them buy anything. The
+bar is declared a rousing success.&quot;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&quot;An expert is a man who has made all the mistakes, which can be made, in a
+very narrow field&quot;. - Niels Henrik David Bohr (1885-1962) via
+&lt;a href=&quot;http://twitter.com/mysciencework&quot;&gt;@MyScienceWork&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+                <link>http://username.github.io/blog/2012/05/20/revue_de_web_1</link>
+                <guid>http://username.github.io/blog/2012/05/20/revue_de_web_1</guid>
+                <pubDate>2012-05-20T18:51:20+02:00</pubDate>
+        </item>
+
+        <item>
+                <title>Les conférences Treize minutes de Paris 7</title>
+                <description>&lt;p&gt;Le jeudi 3 mai dernier, à l&#39;université Paris 7 (Diderot), une nouvelle session
+des &lt;a href=&quot;http://www.treizeminutes.fr&quot; title=&quot;Treize minutes site officiel&quot;&gt;Treize minutes&lt;/a&gt; était organisée et je suis allé y faire un
+tour. Le concept semble se rapprocher des conférences &lt;a href=&quot;http://www.ted.com&quot; title=&quot;TED&quot;&gt;TED&lt;/a&gt;, où plusieurs
+orateurs se succèdent dans un temps court (ici, 13 minutes par personne, d&#39;où le
+nom). Les affiches annoncent des conférences &quot;nerveuses, variées et
+inattendues&quot;, avec &quot;Risque d&#39;excitation intellectuelle&quot;. Voilà à peu près ce que
+j&#39;en savais avant d&#39;y aller, voici ce que j&#39;en ai pensé et retenu. Les vidéos
+seront bientôt disponibles sur leur site.&lt;/p&gt;
+
+&lt;h2&gt;Programme de la session du jeudi 3 mai 2012&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Jacques Honvault — Existence et mouvement&lt;/li&gt;
+&lt;li&gt;Roland Lehoucq — Déjouer les apparences&lt;/li&gt;
+&lt;li&gt;Luis Garcia — Nouvelles médecines personnelles&lt;/li&gt;
+&lt;li&gt;Violaine de Carné et Didier Trotier — Théâtre olfactif&lt;/li&gt;
+&lt;li&gt;Jean-Louis Berdot — Les réalités du cinéma documentaire&lt;/li&gt;
+&lt;li&gt;François Taddéi — Apprendre au 21e siècle&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h2&gt;Compte-rendu et commentaires personnels&lt;/h2&gt;
+
+&lt;h3&gt;Existence et mouvement par Jacques Honvault&lt;/h3&gt;
+
+&lt;p&gt;J&#39;ai raté un peu le début de cette présentation. L&#39;orateur présente son travail
+sur l&#39;existence et le mouvement, qu&#39;il réalise principalement via de la
+photographie et de la vidéo. Sa technologie de prédilection : la synthèse
+soustractive d&#39;images. À titre d&#39;exemple, il filme son public avec une webcam et
+projette l&#39;image en direct, mais en soustrayant à celle-ci l&#39;image prise 1
+seconde auparavant : tous les pixels qui sont identiques entre cette image et la
+précédente deviennent noirs, seuls ceux qui diffèrent restent visibles. Et, pour
+éviter de projeter une image essentiellement noire, il bascule le noir en
+transparent et superpose à une image de la salle vide : comme le public est
+attentif, on ne voit quasiment plus aucun visage, seuls quelques mouvements
+peuvent être distingués en surimpression des fauteuils. Le message de J.
+Honvault, au-delà de la performance technique, est d&#39;amener son public à
+réfléchir sur le fait que moins on bouge, plus notre esprit est en réalité
+concentré, mais moins on apparaît, on n&#39;existe plus.&lt;/p&gt;
+
+&lt;p&gt;Le reste de son intervention est axée autour de variations sur ce thème, qui ont
+été présentée partiellement au Palais de la Découverte il y a quelques années.
+Deux expériences que je trouve intéressantes, et pourraient servir à initier des
+collégiens à la science :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;il photographie la Tour Eiffel un matin d&#39;été vers 6h, puis refait la même
+photographie quelques heures plus tard, quand la chaleur s&#39;est installé et que
+la Tour Eiffel a pris plusieurs degrés et s&#39;est dilatée. Les images ne se
+superposent plus (et elles sont esthétiquement jolies) !&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;de même, quand on photographie le pont d&#39;Austerlitz, avant et pendant le
+passage d&#39;une rame de métro, on constate un écart en hauteur de quelques
+centimètres (observé à nouveau en montrant que les images ne se superposent
+plus).&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;Évidemment, on est amené à réfléchir remettre en question ces certitudes : la
+Tour Eiffel, un pont, des objets &quot;immobiles&quot; bougent ?!&lt;/p&gt;
+
+&lt;p&gt;Enfin, il nous montre quelques images sur les convois de véhicules sur les
+Champs-Elysées et leur interaction avec les piétons.&lt;/p&gt;
+
+&lt;p&gt;J&#39;ai bien aimé cette présentation, l&#39;orateur était assez bon et les travaux
+vraiment originaux, de quoi donner des idées. Je reste un peu &quot;à côté&quot; sur le
+message lui-même (l&#39;enrobage philosophique sur le fait qu&#39;on n&#39;existe plus quand
+on bouge plus), mais ce n&#39;est pas le plus important.&lt;/p&gt;
+
+&lt;p&gt;EDIT : la vidéo de cette conférence est disponible
+&lt;a href=&quot;http://vimeo.com/41971652&quot;&gt;ici&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3&gt;Déjouer les apparences par Roland Lehoucq&lt;/h3&gt;
+
+&lt;p&gt;La conférence suivante est présentée par un astrophysicien du CEA. L&#39;orateur
+fait de la vulgarisation sur l&#39;espace, commençant par l&#39;observation en 1610 des
+satellites de Jupiter par Galilée et terminant par les performances des
+téléscopes actuels. Progressivement, on a pris conscience que la Voie Lactée
+n&#39;était pas simplement un &quot;truc diffus&quot; dans le ciel, mais plutôt un ensemble
+d&#39;objets (100 milliards de galaxies). Nos yeux sont très limités pour distinguer
+la lumière qui provient de l&#39;espace, que ce soit en résolution angulaire, mais
+aussi en terme de formes de lumière (infra-rouge, rayons X, etc.). On parle
+d&#39;horizon cosmologique, et du fait que les problèmes viennent du fait que
+beaucoup  d&#39;étoiles brillent peu et peu d&#39;étoiles qui brillent beaucoup.
+L&#39;orateur projette de nombreuses photographies du ciel, magnifiques. Il termine
+sur ce qui reste pour moi l&#39;idée importante : l&#39;homme est limité pour construire
+des représentations de l&#39;espace, parce que c&#39;est grand et (on y pense moins)
+très long (devant l&#39;échelle humaine), mais surtout parce qu&#39;on est obligés de
+regarder l&#39;univers depuis ici et maintenant ! (alors qu&#39;on aurait envie de le
+voir il y a plusieurs siècles/millénaires, et depuis d&#39;autres galaxies).&lt;/p&gt;
+
+&lt;p&gt;La conférence est intéressante, même si elle restait dans un style assez
+scientifique, et que j&#39;ai vraiment attendu la fin pour avoir l&#39;idée
+&quot;transférable&quot; à d&#39;autres domaines (penser à changer de point d&#39;observation...)&lt;/p&gt;
+
+&lt;h3&gt;Nouvelle médecine personnalisée par Luis Garcia&lt;/h3&gt;
+
+&lt;p&gt;J&#39;ai pris peu de notes sur cette conférence, que je n&#39;ai pas trouvé dans le ton.
+Le sujet concernait des nouvelles idées en médecine où l&#39;on adapte à l&#39;ADN même
+du patient la thérapie. C&#39;est sûrement très prometteur d&#39;un point de vue
+scientifique, mais pour moi l&#39;orateur a raté sa vulgarisation. Il m&#39;a vite perdu
+avec des diapos (&lt;em&gt;slides&lt;/em&gt;) trop chargées et trop techniques, et un texte
+destiné à des spécialistes.&lt;/p&gt;
+
+&lt;h3&gt;Théâtre olfactif par Violaine de Carné et Didier Trotier&lt;/h3&gt;
+
+&lt;p&gt;À nouveau, une conférence qui ne m&#39;a pas passionné. Il s&#39;agissait de présenter
+le travail de plusieurs personnes d&#39;horizons très différents (comédiens de
+théâtre, scientifiques et philosophes) autour du théâtre olfactif. Je pense
+que c&#39;est d&#39;assister à une représentation du spectacle qui aurait pu
+provoquer &quot;l&#39;excitation intellectuelle&quot; promise, transformant l&#39;expérience
+habituelle du théâtre. Là, si l&#39;idée de départ est intéressante, la conférence
+était trop &lt;em&gt;plate&lt;/em&gt; et pas assez maîtrisée dans la forme (la distribution de
+&lt;em&gt;mouillettes&lt;/em&gt; parfumées sans suivi dans la présentation, par exemple).&lt;/p&gt;
+
+&lt;h3&gt;Les réalités du cinéma documentaire par Jean-Louis Berdot&lt;/h3&gt;
+
+&lt;p&gt;Une conférence qui a débuté et s&#39;est déroulée avec de nombreux
+problèmes techniques, ce qui est très gênant quand on parle de cinéma. Le
+conférencier a su le prendre avec humour et nous parler pendant 13 minutes de
+l&#39;interaction entre la réalité et le cinéma dans le documentaire. Où l&#39;on
+apprend que, les frères Lumière avaient filmé plusieurs fois la
+célèbre scène de sortie des usines, celle qui reste n&#39;étant donc pas
+complètement la &lt;em&gt;première&lt;/em&gt; (les ouvriers étaient revenus le dimanche après la
+messe, ne portant donc pas &lt;strong&gt;du tout&lt;/strong&gt; les mêmes vêtements que la semaine). Dès
+le début, ce qui se veut fidèle à la réalité ne l&#39;est donc pas complètement...&lt;/p&gt;
+
+&lt;p&gt;Le deuxième extrait a été réalisé par Luis Buñuel et montre une chèvre se
+promenant sur un chemin à flanc de falaise puis chutant fatalement. Le
+spectateur s&#39;interroge forcément sur l&#39;opportunité de la présence de la caméra
+au moment de la chute, les &lt;em&gt;rushes&lt;/em&gt; racontent une autre histoire, la chèvre
+ayant été amenée sur un chemin impraticable d&#39;abord par les cris des assistants
+du réalisateur puis par un coup de feu de Buñuel lui-même...&lt;/p&gt;
+
+&lt;p&gt;L&#39;extrait suivant est issu du travail de Chris Marker. Les images sont tournées
+dans une ville de Sibérie et montrent un bus passant dans une rue, que traverse
+un vélo et une berline ; des cantonniers qui construisent une route ; etc.
+Les images sont projetées trois fois successivement, avec trois
+sonorisations (musique et commentaires) très différentes, neutre, pro-communiste
+et anti-communiste. Évidemment, le commentaire et la musique permettent de
+transformer complètement la perception du spectateur des &lt;em&gt;mêmes&lt;/em&gt; images : les
+ouvriers œuvrent tantôt à la grandeur de leur pays, tantôt ils sont exploités
+sombrement par le régime...&lt;/p&gt;
+
+&lt;p&gt;Ensuite, deux extraits supplémentaires, une interview très curieuse d&#39;Yves Saint
+Laurent (avec montage approximatif et images surexposés) et un extrait de S21
+(qui seront peu commentés, faute de temps).&lt;/p&gt;
+
+&lt;p&gt;On finit sur trois phrases :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;le documentaire s&#39;avance masqué, mais comme un masque il peut cacher ou révéler&lt;/li&gt;
+&lt;li&gt;la représnetation de la réalité ou la réalité de la représentation (Godard)&lt;/li&gt;
+&lt;li&gt;que vois-je ou qu&#39;a-t-on voulu que je voie&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;C&#39;était très intéressant, même si ce n&#39;était peut-être pas &lt;em&gt;life-changing&lt;/em&gt;,
+l&#39;orateur était bon — peut-être qu&#39;un peu moins d&#39;extraits et un peu plus de
+commentaires aurait été pas mal.&lt;/p&gt;
+
+&lt;h3&gt;Apprendre au 21e siècle par François Taddéi&lt;/h3&gt;
+
+&lt;p&gt;[&lt;em&gt;full-disclosure&lt;/em&gt;] Je connais un peu François Taddéi (&lt;a href=&quot;http://twitter.com/francoistaddei&quot;&gt;@francoistaddei&lt;/a&gt;),
+avec qui j&#39;ai eu l&#39;opportunité de discuter quelques fois au
+&lt;a href=&quot;http://www.fabelier.org&quot; title=&quot;Fabelier&quot;&gt;Fabelier&lt;/a&gt;. Cependant, j&#39;avais décidé d&#39;aller aux Treize minutes avant
+de savoir qu&#39;il serait orateur.&lt;/p&gt;
+
+&lt;p&gt;La présentation de cet orateur évoque l&#39;avenir de la transmission et de la
+production de connaissances : l&#39;arrivée de l&#39;informatique et de quelques autres
+sciences (intelligence artificielle, robotique) ont transformé les sciences et
+les techniques. Les coûts se sont réduits (dans peu de temps, séquencer un
+génome coutera une dizaine d&#39;euros), les machines sont adoptées universellement
+(il y a la même puissance dans un téléphone mobile actuelle que la totalité des
+ordinateurs de la NASA au moment des premiers voyages sur la Lune). Depuis
+Kasparov il y a quelques années, on sait aussi que la machine, convenablement
+guidée par l&#39;homme, peut réaliser des choses très performantes (aux échecs,
+&quot;homme seul &amp;lt; machine seule &amp;lt; homme + machine&quot;). Et il y a un million de fois
+plus de publications scientifiques aujourd&#39;hui qu&#39;à l&#39;époque de Diderot et
+d&#39;Alembert...&lt;/p&gt;
+
+&lt;p&gt;Pourtant nous dit-il, nos écoles sont proches de celles d&#39;il y a 50 ans, à
+quelques exceptions près (un exemple d&#39;école à NY où l&#39;on enseigne par le jeu).
+Le modèle n&#39;a pas changé. Il y a cependant des nouvelles idées qui se dégagent.
+On peut saluer les travaux et l&#39;article réalisés par un biologiste avec
+quelques jeunes enfants (8-10 ans) pour les initier à la recherche, publié &lt;em&gt;pour
+de vrai&lt;/em&gt; dans un journal scientifique. On peut aussi penser aux nouvelles formes
+de jeu qui, comme récemment, ont permis de résoudre des problèmes scientifiques
+épineux sur lesquels des scientifiques planchaient depuis plusieurs années (cf
+iGem je crois). François Taddéi nous présente comment il pense qu&#39;on peut, avec
+quelques puces d&#39;un coût réduit (accéléromètre et GPS), donner aux enfants les
+moyens de mesurer l&#39;activité de leur chien puis de les récupérer sur smartphone
+ou ordinateur pour les traiter. Il n&#39;oublie pas la dimension sociale, en pensant
+que des enfants de différents coins du globe pourraient ainsi échanger autour de
+leurs observations et commencer à développer un esprit scientifique.&lt;/p&gt;
+
+&lt;p&gt;Je manque de notes sur le dernier &lt;em&gt;slide&lt;/em&gt; qui était pourtant intéressant et
+présentait une flopée de questions sur le sujet (dont certains sont des dadas de
+François, comme le &lt;em&gt;coding goûter&lt;/em&gt; où des enfants apprendraient des rudiments de
+programmation, ou la recherche de &quot;frères d&#39;idées&quot; &lt;em&gt;via&lt;/em&gt; des algorithmes de
+réseaux sociaux). Je trouve que les expériences et les idées présentées dans
+cette intervention sont vraiment intéressantes et provoquent la réflexion,
+&quot;l&#39;excitation intellectuelle&quot; : comment apprendrons-nous demain, comment nos
+enfants apprendront-ils, comment pouvons-nous faire progresser le savoir du plus
+grand nombre ?&lt;/p&gt;
+
+&lt;p&gt;Un ouvrage de référence sur le sujet : &lt;a href=&quot;http://www.amazon.fr/gp/product/0691148902/ref=as_li_ss_tl?ie=UTF8&amp;amp;tag=geekerietbido-21&amp;amp;linkCode=as2&amp;amp;camp=1642&amp;amp;creative=19458&amp;amp;creativeASIN=0691148902&quot; title=&quot;Reinventing Discovery&quot;&gt;Reinventing discovery&lt;/a&gt;, de M. Nielsen.&lt;/p&gt;
+
+&lt;p&gt;EDIT : la vidéo de cette conférence est disponible
+&lt;a href=&quot;http://vimeo.com/41972610&quot;&gt;ici&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;Je vous conseille donc d&#39;assister aux Treize minutes la prochaine fois, le 14
+novembre prochain : si l&#39;excitation intellectuelle n&#39;est pas au rendez-vous de
+chaque intervention, l&#39;ensemble vaut vraiment le coup (merci et bravo aux
+organisateurs, pour la qualité du programme, la captation vidéo, sans oublier le
+buffet final pour discuter avec les orateurs). Si vous ne pouvez pas, pensez à
+rattraper en ligne via les vidéos sur le &lt;a href=&quot;http://www.treizeminutes.fr&quot; title=&quot;Treize minutes site officiel&quot;&gt;site officiel&lt;/a&gt;.&lt;/p&gt;
+</description>
+                <link>http://username.github.io/blog/2012/05/13/les_conferences_treize_minutes_de_paris_7</link>
+                <guid>http://username.github.io/blog/2012/05/13/les_conferences_treize_minutes_de_paris_7</guid>
+                <pubDate>2012-05-13T21:15:57+02:00</pubDate>
+        </item>
+
+        <item>
+                <title>Say no to ACTA!</title>
+                <description>&lt;iframe src=&quot;http://mediakit.laquadrature.net/embed/716?size=medium&quot; 
+style=&quot;width: 650px; height: 600px; border: 0; overflow: hidden&quot; scrolling=&quot;no&quot;
+frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+
+
+
+</description>
+                <link>http://username.github.io/blog/2012/01/08/say_no_to_acta</link>
+                <guid>http://username.github.io/blog/2012/01/08/say_no_to_acta</guid>
+                <pubDate>2012-01-08T18:15:08+01:00</pubDate>
+        </item>
+
+        <item>
+                <title>bootstrapping: a brand-new jekyll-powered blog</title>
+                <description>&lt;p&gt;I recently decided to move my custom-made personal homepage and my
+blogger-powered blog onto a single website. I stumbled upon
+&lt;a href=&quot;http://jekyllrb.com&quot;&gt;jekyll&lt;/a&gt;, a &quot;blog aware, static site generator&quot;. It can be
+freely hosted on &lt;a href=&quot;http://github.com&quot;&gt;github&lt;/a&gt;, via github-pages. There is no
+database and every page and post are written in markdown (or another outlining
+language). The source is located in a folder on my site and are controlled via
+git. If you want a similar website, you can clone the
+&lt;a href=&quot;https://github.com/raphaelfournier/raphaelfournier.github.com&quot;&gt;repo&lt;/a&gt; and look
+for the user-contributed
+&lt;a href=&quot;https://github.com/mojombo/jekyll/wiki/Plugins&quot;&gt;plugins&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Three jekyll bloggers, among the
+&lt;a href=&quot;https://github.com/mojombo/jekyll/wiki/sites&quot;&gt;others&lt;/a&gt;, inspired me for building
+this site:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.pstamatiou.com&quot;&gt;stammy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/josegonzalez/josediazgonzalez.com&quot;&gt;josé diaz gonsalez&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.ksornberger.com&quot;&gt;kevin sornberger&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.lukencode.com&quot;&gt;lukencode&lt;/a&gt; from which I took most of the theme&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;You may also have a look at other static html generators, such as pelican,
+nanoblogger or hyde. I have tested the first two, they were great but jekyll is
+better (in terms of plugins, community and the bonus of github hosting).&lt;/p&gt;
+
+&lt;p&gt;The only issue I still have to figure out is how to neatly publish posts in
+French and English. The authors of
+&lt;a href=&quot;http://www.sp4ce.net/site/2011/01/15/how-to-have-a-multilingual-website-with-jekyll.html&quot;&gt;sp4ce.net&lt;/a&gt;
+and &lt;a href=&quot;http://drivemeup.github.com/&quot;&gt;drivemeup&lt;/a&gt; have kind of succeeded in doing
+this, but I need some time to see how I can adapt their solutions to this blog.&lt;/p&gt;
+
+&lt;p&gt;However, jekyll and github are really great!&lt;/p&gt;
+</description>
+                <link>http://username.github.io/blog/2011/12/30/bootstrapping:_a_brand-new_jekyll-powered_blog</link>
+                <guid>http://username.github.io/blog/2011/12/30/bootstrapping:_a_brand-new_jekyll-powered_blog</guid>
+                <pubDate>2011-12-30T11:59:28+01:00</pubDate>
+        </item>
+
+        <item>
+                <title>La fille de Monaco et Le Concert</title>
+                <description>&lt;p&gt;Récemment, j&#39;ai eu l&#39;occasion de voir deux films : La fille de Monaco, d&#39;Anne
+Fontaine et Le Concert, de Radu Mihaileanu, deux films qu&#39;on m&#39;avait auparavant
+beaucoup recommandés.&lt;/p&gt;
+
+
+&lt;p&gt;&lt;img src=&quot;/images/bourgoin_monaco.jpg&quot; alt=&quot;Louise Bourgoin et Fabrice Luchini
+dans La fille de Monaco&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;La fille de Monaco est, en bref, l&#39;histoire d&#39;un avocat parisien qui descend
+pour un procès difficile à Monaco et s&#39;amourache d&#39;une présentatrice météo d&#39;une
+chaîne locale aux moeurs disons facile (en français, une &lt;em&gt;chagasse&lt;/em&gt;.
+L&#39;avocat, c&#39;est Fabrice Luchini, la starlette, c&#39;est Louise Bourgoin. Le
+troisième rôle principal est joué par Roschdy Zem, agent de protection
+rapprochée de l&#39;avocat, parce que le procès met en cause un Russe aux
+accointances mafieuses.&lt;/p&gt;
+
+
+
+
+&lt;p&gt;Le film dure 1h30. C&#39;est court, mais je ne le reprocherai pas à la réalisatrice.
+Le scénario manque cruellement de profondeur. On touche au thème de l&#39;obsession,
+on se rapproche du film noir, mais l&#39;on s&#39;en tient à des enchaînements de
+petites scènes.  Le procès n&#39;est qu&#39;un décor, un prétexte pour donner à Luchini
+ses manières et à Roschdy Zem une raison d&#39;être là. On ne verra que peu les
+Russes, l&#39;affaire à traiter n&#39;a aucune importance. Jusque là, ok, pourquoi pas.
+Mais avec un tel parti pris, il faut remplir le film avec autre chose. Et c&#39;est
+là que le bât blesse. Les personnages sont assez creux et la trame ne rend pas
+vraiment crédible l&#39;idylle Luchini/Bourgoin (la gaieté et la plastique de cette
+dernière ne suffisent pas à faire un film). Il y a eu un semblant d&#39;histoire
+&quot;avant le film&quot;, mais ça ne va pas loin non plus.  On a des scènes où l&#39;on tend
+aussi vers le film-à-duo-d&#39;hommes, mais ça ne vaut pas ce qui se fait ailleurs.
+D&#39;autres scènes me paraissent aussi assez inutiles, comme celle de la piscine,
+ou celle de la révélation de l&#39;homosexualité du fils -- ce ne sont pas des
+révélations cruciales. Quant à la fin, que l&#39;on ne dévoilera pas, c&#39;est aussi
+peu crédible que ce qui précède.  On aimerait que le thème de l&#39;obsession
+amoureuse soit développé, que l&#39;on va verser dans le film noir, on pense à ce
+que Chabrol aurait pu faire du script.  &lt;/p&gt;
+
+
+&lt;p&gt;&lt;img src=&quot;/images/laurent_concert.jpg&quot; alt=&quot;Mélanie Laurent dans Le Concert&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Le Concert raconte l&#39;histoire d&#39;Andreï Filipov, chef d&#39;orchestre dont la
+brillante ascension s&#39;est arrêtée en 1980 quand Brejnev a interrompu l&#39;un de ses
+concerts pour des raisons politiques. En 2009, homme de ménage au Bolchoï qui
+n&#39;a plus dirigé depuis 30 ans, il a l&#39;occasion inespérée de prendre sa revanche
+et de venir jouer au Théâtre du Châtelet, à Paris. Avec les musiciens d&#39;alors, à
+la place des actuels membres du Bolchoï.&lt;/p&gt;
+
+
+
+
+&lt;p&gt;J&#39;ai beaucoup plus apprécié ce film que le précédent. Le fim commence par une
+longue partie à Moscou. Filipov est accompagné par son copain violoncelliste
+devenu ambulancier, le débonnaire Sacha. À eux deux, ils vont parcourir la ville
+pour retrouver chacun des ex-musiciens. Qui se sont reconvertis hors de la
+musique, en gardien de musée, vendeurs de légumes au marché.  Leur tournée de
+reprise de contact, en ambulance, est un grand moment -- très bon choix de
+profession pour Sacha. Ils sont soutenus par la femme de Filipov, Irina,
+pourvoyeuse de figurants pour manifestation du PC (eh oui) et par leur manager
+Garilov, apparatchik qui rêve du Grand Soir à Paris.  Cahin-caha, grâce au
+système D, les Russes arrivent à Paris. Là, le rythme baisse un peu. Mais les
+péripéties s&#39;enchaînent quand même agréablement : les relations se tendent avec
+les officiels du Châtelet -- bon duo Abelanski-Berléand --, le matériel et les
+costumes à trouver, l&#39;oligarque Russe qui se greffe au groupe. Et puis, les
+musiciens qui se mettent à profiter de Paris de façon un peu inattendue. Le
+réalisateur rattrappe bien son histoire, notamment avec l&#39;apparition de Mélanie
+Laurent -- bien meilleure que dans Inglorious Bastards et toujours aussi jolie
+-- et de son agent-mère adoptive, jouée par Miou-Miou. Arrive ensuite la
+dernière partie du film, la représentation au Châtelet du fameux Concerto pour
+violon et orchestre de Tchaïkovski. Le dénouement de l&#39;histoire a alors lieu, le
+film entrecoupant la musique filmée et quelques flashbacks éclairants. Au final,
+malgré quelques clichés (&quot;toutes notes recherchent harmonie&quot;) ou
+invraisemblances (pour des Russes qui n&#39;ont pas parlé notre langue depuis 30
+ans, ils se débrouillent un peu trop bien -- mais c&#39;est du ciné et on s&#39;en fiche
+un peu en fait), c&#39;est un bon film. Pas le film de l&#39;année, mais bon quand
+même.&lt;/p&gt;
+
+
+
+</description>
+                <link>http://username.github.io/blog/2010/01/12/la_fille_de_monaco_et_le_concert</link>
+                <guid>http://username.github.io/blog/2010/01/12/la_fille_de_monaco_et_le_concert</guid>
+                <pubDate>2010-01-12T17:26:54+01:00</pubDate>
+        </item>
+
+        <item>
+                <title>Bash bangs usage</title>
+                <description>&lt;p&gt;In Bash, one may use !!, !* and !:2 to
+get quicker access to previously typed commands or part of commands. &quot;!!&quot;
+stands for the last command, &quot;!*&quot; for the last command without the first term
+and !:2 is the third argument of the previous command. Let&#39;s have some
+examples:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;raph@machine$ ls books/
+foo.txt bar.txt
+
+raph@machine$ !!
+ls books/ ## you notice that Bash outputs immediately the expanded command ## 
+foo.txt bar.txt
+
+raph@machine$ ls books/foo.txt foo.txt 
+
+raph@machine$ head !*
+head books/foo.txt foo.txt
+# first lines of foo.txt here # 
+
+raph@machine$ wc -l !*
+wc -l foo.txt
+# number of lines in foo.txt # 
+
+raph@machine$ file !:2
+file foo.txt
+# output of command file #
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;As one may see, !:2 is useful when some options have been given between the
+command and the filename. If I had used &quot;file !*&quot; instead of &quot;file !:2&quot;, bash
+would have tried to execute command file on &quot;-l&quot; and &quot;foo.txt&quot;. The &quot;-l, file
+not found&quot; error message would then occur.&lt;/p&gt;
+
+&lt;p&gt;I admit that !:2 -- or, more generally, !:n -- is a bit complicated if n greater
+than 2, because one would not want to manually count the number of options ...
+But it works like a charm in the sequence above with &quot;wc -l&quot; and &quot;head&quot;.&lt;/p&gt;
+
+&lt;p&gt;The !! is very useful when you are the administrator of your computer and you
+forget to use sudo at the beginning of a command. Just type &quot;sudo !!&quot; after the
+&quot;permission denied&quot; message and you&#39;re done ... (indeed, CTRL+A may also help
+you).&lt;/p&gt;
+</description>
+                <link>http://username.github.io/blog/2009/10/15/bash_bangs_usage</link>
+                <guid>http://username.github.io/blog/2009/10/15/bash_bangs_usage</guid>
+                <pubDate>2009-10-15T10:10:27+02:00</pubDate>
+        </item>
+
+        <item>
+                <title>Bash completion after sudo or man</title>
+                <description>&lt;p&gt;While typing in a Bash shell, one may want to enable the [TAB] completion even
+when sudo or man was typed before the command. Just add the following lines to
+your ~/.bash_profile :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;complete -cf sudo
+complete -cf man
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and you&#39;re done ! There are plenty of powerful features in &quot;bash-completion&quot;
+package, we&#39;ll see that later on this blog, too much work at the moment.&lt;/p&gt;
+</description>
+                <link>http://username.github.io/blog/2009/10/14/bash_completion_after_sudo_or_man</link>
+                <guid>http://username.github.io/blog/2009/10/14/bash_completion_after_sudo_or_man</guid>
+                <pubDate>2009-10-14T21:20:22+02:00</pubDate>
+        </item>
+
+        <item>
+                <title>Thank you, Finland!</title>
+                <description>&lt;p&gt;Internet is now a LEGAL RIGHT in Finland (&lt;a href=&quot;http://www.intomobile.com/2009/10/14/finland-becomes-the-first-country-to-make-broadband-a-legal-right.html&quot;&gt;source&lt;/a&gt;).&lt;/p&gt;
+</description>
+                <link>http://username.github.io/blog/2009/10/08/thank_you_finland</link>
+                <guid>http://username.github.io/blog/2009/10/08/thank_you_finland</guid>
+                <pubDate>2009-10-08T21:50:28+02:00</pubDate>
+        </item>
+
+        <item>
+                <title>Conversion d'une date unix en date lisible</title>
+                <description>&lt;p&gt;Pour tous les fichiers d&#39;un dossier (nommés ls[unixtime].log), en bash :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;for i in *; do bla=`echo $i | sed &quot;s:ls::&quot; | sed &quot;s:\.log::&quot;`; toto=`date -u -d &quot;1970-01-01 UTC + $bla seconds&quot;`; echo $i,$toto; done
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+                <link>http://username.github.io/blog/2009/09/04/conversion_dune_date_unix_en_date_lisible</link>
+                <guid>http://username.github.io/blog/2009/09/04/conversion_dune_date_unix_en_date_lisible</guid>
+                <pubDate>2009-09-04T12:43:12+02:00</pubDate>
+        </item>
+
+        <item>
+                <title>Hadopi : résumé de la saga</title>
+                <description>&lt;p&gt;
+Le Sénat vient d&#39;avaliser la loi Hadopi 2. Il est temps de faire un petit rappel des faits et des arguments des différentes parties en présence.
+&lt;/p&gt;
+
+
+&lt;p&gt;Au commencement, en 2005, était la loi DADVSI (relative aux Droits d&#39;auteur et droits voisins dans la société de l&#39;information). Elle instituait des peines de prison pour les contrefacteurs qui utilisaient des logiciels permettant de contourner les DRM placés sur des contenus numériques. Elle met en péril les logiciels libres, puisque ceux-ci permettent de contourner les DRM. Par exemple, VLC, l&#39;excellent lecteur multimédia multiplateforme qui vient de sortir en version 1.0, permet de contourner le chiffrement mis en place sur les DVD. Heureusement, pour l&#39;instant ces dispositions ne sont pas appliquées dans ce cas précis. La lettre de la loi DADVSI mettait également fin à la copie privée, juridiquement tolérée jusque là. Son adoption fut rocambolesque, en procédure d&#39;urgence et pendant les vacances parlementaires.&lt;/p&gt;
+
+
+&lt;p&gt;Quatre ans plus tard, le marché a un peu changé : Apple et les fabricants de baladeurs numériques ont popularisé ces appareils, les FAI (Free en tête) ont obtenu un prix unique pour un abonnement haut-débit -- le monopole permettant cela n&#39;est pas l&#39;objet de cet article, même s&#39;il y aurait à redire. Ainsi, la possession de plusieurs centaines de fichiers mp3 est devenue banale. Il est évident que la plupart des gens ne &quot;rippent&quot; pas leurs DVD ou leurs CD pour remplir 30 Go (ou plus) d&#39;un iPod : ils les téléchargent sur eMule. Ce qui est mal, même si l&#39;on peut comprendre ce phénomène, à l&#39;aune de l&#39;inertie des majors (qui auraient pu, par exemple, proposer leurs catalogues numériques plus rapidement, moins cher et moins verrouillé au public, assortis d&#39;une réduction pour ceux qui possèdent déjà les disques).&lt;/p&gt;
+
+
+&lt;p&gt;Le gouvernement aussi a changé, mais les idées et les intentions sont les mêmes : il faut protéger nos-copains-les-artistes-millionnaires, ceux-là mêmes qui étouffent le marché et empêchent les indépendants d&#39;exister -- sous prétexte qu&#39;ils n&#39;ont aucun talent (?). Ceux-là mêmes, donc, qui n&#39;ont plus vraiment besoin d&#39;être défendus. Il faut aussi contrôler internet, ce média dangereux ! Donc, le chef de l&#39;État a donc confié à Ch. Albanel le soin de faire passer une nouvelle loi. Celle-ci, prenant pour base un rapport de D. Olivennes (ancien patron de la Fnac), introduit la riposte graduée : l&#39;internaute téléchargeur se voit envoyer, en cas de récidive, un e-mail, puis un recommandé, avant suspension de sa ligne. Une nouvelle adminstration, l&#39;HADOPI, est chargée de ce contrôle.&lt;/p&gt;
+
+
+
+
+&lt;p&gt;Le fonctionnement du système contient diverses incohérences (je relève celles qui sont connues, j&#39;en ajoute une à la fin) :
+&lt;ul&gt;
+&lt;li&gt; la loi introduit un filtrage du Net, par le biais de logiciels &quot;mouchards&quot;, que l&#39;on installe sur sa machine pour prouver sa bonne foi (comme si les excès de vitesse étaient controlés par des boîtes noires installées sur des voitures, le tout à la charge de l&#39;automobiliste). Le fait de devoir prouver sa bonne foi est en contradiction totale avec le droit français (où c&#39;est l&#39;accusation qui doit prouver la faute).&lt;/li&gt;
+&lt;li&gt; l&#39;Etat envisage de confier la gestion des mouchards à une société privée, ce qui est contraire à divers arrêtés de la Cour Européenne.&lt;/li&gt;
+&lt;li&gt; l&#39;accusation repose sur un filtrage par IP, ce qui est peu efficace (un chercheur a montré qu&#39;on pouvait faire croire qu&#39;une imprimante réseau sans disque dur était coupable de P2P ...) et surtout il suffit de peu de temps pour contourner le problème (passer par un proxy à l&#39;étranger, crypter ses communications, emprunter la connexion d&#39;un voisin).&lt;/li&gt;
+&lt;li&gt; dans certains cas, couper le Net suppose de couper aussi le téléphone, ce qui est impossible (contraire à une autre loi)&lt;/li&gt;
+&lt;li&gt; un amendement instaure le paiement de l&#39;abonnement Internet suspendu (comme si on imposait un plein hebdomadaire à ceux auxquels on a retiré le permis de conduire)&lt;/li&gt;
+&lt;li&gt; le recouvrement des éventuelles amendes et l&#39;envoi des lettres sera particulièrement coûteux, pour un résultat très incertain...&lt;/li&gt;
+&lt;li&gt; un amendement prévoit que l&#39;on s&#39;intéresse principalement aux oeuvres d&#39;ayants-droits français (dommage pour nos amis suisses francophones qui voudraient que les Français achètent leurs disques.&lt;/li&gt;
+
+&lt;li&gt; à noter : personne n&#39;évoque une suppression de la contribution sur les supports de stockage. Pourtant, s&#39;il n&#39;y a plus de manque à gagner à compenser (puisqu&#39;une loi est faite pour être efficace), il n&#39;y a pas lieu de continuer à nous prendre pour des vaches à lait.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;Le vote de cette loi fut lui aussi rocambolesque. Les sénateurs, godillots comme à l&#39;habitude -- ou séniles ? --, votèrent. Mais les députés, sensibilisés par quelques mousquetaires, N. Dupont-Aignan, M. Billard, P. Bloche, J. Dionis Duséjour, votèrent, avec les pieds : les UMP choisirent de rester dans leurs circonscription, laissant la voie libre pour les socialistes, &quot;cachés sous l&#39;escalier du palais Bourbon&quot;. Le chef de l&#39;État s&#39;étouffa de rage et tonna si fort que la majorité vint massivement voter en 2e lecture (mais pour certains, le manque de conviction est patent sur les vidéos des débats).&lt;/p&gt;
+
+
+
+
+&lt;p&gt;Heureusement, le Conseil Constitutionnel est passé par là et a censuré la plupart des mesures, surtout les dispositions répressives (notamment : couper Internet sans jugement est déclaré inconstitutionnel). Internet est devenu un droit fondamental, Ch. Albanel eut beau prétendre à sa victoire, elle fut tout de même débarquée au remaniement. Toutefois, comme &quot;on&quot; y tient, &quot;on&quot; se dépêche de faire pondre à de zélés collaborateurs la &quot;même chose mais pas pareil&quot;.&lt;/p&gt;
+
+
+
+
+&lt;p&gt;Arrive donc &quot;Hadopi 2&quot;. Un remaniement plus tard, le projet est défendu par M. Alliot-Marie et F. Mitterand. Mais il a, à peu près, le même lot de problèmes que &quot;Hadopi 1&quot;. Et introduit, ce qui à mon sens est le plus grave, l&#39;espionnage des communications privées en temps de paix. Le Sénat vient de le voter, ça promet pour les jours à venir.&lt;/p&gt;
+
+
+
+
+&lt;p&gt;On parlera sous peu ici des enjeux de ces lois, du marché de la musique et des propositions alternatives au &quot;tout-répressif&quot;.&lt;/p&gt;
+
+
+
+</description>
+                <link>http://username.github.io/blog/2009/07/09/hadopi_resume_de_la_saga</link>
+                <guid>http://username.github.io/blog/2009/07/09/hadopi_resume_de_la_saga</guid>
+                <pubDate>2009-07-09T22:24:45+02:00</pubDate>
+        </item>
+
+        <item>
+                <title>How-to flash an a6km bios</title>
+                <description>&lt;p&gt;I&#39;m the owner, for three years now, of
+an Asus laptop (ref : A6km Q007h). It came with Windows XP, which I kept until
+May 2007 or so, when I decided that the dual-boot time was over and I could only
+use Ubuntu Linux. I tried Ubuntu Dapper Drake first, then I upgraded directly to
+Feisty Fawn (good version). I followed the release cycle, upgrading to Gutsy
+Gibbon and Hardy Heron. Then, for different reasons, I installed an ArchLinux,
+which is still my only distro at the moment.&lt;/p&gt;
+
+
+&lt;p&gt; &lt;p&gt;The main problem when you
+use Linux on non-evolutive hardware such as a my laptop is that you are
+compelled to &quot;tell yourself that you don&#39;t really need [some] features&quot; (&lt;a
+href=&quot;http://linuxhaters.blogspot.com/2008/06/how-to-be-linux-user.html&quot;&gt;Linux
+hater&#39;s blog&lt;/a&gt;). In May 2007, for example, the webcam on my model was not
+working (it now works, due to clever reverse-engineering from users, not thanks
+to Asus...). And, more annoying, if any USB device was plugged at startup, the
+boot process hanged with no error message. It means that you have to unplug your
+USB mouse or hard-disk at powering down, or check it when switching the laptop
+on. &lt;/p&gt; &lt;p&gt;The problem lies in the buggy bios version. DSDT tables may be
+used to correct it -- at least, some users claim it worked for them -- or one
+should downgrade its BIOS. I have only figured out today how to do it -- yes,
+shame on me. My difficulty was to know how to have the file visible from the
+bios : CD/DVD were not solutions (since they are not recognize by the BIOS for
+flash), floppy was not present (it&#39;s a laptop). My previous attempts with hard
+disk FAT partitions failed, probably because I used FAT 16 (?). As far as USB
+key are concerned, I thougt they were not appropriate on to do it with ASUS
+BIOS.&lt;/p&gt; &lt;p&gt;Flashing a BIOS is dangerous, do it at your own risks, backup
+your data before.&lt;/p&gt; &lt;p&gt;Here&#39;s the procedure, step by step
+:&lt;/p&gt; &lt;ul&gt;&lt;li&gt;You may use a USB key, or any other FAT32-formatted disk you
+have&lt;/li&gt; &lt;li&gt;Download the correct (and old - 2005 !) version : &lt;a
+href=&quot;http://people.bath.ac.uk/enxspd/laptop/A6Km0202AS.zip&quot;&gt;link&lt;/a&gt; (thanks,
+&lt;a href=&quot;http://wiki.archlinux.org/index.php/Asus_A6km&quot;&gt;Arch
+Wiki&lt;/a&gt;)&lt;/li&gt; &lt;li&gt;Unzip the file on the usb key&lt;/li&gt; &lt;li&gt;Reboot and press
+&#39;F2&#39; at startup, to enter BIOS option&lt;/li&gt; &lt;li&gt;Find &quot;Easy
+Flash&quot;&lt;/li&gt; &lt;li&gt;If you&#39;re doing it right, you may see A: and C:. Choose C:
+with arrows&lt;/li&gt; &lt;li&gt;Press &#39;Enter&#39; and follow the
+instructions.&lt;/li&gt; &lt;/ul&gt; The process was quick and easy. I plugged my USB
+mouse (though I don&#39;t use it very much those days) and rebooted : it works !&lt;/p&gt;
+
+&lt;p&gt;Note : I also discovered, while wandering my BIOS options, that a USB
+key is listed as ... harddisk drive instead of &quot;removable device&quot; (important
+to try a linux distro on a key).&lt;/p&gt;
+</description>
+                <link>http://username.github.io/blog/2009/06/26/how-to_flash_an_a6km_bios</link>
+                <guid>http://username.github.io/blog/2009/06/26/how-to_flash_an_a6km_bios</guid>
+                <pubDate>2009-06-26T17:22:38+02:00</pubDate>
+        </item>
+
+        <item>
+                <title>Récupération de video sur Rutube</title>
+                <description>&lt;p&gt;Ce soir, je voulais
+récupérer la vidéo qui \&quot;buzze\&quot; sur Sarkozy : un reportage diffusé par la TSR
+(Télévision Suisse Romande, &lt;a hreflang=\&quot;fr\&quot;
+href=\&quot;http://www.tsr.ch/tsr/index.html?siteSect=500000&amp;amp;bcid=673809#vid=10784729\&quot;&gt;émission
+Temps Présent du 4 juin dernier&lt;/a&gt;), qui - censure ou autocensure - ne sera pas
+repris par les chaînes françaises. La vidéo existe en deux exemplaires, l&#39;un sur
+le site de la TSR, avec un player que je n&#39;ai pas identifié, l&#39;autre par Rutube.
+&lt;/p&gt;
+
+
+&lt;p&gt;\r\n\r\n&lt;p&gt;J&#39;aurais pu regarder la vidéo devant mon PC mais elle dure près
+de 30 minutes. J&#39;ai donc immédiatement pensé à mon prochain trajet en métro et à
+mon baladeur. Problème, il faut récupérer le fichier en flash. Ni le code source
+des pages (Ctrl+u dans Firefox), ni mon \&quot;cache\&quot; ne m&#39;ont été d&#39;un grand
+secours. Évidemment, l&#39;add-on que j&#39;utilse pour Youtube et Dailymotion ne
+marchait pas non plus.&lt;br /&gt;Je me suis donc tourné vers mon moteur de recherche
+préféré pour savoir comment télécharger une vidéo sur Rutube. Pas de réponse
+satisfaisante : essentiellement des trucs payants et un script Greasemonkey
+malheureusement daté de 2007 (les url ont dû changer).&lt;br /&gt;Puis, j&#39;ai cliqué
+par hasard pour visualiser la vidéo &lt;em&gt;directement&lt;/em&gt; chez Rutube. Et là,
+l&#39;url semble presque intelligible :&lt;br /&gt;\r\n&lt;code&gt;&lt;a
+class=\&quot;linkification-ext\&quot;
+href=\&quot;http://rutube.ru/player.swf?buffer_first=1.0&amp;amp;file=http%3A%2F%2Fbl.rutube.ru%2Fbed67400a06eec26fa2ba86a55e25958.iflv&amp;amp;image=http%3A%2F%2Fimg.rutube.ru%2Fthumbs%2Fbe%2Fd6%2Fbed67400a06eec26fa2ba86a55e25958-1.jpg&amp;amp;xurl=http%3A%2F%2Frutube.ru%2Ftrackinfo%2Fbed67400a06eec26fa2ba86a55e25958.html&amp;amp;referer=\&quot;
+title=\&quot;Linkification:
+http://rutube.ru/player.swf?buffer_first=1.0&amp;amp;file=http%3A%2F%2Fbl.rutube.ru%2Fbed67400a06eec26fa2ba86a55e25958.iflv&amp;amp;image=http%3A%2F%2Fimg.rutube.ru%2Fthumbs%2Fbe%2Fd6%2Fbed67400a06eec26fa2ba86a55e25958-1.jpg&amp;amp;xurl=http%3A%2F%2Frutube.ru%2Ftrackinfo%2Fbed67400a06eec26fa2ba86a55e25958.html&amp;amp;referer=\&quot;&gt;http://rutube.ru/player.swf?buffer_first=1.0&amp;amp;file=http%3A%2F%2Fbl.rutube.ru%2Fbed67400a06eec26fa2ba86a55e25958.iflv&amp;amp;image=http%3A%2F%2Fimg.rutube.ru%2Fthumbs%2Fbe%2Fd6%2Fbed67400a06eec26fa2ba86a55e25958-1.jpg&amp;amp;xurl=http%3A%2F%2Frutube.ru%2Ftrackinfo%2Fbed67400a06eec26fa2ba86a55e25958.html&amp;amp;referer=&lt;/a&gt;&lt;/code&gt;\r\n&lt;p&gt;Du
+moins, on peut voir apparaître le nom d&#39;un fichier flash, entre le \&quot;file=\&quot; et
+le \&quot;i.flv\&quot;. Reste plus qu&#39;à transformer les \&quot;%2F\&quot; en \&quot;/\&quot; et \&quot;%3A\&quot; en
+\&quot;:\&quot;. Un petit wget plus tard et c&#39;est bon, le fichier est téléchargé, avidemux
+ou iriverter le mettra au format-qui-va-bien pour mon pmp ... &lt;/p&gt;\r\n&lt;p&gt;Un
+jour, si j&#39;ai le temps, j&#39;en ferai peut-être un petit userscript pour
+greasemonkey, on verra.&lt;/p&gt;&lt;p&gt;[EDIT :] Reportage intéressant sur les rapports
+entre les médias et Sarkozy. En gros, il est le premier président à avoir ce
+rapport à la télévision (Chirac et Mitterrand étaient plutôt des hommes \&quot;de
+l&#39;écrit\&quot;). Cela ne va pas sans un certain nombre de problèmes, liés à sa
+volonté de maîtriser de son image ; les médias d&#39;opposition sont cantonnés au
+strict minimum. Et être \&quot;d&#39;opposition\&quot; veut parfois dire \&quot;être le premier
+journal à sortir une couverture sur son entourage, alors que toute l&#39;Europe est
+au courant\&quot; (cf l&#39;affaire Cécilia-Attias-Génestar).&lt;/p&gt;&lt;/p&gt;
+</description>
+                <link>http://username.github.io/blog/2009/06/24/recuperation_de_video_sur_rutube</link>
+                <guid>http://username.github.io/blog/2009/06/24/recuperation_de_video_sur_rutube</guid>
+                <pubDate>2009-06-24T21:50:23+02:00</pubDate>
+        </item>
+
+        <item>
+                <title>Bavure ...</title>
+                <description>&lt;p&gt;&lt;p&gt;Un texte de Patrick Mohr, qui relate une bavure policière, au festival
+d&#39;Avignon, cet été. Via &lt;a href=&quot;http://arhv.lhivic.org&quot;&gt;Arhv&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;«Je m&#39;appelle Patrick
+Mohr. Je suis né le 18 septembre 1962 à Genève. Je suis acteur, metteur en
+scène et auteur.&lt;/p&gt; &lt;p&gt;A Genève je dirige une compagnie, le &lt;a
+target=&quot;_blank&quot; href=&quot;http://www.theatrespirale.com/Home.htm&quot;&gt;Théâtre
+Spirale&lt;/a&gt;, je co-dirige le &lt;a target=&quot;_blank&quot;
+href=&quot;http://www.laparfumerie.ch/&quot;&gt;Théâtre de la Parfumerie&lt;/a&gt; et m&#39;occupe
+également du festival &quot;De bouche à oreille&quot;.&lt;/p&gt; &lt;p&gt;Dans le cadre de mes
+activités artistiques, je viens régulièrement au festival d&#39;Avignon pour y
+découvrir des spectacles du &quot;in&quot; et du &quot;off&quot;. Notre compagnie s&#39;y est
+d&#39;ailleurs produite à trois reprises. Cette année, je suis arrivé dans la
+région depuis le 10 juillet et j&#39;ai assisté à de nombreux spectacles.
+Le lundi 21 juillet, je sors avec mon amie, ma fille et trois de ses
+camarades d&#39;une représentation d&#39;une pièce très dure sur la guerre en
+ex-Yougoslavie et nous prenons le frais à l&#39;ombre du Palais des Papes, en
+assistant avec plaisir à un spectacle donné par un couple d&#39;acrobates. A la
+fin de leur numéro, je m&#39;avance pour mettre une pièce dans leur chapeau
+lorsque j&#39;entends le son d&#39;un Djembé (tambour africain) derrière moi. Etant
+passionné par la culture africaine (j&#39;y ai monté plusieurs spectacles et ai
+eu l&#39;occasion d&#39;y faire des tournées), je m&#39;apprête à écouter les musiciens.
+Le percussionniste est rejoint par un joueur de Kamele Ngoni (sorte de
+contrebasse surtout utilisée par les chasseurs en Afrique de
+l&#39;Ouest).&lt;/p&gt; &lt;p&gt;A peine commencent-ils à jouer qu&#39;un groupe de C.R.S se
+dirige vers eux pour les interrompre et contrôler leur identité. Contrarié,
+je me décide à intervenir. Ayant déjà subi des violences policières dans le
+même type de circonstances il y a une vingtaine d&#39;année à Paris, je me suis
+adressé à eux avec calme et politesse, le souvenir de ma précédente
+mésaventure bien en tête. Mais je me suis dit que j&#39;étais plus âgé, que l&#39;on
+se trouvait dans un haut lieu culturel et touristique, dans une démocratie et
+que j&#39;avais le droit de m&#39;exprimer face à ce qui me semblait une injustice.
+J&#39;aborde donc un des C.R.S et lui demande&amp;nbsp;: &quot;Pourquoi contrôlez-vous
+ces artistes en particulier et pas tous ceux qui se trouvent sur la place?&quot;
+Réponse immédiate&amp;nbsp;: &quot;Ta gueule, mêle-toi de ce qui te regarde!
+&quot;Justement ça me regarde. Je trouve votre attitude
+discriminatoire.&quot;&lt;/p&gt; &lt;p&gt;Regard incrédule. &quot;Tes papiers!&quot; &quot;Je ne les ai
+pas sur moi, mais on peut aller les chercher dans la voiture.&quot;  &quot;Mets-lui
+les menottes!&quot; &quot;Mais vous n&#39;avez pas le droit de...&quot; Ces mots semblent
+avoir mis le feu aux poudres. &quot;Tu vas voir si on n&#39;a pas le droit.&quot; Et
+brusquement la scène a dérapé. Ils se sont jetés sur moi avec une sauvagerie
+inouïe. Mon amie, ma  fille, ses camarades et les curieux qui assistaient à
+la scène ont reculé choqués alors qu&#39;ils me projetaient au sol, me plaquaient
+la tête contre les pavés, me tiraient de toutes leurs forces les bras en
+arrière comme un poulet désarticulé et m&#39;enfilaient des menottes. Les bras
+dans le dos, ils m&#39;ont relevé et m&#39;ont jeté en avant en me retenant par la
+chaîne. La menotte gauche m&#39;a tordu le poignet et a pénétré profondément mes
+chairs. J&#39;ai hurlé: &quot;Vous n&#39;avez pas le droit, arrêtez, vous me cassez le
+bras!&quot; &quot;Tu vas voir ce que tu vas voir espèce de tapette. Sur le dos! Sur
+le ventre! Sur le dos je te dis, plus vite, arrête de gémir!&quot; Et ils me
+frottent la tête contre les pavés me tordent et me frappent, me traînent, me
+re-plaquent à terre. La foule horrifiée s&#39;écarte sur notre passage. Mon amie
+essaie de me venir en aide et se fait violemment repousser. Des gens
+s&#39;indignent, sifflent, mais personne n&#39;ose interrompre cette interpellation
+d&#39;une violence inouïe. Je suis traîné au sol et malmené jusqu&#39;à leur
+fourgonnette qui se trouve à la place de l&#39;horloge 500 m plus bas. Là, ils me
+jettent dans le véhicule, je tente de m&#39;asseoir et le plus grand de
+mes agresseurs (je ne peux pas les appeler autrement), me donne un coup pour
+me faire tomber entre les sièges, face contre terre, il me plaque un pied sur
+les côtes et l&#39;autre sur la cheville il appuie de tout son poids contre une
+barre de fer. &quot;S&#39;il vous plait, n&#39;appuyez pas comme ça, vous me coupez la
+circulation.&quot; &quot;C&#39;est pour ma sécurité.&quot; Et toute leur compagnie de rire de
+ce bon mot. Jusqu&#39;au commissariat de St Roch. Le trajet est court mais il me
+semble interminable. Tout mon corps est meurtri, j&#39;ai l&#39;impression d&#39;avoir le
+poignet brisé, les épaules démises, je mange la poussière. On m&#39;extrait du
+fourgon toujours avec autant de délicatesse.&lt;/p&gt; &lt;p&gt;Je vous passe les
+détails de l&#39;interrogatoire que j&#39;ai subi dans un état lamentable. Je me
+souviens seulement du maquillage bleu sur les paupières de la femme qui
+posait les questions. &quot;Vous êtes de quelle nationalité ?&quot;
+&quot;Suisse.&quot; &quot;Vous êtes un sacré fouteur de merde.&quot; &quot;Vous n&#39;avez pas le
+droit de m&#39;insulter.&quot; &quot;C&#39;est pas une insulte, la merde&quot; (petit
+rire).&lt;/p&gt; &lt;p&gt;C&#39;est fou comme la mémoire fonctionne bien quand on subit de
+pareilles agressions. Toutes les paroles, tout les détails de cette
+arrestation et de ma garde à vue resteront gravés à vie dans mes souvenirs,
+comme la douleur des coups subis dans ma chair. Je remarque que l&#39;on me
+vouvoie depuis que je ne suis plus entre les griffes des CRS.&lt;/p&gt; &lt;p&gt;Mais
+la violence physique a seulement fait place au mépris et à une
+forme d&#39;inhumanité plus sournoise. Je demande que l&#39;on m&#39;ôte les menottes qui
+m&#39;ont douloureusement entaillé les poignets et que l&#39;on appelle un docteur.
+On me dit de cesser de pleurnicher et que j&#39;aurais mieux fait de réfléchir
+avant de faire un scandale. Je tente de protester, on me coupe immédiatement
+la parole. Je comprends qu&#39;ici on ne peut pas s&#39;exprimer librement. Ils font
+volontairement traîner avant de m&#39;enlever les menottes. Font semblant de ne
+pas trouver les clés. Je ne sens plus ma main droite. Fouille intégrale. On
+me retire ce que j&#39;ai, bref inventaire, le tout est mis dans une petite
+boîte.&lt;/p&gt; &lt;p&gt;&quot;Enlevez vos vêtements!&quot; J&#39;ai tellement mal que je n&#39;y arrive
+presque pas. &quot;Dépêchez-vous, on n&#39;a pas que ça à faire. La boucle
+d&#39;oreille!&quot; J&#39;essaye de l&#39;ôter sans y parvenir.&lt;/p&gt; &lt;p&gt;&quot;Je ne l&#39;ai pas
+enlevée depuis des années. Elle n&#39;a plus de fermoir.&quot; &quot;Ma patience à des
+limites vous vous débrouillez pour l&#39;enlever, c&#39;est tout!&quot; Je force en
+tirant sur le lobe de l&#39;oreille, la boucle lâche. &quot;Baissez la culotte!&quot; Je
+m&#39;exécute. Après la fouille ils m&#39;amènent dans une petite cellule de
+garde à vue. 4 m de long par 2 m de large. Une petite couchette beige
+vissée au mur. Les parois sont taggées, grattées par les inscriptions
+griffonnées à la hâte par les détenus de passage. Au briquet ou gravé avec
+les ongles dans le crépis. Momo de Monclar, Ibrahim, Rachid...
+chacun laisse sa marque. L&#39;attente commence. Pas d&#39;eau, pas de nourriture.
+Je réclame en vain de la glace pour faire désenfler mon bras. Les murs et
+le sol sont souillés de tâches de sang, d&#39;urine et d&#39;excréments. Un
+méchant néon est allumé en permanence.&lt;/p&gt; &lt;p&gt;Le temps s&#39;étire. Rien
+ici qui permette de distinguer le jour de la nuit. La douleur lancinante
+m&#39;empêche de dormir. J&#39;ai l&#39;impression d&#39;avoir le coeur qui pulse dans ma
+main. D&#39;ailleurs alors que j&#39;écris ces lignes une semaine plus tard, je ne
+parviens toujours pas à dormir normalement. J&#39;écris tout cela en détails, non
+pas pour me lamenter sur mon sort. Je suis malheureusement bien conscient que
+ce qui m&#39;est arrivé est tristement banal, que plusieurs fois par jour et par
+nuit dans chaque ville de France des dizaines de personnes subissent des
+traitements bien pires que ce que j&#39;ai enduré. Je sais aussi que si j&#39;étais
+noir ou arabe je me serais fait cogner avec encore moins de retenue. C&#39;est
+pour cela que j&#39;écris et porte plainte. Car j&#39;estime que dans la police
+française et dans les CRS en particulier il existe de dangereux individus qui
+sous le couvert de l&#39;uniforme laissent libre cour à leurs plus bas instincts.
+(Evidemment il y a aussi des arrestations justifiées, et la police ne fait
+pas que des interventions abusives. Mais je parle des dérapages qui
+me semblent beaucoup trop fréquents.) Que ces dangers publics sévissent en
+toute impunité au sein d&#39;un service public qui serait censé protéger les
+citoyens est inadmissible dans un état de droit.&lt;/p&gt; &lt;p&gt;J&#39;ai un casier
+judiciaire vierge et suis quelqu&#39;un de profondément non violent, par
+conviction, ce type de mésaventure me renforce encore dans mes convictions,
+mais si je ne disposais pas des outils pour analyser la situation je pourrais
+aisément basculer dans la violence et l&#39;envie de vengeance. Je suis persuadé
+que ce type d&#39;action de la police nationale visant à instaurer la peur ne
+fait qu&#39;augmenter l&#39;insécurité en France et stimuler la suspicion et la haine
+d&#39;une partie de la population (des jeunes en particulier) face à la
+police.&lt;/p&gt; &lt;p&gt;En polarisant ainsi la population on crée une tension
+perpétuelle extrêmement perverse. Comme je suis un homme de culture et de
+communication je réponds à cette violence avec mes armes. L&#39;écriture et
+la parole. Durant les 16h qu&#39;a duré ma détention (avec les nouvelles lois,
+on aurait même pu me garder 48h en garde à vue), je n&#39;ai vu dans les cellules
+que des gens d&#39;origine africaine et des gitans. Nous étions tous traités avec
+un mépris hallucinant. Un exemple, mon voisin de cellule avait besoin d&#39;aller
+aux toilettes. Il appelait sans relâche depuis près d&#39;une demi-heure,
+personne ne venait. Il s&#39;est mis à taper contre la porte pour se faire
+entendre, personne. Il cognait de plus en plus fort, finalement un gardien
+exaspéré surgit. &quot;Qu&#39;est ce qu&#39;il y a ?&quot; &quot;J&#39;ai besoin d&#39;aller aux
+chiottes.&quot; &quot;Y a une coupure d&#39;eau.&quot; &quot;Mais j&#39;ai besoin.&quot; &quot;Y a pas d&#39;eau
+dans tout le commissariat, alors tu te la coinces pigé.&quot; Mon voisin qui
+n&#39;est pas seul dans sa cellule continue de se plaindre, disant qu&#39;il est
+malade, qu&#39;il va faire ses besoins dans la cellule. &quot;Si tu fais ça on te
+fait essuyer avec ton t-shirt.&quot; Les coups redoublent. Une voix féminine
+lance d&#39;un air moqueur. &quot;Vas-y avec la tête pendant que tu y es., ça nous en
+fera un de moins.&quot; Eclats de rire dans le couloir comme si elle avait fait
+une bonne plaisanterie.&lt;/p&gt; &lt;p&gt;Après une nuit blanche vers 9h du matin on
+vient me chercher pour prendre mon empreinte et faire ma photo. Face, profil,
+avec un petit écriteau, comme dans les films. La dame qui s&#39;occupe de cela
+est la première personne qui me parle avec humanité et un peu de compassion
+depuis le début de ce cauchemar. &quot;He bien, ils vous ont pas raté. C&#39;est les
+CRS, ah bien sûr. Faut dire qu&#39;on a aussi des sacrés cas sociaux chez nous.
+Mais ils sont pas tous comme ça.&quot; J&#39;aimerais la croire.&lt;/p&gt; &lt;p&gt;Un
+officier vient me chercher pour que je dépose ma version des faits et
+me faire connaître celle de ceux qui m&#39;ont interpellé. J&#39;apprends que je
+suis poursuivi pour: outrage, incitation à l&#39;émeute et violence envers
+des dépositaires de l&#39;autorité publique. C&#39;est vraiment le comble. Je les
+aurais soi-disant agressés verbalement et physiquement. Comment ces
+fonctionnaires assermentés peuvent ils mentir aussi éhontement? Je raconte ma
+version des faits à l&#39;officier. Je sens que sans vouloir l&#39;admettre devant
+moi, il se rend compte qu&#39;ils ont commis une gaffe. Ma déposition est
+transmise au procureur et vers midi je suis finalement
+libéré.&lt;/p&gt; &lt;p&gt;J&#39;erre dans la ville comme un boxeur sonné. Je marche
+péniblement. Un mistral à décorner les boeufs souffle sur la ville. Je
+trouve un avocat qui me dit d&#39;aller tout de suite à l&#39;hôpital faire un
+constat médical. Je marche longuement pour parvenir aux urgences où
+je patiente plus de 4 heures pour recevoir des soins hâtifs. Dans la
+salle d&#39;attente, je lis un journal qui m&#39;apprend que le gouvernement veut
+supprimer 200 hôpitaux dans le pays, on parle de couper 6000 emplois dans
+l&#39;éducation. Sur la façade du commissariat de St Roch j&#39;ai pu lire qu&#39;il
+allait être rénové pour 19 millions d&#39;Euros. Les budgets de la sécurité sont
+à la hausse, on diminue la santé, le social et l&#39;éducation. Pas de
+commentaires.  Je n&#39;écris pas ces lignes pour me faire mousser, mais pour
+clamer mon indignation face à un système qui tolère ce type de violence. Sans
+doute suis-je naïf de m&#39;indigner. La plupart des Français auxquels j&#39;ai
+raconté cette histoire ne semblaient pas du tout surpris, et avaient
+connaissance de nombreuses anecdotes du genre. Cela me semble d&#39;autant plus
+choquant.&lt;/p&gt; &lt;p&gt;Ma naïveté, je la revendique, comme je revendique le droit
+de m&#39;indigner face à l&#39;injustice. Même si cela peut paraître de petites
+injustices. C&#39;est la somme de nos petits silences et de nos petites lâchetés
+qui peut conduire à une démission collective et en dernier recours aux pires
+systèmes totalitaires (nous n&#39;en sommes bien évidement heureusement pas
+encore là).&lt;/p&gt; &lt;p&gt;Depuis ma sortie, nous sommes retournés sur la Place
+des Papes et nous avons réussi à trouver une douzaine de témoins qui ont
+accepté d&#39;écrire leur version des faits qui corroborent tous ce que j&#39;ai dit.
+Ils certifient tous que je n&#39;ai proféré aucunes insultes ni n&#39;ai commis
+aucune violence. Les témoignages soulignent l&#39;incroyable brutalité de
+l&#39;intervention des CRS et la totale disproportion de leur réaction face à
+mon intervention. J&#39;ai essayé de retrouver des images des faits,
+mais malheureusement les caméras qui surveillent la place sont gérées par la
+police et, comme par hasard elles sont en panne depuis début
+juillet.&lt;/p&gt; &lt;p&gt;Il y avait des centaines de personnes sur la place qui
+auraient pu témoigner, mais le temps de sortir de garde à vue, de me faire
+soigner et de récupérer suffisamment d&#39;énergie pour pouvoir tenter de les
+retrouver, je n&#39;ai pu en rassembler qu&#39;une douzaine. J&#39;espère toujours que
+peut être quelqu&#39;un a photographié ou même filmé la scène et que je parvienne
+à récupérer ces images qui prouveraient de manière définitive ce qui c&#39;est
+passé.&lt;/p&gt; &lt;p&gt;Après 5 jours soudain, un monsieur africain m&#39;a abordé, c&#39;était
+l&#39;un des musiciens qui avait été interpellé. Il était tout content de me
+retrouver car il me cherchait depuis plusieurs jours. Il se sentait mal de
+n&#39;avoir rien pu faire et de ne pas avoir pu me remercier d&#39;être intervenu en
+leur faveur. Il était profondément touché et surpris par mon intervention et
+m&#39;a dit qu&#39;il habitait Grenoble, qu&#39;il avait 3 enfants et qu&#39;il était
+français. Qu&#39;il viendrait témoigner pour moi. Qu&#39;il s&#39;appelait Moussa Sanou.
+&quot;Sanou , c&#39;est un nom de l&#39;ethnie Bobo.&quot; &quot;Vous êtes de Bobo-Dioulasso ?&quot;
+&quot;Oui.&quot; Nous nous sommes souri et je l&#39;ai salué dans sa langue en Dioula. Il
+se trouve que je vais justement créer un spectacle prochainement à
+Bobo-Dioulasso au Burkina-faso. La pièce qui est une adaptation de nouvelles
+de l&#39;auteur Mozambicain Mia Couto s&#39;appellera &quot;Chaque homme est une race&quot;
+et un des artistes avec lequel je vais collaborer se nomme justement Sanou.
+Coïncidence&amp;nbsp;? Je ne crois pas. Je suis content d&#39;avoir défendu un ami,
+même si je ne le connaissais pas encore. La pièce commence par ce dialogue
+prémonitoire&amp;nbsp;: &quot;quand on lui demanda de quelle race il était,
+il répondit&amp;nbsp;: &quot;Ma race c&#39;est moi.&quot; Invité à s&#39;expliquer il ajouta &quot;Ma
+race c&#39;est celui que je suis. Toute personne est à elle seule une humanité.
+Chaque homme est une race, monsieur le policier.&quot;»&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;Patrick Mohr,
+le 28 juillet 2008.&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;[Antipaedo]: http://antipaedo.lip6.fr
+[LIP6]: http://www.lip6.fr
+[L2TI]: http://www-l2ti.univ-paris13.fr/
+[AMMICO]: http://www.ammico.fr
+[www-cn]: http://www.complexnetworks.fr
+[matthieu]: http://www-rp.lip6.fr/~latapy
+[emmanuel]: http://www-l2ti.univ-paris13.fr/~viennet/
+[jekyll]: http://www.jekyll.org
+[github]: http://www.github.com
+[vim]: http://www.vim.org
+[archlinux]: http://www.archlinux.org&lt;/p&gt;
+
+&lt;p&gt;[clochix]: http://www.clochix.net
+[vicnent]: http://www.vicnent.info/blog/&lt;/p&gt;
+
+&lt;p&gt;[@clochix]: http://twitter.com/clochix
+[@vicnent]: http://twitter.com/vicnent
+[@francoistaddei]: http://twitter.com/francoistaddei
+[@mysciencework]: http://twitter.com/mysciencework&lt;/p&gt;
+
+&lt;p&gt;[cv-pdf-fr]: ../files/FOURNIER-Raphael_CV-academique.pdf
+[cv-pdf-en]: ../files/FOURNIER-Raphael_AcademicResume.pdf
+[these]: ../files/These_FournierRaphael_vfinale.pdf&lt;/p&gt;
+</description>
+                <link>http://username.github.io/blog/2008/10/17/bavure</link>
+                <guid>http://username.github.io/blog/2008/10/17/bavure</guid>
+                <pubDate>2008-10-17T20:54:43+02:00</pubDate>
+        </item>
+
+        <item>
+                <title>Quotes</title>
+                <description>&lt;p&gt;Fred : - Vous êtes co-co-mmandant ?
+Omar : (voix suave) Non, je suis coco-bandant.&lt;/p&gt;
+
+&lt;h2&gt;Citation du jour :&lt;/h2&gt;
+
+&lt;p&gt;En français, on a de la chance amour rime avec toujours. En anglais, always rime
+avec Coca-cola ! (Chérie).&lt;/p&gt;
+</description>
+                <link>http://username.github.io/blog/2008/10/16/quotes</link>
+                <guid>http://username.github.io/blog/2008/10/16/quotes</guid>
+                <pubDate>2008-10-16T00:11:43+02:00</pubDate>
+        </item>
+
+        <item>
+                <title>Petite blague</title>
+                <description>&lt;p&gt;Lorsque Dieu créa le monde, il décida de concéder deux vertus
+aux hommes de chaque peuple afin qu&#39;ils prospèrent. Par exemple il rendit
+:&lt;br /&gt; Les Suisses précis et pacifistes,&lt;br /&gt; Les Anglais flegmatiques
+et ironiques&lt;br /&gt; Les Japonais travailleurs et réalistes&lt;br /&gt; Les
+Italiens joyeux et humanistes&lt;br /&gt; Quant aux Français, il dit : « Les
+Français seront intelligents, honnêtes et sarkozistes. »&lt;br /&gt; Lorsque le
+monde fut achevé, l&#39;ange qui avait été chargé de la distribution des vertus
+demanda à Dieu : &lt;br /&gt; « Seigneur, tu as dit que tu octroyais deux vertus à
+chaque peuple, mais les Français en ont trois. Est-ce pour cela qu&#39;ils se
+placent au-dessus des autres ? »&lt;br /&gt; « En vérité, Je te le dis, chaque
+peuple a deux vertus y compris les Français, car chacun d&#39;entre eux ne pourra
+en posséder que deux à la fois. »&lt;br /&gt; Ce qui veut dire que :&lt;br /&gt; Si
+un Français est sarkoziste et honnête, il ne sera pas intelligent,&lt;br /&gt; S&#39;il
+est sarkoziste et intelligent, il ne sera pas honnête,&lt;br /&gt; S&#39;il est
+intelligent et honnête, il ne peut pas être sarkoziste ... &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;via &lt;a href=\&quot;http://www.labanane.org\&quot;&gt;LaBanane&lt;/a&gt;&lt;/p&gt;
+
+
+
+</description>
+                <link>http://username.github.io/blog/2008/08/05/petite_blague</link>
+                <guid>http://username.github.io/blog/2008/08/05/petite_blague</guid>
+                <pubDate>2008-08-05T21:43:20+02:00</pubDate>
+        </item>
+
+        <item>
+                <title>Cuil</title>
+                <description>&lt;p&gt;Il y a quelques jours est apparu sur le Net un nouveau moteur de
+recherche,&amp;nbsp;&lt;a href=&quot;http://www.cuil.com/&quot;&gt;Cuil&lt;/a&gt;. Cette start-up entend
+concurrencer Yahoo et Google. La preuve : une page d&#39;accueil très simple, écrite
+en blanc sur noir et proclamant fièrement le nombre de pages indexées. En outre,
+la section &quot;About&quot; s&#39;intitule modestement &quot;Cuil - The world&#39;s biggest search
+engine&quot;...&lt;/p&gt;
+
+
+&lt;p&gt; &lt;p&gt;Pour la prononciation, &lt;a
+href=&quot;http://en.wikipedia.org/wiki/Cuil&quot;&gt;Cuil&lt;/a&gt; nous enseigne qu&#39;il faut dire
+&quot;Cool&quot;. OK. On verra si ça marche et si on s&#39;en sert.&lt;/p&gt; &lt;p&gt;C&#39;est en ligne
+depuis le 28 juillet. Wikipédia parle d&#39;un lancement assez critiqué par la
+presse. En cause, des résultats moins pertinents qu&#39;avec you-know-who, voire
+inappropriés ().Pourtant, ce sont des anciens de Google (et de l&#39;indexation de
+pages web en général) qui sont à la tête du projet.&lt;/p&gt; &lt;p&gt;Pour ma part, j&#39;ai
+testé pour vous, le résultat est sans appel : ne changez pas de moteur de
+recherche. Ma méthode est éminemment scientifique et porte sur deux requêtes :
+le club de Hockey sur glace de Clermont-Ferrand et ... mon nom - oui, je suis
+assez mégalo, mais après tout, prenom+nom d&#39;une personne, c&#39;est une requête
+assez fréquente.&lt;/p&gt; &lt;ul&gt;&lt;li&gt;&lt;a
+href=&quot;http://www.cuil.com/search?q=clermont+hockey&quot;&gt;Requête 1&lt;/a&gt; : pas un seul
+résultat français en première page, comme s&#39;il n&#39;y avait des &quot;clermont&quot; qu&#39;aux
+États-Unis. Il y a du golf, des hôtels, et ... très peu de hockey sur glace.
+Comparons avec nos &lt;a
+href=&quot;http://www.google.com/search?hl=en&amp;amp;q=clermont+hockey&amp;amp;btnG=Google+Search&quot;&gt;amis
+de Mountain view&lt;/a&gt; (en version US, pour ne pas favoriser une éventuelle
+localisation)&lt;/li&gt; &lt;li&gt;&lt;a
+href=&quot;http://www.cuil.com/search?q=raphael%20fournier&amp;amp;sl=long&quot;&gt;Requête
+deux&lt;/a&gt; : un photographe installé en Asie truste la première page. Un seul
+n&#39;est pas pour lui et parle d&#39;un Saint Raphaël américain. On peut aussi voir une
+section &quot;Explore by category&quot;, en Javascript, proposant ... des violoncellistes,
+dont on se demande un peu ce qu&#39;ils font là. Un Fournier apparaît bien, mais des
+Fournier,&lt;del&gt; c&#39;est comme la mauvaise herbe,&lt;/del&gt; on en trouve partout - c&#39;est
+même l&#39;un des 20 noms les plus portés en France. Pourquoi des violoncellistes
+comme &lt;a href=&quot;http://en.wikipedia.org/wiki/Pierre_Fournier&quot;&gt;Pierre Fournier&lt;/a&gt;
+et pas des écrivains (pensons à &lt;a
+href=&quot;http://fr.wikipedia.org/wiki/Alain-Fournier&quot;&gt;Henri Alain-Fournier&lt;/a&gt;, &lt;a
+href=&quot;http://fr.wikipedia.org/wiki/Lucas_Fournier&quot;&gt;Lucas Fournier&lt;/a&gt;, &lt;a
+href=&quot;http://fr.wikipedia.org/wiki/Jean-Louis_Fournier&quot;&gt;Jean-Louis Fournier&lt;/a&gt;,
+&lt;a href=&quot;http://fr.wikipedia.org/wiki/Jean-Claude_Fournier&quot;&gt;Jean-Claude
+Fournier&lt;/a&gt;, etc.), des footballeurs (comme Laurent Fournier) ou des hommes
+politiques (français ou québécois) ? Même si Pierre Fournier est très connu chez
+les violoncellistes - ce que Wikipédia confirme -, je ne pense pas me tromper en
+disant que le bruit médiatique - le buzz - d&#39;un footballeur, d&#39;un politicien
+voire de certains écrivains est plus important. Je vous laisse comparer avec le
+&lt;a
+href=&quot;http://www.google.com/search?hl=en&amp;amp;q=raphael+fournier&amp;amp;btnG=Search&quot;&gt;concurrent&lt;/a&gt;,
+qui parle de moi deux fois sur les 10 premiers résultats... No comment.&lt;/li&gt;
+&lt;/ul&gt; Avant de conclure, remarquons l&#39;interface, très Web 2.0 (résultats sur 3
+colonnes, hiérarchie claire de la page, des éventuelles photos). Je noterais
+cependant que l&#39;on va vers un Internet consulté sur des supports de plus en plus
+disparates (de mon petit k530i en 176*240 à l&#39;écran 24 pouces), je ne suis pas
+sûr que leur mise en page passe bien partout ... &lt;br /&gt;&lt;br /&gt;Conclusion : il
+reste des progrès à faire pour cuil. Malgré le nombre de pages indexées, la
+pertinence n&#39;est pas encore au rendez-vous. Comme on dit dans le monde de
+l&#39;entreprise, le &quot;quantitatif&quot;, ça ne suffit pas !&lt;/p&gt;
+</description>
+                <link>http://username.github.io/blog/2008/08/03/cuil</link>
+                <guid>http://username.github.io/blog/2008/08/03/cuil</guid>
+                <pubDate>2008-08-03T22:55:02+02:00</pubDate>
+        </item>
+
+        <item>
+                <title>Reprise</title>
+                <description>&lt;p&gt;Après quelques longs mois d&#39;absence, je relance un blog. L&#39;envie d&#39;écrire, de
+commenter, de faire partager. Ce que je pense, ce que je lis, entends ou vois,
+les petites choses que j&#39;apprends. Peu à peu, les articles de mon ancien blog
+pourraient revenir, du moins ceux qui le méritent.&lt;/p&gt;
+</description>
+                <link>http://username.github.io/blog/2008/07/22/reprise</link>
+                <guid>http://username.github.io/blog/2008/07/22/reprise</guid>
+                <pubDate>2008-07-22T22:00:54+02:00</pubDate>
+        </item>
+
+
+</channel>
+</rss>

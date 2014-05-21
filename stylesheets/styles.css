@@ -2,9 +2,8 @@ body {
   padding:50px;
   padding-top:30px;
   font-family: Sans-Serif;
-  font-size:12px;
+  font-size:12pt;
   color:#777;
-  font-weight:300;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -20,14 +19,6 @@ h1, h2, h3 {
   line-height:1.1;
 }
 
-h1 {
-  font-size:20px;
-}
-
-h2 {
-  color:#393939;
-}
-
 div.annee {
   margin:20px 0px 10px -30px;
 }
@@ -38,13 +29,12 @@ div.annee {
   content:":";
 }
 
-h3, h4, h5, h6 {
+h2,h3, h4, h5, h6 {
   color:#494949;
 }
 
 a {
   color:#39c;
-  font-weight:400;
   text-decoration:none;
 }
 
@@ -53,7 +43,7 @@ a:hover {
 }
 
 a small {
-  font-size:11px;
+  font-size:11pt;
   color:#777;
   margin-top:-0.6em;
   display:block;
@@ -78,7 +68,7 @@ blockquote {
 code, pre {
   font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
   color:#333;
-  font-size:12px;
+  font-size:12pt;
 }
 
 pre {
@@ -102,7 +92,6 @@ th, td {
 
 dt {
   color:#444;
-  font-weight:700;
 }
 
 th {
@@ -151,7 +140,7 @@ header ul.button li {
 
 header ul.button a {
   line-height:1;
-  font-size:11px;
+  font-size:11pt;
   color:#999;
   display:block;
   text-align:center;
@@ -192,7 +181,7 @@ header ul.button a:active {
 /*}*/
 
 header ul.button a strong {
-  font-size:14px;
+  font-size:14pt;
   display:block;
   color:#222;
 }
@@ -256,7 +245,7 @@ section {
 }
 
 small {
-  font-size:11px;
+  font-size:11pt;
 }
 
 hr {
