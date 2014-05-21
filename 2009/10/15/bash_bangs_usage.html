@@ -62,46 +62,47 @@ pic" height="80px"/>
   
 </div>
 
-  In Bash, one may use !!, !\* and !:2 to
+  <p>In Bash, one may use !!, !* and !:2 to
 get quicker access to previously typed commands or part of commands. "!!"
-stands for the last command, "!\*" for the last command without the first term
+stands for the last command, "!*" for the last command without the first term
 and !:2 is the third argument of the previous command. Let's have some
-examples:
+examples:</p>
 
-    raph@machine$ ls books/
-    foo.txt bar.txt
+<pre><code>raph@machine$ ls books/
+foo.txt bar.txt
 
-    raph@machine$ !!
-    ls books/ ## you notice that Bash outputs immediately the expanded command ## 
-    foo.txt bar.txt
+raph@machine$ !!
+ls books/ ## you notice that Bash outputs immediately the expanded command ## 
+foo.txt bar.txt
 
-    raph@machine$ ls books/foo.txt foo.txt 
+raph@machine$ ls books/foo.txt foo.txt 
 
-    raph@machine$ head !*
-    head books/foo.txt foo.txt
-    # first lines of foo.txt here # 
+raph@machine$ head !*
+head books/foo.txt foo.txt
+# first lines of foo.txt here # 
 
-    raph@machine$ wc -l !*
-    wc -l foo.txt
-    # number of lines in foo.txt # 
+raph@machine$ wc -l !*
+wc -l foo.txt
+# number of lines in foo.txt # 
 
-    raph@machine$ file !:2
-    file foo.txt
-    # output of command file #
+raph@machine$ file !:2
+file foo.txt
+# output of command file #
+</code></pre>
 
-As one may see, !:2 is useful when some options have been given between the
-command and the filename. If I had used "file !\*" instead of "file !:2", bash
+<p>As one may see, !:2 is useful when some options have been given between the
+command and the filename. If I had used "file !*" instead of "file !:2", bash
 would have tried to execute command file on "-l" and "foo.txt". The "-l, file
-not found" error message would then occur. 
+not found" error message would then occur.</p>
 
-I admit that !:2 -- or, more generally, !:n -- is a bit complicated if n greater
+<p>I admit that !:2 -- or, more generally, !:n -- is a bit complicated if n greater
 than 2, because one would not want to manually count the number of options ...
-But it works like a charm in the sequence above with "wc -l" and "head". 
+But it works like a charm in the sequence above with "wc -l" and "head".</p>
 
-The !! is very useful when you are the administrator of your computer and you
+<p>The !! is very useful when you are the administrator of your computer and you
 forget to use sudo at the beginning of a command. Just type "sudo !!" after the
 "permission denied" message and you're done ... (indeed, CTRL+A may also help
-you).
+you).</p>
 
 </div>
 
@@ -123,14 +124,6 @@ you).
 <div id="relatedposts">
   <h2 class="annee">Related posts</h2>
     <ul class="related">
-    
-      <li>     <a class="posturl" href="/2014/02/10/enquete-philosophique-kerr.html">Une enquête philosophique, de Philippe Kerr</a> <span class="lang">(en)</span>
-    <!-- [<span class="categlink"><a href="/tags/unix/">unix</a></span> ] <span class="postdate">10 February</span>-->
- </li>
-    
-      <li>     <a class="posturl" href="/2013/12/02/newsbeuter.html">Newsbeuter</a> <span class="lang">(en)</span>
-    <!-- [<span class="categlink"><a href="/tags/unix/">unix</a></span> ] <span class="postdate">02 December</span>-->
- </li>
     
       <li>     <a class="posturl" href="/2013/08/21/breve.html">une breve</a> <span class="lang">(en)</span>
     <!-- [<span class="categlink"><a href="/tags/breve/">breve</a></span> ] <span class="postdate">21 August</span>-->
@@ -160,8 +153,16 @@ you).
     <!-- [<span class="categlink"><a href="/tags/acta/">acta</a>, <a href="/tags/quadrature/">quadrature</a></span> ] <span class="postdate">08 January</span>-->
  </li>
     
-      <li>     <a class="posturl" href="/2011/12/30/bootstrapping%3A_a_brand-new_jekyll-powered_blog.html">bootstrapping: a brand-new jekyll-powered blog</a> <span class="lang">(en)</span>
+      <li>     <a class="posturl" href="/2011/12/30/bootstrapping:_a_brand-new_jekyll-powered_blog.html">bootstrapping: a brand-new jekyll-powered blog</a> <span class="lang">(en)</span>
     <!-- [<span class="categlink"><a href="/tags/jekyll/">jekyll</a></span> ] <span class="postdate">30 December</span>-->
+ </li>
+    
+      <li>     <a class="posturl" href="/2010/01/12/la_fille_de_monaco_et_le_concert.html">La fille de Monaco et Le Concert</a> <span class="lang">(fr)</span>
+    <!-- [<span class="categlink"><a href="/tags/cinema/">cinema</a></span> ] <span class="postdate">12 January</span>-->
+ </li>
+    
+      <li>     <a class="posturl" href="/2009/10/14/bash_completion_after_sudo_or_man.html">Bash completion after sudo or man</a> <span class="lang">(en)</span>
+    <!-- [<span class="categlink"><a href="/tags/astuce/">astuce</a>, <a href="/tags/bash/">bash</a></span> ] <span class="postdate">14 October</span>-->
  </li>
     
     </ul>

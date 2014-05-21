@@ -6,99 +6,27 @@
     <atom:link href="http://raphaelfournier.net/rss.xml" rel="self" type="application/rss+xml" />
     <description></description>
     <language>en-us</language>
-    <pubDate>Wed, 21 May 2014 16:01:41 +0200</pubDate>
-    <lastBuildDate>Wed, 21 May 2014 16:01:41 +0200</lastBuildDate>
+    <pubDate>Tue, 20 May 2014 16:54:28 +0200</pubDate>
+    <lastBuildDate>Tue, 20 May 2014 16:54:28 +0200</lastBuildDate>
 
     
     <item>
-      <title>Article avec le LORIA accepté</title>
-      <link>http://raphaelfournier.net/news/2014/05/18/kad</link>
-      <pubDate>Sun, 18 May 2014 00:00:00 +0200</pubDate>
-      <author>raphael@raphaelfournier.net (Raphael Fournier)</author>
-      <guid>http://raphaelfournier.net/news/2014/05/18/kad</guid>
-      <description>&lt;p&gt;L&#39;article Comparing paedophile activity in different P2P systems, coécrit avec
-l&#39;équipe du LORIA (Thibault Cholez, Isabelle Chrisment, Olivier Festor) a été
-accepté pour publication dans Social Sciences, numéro spécial &quot;Contemporary
-Developments in Child Protection&quot;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>450 ans de Galilée</title>
-      <link>http://raphaelfournier.net/news/2014/05/15/galilee</link>
-      <pubDate>Thu, 15 May 2014 00:00:00 +0200</pubDate>
-      <author>raphael@raphaelfournier.net (Raphael Fournier)</author>
-      <guid>http://raphaelfournier.net/news/2014/05/15/galilee</guid>
-      <description>&lt;p&gt;Journée de vulgarisation scientifique, où le L2TI présente un stand double, sur
-la super résolution et sur la stéréoscopie. Les autres laboratoires sont
-également présents et la journée est parrainée par Jen-Pierre Haigneré.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Audition MCF</title>
-      <link>http://raphaelfournier.net/news/2014/05/07/audition-cnam</link>
-      <pubDate>Wed, 07 May 2014 00:00:00 +0200</pubDate>
-      <author>raphael@raphaelfournier.net (Raphael Fournier)</author>
-      <guid>http://raphaelfournier.net/news/2014/05/07/audition-cnam</guid>
-      <description>&lt;p&gt;Je suis auditionné pour un poste MCF au CNAM (laboratoire CEDRIC).&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Talk</title>
-      <link>http://raphaelfournier.net/news/2014/04/29/aafd</link>
-      <pubDate>Tue, 29 Apr 2014 00:00:00 +0200</pubDate>
-      <author>raphael@raphaelfournier.net (Raphael Fournier)</author>
-      <guid>http://raphaelfournier.net/news/2014/04/29/aafd</guid>
-      <description>&lt;p&gt;Exposé sur le projet AMMICO.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>une premiere question</title>
-      <link>http://raphaelfournier.net/questions/2013/08/21/breve</link>
+      <title>une breve</title>
+      <link>http://raphaelfournier.net/2013/08/21/breve.html</link>
       <pubDate>Wed, 21 Aug 2013 17:39:28 +0200</pubDate>
       <author>raphael@raphaelfournier.net (Raphael Fournier)</author>
-      <guid>http://raphaelfournier.net/questions/2013/08/21/breve</guid>
-      <description>&lt;p&gt;coucou Sollicitudin eros sit amet diam. Aliquam ante. Vestibulum ante ipsum
-primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut et est.
-Donec semper nulla in ipsum. Integer elit. In pharetra lorem vel ante.&lt;/p&gt;
-
-&lt;p&gt;Sed sed justo. Curabitur consectetuer arcu. Etiam placerat est eget odio. Nulla
-facilisi. Nulla facilisi. Mauris non neque. Suspendisse et diam. Sed vestibulum
-malesuada ipsum. Cras id magna. Nunc pharetra velit vitae eros. Vivamus ac
-risus. Mauris ac pede laoreet felis pharetra ultricies. Proin et neque. Aliquam
-dignissim placerat felis. Mauris porta ante sagittis purus.&lt;/p&gt;
-
-&lt;p&gt;Pellentesque quis leo eget ante tempor cursus. Pellentesque sagittis, diam ut
-dictum accumsan, magna est viverra erat, vitae imperdiet neque mauris aliquam
-nisl. Suspendisse blandit quam quis felis. Praesent turpis nunc, vehicula in,
-bibendum vitae, blandit ac, turpis. Duis rhoncus. Vestibulum metus. Morbi
-consectetuer felis id tortor. Etiam augue leo, cursus eget, ornare et, ornare
-sagittis, tellus. Fusce felis tellus, consectetuer nec, consequat at, ornare
-non, arcu. Maecenas condimentum sodales odio. Sed eu orci.&lt;/p&gt;
-
-&lt;p&gt;Nullam adipiscing eros sit amet ante. Vestibulum ante. Sed quis ipsum non ligula
-dignissim luctus. Integer quis justo id tortor accumsan tempus. Cras vitae
-magna. Nunc bibendum lacinia tellus. Quisque porttitor ligula et pede. Nam erat
-nibh, fringilla ac, rutrum.&lt;/p&gt;
+      <guid>http://raphaelfournier.net/2013/08/21/breve</guid>
+      <description>&lt;p&gt;coucou&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Useful unix commands</title>
-      <link>http://raphaelfournier.net/blog/2013/08/20/useful-unix-commands</link>
+      <link>http://raphaelfournier.net/2013/08/20/useful-unix-commands.html</link>
       <pubDate>Tue, 20 Aug 2013 17:34:25 +0200</pubDate>
       <author>raphael@raphaelfournier.net (Raphael Fournier)</author>
-      <guid>http://raphaelfournier.net/blog/2013/08/20/useful-unix-commands</guid>
-      <description>&lt;p&gt;This blog contains sample posts which help stage pages and blog data.
-When you don&#39;t need the samples anymore just delete the &lt;code&gt;_posts/core-samples&lt;/code&gt; folder.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ rm -rf _posts/core-samples
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3&gt;rename files with spaces&lt;/h3&gt;
+      <guid>http://raphaelfournier.net/2013/08/20/useful-unix-commands</guid>
+      <description>&lt;h3&gt;rename files with spaces&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;IFS=$&#39;\n&#39;;for file in `find . -regex &quot;.*([0-9]).jpg&quot;`; do new=$(echo $file | sed &quot;s:[0-9]:0&amp;amp;:&quot;);mv $file $new;done;unset IFS
 IFSS=&quot;$(printf &#39;\n\t&#39;)&quot;;for f in 01*; do mv $f 0$f; done
@@ -107,6 +35,299 @@ IFSS=&quot;$(printf &#39;\n\t&#39;)&quot;;for f in 01*; do mv $f 0$f; done
 &lt;h3&gt;xrandr&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;xrandr --output VGA1 --auto --left-of LVDS1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;aspirer un site web&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;wget -r -k -np -E -T 15 -t 2 http://www.example.com
+-r : téléchargement sera récursif (avec les liens de la page).
+-k : les liens sont modifié pour pointer localement.
+-np : empêche de remonter dans le répertoire parent.
+-E : Transformation en HTML.
+-T 15 : Time connection. Le temps max en seconde pour aspirer un lien. Quand
+cette option est omis, un lien difficilement accessible peut ralentir
+considérablement l’aspiration du site.
+-t 2 : nombre de tentative de connexion si il y a erreur 404 (pas de lien). Ici,
+on veut qu’il n’y ait qu’une seule tentative de connexion afin d’accélérer le
+traitement d’aspiration.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;recuperer des images dans un swf&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;1. Install swftools (http://www.swftools.org/)
+2. Get the SWF file: wget http://www.legendarybbq.com/header.swf
+3. Find the image ID (it is 0002): swfdump -D header.swf | grep JPEG
+4. Extract the image: swfextract -o secretimg.jpg -j 2 header.swf
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;generer rapidement une dizaine de nombres aleatoires entre 1 et 2320&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;for i in `seq 1 10`; do num=$RANDOM;let &quot;num %= 2320&quot;;echo $num;done
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;dates&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;date -d &quot;1970-01-01 UTC + 1164128484 seconds&quot;
+date -d &quot;2010-08-12&quot; +%s
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;date : changer manuellement&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo date -s &quot;2010/07/15 12:59:28 CEST&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;files with hyphen&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;mv -- -foo bar # rename -foo in bar
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;fake busy&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;for i in $(seq 0 2 100); do echo $i; sleep 1; done | zenity --progress --title &quot;Installation&quot; --text &quot;Veuillez patienter, installation en cours...&quot; 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;test alsa&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;aplay /usr/share/sounds/alsa/Front_Center.wav
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;ssh scp espaces&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;scp raph@host:&quot;/mnt/Data/Downloaded/Artist\\ Name\\ -\\ Albumname/&quot; ./musique/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;cancel archive extraction&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;for file in `tar tzf archive.tar.gz`; do rm -Rf $file; done
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;infos systeme&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Carte mère et Bios (en root) : :command:&lt;code&gt;dmidecode&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;RAM : :command:&lt;code&gt;free -m&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Processeur : :command:&lt;code&gt;lscpu - cat /proc/cpuinfo&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Carte graphique : :command:&lt;code&gt;lspci | grep VGA&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Liste des périphériques du bus PCI : :command:&lt;code&gt;lspci&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Liste des périphériques USB : :command:&lt;code&gt;lsusb&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Interfaces réseau : :command:&lt;code&gt;ifconfig&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Espace disque et pourcentage d&#39;occupation : :command:&lt;code&gt;df -h&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Partition swap : :command:&lt;code&gt;swapon -s&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Machine (noyau, nom de machine...) : :command:&lt;code&gt;uname -a&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Informations de fonctionnement : :command:&lt;code&gt;uptime&lt;/code&gt;, :command:&lt;code&gt;top&lt;/code&gt;, :command:&lt;code&gt;ps&lt;/code&gt;, :command:&lt;code&gt;who&lt;/code&gt;, :command:&lt;code&gt;vmstat&lt;/code&gt; ...&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h3&gt;ls full path!&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;find nomdudossier -type f
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;latex embed fonts polices&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;dvips fichier
+ps2pdf14 -dPDFSETTINGS=/prepress -dEmbedAllFonts=true fichier.ps
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then check &quot;embedded&quot; via acroread, File &gt; Properties &gt; Fonts (all fonts should be &quot;Embedded subset&quot;).&lt;/p&gt;
+
+&lt;h3&gt;crontab : pas de mail&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;MAILTO=&quot;&quot; au début du fichier crontab -e
+ou &amp;amp;&amp;gt; /dev/null à la fin de la commande
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;time date timezone : changer facilement l&#39;heure&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo ln -sf /usr/share/zoneinfo/Asia/Shanghai localtime
+
+ntpd -qg
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;opera tray icon modification de /usr/bin/opera&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;exec /usr/lib/opera/opera -notrayicon &quot;$@&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;find duplicates images&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;find . -type f -print0 | xargs -0 file | grep &#39;image data&#39; | cut -f1 -d: | tr &#39;\012&#39; &#39;\000&#39; | xargs -0 md5sum | sort | uniq -w 32 -D
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;mettre une commande en image&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;ifconfig | convert label:@- command.png
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;find total duration for a set of *avi files&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;find -type f -name &quot;*.avi&quot; -print0 | xargs -0  mplayer -vo dummy -ao dummy -identify 2&amp;gt;/dev/null | perl -nle &#39;/ID_LENGTH=([0-9\.]+)/ &amp;amp;&amp;amp; ($t +=$1) &amp;amp;&amp;amp; printf &quot;%02d:%02d:%02d\n&quot;,$t/3600,$t/60%60,$t%60&#39; | tail -n 1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;play a video faster, without modifying pitch&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;mplayer -af scaletempo=scale=1.25:speed=both -fs video.avi
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;crop pdf marges margin&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;pdfcrop --margins 10 edonkeyBMS04.pdf outfile2.pdf
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;tables de multiplications&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;seq 9 | sed &#39;H;g&#39; | awk -v RS=&#39;&#39; &#39;{for(i=1;i&amp;lt;=NF;i++)printf(&quot;%dx%d=%d%s&quot;, i, NR, i*NR, i==NR?&quot;\n&quot;:&quot;\t&quot;)}&#39; 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;wrap vim&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;set tw=0 (lignes infinies) / set tw=80 (80 caractères)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;photos resize redimensionner&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;find . -maxdepth 1 -name &quot;*JPG&quot; -exec convert -resize 50% -quality 75 {} imagemagick/{} \;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;font - police&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;To install fonts system-wide (available for all users), move the folder to the /usr/share/fonts/ directory. To install fonts for only a single user, use ~/.fonts/ instead. Then:
+
+$ fc-cache -vf
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;ssh new host&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;Generate a key if necessary:
+
+mkdir -p ~/.ssh  If it doesn&#39;t already exist
+chmod 700 ~/.ssh
+cd ~/.ssh
+ssh-keygen -t dsa
+
+Copy the public key to the remote host:
+
+$ scp -p id_dsa.pub remoteuser@remotehost:
+
+Log into the remote host and install the public key:
+
+ssh -l remoteuser remotehost
+mkdir -p ~/.ssh If it doesn&#39;t already exist
+chmod 700 ~/.ssh
+cat id_rsa.pub &amp;gt;&amp;gt; ~/.ssh/authorized_keys  (Appending)
+chmod 600 ~/.ssh/authorized_keys
+mv id_rsa.pub ~/.ssh Optional, just to be organized
+logout
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;mettre un site en developpement&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;creer le dossier et recopier ça dans la config virtual host d&#39;apache:
+
+&amp;lt;Directory &quot;/home/raph/public_html/drivemeup&quot;&amp;gt;
+    Options Indexes FollowSymLinks MultiViews
+    AllowOverride All
+    Order allow,deny
+    Allow from all
+&amp;lt;/Directory&amp;gt;
+&amp;lt;VirtualHost *:80&amp;gt;
+    ServerAdmin webmaster@dummy-host2.example.com
+    DocumentRoot &quot;/home/raph/public_html/drivemeup&quot;
+    ServerName drivemeup.dev
+    ErrorLog &quot;/var/log/httpd/drivemeup-error.log&quot;
+    CustomLog &quot;/var/log/httpd/drivemeup-access.log&quot; combined
+&amp;lt;/VirtualHost&amp;gt;
+
+Ne pas oublier de rajouter dans /etc/hosts/
+
+127.0.0.1 drivemeup.dev
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;instagram avec imagemagick&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;convert +level-colors Firebrick, me.jpg oldme.jpg
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;match vim all lines : for all lignes (g) with pattern /url/, s[ubstitute] amazon by # fnac&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;g/url/ s/amazon/fnac/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;mieux visualiser les csv&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;column -ts, foo.csv | less -NS#2
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;tune2fs disque space&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo tune2fs  -m 1 /dev/sda4 # 1% espace disque reserve au lieu de 5%
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;imagemagick thumbnail&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;mogrify -thumbnail 200x200 -format jpg -quality 75 -path thumbnail/ *.jpg &amp;amp;
+for f in *.JPG; do convert $f -thumbnail 200x200 -format jpg -quality 75 thumbnail/TN-$f; done
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;tester une date dans remind&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;rem 2013-05-29
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;spaces&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;ls -1 | while read file; do new_file=$(echo $file | sed s/\ //g); mv &quot;$file&quot; &quot;$new_file&quot;; done
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;faire de la place dans le cache pacman&lt;/h3&gt;
+
+&lt;h3&gt;ne garde que les deux dernières versions d&#39;un package&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;cd /var/cache/pacman/pkg/
+ls -r | gawk &#39;{a=gensub(/-[0-9].*$/,&quot;&quot;,&quot;s&quot;); if(a==b){c++;if(c&amp;gt;=2){print $1;}}else{c=0;}b=a;}&#39; | xargs rm
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;supprimer le verrou quand pacman a été mal arrêté&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;rm /var/lib/pacman/db.lck
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;print options cli&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;lpr -PHP_LaserJet_P4015 -o number-up=2 -o sides=two-sided-short-edge -o page-ranges=1-4,7,9-12 $file
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;fold vim modeline&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;% vim: set fdm=marker fmr=&amp;lt;&amp;lt;&amp;lt;,&amp;gt;&amp;gt;&amp;gt; fdl=0:fdc=2
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;Force password for ssh&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;ssh -o &quot;PubkeyAuthentication no&quot; user@server
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;Fork github : update fork with upstream&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;git remote add upstream git://url-to-original-repo
+git fetch upstream
+git merge upstream/master
+git push
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;find filtre file size&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;-type f -size +1048576 -printf &quot;%s:%h%f\n&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;find print human readable&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;find folder/*gz -type f -print0 -exec ls &#39;-1Ssh&#39; &#39;{}&#39; &#39;+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;0pad&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;for name in `ls`; do if [ ${#name} -eq 2 ]; then mv $name 0$name; fi; done
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3&gt;CTRL right key does not work with oss keymap&lt;/h3&gt;
@@ -119,10 +340,10 @@ IFSS=&quot;$(printf &#39;\n\t&#39;)&quot;;for f in 01*; do mv $f 0$f; done
     
     <item>
       <title>Awesome: switch apps with dmenu</title>
-      <link>http://raphaelfournier.net/blog/2013/08/05/awesome-dmenu-switch-apps</link>
+      <link>http://raphaelfournier.net/2013/08/05/awesome-dmenu-switch-apps.html</link>
       <pubDate>Mon, 05 Aug 2013 20:14:25 +0200</pubDate>
       <author>raphael@raphaelfournier.net (Raphael Fournier)</author>
-      <guid>http://raphaelfournier.net/blog/2013/08/05/awesome-dmenu-switch-apps</guid>
+      <guid>http://raphaelfournier.net/2013/08/05/awesome-dmenu-switch-apps</guid>
       <description>&lt;p&gt;I have been using &lt;a href=&quot;http://awesome.naquadah.org&quot;&gt;Awesome&lt;/a&gt; as a window manager for several years. It uses a
 tiling approach, and really &lt;em&gt;manages&lt;/em&gt; windows, maximizing available space on my
 12&quot; laptop screen. A great addition is &lt;a href=&quot;http://tools.suckless.org/dmenu/&quot;&gt;dmenu&lt;/a&gt;, created by the &lt;a href=&quot;http://suckless.org/&quot;&gt;suckless&lt;/a&gt;
@@ -189,10 +410,10 @@ is given focus.&lt;/p&gt;
     
     <item>
       <title>Switch from Makefile to Fabric file for Latex projects</title>
-      <link>http://raphaelfournier.net/blog/2012/08/15/switch_from_makefile_to_fabric_file_for_latex_projects</link>
+      <link>http://raphaelfournier.net/2012/08/15/switch_from_makefile_to_fabric_file_for_latex_projects.html</link>
       <pubDate>Wed, 15 Aug 2012 13:41:52 +0200</pubDate>
       <author>raphael@raphaelfournier.net (Raphael Fournier)</author>
-      <guid>http://raphaelfournier.net/blog/2012/08/15/switch_from_makefile_to_fabric_file_for_latex_projects</guid>
+      <guid>http://raphaelfournier.net/2012/08/15/switch_from_makefile_to_fabric_file_for_latex_projects</guid>
       <description>&lt;p&gt;While writing my Ph. D. thesis, I procrastinate by customizing my environment. I
 have managed to reuse Tikitu de Jager &lt;a href=&quot;http://www.logophile.org/LaTeX/MyThesisSetup&quot;&gt;LateX setup&lt;/a&gt; to compile
 individual chapters of the manuscript. This is very useful to obtain dated-pdf
@@ -278,10 +499,10 @@ $ fab chapter1
     
     <item>
       <title>Revue de Web 1</title>
-      <link>http://raphaelfournier.net/blog/2012/05/20/revue_de_web_1</link>
+      <link>http://raphaelfournier.net/2012/05/20/revue_de_web_1.html</link>
       <pubDate>Sun, 20 May 2012 18:51:20 +0200</pubDate>
       <author>raphael@raphaelfournier.net (Raphael Fournier)</author>
-      <guid>http://raphaelfournier.net/blog/2012/05/20/revue_de_web_1</guid>
+      <guid>http://raphaelfournier.net/2012/05/20/revue_de_web_1</guid>
       <description>&lt;p&gt;Plutôt que de stocker infiniment des tweets comme &quot;favoris&quot; ou des billets de
 blogs dans un coin, je vais poster ici les trucs que je lis. C&#39;est en vrac,
 éventuellement avec un petit commentaire et la présence d&#39;un lien ne signifie
@@ -311,10 +532,10 @@ very narrow field&quot;. - Niels Henrik David Bohr (1885-1962) via
     
     <item>
       <title>Les conférences Treize minutes de Paris 7</title>
-      <link>http://raphaelfournier.net/blog/2012/05/13/les_conferences_treize_minutes_de_paris_7</link>
+      <link>http://raphaelfournier.net/2012/05/13/les_conferences_treize_minutes_de_paris_7.html</link>
       <pubDate>Sun, 13 May 2012 21:15:57 +0200</pubDate>
       <author>raphael@raphaelfournier.net (Raphael Fournier)</author>
-      <guid>http://raphaelfournier.net/blog/2012/05/13/les_conferences_treize_minutes_de_paris_7</guid>
+      <guid>http://raphaelfournier.net/2012/05/13/les_conferences_treize_minutes_de_paris_7</guid>
       <description>&lt;p&gt;Le jeudi 3 mai dernier, à l&#39;université Paris 7 (Diderot), une nouvelle session
 des &lt;a href=&quot;http://www.treizeminutes.fr&quot; title=&quot;Treize minutes site officiel&quot;&gt;Treize minutes&lt;/a&gt; était organisée et je suis allé y faire un
 tour. Le concept semble se rapprocher des conférences &lt;a href=&quot;http://www.ted.com&quot; title=&quot;TED&quot;&gt;TED&lt;/a&gt;, où plusieurs
@@ -538,10 +759,10 @@ rattraper en ligne via les vidéos sur le &lt;a href=&quot;http://www.treizeminu
     
     <item>
       <title>Say no to ACTA!</title>
-      <link>http://raphaelfournier.net/blog/2012/01/08/say_no_to_acta</link>
+      <link>http://raphaelfournier.net/2012/01/08/say_no_to_acta.html</link>
       <pubDate>Sun, 08 Jan 2012 18:15:08 +0100</pubDate>
       <author>raphael@raphaelfournier.net (Raphael Fournier)</author>
-      <guid>http://raphaelfournier.net/blog/2012/01/08/say_no_to_acta</guid>
+      <guid>http://raphaelfournier.net/2012/01/08/say_no_to_acta</guid>
       <description>&lt;iframe src=&quot;http://mediakit.laquadrature.net/embed/716?size=medium&quot; 
 style=&quot;width: 650px; height: 600px; border: 0; overflow: hidden&quot; scrolling=&quot;no&quot;
 frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
@@ -553,10 +774,10 @@ frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
     
     <item>
       <title>bootstrapping: a brand-new jekyll-powered blog</title>
-      <link>http://raphaelfournier.net/blog/2011/12/30/bootstrapping:_a_brand-new_jekyll-powered_blog</link>
+      <link>http://raphaelfournier.net/2011/12/30/bootstrapping:_a_brand-new_jekyll-powered_blog.html</link>
       <pubDate>Fri, 30 Dec 2011 11:59:28 +0100</pubDate>
       <author>raphael@raphaelfournier.net (Raphael Fournier)</author>
-      <guid>http://raphaelfournier.net/blog/2011/12/30/bootstrapping:_a_brand-new_jekyll-powered_blog</guid>
+      <guid>http://raphaelfournier.net/2011/12/30/bootstrapping:_a_brand-new_jekyll-powered_blog</guid>
       <description>&lt;p&gt;I recently decided to move my custom-made personal homepage and my
 blogger-powered blog onto a single website. I stumbled upon
 &lt;a href=&quot;http://jekyllrb.com&quot;&gt;jekyll&lt;/a&gt;, a &quot;blog aware, static site generator&quot;. It can be
@@ -596,10 +817,10 @@ this, but I need some time to see how I can adapt their solutions to this blog.&
     
     <item>
       <title>La fille de Monaco et Le Concert</title>
-      <link>http://raphaelfournier.net/blog/2010/01/12/la_fille_de_monaco_et_le_concert</link>
+      <link>http://raphaelfournier.net/2010/01/12/la_fille_de_monaco_et_le_concert.html</link>
       <pubDate>Tue, 12 Jan 2010 17:26:54 +0100</pubDate>
       <author>raphael@raphaelfournier.net (Raphael Fournier)</author>
-      <guid>http://raphaelfournier.net/blog/2010/01/12/la_fille_de_monaco_et_le_concert</guid>
+      <guid>http://raphaelfournier.net/2010/01/12/la_fille_de_monaco_et_le_concert</guid>
       <description>&lt;p&gt;Récemment, j&#39;ai eu l&#39;occasion de voir deux films : La fille de Monaco, d&#39;Anne
 Fontaine et Le Concert, de Radu Mihaileanu, deux films qu&#39;on m&#39;avait auparavant
 beaucoup recommandés.&lt;/p&gt;
@@ -684,10 +905,10 @@ même.&lt;/p&gt;
     
     <item>
       <title>Bash bangs usage</title>
-      <link>http://raphaelfournier.net/blog/2009/10/15/bash_bangs_usage</link>
+      <link>http://raphaelfournier.net/2009/10/15/bash_bangs_usage.html</link>
       <pubDate>Thu, 15 Oct 2009 10:10:27 +0200</pubDate>
       <author>raphael@raphaelfournier.net (Raphael Fournier)</author>
-      <guid>http://raphaelfournier.net/blog/2009/10/15/bash_bangs_usage</guid>
+      <guid>http://raphaelfournier.net/2009/10/15/bash_bangs_usage</guid>
       <description>&lt;p&gt;In Bash, one may use !!, !* and !:2 to
 get quicker access to previously typed commands or part of commands. &quot;!!&quot;
 stands for the last command, &quot;!*&quot; for the last command without the first term
@@ -734,10 +955,10 @@ you).&lt;/p&gt;
     
     <item>
       <title>Bash completion after sudo or man</title>
-      <link>http://raphaelfournier.net/blog/2009/10/14/bash_completion_after_sudo_or_man</link>
+      <link>http://raphaelfournier.net/2009/10/14/bash_completion_after_sudo_or_man.html</link>
       <pubDate>Wed, 14 Oct 2009 21:20:22 +0200</pubDate>
       <author>raphael@raphaelfournier.net (Raphael Fournier)</author>
-      <guid>http://raphaelfournier.net/blog/2009/10/14/bash_completion_after_sudo_or_man</guid>
+      <guid>http://raphaelfournier.net/2009/10/14/bash_completion_after_sudo_or_man</guid>
       <description>&lt;p&gt;While typing in a Bash shell, one may want to enable the [TAB] completion even
 when sudo or man was typed before the command. Just add the following lines to
 your ~/.bash_profile :&lt;/p&gt;
@@ -753,20 +974,20 @@ package, we&#39;ll see that later on this blog, too much work at the moment.&lt;
     
     <item>
       <title>Thank you, Finland!</title>
-      <link>http://raphaelfournier.net/blog/2009/10/08/thank_you_finland</link>
+      <link>http://raphaelfournier.net/2009/10/08/thank_you_finland.html</link>
       <pubDate>Thu, 08 Oct 2009 21:50:28 +0200</pubDate>
       <author>raphael@raphaelfournier.net (Raphael Fournier)</author>
-      <guid>http://raphaelfournier.net/blog/2009/10/08/thank_you_finland</guid>
+      <guid>http://raphaelfournier.net/2009/10/08/thank_you_finland</guid>
       <description>&lt;p&gt;Internet is now a LEGAL RIGHT in Finland (&lt;a href=&quot;http://www.intomobile.com/2009/10/14/finland-becomes-the-first-country-to-make-broadband-a-legal-right.html&quot;&gt;source&lt;/a&gt;).&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Conversion d'une date unix en date lisible</title>
-      <link>http://raphaelfournier.net/blog/2009/09/04/conversion_dune_date_unix_en_date_lisible</link>
+      <link>http://raphaelfournier.net/2009/09/04/conversion_dune_date_unix_en_date_lisible.html</link>
       <pubDate>Fri, 04 Sep 2009 12:43:12 +0200</pubDate>
       <author>raphael@raphaelfournier.net (Raphael Fournier)</author>
-      <guid>http://raphaelfournier.net/blog/2009/09/04/conversion_dune_date_unix_en_date_lisible</guid>
+      <guid>http://raphaelfournier.net/2009/09/04/conversion_dune_date_unix_en_date_lisible</guid>
       <description>&lt;p&gt;Pour tous les fichiers d&#39;un dossier (nommés ls[unixtime].log), en bash :&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;for i in *; do bla=`echo $i | sed &quot;s:ls::&quot; | sed &quot;s:\.log::&quot;`; toto=`date -u -d &quot;1970-01-01 UTC + $bla seconds&quot;`; echo $i,$toto; done
@@ -776,10 +997,10 @@ package, we&#39;ll see that later on this blog, too much work at the moment.&lt;
     
     <item>
       <title>Hadopi : résumé de la saga</title>
-      <link>http://raphaelfournier.net/blog/2009/07/09/hadopi_resume_de_la_saga</link>
+      <link>http://raphaelfournier.net/2009/07/09/hadopi_resume_de_la_saga.html</link>
       <pubDate>Thu, 09 Jul 2009 22:24:45 +0200</pubDate>
       <author>raphael@raphaelfournier.net (Raphael Fournier)</author>
-      <guid>http://raphaelfournier.net/blog/2009/07/09/hadopi_resume_de_la_saga</guid>
+      <guid>http://raphaelfournier.net/2009/07/09/hadopi_resume_de_la_saga</guid>
       <description>&lt;p&gt;
 Le Sénat vient d&#39;avaliser la loi Hadopi 2. Il est temps de faire un petit rappel des faits et des arguments des différentes parties en présence.
 &lt;/p&gt;
@@ -837,10 +1058,10 @@ Le Sénat vient d&#39;avaliser la loi Hadopi 2. Il est temps de faire un petit r
     
     <item>
       <title>How-to flash an a6km bios</title>
-      <link>http://raphaelfournier.net/blog/2009/06/26/how-to_flash_an_a6km_bios</link>
+      <link>http://raphaelfournier.net/2009/06/26/how-to_flash_an_a6km_bios.html</link>
       <pubDate>Fri, 26 Jun 2009 17:22:38 +0200</pubDate>
       <author>raphael@raphaelfournier.net (Raphael Fournier)</author>
-      <guid>http://raphaelfournier.net/blog/2009/06/26/how-to_flash_an_a6km_bios</guid>
+      <guid>http://raphaelfournier.net/2009/06/26/how-to_flash_an_a6km_bios</guid>
       <description>&lt;p&gt;I&#39;m the owner, for three years now, of
 an Asus laptop (ref : A6km Q007h). It came with Windows XP, which I kept until
 May 2007 or so, when I decided that the dual-boot time was over and I could only
@@ -888,10 +1109,10 @@ to try a linux distro on a key).&lt;/p&gt;
     
     <item>
       <title>Récupération de video sur Rutube</title>
-      <link>http://raphaelfournier.net/blog/2009/06/24/recuperation_de_video_sur_rutube</link>
+      <link>http://raphaelfournier.net/2009/06/24/recuperation_de_video_sur_rutube.html</link>
       <pubDate>Wed, 24 Jun 2009 21:50:23 +0200</pubDate>
       <author>raphael@raphaelfournier.net (Raphael Fournier)</author>
-      <guid>http://raphaelfournier.net/blog/2009/06/24/recuperation_de_video_sur_rutube</guid>
+      <guid>http://raphaelfournier.net/2009/06/24/recuperation_de_video_sur_rutube</guid>
       <description>&lt;p&gt;Ce soir, je voulais
 récupérer la vidéo qui \&quot;buzze\&quot; sur Sarkozy : un reportage diffusé par la TSR
 (Télévision Suisse Romande, &lt;a hreflang=\&quot;fr\&quot;
@@ -935,10 +1156,10 @@ au courant\&quot; (cf l&#39;affaire Cécilia-Attias-Génestar).&lt;/p&gt;&lt;/p&
     
     <item>
       <title>Bavure ...</title>
-      <link>http://raphaelfournier.net/blog/2008/10/17/bavure</link>
+      <link>http://raphaelfournier.net/2008/10/17/bavure.html</link>
       <pubDate>Fri, 17 Oct 2008 20:54:43 +0200</pubDate>
       <author>raphael@raphaelfournier.net (Raphael Fournier)</author>
-      <guid>http://raphaelfournier.net/blog/2008/10/17/bavure</guid>
+      <guid>http://raphaelfournier.net/2008/10/17/bavure</guid>
       <description>&lt;p&gt;&lt;p&gt;Un texte de Patrick Mohr, qui relate une bavure policière, au festival
 d&#39;Avignon, cet été. Via &lt;a href=&quot;http://arhv.lhivic.org&quot;&gt;Arhv&lt;/a&gt;.&lt;/p&gt;
 
@@ -1183,10 +1404,10 @@ le 28 juillet 2008.&lt;/p&gt;&lt;/p&gt;
     
     <item>
       <title>Quotes</title>
-      <link>http://raphaelfournier.net/blog/2008/10/16/quotes</link>
+      <link>http://raphaelfournier.net/2008/10/16/quotes.html</link>
       <pubDate>Thu, 16 Oct 2008 00:11:43 +0200</pubDate>
       <author>raphael@raphaelfournier.net (Raphael Fournier)</author>
-      <guid>http://raphaelfournier.net/blog/2008/10/16/quotes</guid>
+      <guid>http://raphaelfournier.net/2008/10/16/quotes</guid>
       <description>&lt;p&gt;Fred : - Vous êtes co-co-mmandant ?
 Omar : (voix suave) Non, je suis coco-bandant.&lt;/p&gt;
 
@@ -1199,10 +1420,10 @@ avec Coca-cola ! (Chérie).&lt;/p&gt;
     
     <item>
       <title>Petite blague</title>
-      <link>http://raphaelfournier.net/blog/2008/08/05/petite_blague</link>
+      <link>http://raphaelfournier.net/2008/08/05/petite_blague.html</link>
       <pubDate>Tue, 05 Aug 2008 21:43:20 +0200</pubDate>
       <author>raphael@raphaelfournier.net (Raphael Fournier)</author>
-      <guid>http://raphaelfournier.net/blog/2008/08/05/petite_blague</guid>
+      <guid>http://raphaelfournier.net/2008/08/05/petite_blague</guid>
       <description>&lt;p&gt;Lorsque Dieu créa le monde, il décida de concéder deux vertus
 aux hommes de chaque peuple afin qu&#39;ils prospèrent. Par exemple il rendit
 :&lt;br /&gt; Les Suisses précis et pacifistes,&lt;br /&gt; Les Anglais flegmatiques
@@ -1228,10 +1449,10 @@ intelligent et honnête, il ne peut pas être sarkoziste ... &lt;/p&gt;&lt;/p&gt
     
     <item>
       <title>Cuil</title>
-      <link>http://raphaelfournier.net/blog/2008/08/03/cuil</link>
+      <link>http://raphaelfournier.net/2008/08/03/cuil.html</link>
       <pubDate>Sun, 03 Aug 2008 22:55:02 +0200</pubDate>
       <author>raphael@raphaelfournier.net (Raphael Fournier)</author>
-      <guid>http://raphaelfournier.net/blog/2008/08/03/cuil</guid>
+      <guid>http://raphaelfournier.net/2008/08/03/cuil</guid>
       <description>&lt;p&gt;Il y a quelques jours est apparu sur le Net un nouveau moteur de
 recherche,&amp;nbsp;&lt;a href=&quot;http://www.cuil.com/&quot;&gt;Cuil&lt;/a&gt;. Cette start-up entend
 concurrencer Yahoo et Google. La preuve : une page d&#39;accueil très simple, écrite
@@ -1293,10 +1514,10 @@ l&#39;entreprise, le &quot;quantitatif&quot;, ça ne suffit pas !&lt;/p&gt;
     
     <item>
       <title>Reprise</title>
-      <link>http://raphaelfournier.net/blog/2008/07/22/reprise</link>
+      <link>http://raphaelfournier.net/2008/07/22/reprise.html</link>
       <pubDate>Tue, 22 Jul 2008 22:00:54 +0200</pubDate>
       <author>raphael@raphaelfournier.net (Raphael Fournier)</author>
-      <guid>http://raphaelfournier.net/blog/2008/07/22/reprise</guid>
+      <guid>http://raphaelfournier.net/2008/07/22/reprise</guid>
       <description>&lt;p&gt;Après quelques longs mois d&#39;absence, je relance un blog. L&#39;envie d&#39;écrire, de
 commenter, de faire partager. Ce que je pense, ce que je lis, entends ou vois,
 les petites choses que j&#39;apprends. Peu à peu, les articles de mon ancien blog

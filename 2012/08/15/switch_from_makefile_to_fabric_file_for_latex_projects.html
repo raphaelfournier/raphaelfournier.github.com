@@ -62,86 +62,86 @@ pic" height="80px"/>
   
 </div>
 
-  While writing my Ph. D. thesis, I procrastinate by customizing my environment. I
-have managed to reuse Tikitu de Jager [LateX setup][Latex-setup] to compile
+  <p>While writing my Ph. D. thesis, I procrastinate by customizing my environment. I
+have managed to reuse Tikitu de Jager <a href="http://www.logophile.org/LaTeX/MyThesisSetup">LateX setup</a> to compile
 individual chapters of the manuscript. This is very useful to obtain dated-pdf
 of a given chapter, with references, which can be send to friends/coworkers for
-reviewing, without sending the full document. 
+reviewing, without sending the full document.</p>
 
-I also took the time to replace the Makefile I usually use by a [fab
-file][Fabric], which benefits from the Python syntax and is thus easier to
-tweak.
+<p>I also took the time to replace the Makefile I usually use by a <a href="http://fabfile.org">fab
+file</a>, which benefits from the Python syntax and is thus easier to
+tweak.</p>
 
-Just put a file called `fabfile.py` in the folder where your .tex files reside.
-Here is an excerpt of my fabfile :
+<p>Just put a file called <code>fabfile.py</code> in the folder where your .tex files reside.
+Here is an excerpt of my fabfile :</p>
 
-    from fabric.api import local
+<pre><code>from fabric.api import local
 
-    # variables
-    SRC = "these"
-    FIGDIR = "figures"
-    PDFREADER = "zathura"
-    LATEXMODE = "pdflatex"
-    BIBTEX = "bibtex"
+# variables
+SRC = "these"
+FIGDIR = "figures"
+PDFREADER = "zathura"
+LATEXMODE = "pdflatex"
+BIBTEX = "bibtex"
 
-    def execute(command):
-      local(command)
-      #local("echo %s"%command)
+def execute(command):
+  local(command)
+  #local("echo %s"%command)
 
-    def move(output,chapter):
-      command = "mv %s %s.pdf"%(output,chapter)
-      execute(command)
+def move(output,chapter):
+  command = "mv %s %s.pdf"%(output,chapter)
+  execute(command)
 
-    def preview(chapter):
-      print("previewing...")
-      command1 = 'echo -e "awful.tag.viewmore({tags[1][6],awful.tag.selected(1)})" | awesome-client'
-      command2 = PDFREADER +" "+ chapter+".pdf"
-      execute(command1)
-      execute(command2)
+def preview(chapter):
+  print("previewing...")
+  command1 = 'echo -e "awful.tag.viewmore({tags[1][6],awful.tag.selected(1)})" | awesome-client'
+  command2 = PDFREADER +" "+ chapter+".pdf"
+  execute(command1)
+  execute(command2)
 
-    def clean():
-      command = "rm -f *.aux *.log *.out *.ps *.toc *.nav *.snm *.dvi *.blg *.bbl *.nlo *.mtc* *.brf *.maf *.tdo"
-      execute(command)
+def clean():
+  command = "rm -f *.aux *.log *.out *.ps *.toc *.nav *.snm *.dvi *.blg *.bbl *.nlo *.mtc* *.brf *.maf *.tdo"
+  execute(command)
 
-    def chapter1(bibtex=True,display=True):
-      chapter = "chapter1"
-      make(chapter,bibtex)
-      if display:
-        preview(chapter)
+def chapter1(bibtex=True,display=True):
+  chapter = "chapter1"
+  make(chapter,bibtex)
+  if display:
+    preview(chapter)
 
-    def make(chapter,bibtex):
-      command = LATEXMODE + " --output-directory=auxiliary " + chapter + "_wrapper.tex"
-      bibtexcommand = BIBTEX + " auxiliary/" + chapter + "_wrapper"
-      output = "auxiliary/" + chapter + "_wrapper" + ".pdf"
-      execute(command)
-      if bibtex == True:
-        execute(command)
-        execute(bibtexcommand)
-        execute(command)
-      move(output,chapter)
+def make(chapter,bibtex):
+  command = LATEXMODE + " --output-directory=auxiliary " + chapter + "_wrapper.tex"
+  bibtexcommand = BIBTEX + " auxiliary/" + chapter + "_wrapper"
+  output = "auxiliary/" + chapter + "_wrapper" + ".pdf"
+  execute(command)
+  if bibtex == True:
+    execute(command)
+    execute(bibtexcommand)
+    execute(command)
+  move(output,chapter)
+</code></pre>
 
-Let's review the file :
+<p>Let's review the file :</p>
 
-* The `execute()` function is just an alias for easier readibility of the code
-* The `clean()` function removes all the temporary files produced by a latex
-  compilation
-* The `make()` function lists the sequence of operations required for a full
-  compilation, using a switch whether I need to use `bibtex` to produce the list
-  of references or not
-* The `chapter1` function is called after one of my chapter. I can call it with
-  one of the following command:
+<ul>
+<li>The <code>execute()</code> function is just an alias for easier readibility of the code</li>
+<li>The <code>clean()</code> function removes all the temporary files produced by a latex
+compilation</li>
+<li>The <code>make()</code> function lists the sequence of operations required for a full
+compilation, using a switch whether I need to use <code>bibtex</code> to produce the list
+of references or not</li>
+<li><p>The <code>chapter1</code> function is called after one of my chapter. I can call it with
+one of the following command:</p>
 
-      $ fab chapter1:bibtex=True,preview=False 
-        # full compilation but no preview
-      $ fab chapter1:False,True 
-        # quick compilation and opens a pdf viewer immediately after
-      $ fab chapter1 
-        # defaults to bibtex=True and preview=True
+<pre><code>$ fab chapter1:bibtex=True,preview=False 
+  # full compilation but no preview
+$ fab chapter1:False,True 
+  # quick compilation and opens a pdf viewer immediately after
+$ fab chapter1 
+  # defaults to bibtex=True and preview=True
+</code></pre></li>
+</ul>
 
-
-
-[Latex-setup]: http://www.logophile.org/LaTeX/MyThesisSetup
-[Fabric]: http://fabfile.org
 
 </div>
 
@@ -163,14 +163,6 @@ Let's review the file :
 <div id="relatedposts">
   <h2 class="annee">Related posts</h2>
     <ul class="related">
-    
-      <li>     <a class="posturl" href="/2014/02/10/enquete-philosophique-kerr.html">Une enquête philosophique, de Philippe Kerr</a> <span class="lang">(en)</span>
-    <!-- [<span class="categlink"><a href="/tags/unix/">unix</a></span> ] <span class="postdate">10 February</span>-->
- </li>
-    
-      <li>     <a class="posturl" href="/2013/12/02/newsbeuter.html">Newsbeuter</a> <span class="lang">(en)</span>
-    <!-- [<span class="categlink"><a href="/tags/unix/">unix</a></span> ] <span class="postdate">02 December</span>-->
- </li>
     
       <li>     <a class="posturl" href="/2013/08/21/breve.html">une breve</a> <span class="lang">(en)</span>
     <!-- [<span class="categlink"><a href="/tags/breve/">breve</a></span> ] <span class="postdate">21 August</span>-->
@@ -196,12 +188,20 @@ Let's review the file :
     <!-- [<span class="categlink"><a href="/tags/acta/">acta</a>, <a href="/tags/quadrature/">quadrature</a></span> ] <span class="postdate">08 January</span>-->
  </li>
     
-      <li>     <a class="posturl" href="/2011/12/30/bootstrapping%3A_a_brand-new_jekyll-powered_blog.html">bootstrapping: a brand-new jekyll-powered blog</a> <span class="lang">(en)</span>
+      <li>     <a class="posturl" href="/2011/12/30/bootstrapping:_a_brand-new_jekyll-powered_blog.html">bootstrapping: a brand-new jekyll-powered blog</a> <span class="lang">(en)</span>
     <!-- [<span class="categlink"><a href="/tags/jekyll/">jekyll</a></span> ] <span class="postdate">30 December</span>-->
  </li>
     
       <li>     <a class="posturl" href="/2010/01/12/la_fille_de_monaco_et_le_concert.html">La fille de Monaco et Le Concert</a> <span class="lang">(fr)</span>
     <!-- [<span class="categlink"><a href="/tags/cinema/">cinema</a></span> ] <span class="postdate">12 January</span>-->
+ </li>
+    
+      <li>     <a class="posturl" href="/2009/10/15/bash_bangs_usage.html">Bash bangs usage</a> <span class="lang">(en)</span>
+    <!-- [<span class="categlink"><a href="/tags/astuce/">astuce</a>, <a href="/tags/bash/">bash</a></span> ] <span class="postdate">15 October</span>-->
+ </li>
+    
+      <li>     <a class="posturl" href="/2009/10/14/bash_completion_after_sudo_or_man.html">Bash completion after sudo or man</a> <span class="lang">(en)</span>
+    <!-- [<span class="categlink"><a href="/tags/astuce/">astuce</a>, <a href="/tags/bash/">bash</a></span> ] <span class="postdate">14 October</span>-->
  </li>
     
     </ul>
