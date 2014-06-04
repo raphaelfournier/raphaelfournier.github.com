@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>APMM</title>
+    <title>Mutt and mailcap: two apps to open attachments</title>
     <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://raphaelfournier.net/feed/rss" />
     <link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="http://raphaelfournier.net/feed/atom" />
     
@@ -36,7 +36,7 @@ pic" height="80px"/>
         </ul>
 
         <ul class="tabs">
-          <li class="blog "><a rel="home page" title="homepage" href="/blog">read my <strong>blog</strong></a></li>
+          <li class="blog actuel"><a rel="home page" title="homepage" href="/blog">read my <strong>blog</strong></a></li>
           <li> <a rel="rss feed" title="receive update via rss"
             href="/feed/rss.xml">subscribe by <strong>rss</strong></a> </li>
           <li><a rel="twitter" title="follow me on twitter!" href="http://www.twitter.com/fournier_r">follow me on <strong>Twitter</strong></a></li>
@@ -52,41 +52,49 @@ pic" height="80px"/>
 
       </header>
       <section>
-        
-<div class="page-header">
-  <h1>APMM </h1>
+        <div id="post">
+  <h1>
+  <a href="/blog/2014/06/04/mutt-and-mailcap-two-apps-to-open-attachments">Mutt and mailcap: two apps to open attachments</a>
+</h1>
+<div class="authoring">
+  Published on 04-06-2014 
+  
+  
 </div>
 
-<div class="row-fluid">
-  <div class="span12">
-    <p>Documents :</p>
+  <p>Yesterday, I was looking for the syntax of the "pipe-entry" command in mutt,
+which allows to pass a message or an attachment to a specific command. For
+instance, for a pdf, one can press "|" then type "acroread -" to open a pdf with
+the adobe pdf reader. I did not find the exact syntax but I found that in the
+mailcap file, it is possible to configure not only one but two applications to
+automatically open a file.</p>
 
-<ul>
-<li><a href="../files/APMM_Cours.pdf">Cours</a></li>
-<li><a href="../files/APMM_TD.pdf">Sujets TD et TME</a></li>
-<li><a href="../files/APMM_TD_correction.pdf">Correction du TD</a></li>
-</ul>
+<p>The regular syntax is:</p>
 
+<pre><code>text/html; /usr/bin/firefox %s;
+</code></pre>
 
-<!--
-  <ul class="related">
-  <li><h3 class="intitule"><span class="categlink">Documents</span>2010-2011</h3>
-<p class="contenu">
-  <ul class="normal">
-      <li><a href="../files/APMM_Cours.pdf">Cours</a></span></li>
-      <li><a href="../files/APMM_TD.pdf">Sujets TD et TME</a></span></li>
-      <li><a href="../files/APMM_TD_correction.pdf">Correction du TD</a></span></li>
-  </ul>
-Ces documents sont proviennent de <a href="http://jlguillaume.free.fr">J.-L. Guillaume</a>.
-</p>
-  </ul>
--->
+<p>for an html file. This way, when you visualize the attachments (by pressing
+"v"), if you are on an html file, if you press ENTER it opens in firefox. It is
+possible add something like this:</p>
 
+<pre><code>text/html; /usr/bin/firefox %s; print=/usr/bin/chromium %s
+</code></pre>
 
+<p>so that, while keeping the ENTER behavior, you also get a print behavior (press
+"p"): the file may then be open in chromium, with "P". Indeed, it also works
+with pdf files:</p>
 
+<pre><code>application/pdf; /usr/bin/zathura %s; print=/usr/bin/acroread %s
+</code></pre>
 
-  </div>
+<p><a href="http://pwmt.org/projects/zathura/">zathura</a> is a nice pdf viewer but it
+sometimes lack some of the features of Acroread (which is way heavier).</p>
+
+<p><a href="http://wcm1.web.rice.edu/mutt-tips.html">source of this tip</a></p>
+
 </div>
+
 
 
       </section>

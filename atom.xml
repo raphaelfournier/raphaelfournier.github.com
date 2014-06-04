@@ -4,13 +4,51 @@
  <title>Jekyll Bootstrap</title>
  <link href="http://username.github.io/" rel="self"/>
  <link href="http://username.github.io"/>
- <updated>2014-05-21T16:01:41+02:00</updated>
+ <updated>2014-06-04T14:37:47+02:00</updated>
  <id>http://username.github.io</id>
  <author>
    <name>Name Lastname</name>
    <email>blah@email.test</email>
  </author>
 
+ 
+ <entry>
+   <title>Mutt and mailcap: two apps to open attachments</title>
+   <link href="http://username.github.io/blog/2014/06/04/mutt-and-mailcap-two-apps-to-open-attachments"/>
+   <updated>2014-06-04T14:23:00+02:00</updated>
+   <id>http://username.github.io/blog/2014/06/04/mutt-and-mailcap-two-apps-to-open-attachments</id>
+   <content type="html">&lt;p&gt;Yesterday, I was looking for the syntax of the &quot;pipe-entry&quot; command in mutt,
+which allows to pass a message or an attachment to a specific command. For
+instance, for a pdf, one can press &quot;|&quot; then type &quot;acroread -&quot; to open a pdf with
+the adobe pdf reader. I did not find the exact syntax but I found that in the
+mailcap file, it is possible to configure not only one but two applications to
+automatically open a file.&lt;/p&gt;
+
+&lt;p&gt;The regular syntax is:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;text/html; /usr/bin/firefox %s;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;for an html file. This way, when you visualize the attachments (by pressing
+&quot;v&quot;), if you are on an html file, if you press ENTER it opens in firefox. It is
+possible add something like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;text/html; /usr/bin/firefox %s; print=/usr/bin/chromium %s
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;so that, while keeping the ENTER behavior, you also get a print behavior (press
+&quot;p&quot;): the file may then be open in chromium, with &quot;P&quot;. Indeed, it also works
+with pdf files:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;application/pdf; /usr/bin/zathura %s; print=/usr/bin/acroread %s
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://pwmt.org/projects/zathura/&quot;&gt;zathura&lt;/a&gt; is a nice pdf viewer but it
+sometimes lack some of the features of Acroread (which is way heavier).&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://wcm1.web.rice.edu/mutt-tips.html&quot;&gt;source of this tip&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Article avec le LORIA accepté</title>
@@ -84,15 +122,19 @@ nibh, fringilla ac, rutrum.&lt;/p&gt;
  </entry>
  
  <entry>
-   <title>Useful unix commands</title>
-   <link href="http://username.github.io/blog/2013/08/20/useful-unix-commands"/>
-   <updated>2013-08-20T17:34:25+02:00</updated>
-   <id>http://username.github.io/blog/2013/08/20/useful-unix-commands</id>
-   <content type="html">&lt;p&gt;This blog contains sample posts which help stage pages and blog data.
-When you don&#39;t need the samples anymore just delete the &lt;code&gt;_posts/core-samples&lt;/code&gt; folder.&lt;/p&gt;
+   <title>Useful Unix Commands</title>
+   <link href="http://username.github.io/2013/08/20/useful-unix-commands"/>
+   <updated>2013-08-20T00:00:00+02:00</updated>
+   <id>http://username.github.io/2013/08/20/useful-unix-commands</id>
+   <content type="html">&lt;p&gt;[[---]]
+layout: post
+title: &quot;Useful unix commands&quot;
+date: 2013-08-20 15:34:25
+lang: en
+categories: blog
+tags:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;$ rm -rf _posts/core-samples
-&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt; - unix&lt;/h2&gt;
 
 &lt;h3&gt;rename files with spaces&lt;/h3&gt;
 

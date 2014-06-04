@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html>
   <head>
@@ -15,6 +16,7 @@
     <![endif]-->
     <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" /><!-- pour IE -->
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" /><!-- pour les navigateurs standards -->
+      <script src="/assets/js/toggle.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -26,7 +28,7 @@ pic" height="80px"/>
 <h1>Raphaël <br/>Fournier-<br/>S'niehotta</h1>
 </div>
         <ul class="tabs">
-          <li class="about"><a rel="about me" title="about" href="/about/">about <strong>me</strong></a></li>
+          <li class="about"><a rel="about me" title="about" href="/">about <strong>me</strong></a></li>
           <li class="research actuel"><a rel="research" title="research" href="/research/">I do <strong>research</strong></a></li>
           <li class="teaching "><a rel="teaching" title="teaching" href="/teaching/">and I <strong>teach</strong></a></li>
           <li><a title="cv"
@@ -52,37 +54,61 @@ pic" height="80px"/>
 
       </header>
       <section>
-        <a name="top"></a>
+        
+<div class="page-header">
+  <h1>Research </h1>
+</div>
 
-<h1 class="section"> Research </h1>
+<div class="row-fluid">
+  <div class="span12">
+    <h2>Topics</h2>
 
-
- <p>My research topics are related to data and graph mining, recommender systems,
+<p>My research topics are related to data and graph mining, recommender systems,
 community detection and P2P networks. I have been funded by the <a href="http://antipaedo.lip6.fr">Antipaedo</a>
 project, which aims at increasing knowledge on paedophile activity in P2P
 networks. Recently, I joined the <a href="http://www.ammico.fr">AMMICO</a> project, in which we study
 contextual recommender systems in order to improve museum visiting assistant
 devices.</p>
 
-<h3>Peer-reviewed international journals</h3>
+<h2>Publications</h2>
 
-<ol>
-<li><p><em>Comparing paedophile activity in different P2P systems</em>. Collaboration with the MADYNES team from LORIA. Submitted, May 2012.
+<!-- [automatic list](publications.html) -->
+
+
+<h3>Peer-reviewed journals</h3>
+
+<ul>
+<li><p>[j2] <em>Comparing paedophile activity in different P2P systems</em>. Raphaël
+Fournier, Thibault Cholez, Matthieu Latapy, Isabelle Chrisment, Clémence
+Magnien, Ivan Daniloff, Olivier Festor. Accepted in Social Sciences, May 2014.
 [<a href="../files/ComparingPaedoActP2P_FournierCholezLatapyMagnienChrismentDaniloffFestor.pdf">Preprint</a>]</p></li>
-<li><p><em>Quantifying paedophile activity in a large P2P system</em>.
-Published in <a href="http://dx.doi.org/10.1016/j.ipm.2012.02.008">Information Processing and Management</a>, March 2012. [<a href="../files/Quantifying-IPM-final.pdf">PDF</a>]</p></li>
-</ol>
+<li><p>[j1] <em>Quantifying paedophile activity in a large P2P system</em>. Raphaël
+Fournier, Matthieu Latapy, Clémence Magnien. Published in <a href="http://dx.doi.org/10.1016/j.ipm.2012.02.008">Information
+Processing and Management</a>,
+March 2012. [<a href="../files/Quantifying-IPM-final.pdf">PDF</a>]</p></li>
+</ul>
 
 
-<h3>Peer-reviewed international conferences</h3>
+<h3>Peer-reviewed conferences</h3>
 
-<ol>
-<li><em>Quantifying paedophile queries in a large P2P system</em>. Accepted for the
+<ul>
+<li><p>[c5] <em>A Social Framework for Recommender Systems</em>. Daniel Bernardes, Mamadou Diaby,
+Raphaël Fournier, Françoise Fogelman Soulié, Emmanuel Viennet. Submitted.
+[<a href="../files/SocialFrameworkRecSys-BernardesDiabyFournierSoulieViennet.pdf">PDF</a>]</p></li>
+<li><p>[c4] <em>Social Recommender Systems, a Survey</em>. Mamadou Diaby, Raphaël Fournier,
+Françoise Fogelman Soulié, Emmanuel Viennet. Submitted.
+[<a href="../files/SocialRecSysSurvey-DiabyFournierSoulieViennet.pdf">PDF</a>]</p></li>
+<li><p>[c3] <em>AMMICO : recommandation sociale pour la visite de musée</em>. Raphaël Fournier,
+Emmanuel Viennet. AAFD14. [<a href="../files/AMMICO-AAFD-FournierViennet.pdf">PDF</a>]</p></li>
+<li><p>[c2] <em>Mining bipartite graphs to improve semantic paedophile activity detection</em>.
+Raphael Fournier, Maximilien Danisch. RCIS 2014.
+[<a href="../files/Mining-RCIS2014-FournierDanisch.pdf">PDF</a>]</p></li>
+<li><p>[c1] <em>Quantifying paedophile queries in a large P2P system</em>. Accepted for the
 <a href="http://www.ieee-infocom.org/">IEEE Infocom Mini-Conference 2011</a>, Shanghai,
 (acceptance rate : 23,42%).
 [<a href="./quantifying">Dedicated web page</a>]
-[<a href="../files/InfocomMC11_LatapyMagnienFournier_QuantifyingPaedophileQueriesP2P.pdf">PDF version</a>]</li>
-</ol>
+[<a href="../files/InfocomMC11_LatapyMagnienFournier_QuantifyingPaedophileQueriesP2P.pdf">PDF version</a>]</p></li>
+</ul>
 
 
 <h3>PhD Thesis</h3>
@@ -121,18 +147,22 @@ INTERPOL World Headquarters, Lyon.
 <li><em>Quantifying paedophile users on a P2P system</em>. [<a href="http://complexnetworks.fr/plots.php?plot_id=53" title=" target=&quot;_blank">Link</a>, external, on the complexnetworks team website]</li>
 </ol>
 
- 
+
+  </div>
+</div>
+
 
       </section>
       <footer>
         <div align="center">
 <small>
-  <ul>
-    <li><a href="legal.html">legal</a></li>
-    <li><a href="sitemap.xml">map</a></li>
-    <li><a href="http://jekyll.org">jekyll</a></li>
-    <li><a href="https://github.com/orderedlist">theme</a></li>
-  </ul>
+04/06/2014
+  <!--<ul>-->
+    <!--<li><a href="legal.html">legal</a></li>-->
+    <!--<li><a href="sitemap.xml">map</a></li>-->
+    <!--<li><a href="http://jekyll.org">jekyll</a></li>-->
+    <!--<li><a href="https://github.com/orderedlist">theme</a></li>-->
+  <!--</ul>-->
 </small>
 </div>
 
@@ -141,3 +171,4 @@ INTERPOL World Headquarters, Lyon.
     <script src="javascripts/scale.fix.js"></script>
   </body>
 </html>
+

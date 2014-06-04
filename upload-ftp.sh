@@ -2,7 +2,7 @@
 HOST="ftp.lautre.net"
 USER="rfs"
 PASS="Passer_8"
-LCD="~/Blogging/newordered/_site/"
+LCD="~/Blogging/fusion/_site/"
 RCD="raphael"
 #DELETE="--delete"
 #lftp -c "set ftp:list-options -a;
