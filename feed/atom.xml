@@ -4,7 +4,7 @@
   <title>Raphael Fournier blog</title>
   <link href="http://raphaelfournier.net/"/>
   <link type="application/atom+xml" rel="self" href="http://raphaelfournier.net/atom.xml"/>
-  <updated>2014-06-04T14:37:47+02:00</updated>
+  <updated>2014-06-07T08:18:29+02:00</updated>
   <id>http://raphaelfournier.net/</id>
   <author>
     <name>Raphael Fournier</name>
@@ -152,26 +152,16 @@ nibh, fringilla ac, rutrum.&lt;/p&gt;
   </entry>
   
   <entry>
-    <id>http://raphaelfournier.net/2013/08/20/useful-unix-commands</id>
-    <link type="text/html" rel="alternate" href="http://raphaelfournier.net/2013/08/20/useful-unix-commands"/>
-    <title>Useful Unix Commands</title>
-    <published>2013-08-20T00:00:00+02:00</published>
-    <updated>2013-08-20T00:00:00+02:00</updated>
+    <id>http://raphaelfournier.net/blog/2013/08/20/useful-unix-commands</id>
+    <link type="text/html" rel="alternate" href="http://raphaelfournier.net/blog/2013/08/20/useful-unix-commands"/>
+    <title>Useful unix commands</title>
+    <published>2013-08-20T17:34:25+02:00</published>
+    <updated>2013-08-20T17:34:25+02:00</updated>
     <author>
       <name>Raphael Fournier</name>
       <uri>http://raphaelfournier.net/</uri>
     </author>
-    <content type="html">&lt;p&gt;[[---]]
-layout: post
-title: &quot;Useful unix commands&quot;
-date: 2013-08-20 15:34:25
-lang: en
-categories: blog
-tags:&lt;/p&gt;
-
-&lt;h2&gt; - unix&lt;/h2&gt;
-
-&lt;h3&gt;rename files with spaces&lt;/h3&gt;
+    <content type="html">&lt;h3&gt;rename files with spaces&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;IFS=$&#39;\n&#39;;for file in `find . -regex &quot;.*([0-9]).jpg&quot;`; do new=$(echo $file | sed &quot;s:[0-9]:0&amp;amp;:&quot;);mv $file $new;done;unset IFS
 IFSS=&quot;$(printf &#39;\n\t&#39;)&quot;;for f in 01*; do mv $f 0$f; done

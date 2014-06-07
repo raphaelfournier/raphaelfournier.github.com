@@ -6,8 +6,8 @@
     <atom:link href="http://raphaelfournier.net/rss.xml" rel="self" type="application/rss+xml" />
     <description></description>
     <language>en-us</language>
-    <pubDate>Wed, 04 Jun 2014 14:37:47 +0200</pubDate>
-    <lastBuildDate>Wed, 04 Jun 2014 14:37:47 +0200</lastBuildDate>
+    <pubDate>Sat, 07 Jun 2014 08:18:29 +0200</pubDate>
+    <lastBuildDate>Sat, 07 Jun 2014 08:18:29 +0200</lastBuildDate>
 
     
     <item>
@@ -126,22 +126,12 @@ nibh, fringilla ac, rutrum.&lt;/p&gt;
     </item>
     
     <item>
-      <title>Useful Unix Commands</title>
-      <link>http://raphaelfournier.net/2013/08/20/useful-unix-commands</link>
-      <pubDate>Tue, 20 Aug 2013 00:00:00 +0200</pubDate>
+      <title>Useful unix commands</title>
+      <link>http://raphaelfournier.net/blog/2013/08/20/useful-unix-commands</link>
+      <pubDate>Tue, 20 Aug 2013 17:34:25 +0200</pubDate>
       <author>raphael@raphaelfournier.net (Raphael Fournier)</author>
-      <guid>http://raphaelfournier.net/2013/08/20/useful-unix-commands</guid>
-      <description>&lt;p&gt;[[---]]
-layout: post
-title: &quot;Useful unix commands&quot;
-date: 2013-08-20 15:34:25
-lang: en
-categories: blog
-tags:&lt;/p&gt;
-
-&lt;h2&gt; - unix&lt;/h2&gt;
-
-&lt;h3&gt;rename files with spaces&lt;/h3&gt;
+      <guid>http://raphaelfournier.net/blog/2013/08/20/useful-unix-commands</guid>
+      <description>&lt;h3&gt;rename files with spaces&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;IFS=$&#39;\n&#39;;for file in `find . -regex &quot;.*([0-9]).jpg&quot;`; do new=$(echo $file | sed &quot;s:[0-9]:0&amp;amp;:&quot;);mv $file $new;done;unset IFS
 IFSS=&quot;$(printf &#39;\n\t&#39;)&quot;;for f in 01*; do mv $f 0$f; done

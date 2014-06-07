@@ -64,13 +64,7 @@ pic" height="80px"/>
   
 </div>
 
-  <p>This blog contains sample posts which help stage pages and blog data.
-When you don't need the samples anymore just delete the <code>_posts/core-samples</code> folder.</p>
-
-<pre><code>$ rm -rf _posts/core-samples
-</code></pre>
-
-<h3>rename files with spaces</h3>
+  <h3>rename files with spaces</h3>
 
 <pre><code>IFS=$'\n';for file in `find . -regex ".*([0-9]).jpg"`; do new=$(echo $file | sed "s:[0-9]:0&amp;:");mv $file $new;done;unset IFS
 IFSS="$(printf '\n\t')";for f in 01*; do mv $f 0$f; done
@@ -95,7 +89,7 @@ IFSS="$(printf '\n\t')";for f in 01*; do mv $f 0$f; done
       <footer>
         <div align="center">
 <small>
-21/05/2014
+07/06/2014
   <!--<ul>-->
     <!--<li><a href="legal.html">legal</a></li>-->
     <!--<li><a href="sitemap.xml">map</a></li>-->

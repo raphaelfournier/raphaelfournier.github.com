@@ -5,8 +5,8 @@
         <description>Jekyll Bootstrap - Name Lastname</description>
         <link>http://username.github.io</link>
         <link>http://username.github.io</link>
-        <lastBuildDate>2014-06-04T14:37:47+02:00</lastBuildDate>
-        <pubDate>2014-06-04T14:37:47+02:00</pubDate>
+        <lastBuildDate>2014-06-07T08:18:29+02:00</lastBuildDate>
+        <pubDate>2014-06-07T08:18:29+02:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -120,18 +120,8 @@ nibh, fringilla ac, rutrum.&lt;/p&gt;
         </item>
 
         <item>
-                <title>Useful Unix Commands</title>
-                <description>&lt;p&gt;[[---]]
-layout: post
-title: &quot;Useful unix commands&quot;
-date: 2013-08-20 15:34:25
-lang: en
-categories: blog
-tags:&lt;/p&gt;
-
-&lt;h2&gt; - unix&lt;/h2&gt;
-
-&lt;h3&gt;rename files with spaces&lt;/h3&gt;
+                <title>Useful unix commands</title>
+                <description>&lt;h3&gt;rename files with spaces&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;IFS=$&#39;\n&#39;;for file in `find . -regex &quot;.*([0-9]).jpg&quot;`; do new=$(echo $file | sed &quot;s:[0-9]:0&amp;amp;:&quot;);mv $file $new;done;unset IFS
 IFSS=&quot;$(printf &#39;\n\t&#39;)&quot;;for f in 01*; do mv $f 0$f; done
@@ -148,9 +138,9 @@ IFSS=&quot;$(printf &#39;\n\t&#39;)&quot;;for f in 01*; do mv $f 0$f; done
 // include &quot;level5(rctrl_switch)&quot;
 &lt;/code&gt;&lt;/pre&gt;
 </description>
-                <link>http://username.github.io/2013/08/20/useful-unix-commands</link>
-                <guid>http://username.github.io/2013/08/20/useful-unix-commands</guid>
-                <pubDate>2013-08-20T00:00:00+02:00</pubDate>
+                <link>http://username.github.io/blog/2013/08/20/useful-unix-commands</link>
+                <guid>http://username.github.io/blog/2013/08/20/useful-unix-commands</guid>
+                <pubDate>2013-08-20T17:34:25+02:00</pubDate>
         </item>
 
         <item>
