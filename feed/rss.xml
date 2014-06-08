@@ -6,8 +6,8 @@
     <atom:link href="http://raphaelfournier.net/rss.xml" rel="self" type="application/rss+xml" />
     <description></description>
     <language>en-us</language>
-    <pubDate>Sat, 07 Jun 2014 08:18:29 +0200</pubDate>
-    <lastBuildDate>Sat, 07 Jun 2014 08:18:29 +0200</lastBuildDate>
+    <pubDate>Sat, 07 Jun 2014 11:08:36 +0200</pubDate>
+    <lastBuildDate>Sat, 07 Jun 2014 11:08:36 +0200</lastBuildDate>
 
     
     <item>
@@ -95,67 +95,11 @@ la super résolution et sur la stéréoscopie. Les autres laboratoires sont
     </item>
     
     <item>
-      <title>une premiere question</title>
-      <link>http://raphaelfournier.net/questions/2013/08/21/breve</link>
-      <pubDate>Wed, 21 Aug 2013 17:39:28 +0200</pubDate>
-      <author>raphael@raphaelfournier.net (Raphael Fournier)</author>
-      <guid>http://raphaelfournier.net/questions/2013/08/21/breve</guid>
-      <description>&lt;p&gt;coucou Sollicitudin eros sit amet diam. Aliquam ante. Vestibulum ante ipsum
-primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut et est.
-Donec semper nulla in ipsum. Integer elit. In pharetra lorem vel ante.&lt;/p&gt;
-
-&lt;p&gt;Sed sed justo. Curabitur consectetuer arcu. Etiam placerat est eget odio. Nulla
-facilisi. Nulla facilisi. Mauris non neque. Suspendisse et diam. Sed vestibulum
-malesuada ipsum. Cras id magna. Nunc pharetra velit vitae eros. Vivamus ac
-risus. Mauris ac pede laoreet felis pharetra ultricies. Proin et neque. Aliquam
-dignissim placerat felis. Mauris porta ante sagittis purus.&lt;/p&gt;
-
-&lt;p&gt;Pellentesque quis leo eget ante tempor cursus. Pellentesque sagittis, diam ut
-dictum accumsan, magna est viverra erat, vitae imperdiet neque mauris aliquam
-nisl. Suspendisse blandit quam quis felis. Praesent turpis nunc, vehicula in,
-bibendum vitae, blandit ac, turpis. Duis rhoncus. Vestibulum metus. Morbi
-consectetuer felis id tortor. Etiam augue leo, cursus eget, ornare et, ornare
-sagittis, tellus. Fusce felis tellus, consectetuer nec, consequat at, ornare
-non, arcu. Maecenas condimentum sodales odio. Sed eu orci.&lt;/p&gt;
-
-&lt;p&gt;Nullam adipiscing eros sit amet ante. Vestibulum ante. Sed quis ipsum non ligula
-dignissim luctus. Integer quis justo id tortor accumsan tempus. Cras vitae
-magna. Nunc bibendum lacinia tellus. Quisque porttitor ligula et pede. Nam erat
-nibh, fringilla ac, rutrum.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Useful unix commands</title>
-      <link>http://raphaelfournier.net/blog/2013/08/20/useful-unix-commands</link>
-      <pubDate>Tue, 20 Aug 2013 17:34:25 +0200</pubDate>
-      <author>raphael@raphaelfournier.net (Raphael Fournier)</author>
-      <guid>http://raphaelfournier.net/blog/2013/08/20/useful-unix-commands</guid>
-      <description>&lt;h3&gt;rename files with spaces&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code&gt;IFS=$&#39;\n&#39;;for file in `find . -regex &quot;.*([0-9]).jpg&quot;`; do new=$(echo $file | sed &quot;s:[0-9]:0&amp;amp;:&quot;);mv $file $new;done;unset IFS
-IFSS=&quot;$(printf &#39;\n\t&#39;)&quot;;for f in 01*; do mv $f 0$f; done
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3&gt;xrandr&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code&gt;xrandr --output VGA1 --auto --left-of LVDS1
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3&gt;CTRL right key does not work with oss keymap&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo vim /usr/share/X11/xkb/symbols/fr
-// include &quot;level5(rctrl_switch)&quot;
-&lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Awesome: switch apps with dmenu</title>
-      <link>http://raphaelfournier.net/blog/2013/08/05/awesome-dmenu-switch-apps</link>
-      <pubDate>Mon, 05 Aug 2013 20:14:25 +0200</pubDate>
+      <link>http://raphaelfournier.net/blog/2013/09/13/awesome-dmenu-switch-apps</link>
+      <pubDate>Fri, 13 Sep 2013 00:00:00 +0200</pubDate>
       <author>raphael@raphaelfournier.net (Raphael Fournier)</author>
-      <guid>http://raphaelfournier.net/blog/2013/08/05/awesome-dmenu-switch-apps</guid>
+      <guid>http://raphaelfournier.net/blog/2013/09/13/awesome-dmenu-switch-apps</guid>
       <description>&lt;p&gt;I have been using &lt;a href=&quot;http://awesome.naquadah.org&quot;&gt;Awesome&lt;/a&gt; as a window manager for several years. It uses a
 tiling approach, and really &lt;em&gt;manages&lt;/em&gt; windows, maximizing available space on my
 12&quot; laptop screen. A great addition is &lt;a href=&quot;http://tools.suckless.org/dmenu/&quot;&gt;dmenu&lt;/a&gt;, created by the &lt;a href=&quot;http://suckless.org/&quot;&gt;suckless&lt;/a&gt;
@@ -217,6 +161,62 @@ is given focus.&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
+</description>
+    </item>
+    
+    <item>
+      <title>une premiere question</title>
+      <link>http://raphaelfournier.net/questions/2013/08/21/breve</link>
+      <pubDate>Wed, 21 Aug 2013 17:39:28 +0200</pubDate>
+      <author>raphael@raphaelfournier.net (Raphael Fournier)</author>
+      <guid>http://raphaelfournier.net/questions/2013/08/21/breve</guid>
+      <description>&lt;p&gt;coucou Sollicitudin eros sit amet diam. Aliquam ante. Vestibulum ante ipsum
+primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut et est.
+Donec semper nulla in ipsum. Integer elit. In pharetra lorem vel ante.&lt;/p&gt;
+
+&lt;p&gt;Sed sed justo. Curabitur consectetuer arcu. Etiam placerat est eget odio. Nulla
+facilisi. Nulla facilisi. Mauris non neque. Suspendisse et diam. Sed vestibulum
+malesuada ipsum. Cras id magna. Nunc pharetra velit vitae eros. Vivamus ac
+risus. Mauris ac pede laoreet felis pharetra ultricies. Proin et neque. Aliquam
+dignissim placerat felis. Mauris porta ante sagittis purus.&lt;/p&gt;
+
+&lt;p&gt;Pellentesque quis leo eget ante tempor cursus. Pellentesque sagittis, diam ut
+dictum accumsan, magna est viverra erat, vitae imperdiet neque mauris aliquam
+nisl. Suspendisse blandit quam quis felis. Praesent turpis nunc, vehicula in,
+bibendum vitae, blandit ac, turpis. Duis rhoncus. Vestibulum metus. Morbi
+consectetuer felis id tortor. Etiam augue leo, cursus eget, ornare et, ornare
+sagittis, tellus. Fusce felis tellus, consectetuer nec, consequat at, ornare
+non, arcu. Maecenas condimentum sodales odio. Sed eu orci.&lt;/p&gt;
+
+&lt;p&gt;Nullam adipiscing eros sit amet ante. Vestibulum ante. Sed quis ipsum non ligula
+dignissim luctus. Integer quis justo id tortor accumsan tempus. Cras vitae
+magna. Nunc bibendum lacinia tellus. Quisque porttitor ligula et pede. Nam erat
+nibh, fringilla ac, rutrum.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Useful unix commands</title>
+      <link>http://raphaelfournier.net/blog/2013/08/20/useful-unix-commands</link>
+      <pubDate>Tue, 20 Aug 2013 17:34:25 +0200</pubDate>
+      <author>raphael@raphaelfournier.net (Raphael Fournier)</author>
+      <guid>http://raphaelfournier.net/blog/2013/08/20/useful-unix-commands</guid>
+      <description>&lt;h3&gt;rename files with spaces&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;IFS=$&#39;\n&#39;;for file in `find . -regex &quot;.*([0-9]).jpg&quot;`; do new=$(echo $file | sed &quot;s:[0-9]:0&amp;amp;:&quot;);mv $file $new;done;unset IFS
+IFSS=&quot;$(printf &#39;\n\t&#39;)&quot;;for f in 01*; do mv $f 0$f; done
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;xrandr&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;xrandr --output VGA1 --auto --left-of LVDS1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;CTRL right key does not work with oss keymap&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo vim /usr/share/X11/xkb/symbols/fr
+// include &quot;level5(rctrl_switch)&quot;
+&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     

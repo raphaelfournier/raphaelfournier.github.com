@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Bash bangs usage</title>
+    <title>Awesome: switch apps with dmenu</title>
     <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://raphaelfournier.net/feed/rss" />
     <link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="http://raphaelfournier.net/feed/atom" />
     
@@ -54,10 +54,10 @@ pic" height="80px"/>
       <section>
         <div id="post">
   <h1>
-  <a href="/blog/2009/10/15/bash_bangs_usage">Bash bangs usage</a>
+  <a href="/blog/2013/09/13/awesome-dmenu-switch-apps">Awesome: switch apps with dmenu</a>
 </h1>
 <div class="authoring">
-  Published on 15-10-2009 in
+  Published on 13-09-2013 in
    [
    
       
@@ -66,9 +66,9 @@ pic" height="80px"/>
 
   
      
-    	<a href="/tags.html#bash-ref">bash</a>, 
+    	<a href="/tags.html#awesome-ref">awesome</a>, 
      
-    	<a href="/tags.html#astuce-ref">astuce</a> 
+    	<a href="/tags.html#dmenu-ref">dmenu</a> 
     
   
 
@@ -78,47 +78,67 @@ pic" height="80px"/>
    ]
 </div>
 
-  <p>In Bash, one may use !!, !* and !:2 to
-get quicker access to previously typed commands or part of commands. "!!"
-stands for the last command, "!*" for the last command without the first term
-and !:2 is the third argument of the previous command. Let's have some
-examples:</p>
+  <p>I have been using <a href="http://awesome.naquadah.org">Awesome</a> as a window manager for several years. It uses a
+tiling approach, and really <em>manages</em> windows, maximizing available space on my
+12" laptop screen. A great addition is <a href="http://tools.suckless.org/dmenu/">dmenu</a>, created by the <a href="http://suckless.org/">suckless</a>
+project. The first use is to pipe applications from the path, which dmenu
+presents as a horizontal/vertical list, with incremental search.</p>
 
-<pre><code>raph@machine$ ls books/
-foo.txt bar.txt
+<p>But dmenu is not limited to this, and wrote a small function which proposes a
+menu of currently running applications (or clients, as awesome calls them). The
+selection may be refined by typing a few character which appear in the name of
+the app or the tag. When selecting enter, the tab changes to the client and it
+is given focus.</p>
 
-raph@machine$ !!
-ls books/ ## you notice that Bash outputs immediately the expanded command ## 
-foo.txt bar.txt
+<p>Here is the code:</p>
 
-raph@machine$ ls books/foo.txt foo.txt 
+<pre><code>    local awful= require("awful")
+    local beautiful = require("beautiful")
+    local naughty   = require("naughty")
+    local client=client
+    local pairs=pairs
+    local table=table
+    local print=print
 
-raph@machine$ head !*
-head books/foo.txt foo.txt
-# first lines of foo.txt here # 
+    local dmenuhelpers = {}
 
-raph@machine$ wc -l !*
-wc -l foo.txt
-# number of lines in foo.txt # 
+    dmenuopts = "-b -i -nf '"..beautiful.fg_normal.."' -nb '"..beautiful.bg_normal.."' -sf '"..beautiful.bg_urgent.."' -sb '"..beautiful.bg_focus.."' -fn '-*-dejavu sans mono-*-r-*-*-*-*-*-*-*-*-*-*'"
 
-raph@machine$ file !:2
-file foo.txt
-# output of command file #
+    function dmenuhelpers.switchapp()
+      local allclients = client.get(mouse.screen)
+      clientsline = ""
+      for _,c in ipairs(allclients) do
+        clientsline = clientsline .. c:tags()[1].name .. " - " .. c.name .. "\n"
+      end
+      selected = awful.util.pread("echo '".. clientsline .."' | dmenu -l 10 " .. dmenuopts)
+      for _,c in ipairs(allclients) do
+        a = c:tags()[1].name .. " - " .. c.name 
+        if a == selected:gsub("\n", "") then
+          for i, v in ipairs(c:tags()) do
+            awful.tag.viewonly(v)
+            client.focus = c
+            c:raise()
+            c.minimized = false
+            return
+          end
+        end
+      end
+    end
 </code></pre>
 
-<p>As one may see, !:2 is useful when some options have been given between the
-command and the filename. If I had used "file !*" instead of "file !:2", bash
-would have tried to execute command file on "-l" and "foo.txt". The "-l, file
-not found" error message would then occur.</p>
+<p>To use it, you need to add the following in your rc.lua:</p>
 
-<p>I admit that !:2 -- or, more generally, !:n -- is a bit complicated if n greater
-than 2, because one would not want to manually count the number of options ...
-But it works like a charm in the sequence above with "wc -l" and "head".</p>
+<ul>
+<li><p>at the top</p>
 
-<p>The !! is very useful when you are the administrator of your computer and you
-forget to use sudo at the beginning of a command. Just type "sudo !!" after the
-"permission denied" message and you're done ... (indeed, CTRL+A may also help
-you).</p>
+<pre><code>  local dmenuhelpers = require("dmenu-helpers")
+</code></pre></li>
+<li><p>in the key table</p>
+
+<pre><code>  awful.key({ modkey, "Control" }, "w", function () dmenuhelpers.switchapp()                                        end),
+</code></pre></li>
+</ul>
+
 
 </div>
 
