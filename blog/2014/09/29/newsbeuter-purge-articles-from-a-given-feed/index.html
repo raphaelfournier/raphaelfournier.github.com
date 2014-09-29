@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Article avec le LORIA accepté</title>
+    <title>Newsbeuter: purge articles from a given feed</title>
     <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://raphaelfournier.net/feed/rss" />
     <link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="http://raphaelfournier.net/feed/atom" />
     
@@ -54,50 +54,59 @@ pic" height="80px"/>
       <section>
         <div id="post">
   <h1>
-  <a href="/news/2014/05/18/kad">Article avec le LORIA accepté</a>
+  <a href="/blog/2014/09/29/newsbeuter-purge-articles-from-a-given-feed">Newsbeuter: purge articles from a given feed</a>
 </h1>
 <div class="authoring">
-  Published on 18-05-2014 in
+  Published on 29-09-2014 in
    [
+   
+      
+      
+
+
+  
+     
+    	<a href="/tags.html#newsbeuter-ref">newsbeuter</a>, 
+     
+    	<a href="/tags.html#rss-ref">rss</a>, 
+     
+    	<a href="/tags.html#commandline-ref">commandline</a> 
+    
+  
+
+
+
      
    ]
 </div>
 
-  <p>L'article Comparing paedophile activity in different P2P systems, coécrit avec
-l'équipe du LORIA (Thibault Cholez, Isabelle Chrisment, Olivier Festor) a été
-accepté pour publication dans Social Sciences, numéro spécial "Contemporary
-Developments in Child Protection".</p>
+  <p>Newsbeuter is a great CLI feedreader, which relies on a sqlite database to
+store information. Thus, it is possible to overcome missing features by
+directly updating the database.</p>
+
+<p>I have some frequently updated feeds (say, more than 20 new items a day) for
+which the archive are useless to me and I would like to be able to delete some
+or all of the articles at once, but Newsbeuter only offers a per-article
+command ("D", by default, for delete-article), missing a "delete-feed-read"
+command which would delete all read items. Here is the command to remove all
+unread articles older than 10 days:</p>
+
+<pre><code>sqlite3 ~/.cache/newsbeuter/cache.db &lt;&lt;&lt; "DELETE FROM rss_item WHERE feedurl LIKE 'http://www.example.com/feed' AND unread = 1 AND pubDate &lt; ( SELECT strftime('%s','now') - (10*86400));";
+</code></pre>
+
+<p>Just replace:</p>
+
+<ul>
+<li>~/.cache/newsbeuter/cache.db by the path where newsbeuter stores its db on your machine</li>
+<li>http://www.example.com/feed by the url of the feed you'd like update</li>
+<li>10 in 10*86400 by a number of days</li>
+</ul>
+
+
+<p>If I have time someday, I should fill in a feature request…</p>
 
 </div>
 
-
-<hr>
-<ul>
-  
-      <li><span>18 May 2014</span> &raquo; <a href="/news/2014/05/18/kad">Article avec le LORIA accepté</a>
-
-</li>
-  
-      <li><span>15 May 2014</span> &raquo; <a href="/news/2014/05/15/galilee">450 ans de Galilée</a>
-
-@ Institut Galilée
-
-</li>
-  
-      <li><span>07 May 2014</span> &raquo; <a href="/news/2014/05/07/audition-cnam">Audition MCF</a>
-
-@ CNAM
-
-</li>
-  
-      <li><span>29 Apr 2014</span> &raquo; <a href="/news/2014/04/29/aafd">Talk</a>
-
-@ Journées AAFD 2014
-
-</li>
-  
-      <li><span>before</span> &raquo; <a href="/news.html">all news</a></li>
-</ul>
 
 
       </section>

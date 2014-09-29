@@ -5,10 +5,42 @@
         <description>Jekyll Bootstrap - Name Lastname</description>
         <link>http://username.github.io</link>
         <link>http://username.github.io</link>
-        <lastBuildDate>2014-09-19T15:22:26+02:00</lastBuildDate>
-        <pubDate>2014-09-19T15:22:26+02:00</pubDate>
+        <lastBuildDate>2014-09-29T13:41:34+02:00</lastBuildDate>
+        <pubDate>2014-09-29T13:41:34+02:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>Newsbeuter: purge articles from a given feed</title>
+                <description>&lt;p&gt;Newsbeuter is a great CLI feedreader, which relies on a sqlite database to
+store information. Thus, it is possible to overcome missing features by
+directly updating the database.&lt;/p&gt;
+
+&lt;p&gt;I have some frequently updated feeds (say, more than 20 new items a day) for
+which the archive are useless to me and I would like to be able to delete some
+or all of the articles at once, but Newsbeuter only offers a per-article
+command (&quot;D&quot;, by default, for delete-article), missing a &quot;delete-feed-read&quot;
+command which would delete all read items. Here is the command to remove all
+unread articles older than 10 days:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sqlite3 ~/.cache/newsbeuter/cache.db &amp;lt;&amp;lt;&amp;lt; &quot;DELETE FROM rss_item WHERE feedurl LIKE &#39;http://www.example.com/feed&#39; AND unread = 1 AND pubDate &amp;lt; ( SELECT strftime(&#39;%s&#39;,&#39;now&#39;) - (10*86400));&quot;;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Just replace:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;~/.cache/newsbeuter/cache.db by the path where newsbeuter stores its db on your machine&lt;/li&gt;
+&lt;li&gt;http://www.example.com/feed by the url of the feed you&#39;d like update&lt;/li&gt;
+&lt;li&gt;10 in 10*86400 by a number of days&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;If I have time someday, I should fill in a feature request…&lt;/p&gt;
+</description>
+                <link>http://username.github.io/blog/2014/09/29/newsbeuter-purge-articles-from-a-given-feed</link>
+                <guid>http://username.github.io/blog/2014/09/29/newsbeuter-purge-articles-from-a-given-feed</guid>
+                <pubDate>2014-09-29T13:17:00+02:00</pubDate>
+        </item>
 
         <item>
                 <title>Mutt and mailcap: two apps to open attachments</title>
