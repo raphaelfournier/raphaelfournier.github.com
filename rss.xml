@@ -5,8 +5,8 @@
         <description>Jekyll Bootstrap - Name Lastname</description>
         <link>http://username.github.io</link>
         <link>http://username.github.io</link>
-        <lastBuildDate>2014-09-30T16:42:22+02:00</lastBuildDate>
-        <pubDate>2014-09-30T16:42:22+02:00</pubDate>
+        <lastBuildDate>2014-10-08T18:40:52+02:00</lastBuildDate>
+        <pubDate>2014-10-08T18:40:52+02:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -40,6 +40,28 @@ unread articles older than 10 days:&lt;/p&gt;
                 <link>http://username.github.io/blog/2014/09/29/newsbeuter-purge-articles-from-a-given-feed</link>
                 <guid>http://username.github.io/blog/2014/09/29/newsbeuter-purge-articles-from-a-given-feed</guid>
                 <pubDate>2014-09-29T13:17:00+02:00</pubDate>
+        </item>
+
+        <item>
+                <title>Conférence DigitalIntelligence</title>
+                <description>&lt;p&gt;Je présente le travail réalisé au &lt;a href=&quot;http://www-l2ti.univ-paris13.fr/&quot;&gt;L2TI&lt;/a&gt; pour le projet &lt;a href=&quot;http://www.ammico.fr&quot;&gt;AMMICO&lt;/a&gt; lors de la
+conférence &lt;a href=&quot;http://www.di2014.org&quot;&gt;Digital Intelligence&lt;/a&gt;, qui se tient à Nantes
+du 17 au 19 septembre.&lt;/p&gt;
+</description>
+                <link>http://username.github.io/news/2014/09/18/DigitalIntelligence</link>
+                <guid>http://username.github.io/news/2014/09/18/DigitalIntelligence</guid>
+                <pubDate>2014-09-18T00:00:00+02:00</pubDate>
+        </item>
+
+        <item>
+                <title>Prise de fonctions au CNAM</title>
+                <description>&lt;p&gt;Depuis le 1er septembre 2014, je suis Maître de Conférences au &lt;a href=&quot;http://www.cnam.fr&quot;&gt;CNAM&lt;/a&gt;, en
+Informatique. J&#39;effectue mon activité de recherche au sein du laboratoire
+&lt;a href=&quot;http://cedric.cnam.fr&quot;&gt;CÉDRIC&lt;/a&gt;, dans l&#39;équipe [VERTIGO][].&lt;/p&gt;
+</description>
+                <link>http://username.github.io/news/2014/09/01/cnam</link>
+                <guid>http://username.github.io/news/2014/09/01/cnam</guid>
+                <pubDate>2014-09-01T00:00:00+02:00</pubDate>
         </item>
 
         <item>
@@ -84,8 +106,22 @@ sometimes lack some of the features of Acroread (which is way heavier).&lt;/p&gt
                 <title>Article avec le LORIA accepté</title>
                 <description>&lt;p&gt;L&#39;article Comparing paedophile activity in different P2P systems, coécrit avec
 l&#39;équipe du LORIA (Thibault Cholez, Isabelle Chrisment, Olivier Festor) a été
-accepté pour publication dans Social Sciences, numéro spécial &quot;Contemporary
-Developments in Child Protection&quot;.&lt;/p&gt;
+accepté pour publication dans Social Sciences, numéro spécial &lt;a href=&quot;http://www.mdpi.com/2076-0760/3/3/314&quot;&gt;&quot;Contemporary
+Developments in Child Protection&quot;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;@Article{socsci3030314,
+AUTHOR = {Fournier, Raphaël and Cholez, Thibault and Latapy, Matthieu and Chrisment, Isabelle and Magnien, Clémence and Festor, Olivier and Daniloff, Ivan},
+TITLE = {Comparing Pedophile Activity in Different P2P Systems},
+JOURNAL = {Social Sciences},
+VOLUME = {3},
+YEAR = {2014},
+NUMBER = {3},
+PAGES = {314--325},
+URL = {http://www.mdpi.com/2076-0760/3/3/314},
+ISSN = {2076-0760},
+DOI = {10.3390/socsci3030314}
+}
+&lt;/code&gt;&lt;/pre&gt;
 </description>
                 <link>http://username.github.io/news/2014/05/18/kad</link>
                 <guid>http://username.github.io/news/2014/05/18/kad</guid>
@@ -96,7 +132,7 @@ Developments in Child Protection&quot;.&lt;/p&gt;
                 <title>450 ans de Galilée</title>
                 <description>&lt;p&gt;Journée de vulgarisation scientifique, où le L2TI présente un stand double, sur
 la super résolution et sur la stéréoscopie. Les autres laboratoires sont
-également présents et la journée est parrainée par Jen-Pierre Haigneré.&lt;/p&gt;
+également présents et la journée est parrainée par Jean-Pierre Haigneré.&lt;/p&gt;
 </description>
                 <link>http://username.github.io/news/2014/05/15/galilee</link>
                 <guid>http://username.github.io/news/2014/05/15/galilee</guid>
@@ -114,7 +150,7 @@ la super résolution et sur la stéréoscopie. Les autres laboratoires sont
 
         <item>
                 <title>Talk</title>
-                <description>&lt;p&gt;Exposé sur le projet AMMICO.&lt;/p&gt;
+                <description>&lt;p&gt;Exposé sur le projet &lt;a href=&quot;http://www.ammico.fr&quot;&gt;AMMICO&lt;/a&gt;.&lt;/p&gt;
 </description>
                 <link>http://username.github.io/news/2014/04/29/aafd</link>
                 <guid>http://username.github.io/news/2014/04/29/aafd</guid>
@@ -1197,7 +1233,7 @@ le 28 juillet 2008.&lt;/p&gt;&lt;/p&gt;
 
 &lt;p&gt;[Antipaedo]: http://antipaedo.lip6.fr
 [CNAM]: http://www.cnam.fr
-[CEDRIC]: http://cedric.cnam.fr
+[CÉDRIC]: http://cedric.cnam.fr
 [philippe]: http://deptinfo.cnam.fr/~rigaux/
 [LIP6]: http://www.lip6.fr
 [L2TI]: http://www-l2ti.univ-paris13.fr/
