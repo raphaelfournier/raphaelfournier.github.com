@@ -1,0 +1,140 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Mutt and mailcap: two apps to open attachments</title>
+    <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://raphaelfournier.net/feed/rss" />
+    <link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="http://raphaelfournier.net/feed/atom" />
+    
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+    <link rel="stylesheet" href="/stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" /><!-- pour IE -->
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" /><!-- pour les navigateurs standards -->
+      <script src="/assets/js/toggle.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="me">
+<img src="/images/raphaelfournier3.jpg" style="-moz-border-radius: 15px;
+border-radius: 15px; margin:auto; margin-right: 15px; float:left;" alt="profile
+pic" height="80px"/>
+<h1>Raphaël <br/>Fournier-<br/>S'niehotta</h1>
+</div>
+        <ul class="tabs">
+          <li class="about"><a rel="about me" title="about" href="/">about <strong>me</strong></a></li>
+          <li class="research "><a rel="research" title="research" href="/research/">I do <strong>research</strong></a></li>
+          <li class="teaching "><a rel="teaching" title="teaching" href="/teaching/">and I <strong>teach</strong></a></li>
+          <li><a title="cv"
+            href="/files/FOURNIER-Raphael_AcademicResume.pdf">read my <strong>resume</strong> (PDF)</a></li>
+        </ul>
+
+        <ul class="tabs">
+          <li class="blog actuel"><a rel="home page" title="homepage" href="/blog">read my <strong>blog</strong></a></li>
+          <li> <a rel="rss feed" title="receive update via rss"
+            href="/feed/rss.xml">subscribe by <strong>rss</strong></a> </li>
+          <li><a rel="twitter" title="follow me on twitter!" href="http://www.twitter.com/fournier_r">follow me on <strong>Twitter</strong></a></li>
+        </ul>
+
+<ul class="button">
+  <li>
+    
+      <a class="lang" href="/fr">Lire en <strong>français</a>
+    
+  </li>
+</ul>
+
+      </header>
+      <section>
+        <div id="post">
+  <h1>
+  <a href="/blog/2014/06/04/mutt-and-mailcap-two-apps-to-open-attachments">Mutt and mailcap: two apps to open attachments</a>
+</h1>
+<div class="authoring">
+  Published on 04-06-2014 
+  
+  in
+   [
+   
+      
+      
+
+
+  
+     
+    	<a href="/tags.html#mutt-ref">mutt</a>, 
+     
+    	<a href="/tags.html#mailcap-ref">mailcap</a>, 
+     
+    	<a href="/tags.html#commandline-ref">commandline</a> 
+    
+  
+
+
+
+     
+   ]
+   
+</div>
+
+  <p>Yesterday, I was looking for the syntax of the "pipe-entry" command in mutt,
+which allows to pass a message or an attachment to a specific command. For
+instance, for a pdf, one can press "|" then type "acroread -" to open a pdf with
+the adobe pdf reader. I did not find the exact syntax but I found that in the
+mailcap file, it is possible to configure not only one but two applications to
+automatically open a file.</p>
+
+<p>The regular syntax is:</p>
+
+<pre><code>text/html; /usr/bin/firefox %s;
+</code></pre>
+
+<p>for an html file. This way, when you visualize the attachments (by pressing
+"v"), if you are on an html file, if you press ENTER it opens in firefox. It is
+possible add something like this:</p>
+
+<pre><code>text/html; /usr/bin/firefox %s; print=/usr/bin/chromium %s
+</code></pre>
+
+<p>so that, while keeping the ENTER behavior, you also get a print behavior (press
+"p"): the file may then be open in chromium, with "P". Indeed, it also works
+with pdf files:</p>
+
+<pre><code>application/pdf; /usr/bin/zathura %s; print=/usr/bin/acroread %s
+</code></pre>
+
+<p><a href="http://pwmt.org/projects/zathura/">zathura</a> is a nice pdf viewer but it
+sometimes lack some of the features of Acroread (which is way heavier).</p>
+
+<p><a href="http://wcm1.web.rice.edu/mutt-tips.html">source of this tip</a></p>
+
+</div>
+
+
+
+      </section>
+      <footer>
+        <div align="center">
+<small>
+08/10/2014
+  <!--<ul>-->
+    <!--<li><a href="legal.html">legal</a></li>-->
+    <!--<li><a href="sitemap.xml">map</a></li>-->
+    <!--<li><a href="http://jekyll.org">jekyll</a></li>-->
+    <!--<li><a href="https://github.com/orderedlist">theme</a></li>-->
+  <!--</ul>-->
+</small>
+</div>
+
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+  </body>
+</html>
+

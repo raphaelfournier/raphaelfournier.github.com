@@ -6,9 +6,67 @@
     <atom:link href="http://raphaelfournier.net/rss.xml" rel="self" type="application/rss+xml" />
     <description></description>
     <language>en-us</language>
-    <pubDate>Wed, 08 Oct 2014 18:40:52 +0200</pubDate>
-    <lastBuildDate>Wed, 08 Oct 2014 18:40:52 +0200</lastBuildDate>
+    <pubDate>Wed, 19 Nov 2014 15:41:08 +0100</pubDate>
+    <lastBuildDate>Wed, 19 Nov 2014 15:41:08 +0100</lastBuildDate>
 
+    
+    <item>
+      <title>Offre de stage</title>
+      <link>http://raphaelfournier.net/news/2014/11/19/stage</link>
+      <pubDate>Wed, 19 Nov 2014 15:28:00 +0100</pubDate>
+      <author>raphael@raphaelfournier.net (Raphael Fournier)</author>
+      <guid>http://raphaelfournier.net/news/2014/11/19/stage</guid>
+      <description>&lt;p&gt;&lt;a href=&quot;../files/stage-PredictionLiensReseauxComplexes-LIP6.pdf&quot;&gt;Pdf de l&#39;offre de stage&lt;/a&gt;, en
+co-encadrement avec &lt;a href=&quot;http://lioneltabourier.fr/&quot;&gt;Lionel Tabourier&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1&gt;Prédire la dynamique de réseaux complexes&lt;/h1&gt;
+
+&lt;p&gt;Quelles relations sont susceptibles de se créer dans un réseau social?
+Quels produits peuvent intéresser un client d&#39;un site de vente en ligne?
+Quelles molécules réagissent dans un certain environnement expérimental?
+Ces questions peuvent toutes être étudiées comme des problèmes de prédiction de
+liens dans des réseaux complexes.&lt;/p&gt;
+
+&lt;p&gt;Pour ce stage, nous proposons de nous placer à l&#39;intersection de deux points de
+vue sur le problème:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Le premier consiste à étudier la micro-dynamique du réseau à
+l&#39;aide de &lt;em&gt;méthodes d&#39;apprentissage&lt;/em&gt;: savoir si un lien va apparaître
+ou non est une tâche de classification, pour laquelle le machine
+learning propose des solutions dont on discute la pertinence dans le contexte
+de grands réseaux complexes.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Le second examine la dynamique macroscopique du réseau: sans
+connaître exactement les interactions qui apparaissent, on recherche
+l&#39;&lt;em&gt;évolution de la structure globale&lt;/em&gt;, par exemple est-ce que la
+distribution des distances entre les noeuds évolue conformément à ce que
+l&#39;on attend ?&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;Une piste de travail à explorer consiste à adapter les méthodologies
+d&#39;apprentissage à l&#39;analyse globale du réseau en &lt;em&gt;modifiant la mesure de
+qualité de la prédiction&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Ce travail se veut une première étape dans la construction de modèles réalistes
+de la dynamique des réseaux.&lt;/p&gt;
+
+&lt;h2&gt;Profil souhaité et encadrement&lt;/h2&gt;
+
+&lt;p&gt;Le stage s&#39;adresse à des étudiant(e)s de formations variées (réseaux, fouille de
+données, apprentissage, …), les principales compétences recherchées étant
+une certaine connaissance de l&#39;algorithmique de graphes, la capacité
+d&#39;adaptation à des méthodes nouvelles et de l&#39;intérêt pour les thématiques
+interdisciplinaires. Il sera co-encadré par Lionel Tabourier (LIP6 -- UPMC et
+CNRS) et Raphaël Fournier-S&#39;niehotta (CEDRIC -- CNAM) et le stagiaire
+travaillera au LIP6 (équipe ComplexNetworks).&lt;/p&gt;
+
+&lt;h2&gt;Candidatures&lt;/h2&gt;
+
+&lt;p&gt;À adresser à Lionel Tabourier et Raphaël Fournier-S&#39;niehotta.
+Mails : &lt;a href=&quot;mailto:stages@complexnetworks.fr,fournier@cnam.fr?subject=Candidature%20Stage&quot;&gt;stages@complexnetworks.fr, fournier@cnam.fr&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Newsbeuter: purge articles from a given feed</title>
@@ -1269,6 +1327,7 @@ le 28 juillet 2008.&lt;/p&gt;&lt;/p&gt;
 [www-cn]: http://www.complexnetworks.fr
 [matthieu]: http://www-rp.lip6.fr/~latapy
 [emmanuel]: http://www-l2ti.univ-paris13.fr/~viennet/
+[lionel]: http://lioneltabourier.fr/
 [jekyll]: http://www.jekyll.org
 [github]: http://www.github.com
 [vim]: http://www.vim.org

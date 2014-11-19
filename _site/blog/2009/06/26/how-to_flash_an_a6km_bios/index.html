@@ -1,0 +1,150 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>How-to flash an a6km bios</title>
+    <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://raphaelfournier.net/feed/rss" />
+    <link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="http://raphaelfournier.net/feed/atom" />
+    
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+    <link rel="stylesheet" href="/stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" /><!-- pour IE -->
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" /><!-- pour les navigateurs standards -->
+      <script src="/assets/js/toggle.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="me">
+<img src="/images/raphaelfournier3.jpg" style="-moz-border-radius: 15px;
+border-radius: 15px; margin:auto; margin-right: 15px; float:left;" alt="profile
+pic" height="80px"/>
+<h1>Raphaël <br/>Fournier-<br/>S'niehotta</h1>
+</div>
+        <ul class="tabs">
+          <li class="about"><a rel="about me" title="about" href="/">about <strong>me</strong></a></li>
+          <li class="research "><a rel="research" title="research" href="/research/">I do <strong>research</strong></a></li>
+          <li class="teaching "><a rel="teaching" title="teaching" href="/teaching/">and I <strong>teach</strong></a></li>
+          <li><a title="cv"
+            href="/files/FOURNIER-Raphael_AcademicResume.pdf">read my <strong>resume</strong> (PDF)</a></li>
+        </ul>
+
+        <ul class="tabs">
+          <li class="blog actuel"><a rel="home page" title="homepage" href="/blog">read my <strong>blog</strong></a></li>
+          <li> <a rel="rss feed" title="receive update via rss"
+            href="/feed/rss.xml">subscribe by <strong>rss</strong></a> </li>
+          <li><a rel="twitter" title="follow me on twitter!" href="http://www.twitter.com/fournier_r">follow me on <strong>Twitter</strong></a></li>
+        </ul>
+
+<ul class="button">
+  <li>
+    
+      <a class="lang" href="/fr">Lire en <strong>français</a>
+    
+  </li>
+</ul>
+
+      </header>
+      <section>
+        <div id="post">
+  <h1>
+  <a href="/blog/2009/06/26/how-to_flash_an_a6km_bios">How-to flash an a6km bios</a>
+</h1>
+<div class="authoring">
+  Published on 26-06-2009 
+  
+  in
+   [
+   
+      
+      
+
+
+  
+     
+    	<a href="/tags.html#astuce-ref">astuce</a>, 
+     
+    	<a href="/tags.html#asus-ref">asus</a> 
+    
+  
+
+
+
+     
+   ]
+   
+</div>
+
+  <p>I'm the owner, for three years now, of
+an Asus laptop (ref : A6km Q007h). It came with Windows XP, which I kept until
+May 2007 or so, when I decided that the dual-boot time was over and I could only
+use Ubuntu Linux. I tried Ubuntu Dapper Drake first, then I upgraded directly to
+Feisty Fawn (good version). I followed the release cycle, upgrading to Gutsy
+Gibbon and Hardy Heron. Then, for different reasons, I installed an ArchLinux,
+which is still my only distro at the moment.</p>
+
+
+<p> <p>The main problem when you
+use Linux on non-evolutive hardware such as a my laptop is that you are
+compelled to "tell yourself that you don't really need [some] features" (<a
+href="http://linuxhaters.blogspot.com/2008/06/how-to-be-linux-user.html">Linux
+hater's blog</a>). In May 2007, for example, the webcam on my model was not
+working (it now works, due to clever reverse-engineering from users, not thanks
+to Asus...). And, more annoying, if any USB device was plugged at startup, the
+boot process hanged with no error message. It means that you have to unplug your
+USB mouse or hard-disk at powering down, or check it when switching the laptop
+on. </p> <p>The problem lies in the buggy bios version. DSDT tables may be
+used to correct it -- at least, some users claim it worked for them -- or one
+should downgrade its BIOS. I have only figured out today how to do it -- yes,
+shame on me. My difficulty was to know how to have the file visible from the
+bios : CD/DVD were not solutions (since they are not recognize by the BIOS for
+flash), floppy was not present (it's a laptop). My previous attempts with hard
+disk FAT partitions failed, probably because I used FAT 16 (?). As far as USB
+key are concerned, I thougt they were not appropriate on to do it with ASUS
+BIOS.</p> <p>Flashing a BIOS is dangerous, do it at your own risks, backup
+your data before.</p> <p>Here's the procedure, step by step
+:</p> <ul><li>You may use a USB key, or any other FAT32-formatted disk you
+have</li> <li>Download the correct (and old - 2005 !) version : <a
+href="http://people.bath.ac.uk/enxspd/laptop/A6Km0202AS.zip">link</a> (thanks,
+<a href="http://wiki.archlinux.org/index.php/Asus_A6km">Arch
+Wiki</a>)</li> <li>Unzip the file on the usb key</li> <li>Reboot and press
+'F2' at startup, to enter BIOS option</li> <li>Find "Easy
+Flash"</li> <li>If you're doing it right, you may see A: and C:. Choose C:
+with arrows</li> <li>Press 'Enter' and follow the
+instructions.</li> </ul> The process was quick and easy. I plugged my USB
+mouse (though I don't use it very much those days) and rebooted : it works !</p>
+
+<p>Note : I also discovered, while wandering my BIOS options, that a USB
+key is listed as ... harddisk drive instead of "removable device" (important
+to try a linux distro on a key).</p>
+
+</div>
+
+
+
+      </section>
+      <footer>
+        <div align="center">
+<small>
+08/10/2014
+  <!--<ul>-->
+    <!--<li><a href="legal.html">legal</a></li>-->
+    <!--<li><a href="sitemap.xml">map</a></li>-->
+    <!--<li><a href="http://jekyll.org">jekyll</a></li>-->
+    <!--<li><a href="https://github.com/orderedlist">theme</a></li>-->
+  <!--</ul>-->
+</small>
+</div>
+
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+  </body>
+</html>
+

@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Newsbeuter</title>
+    <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://raphaelfournier.net/feed/rss" />
+    <link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="http://raphaelfournier.net/feed/atom" />
+    
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+    <link rel="stylesheet" href="/stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" /><!-- pour IE -->
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" /><!-- pour les navigateurs standards -->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="me">
+<img src="/images/raphaelfournier3.jpg" style="-moz-border-radius: 15px;
+border-radius: 15px; margin:auto; margin-right: 15px; float:left;" alt="profile
+pic" height="80px"/>
+<h1>Raphaël <br/>Fournier-<br/>S'niehotta</h1>
+</div>
+        <ul class="tabs">
+          <li class="about"><a rel="about me" title="about" href="/about/">about <strong>me</strong></a></li>
+          <li class="research "><a rel="research" title="research" href="/research/">I do <strong>research</strong></a></li>
+          <li class="teaching "><a rel="teaching" title="teaching" href="/teaching/">and I <strong>teach</strong></a></li>
+          <li><a title="cv"
+            href="/files/FOURNIER-Raphael_AcademicResume.pdf">read my <strong>resume</strong> (PDF)</a></li>
+        </ul>
+
+        <ul class="tabs">
+          <li class="blog actuel"><a rel="home page" title="homepage" href="/blog">read my <strong>blog</strong></a></li>
+          <li> <a rel="rss feed" title="receive update via rss"
+            href="/feed/rss.xml">subscribe by <strong>rss</strong></a> </li>
+          <li><a rel="twitter" title="follow me on twitter!" href="http://www.twitter.com/fournier_r">follow me on <strong>Twitter</strong></a></li>
+        </ul>
+
+<ul class="button">
+  <li>
+    
+      <a class="lang" href="/fr">Lire en <strong>français</a>
+    
+  </li>
+</ul>
+
+      </header>
+      <section>
+        <div id="post">
+  <h1>
+  <a href="/2013/12/02/newsbeuter.html">Newsbeuter</a>
+</h1>
+<div class="authoring">
+  Published on 02-12-2013 
+  
+  in <a href="/tags/unix/">unix</a>
+  
+  
+</div>
+
+  Google Reader was my news reader of choice over the last years, but it was
+stopped earlier this year. Alternatives were proposed or already existed, and I
+tried to replace the previous behaviour, which can be written as "skim through
+~100 feeds daily with a simple yet feature-rich interface" (understand :
+keyboard shortcuts). Android sync was a plus.
+
+I tried Feedly and Digg, both with a similar interface to Google Reader
+(presentation, shortcuts). But they are slow. Very slow. Too slow. And it has
+some quirks that made me ditch them (for instance, with feedly, when in
+"headlines mode", I couldn't navigate the feeds without marking the article as
+read: if I want to keep it unread, I have to mark unread each time…).
+
+I have just tried newsbeuter. What a relief: it works like mutt, it is fast,
+configurable.
+
+It lacks a feature however: a "view-all-unread" and a "view all articles",
+because by default articles are presented ordered under a feed hierarchy. But,
+as Newsbeuter is really configurable, it can be added. Yay!
+
+I just added two "query-feeds":
+
+"query:Unread Articles:unread = \"yes\""
+"query:Articles:author =~ ".*"" 
+
+The first one is at the top of my list of feeds, the second at the bottom (I use
+it less often).
+
+</div>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'raphaelfournierblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+<div id="relatedposts">
+  <h2 class="annee">Related posts</h2>
+    <ul class="related">
+    
+      <li>     <a class="posturl" href="/2014/02/10/enquete-philosophique-kerr.html">Une enquête philosophique, de Philippe Kerr</a> <span class="lang">(en)</span>
+    <!-- [<span class="categlink"><a href="/tags/unix/">unix</a></span> ] <span class="postdate">10 February</span>-->
+ </li>
+    
+      <li>     <a class="posturl" href="/2013/08/21/breve.html">une breve</a> <span class="lang">(en)</span>
+    <!-- [<span class="categlink"><a href="/tags/breve/">breve</a></span> ] <span class="postdate">21 August</span>-->
+ </li>
+    
+      <li>     <a class="posturl" href="/2013/08/20/useful-unix-commands.html">Useful unix commands</a> <span class="lang">(en)</span>
+    <!-- [<span class="categlink"><a href="/tags/unix/">unix</a></span> ] <span class="postdate">20 August</span>-->
+ </li>
+    
+      <li>     <a class="posturl" href="/2013/08/05/awesome-dmenu-switch-apps.html">Awesome: switch apps with dmenu</a> <span class="lang">(en)</span>
+    <!-- [<span class="categlink"><a href="/tags/awesome/">awesome</a>, <a href="/tags/dmenu/">dmenu</a></span> ] <span class="postdate">05 August</span>-->
+ </li>
+    
+      <li>     <a class="posturl" href="/2012/08/15/switch_from_makefile_to_fabric_file_for_latex_projects.html">Switch from Makefile to Fabric file for Latex projects</a> <span class="lang">(en)</span>
+    <!-- [<span class="categlink"><a href="/tags/latex/">latex</a>, <a href="/tags/python/">python</a></span> ] <span class="postdate">15 August</span>-->
+ </li>
+    
+      <li>     <a class="posturl" href="/2012/05/20/revue_de_web_1.html">Revue de Web 1</a> <span class="lang">(fr)</span>
+    <!-- [<span class="categlink"><a href="/tags/revue de web/">revue de web</a></span> ] <span class="postdate">20 May</span>-->
+ </li>
+    
+      <li>     <a class="posturl" href="/2012/05/13/les_conferences_treize_minutes_de_paris_7.html">Les conférences Treize minutes de Paris 7</a> <span class="lang">(fr)</span>
+    <!-- [<span class="categlink"><a href="/tags/TED/">TED</a>, <a href="/tags/conferences/">conferences</a>, <a href="/tags/science/">science</a></span> ] <span class="postdate">13 May</span>-->
+ </li>
+    
+      <li>     <a class="posturl" href="/2012/01/08/say_no_to_acta.html">Say no to ACTA!</a> <span class="lang">(en)</span>
+    <!-- [<span class="categlink"><a href="/tags/acta/">acta</a>, <a href="/tags/quadrature/">quadrature</a></span> ] <span class="postdate">08 January</span>-->
+ </li>
+    
+      <li>     <a class="posturl" href="/2011/12/30/bootstrapping%3A_a_brand-new_jekyll-powered_blog.html">bootstrapping: a brand-new jekyll-powered blog</a> <span class="lang">(en)</span>
+    <!-- [<span class="categlink"><a href="/tags/jekyll/">jekyll</a></span> ] <span class="postdate">30 December</span>-->
+ </li>
+    
+      <li>     <a class="posturl" href="/2010/01/12/la_fille_de_monaco_et_le_concert.html">La fille de Monaco et Le Concert</a> <span class="lang">(fr)</span>
+    <!-- [<span class="categlink"><a href="/tags/cinema/">cinema</a></span> ] <span class="postdate">12 January</span>-->
+ </li>
+    
+    </ul>
+</div>
+
+      </section>
+      <footer>
+        <div align="center">
+<small>
+  <ul>
+    <li><a href="legal.html">legal</a></li>
+    <li><a href="sitemap.xml">map</a></li>
+    <li><a href="http://jekyll.org">jekyll</a></li>
+    <li><a href="https://github.com/orderedlist">theme</a></li>
+  </ul>
+</small>
+</div>
+
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+  </body>
+</html>
