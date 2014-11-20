@@ -4,7 +4,7 @@
  <title>Jekyll Bootstrap</title>
  <link href="http://username.github.io/" rel="self"/>
  <link href="http://username.github.io"/>
- <updated>2014-11-19T15:41:08+01:00</updated>
+ <updated>2014-11-20T11:45:36+01:00</updated>
  <id>http://username.github.io</id>
  <author>
    <name>Name Lastname</name>
@@ -17,7 +17,7 @@
    <link href="http://username.github.io/news/2014/11/19/stage"/>
    <updated>2014-11-19T15:28:00+01:00</updated>
    <id>http://username.github.io/news/2014/11/19/stage</id>
-   <content type="html">&lt;p&gt;&lt;a href=&quot;../files/stage-PredictionLiensReseauxComplexes-LIP6.pdf&quot;&gt;Pdf de l&#39;offre de stage&lt;/a&gt;, en
+   <content type="html">&lt;p&gt;&lt;a href=&quot;/files/stage-PredictionLiensReseauxComplexes-LIP6.pdf&quot;&gt;Pdf de l&#39;offre de stage&lt;/a&gt;, en
 co-encadrement avec &lt;a href=&quot;http://lioneltabourier.fr/&quot;&gt;Lionel Tabourier&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h1&gt;Prédire la dynamique de réseaux complexes&lt;/h1&gt;
@@ -1077,249 +1077,235 @@ au courant\&quot; (cf l&#39;affaire Cécilia-Attias-Génestar).&lt;/p&gt;&lt;/p&
    <link href="http://username.github.io/blog/2008/10/17/bavure"/>
    <updated>2008-10-17T20:54:43+02:00</updated>
    <id>http://username.github.io/blog/2008/10/17/bavure</id>
-   <content type="html">&lt;p&gt;&lt;p&gt;Un texte de Patrick Mohr, qui relate une bavure policière, au festival
-d&#39;Avignon, cet été. Via &lt;a href=&quot;http://arhv.lhivic.org&quot;&gt;Arhv&lt;/a&gt;.&lt;/p&gt;
+   <content type="html">&lt;p&gt;Un texte de Patrick Mohr, qui relate une bavure policière, au festival
+d&#39;Avignon, cet été. Via &lt;a href=&quot;http://arhv.lhivic.org&quot;&gt;ARHV&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;p&gt;«Je m&#39;appelle Patrick
-Mohr. Je suis né le 18 septembre 1962 à Genève. Je suis acteur, metteur en
-scène et auteur.&lt;/p&gt; &lt;p&gt;A Genève je dirige une compagnie, le &lt;a
-target=&quot;_blank&quot; href=&quot;http://www.theatrespirale.com/Home.htm&quot;&gt;Théâtre
-Spirale&lt;/a&gt;, je co-dirige le &lt;a target=&quot;_blank&quot;
-href=&quot;http://www.laparfumerie.ch/&quot;&gt;Théâtre de la Parfumerie&lt;/a&gt; et m&#39;occupe
-également du festival &quot;De bouche à oreille&quot;.&lt;/p&gt; &lt;p&gt;Dans le cadre de mes
-activités artistiques, je viens régulièrement au festival d&#39;Avignon pour y
-découvrir des spectacles du &quot;in&quot; et du &quot;off&quot;. Notre compagnie s&#39;y est
-d&#39;ailleurs produite à trois reprises. Cette année, je suis arrivé dans la
-région depuis le 10 juillet et j&#39;ai assisté à de nombreux spectacles.
-Le lundi 21 juillet, je sors avec mon amie, ma fille et trois de ses
-camarades d&#39;une représentation d&#39;une pièce très dure sur la guerre en
-ex-Yougoslavie et nous prenons le frais à l&#39;ombre du Palais des Papes, en
-assistant avec plaisir à un spectacle donné par un couple d&#39;acrobates. A la
-fin de leur numéro, je m&#39;avance pour mettre une pièce dans leur chapeau
-lorsque j&#39;entends le son d&#39;un Djembé (tambour africain) derrière moi. Etant
-passionné par la culture africaine (j&#39;y ai monté plusieurs spectacles et ai
-eu l&#39;occasion d&#39;y faire des tournées), je m&#39;apprête à écouter les musiciens.
-Le percussionniste est rejoint par un joueur de Kamele Ngoni (sorte de
-contrebasse surtout utilisée par les chasseurs en Afrique de
-l&#39;Ouest).&lt;/p&gt; &lt;p&gt;A peine commencent-ils à jouer qu&#39;un groupe de C.R.S se
-dirige vers eux pour les interrompre et contrôler leur identité. Contrarié,
-je me décide à intervenir. Ayant déjà subi des violences policières dans le
-même type de circonstances il y a une vingtaine d&#39;année à Paris, je me suis
-adressé à eux avec calme et politesse, le souvenir de ma précédente
-mésaventure bien en tête. Mais je me suis dit que j&#39;étais plus âgé, que l&#39;on
-se trouvait dans un haut lieu culturel et touristique, dans une démocratie et
-que j&#39;avais le droit de m&#39;exprimer face à ce qui me semblait une injustice.
-J&#39;aborde donc un des C.R.S et lui demande&amp;nbsp;: &quot;Pourquoi contrôlez-vous
-ces artistes en particulier et pas tous ceux qui se trouvent sur la place?&quot;
-Réponse immédiate&amp;nbsp;: &quot;Ta gueule, mêle-toi de ce qui te regarde!
-&quot;Justement ça me regarde. Je trouve votre attitude
-discriminatoire.&quot;&lt;/p&gt; &lt;p&gt;Regard incrédule. &quot;Tes papiers!&quot; &quot;Je ne les ai
-pas sur moi, mais on peut aller les chercher dans la voiture.&quot;  &quot;Mets-lui
-les menottes!&quot; &quot;Mais vous n&#39;avez pas le droit de...&quot; Ces mots semblent
-avoir mis le feu aux poudres. &quot;Tu vas voir si on n&#39;a pas le droit.&quot; Et
-brusquement la scène a dérapé. Ils se sont jetés sur moi avec une sauvagerie
-inouïe. Mon amie, ma  fille, ses camarades et les curieux qui assistaient à
-la scène ont reculé choqués alors qu&#39;ils me projetaient au sol, me plaquaient
-la tête contre les pavés, me tiraient de toutes leurs forces les bras en
-arrière comme un poulet désarticulé et m&#39;enfilaient des menottes. Les bras
-dans le dos, ils m&#39;ont relevé et m&#39;ont jeté en avant en me retenant par la
-chaîne. La menotte gauche m&#39;a tordu le poignet et a pénétré profondément mes
-chairs. J&#39;ai hurlé: &quot;Vous n&#39;avez pas le droit, arrêtez, vous me cassez le
-bras!&quot; &quot;Tu vas voir ce que tu vas voir espèce de tapette. Sur le dos! Sur
-le ventre! Sur le dos je te dis, plus vite, arrête de gémir!&quot; Et ils me
-frottent la tête contre les pavés me tordent et me frappent, me traînent, me
-re-plaquent à terre. La foule horrifiée s&#39;écarte sur notre passage. Mon amie
-essaie de me venir en aide et se fait violemment repousser. Des gens
-s&#39;indignent, sifflent, mais personne n&#39;ose interrompre cette interpellation
-d&#39;une violence inouïe. Je suis traîné au sol et malmené jusqu&#39;à leur
-fourgonnette qui se trouve à la place de l&#39;horloge 500 m plus bas. Là, ils me
-jettent dans le véhicule, je tente de m&#39;asseoir et le plus grand de
-mes agresseurs (je ne peux pas les appeler autrement), me donne un coup pour
-me faire tomber entre les sièges, face contre terre, il me plaque un pied sur
-les côtes et l&#39;autre sur la cheville il appuie de tout son poids contre une
-barre de fer. &quot;S&#39;il vous plait, n&#39;appuyez pas comme ça, vous me coupez la
-circulation.&quot; &quot;C&#39;est pour ma sécurité.&quot; Et toute leur compagnie de rire de
-ce bon mot. Jusqu&#39;au commissariat de St Roch. Le trajet est court mais il me
-semble interminable. Tout mon corps est meurtri, j&#39;ai l&#39;impression d&#39;avoir le
-poignet brisé, les épaules démises, je mange la poussière. On m&#39;extrait du
-fourgon toujours avec autant de délicatesse.&lt;/p&gt; &lt;p&gt;Je vous passe les
-détails de l&#39;interrogatoire que j&#39;ai subi dans un état lamentable. Je me
-souviens seulement du maquillage bleu sur les paupières de la femme qui
-posait les questions. &quot;Vous êtes de quelle nationalité ?&quot;
-&quot;Suisse.&quot; &quot;Vous êtes un sacré fouteur de merde.&quot; &quot;Vous n&#39;avez pas le
-droit de m&#39;insulter.&quot; &quot;C&#39;est pas une insulte, la merde&quot; (petit
-rire).&lt;/p&gt; &lt;p&gt;C&#39;est fou comme la mémoire fonctionne bien quand on subit de
-pareilles agressions. Toutes les paroles, tout les détails de cette
-arrestation et de ma garde à vue resteront gravés à vie dans mes souvenirs,
-comme la douleur des coups subis dans ma chair. Je remarque que l&#39;on me
-vouvoie depuis que je ne suis plus entre les griffes des CRS.&lt;/p&gt; &lt;p&gt;Mais
-la violence physique a seulement fait place au mépris et à une
-forme d&#39;inhumanité plus sournoise. Je demande que l&#39;on m&#39;ôte les menottes qui
-m&#39;ont douloureusement entaillé les poignets et que l&#39;on appelle un docteur.
-On me dit de cesser de pleurnicher et que j&#39;aurais mieux fait de réfléchir
-avant de faire un scandale. Je tente de protester, on me coupe immédiatement
-la parole. Je comprends qu&#39;ici on ne peut pas s&#39;exprimer librement. Ils font
-volontairement traîner avant de m&#39;enlever les menottes. Font semblant de ne
-pas trouver les clés. Je ne sens plus ma main droite. Fouille intégrale. On
-me retire ce que j&#39;ai, bref inventaire, le tout est mis dans une petite
-boîte.&lt;/p&gt; &lt;p&gt;&quot;Enlevez vos vêtements!&quot; J&#39;ai tellement mal que je n&#39;y arrive
-presque pas. &quot;Dépêchez-vous, on n&#39;a pas que ça à faire. La boucle
-d&#39;oreille!&quot; J&#39;essaye de l&#39;ôter sans y parvenir.&lt;/p&gt; &lt;p&gt;&quot;Je ne l&#39;ai pas
-enlevée depuis des années. Elle n&#39;a plus de fermoir.&quot; &quot;Ma patience à des
-limites vous vous débrouillez pour l&#39;enlever, c&#39;est tout!&quot; Je force en
-tirant sur le lobe de l&#39;oreille, la boucle lâche. &quot;Baissez la culotte!&quot; Je
-m&#39;exécute. Après la fouille ils m&#39;amènent dans une petite cellule de
-garde à vue. 4 m de long par 2 m de large. Une petite couchette beige
-vissée au mur. Les parois sont taggées, grattées par les inscriptions
-griffonnées à la hâte par les détenus de passage. Au briquet ou gravé avec
-les ongles dans le crépis. Momo de Monclar, Ibrahim, Rachid...
-chacun laisse sa marque. L&#39;attente commence. Pas d&#39;eau, pas de nourriture.
-Je réclame en vain de la glace pour faire désenfler mon bras. Les murs et
-le sol sont souillés de tâches de sang, d&#39;urine et d&#39;excréments. Un
-méchant néon est allumé en permanence.&lt;/p&gt; &lt;p&gt;Le temps s&#39;étire. Rien
-ici qui permette de distinguer le jour de la nuit. La douleur lancinante
-m&#39;empêche de dormir. J&#39;ai l&#39;impression d&#39;avoir le coeur qui pulse dans ma
-main. D&#39;ailleurs alors que j&#39;écris ces lignes une semaine plus tard, je ne
-parviens toujours pas à dormir normalement. J&#39;écris tout cela en détails, non
-pas pour me lamenter sur mon sort. Je suis malheureusement bien conscient que
-ce qui m&#39;est arrivé est tristement banal, que plusieurs fois par jour et par
-nuit dans chaque ville de France des dizaines de personnes subissent des
-traitements bien pires que ce que j&#39;ai enduré. Je sais aussi que si j&#39;étais
-noir ou arabe je me serais fait cogner avec encore moins de retenue. C&#39;est
-pour cela que j&#39;écris et porte plainte. Car j&#39;estime que dans la police
-française et dans les CRS en particulier il existe de dangereux individus qui
-sous le couvert de l&#39;uniforme laissent libre cour à leurs plus bas instincts.
-(Evidemment il y a aussi des arrestations justifiées, et la police ne fait
-pas que des interventions abusives. Mais je parle des dérapages qui
-me semblent beaucoup trop fréquents.) Que ces dangers publics sévissent en
-toute impunité au sein d&#39;un service public qui serait censé protéger les
-citoyens est inadmissible dans un état de droit.&lt;/p&gt; &lt;p&gt;J&#39;ai un casier
-judiciaire vierge et suis quelqu&#39;un de profondément non violent, par
-conviction, ce type de mésaventure me renforce encore dans mes convictions,
+&lt;p&gt;«Je m&#39;appelle Patrick Mohr. Je suis né le 18 septembre 1962 à Genève. Je suis
+acteur, metteur en scène et auteur.&lt;/p&gt;
+
+&lt;p&gt;A Genève je dirige une compagnie, le &lt;a target=&quot;_blank&quot;
+href=&quot;http://www.theatrespirale.com/Home.htm&quot;&gt;Théâtre Spirale&lt;/a&gt;, je co-dirige
+le &lt;a target=&quot;_blank&quot; href=&quot;http://www.laparfumerie.ch/&quot;&gt;Théâtre de la
+Parfumerie&lt;/a&gt; et m&#39;occupe également du festival &quot;De bouche à oreille&quot;.&lt;/p&gt;
+
+&lt;p&gt;Dans le cadre de mes activités artistiques, je viens régulièrement au festival
+d&#39;Avignon pour y découvrir des spectacles du &quot;in&quot; et du &quot;off&quot;. Notre compagnie
+s&#39;y est d&#39;ailleurs produite à trois reprises. Cette année, je suis arrivé dans
+la région depuis le 10 juillet et j&#39;ai assisté à de nombreux spectacles. Le
+lundi 21 juillet, je sors avec mon amie, ma fille et trois de ses camarades
+d&#39;une représentation d&#39;une pièce très dure sur la guerre en ex-Yougoslavie et
+nous prenons le frais à l&#39;ombre du Palais des Papes, en assistant avec plaisir à
+un spectacle donné par un couple d&#39;acrobates. A la fin de leur numéro, je
+m&#39;avance pour mettre une pièce dans leur chapeau lorsque j&#39;entends le son d&#39;un
+Djembé (tambour africain) derrière moi. Etant passionné par la culture africaine
+(j&#39;y ai monté plusieurs spectacles et ai eu l&#39;occasion d&#39;y faire des tournées),
+je m&#39;apprête à écouter les musiciens. Le percussionniste est rejoint par un
+joueur de Kamele Ngoni (sorte de contrebasse surtout utilisée par les chasseurs
+en Afrique de l&#39;Ouest).&lt;/p&gt;
+
+&lt;p&gt;A peine commencent-ils à jouer qu&#39;un groupe de C.R.S se dirige vers eux pour les
+interrompre et contrôler leur identité. Contrarié, je me décide à intervenir.
+Ayant déjà subi des violences policières dans le même type de circonstances il y
+a une vingtaine d&#39;année à Paris, je me suis adressé à eux avec calme et
+politesse, le souvenir de ma précédente mésaventure bien en tête. Mais je me
+suis dit que j&#39;étais plus âgé, que l&#39;on se trouvait dans un haut lieu culturel
+et touristique, dans une démocratie et que j&#39;avais le droit de m&#39;exprimer face à
+ce qui me semblait une injustice. J&#39;aborde donc un des C.R.S et lui
+demande&amp;nbsp;: &quot;Pourquoi contrôlez-vous ces artistes en particulier et pas tous
+ceux qui se trouvent sur la place?&quot; Réponse immédiate&amp;nbsp;: &quot;Ta gueule,
+mêle-toi de ce qui te regarde! &quot;Justement ça me regarde. Je trouve votre
+attitude discriminatoire.&quot;&lt;/p&gt;
+
+&lt;p&gt;Regard incrédule. &quot;Tes papiers!&quot; &quot;Je ne les ai pas sur moi, mais on peut aller
+les chercher dans la voiture.&quot;  &quot;Mets-lui les menottes!&quot; &quot;Mais vous n&#39;avez pas
+le droit de...&quot; Ces mots semblent avoir mis le feu aux poudres. &quot;Tu vas voir si
+on n&#39;a pas le droit.&quot; Et brusquement la scène a dérapé. Ils se sont jetés sur
+moi avec une sauvagerie inouïe. Mon amie, ma  fille, ses camarades et les
+curieux qui assistaient à la scène ont reculé choqués alors qu&#39;ils me
+projetaient au sol, me plaquaient la tête contre les pavés, me tiraient de
+toutes leurs forces les bras en arrière comme un poulet désarticulé et
+m&#39;enfilaient des menottes. Les bras dans le dos, ils m&#39;ont relevé et m&#39;ont jeté
+en avant en me retenant par la chaîne. La menotte gauche m&#39;a tordu le poignet et
+a pénétré profondément mes chairs. J&#39;ai hurlé: &quot;Vous n&#39;avez pas le droit,
+arrêtez, vous me cassez le bras!&quot; &quot;Tu vas voir ce que tu vas voir espèce de
+tapette. Sur le dos! Sur le ventre! Sur le dos je te dis, plus vite, arrête de
+gémir!&quot; Et ils me frottent la tête contre les pavés me tordent et me frappent,
+me traînent, me re-plaquent à terre. La foule horrifiée s&#39;écarte sur notre
+passage. Mon amie essaie de me venir en aide et se fait violemment repousser.
+Des gens s&#39;indignent, sifflent, mais personne n&#39;ose interrompre cette
+interpellation d&#39;une violence inouïe. Je suis traîné au sol et malmené jusqu&#39;à
+leur fourgonnette qui se trouve à la place de l&#39;horloge 500 m plus bas. Là, ils
+me jettent dans le véhicule, je tente de m&#39;asseoir et le plus grand de mes
+agresseurs (je ne peux pas les appeler autrement), me donne un coup pour me
+faire tomber entre les sièges, face contre terre, il me plaque un pied sur les
+côtes et l&#39;autre sur la cheville il appuie de tout son poids contre une barre de
+fer. &quot;S&#39;il vous plait, n&#39;appuyez pas comme ça, vous me coupez la circulation.&quot;
+&quot;C&#39;est pour ma sécurité.&quot; Et toute leur compagnie de rire de ce bon mot.
+Jusqu&#39;au commissariat de St Roch. Le trajet est court mais il me semble
+interminable. Tout mon corps est meurtri, j&#39;ai l&#39;impression d&#39;avoir le poignet
+brisé, les épaules démises, je mange la poussière. On m&#39;extrait du fourgon
+toujours avec autant de délicatesse.&lt;/p&gt;
+
+&lt;p&gt;Je vous passe les détails de l&#39;interrogatoire que j&#39;ai subi dans un état
+lamentable. Je me souviens seulement du maquillage bleu sur les paupières de la
+femme qui posait les questions. &quot;Vous êtes de quelle nationalité ?&quot; &quot;Suisse.&quot;
+&quot;Vous êtes un sacré fouteur de merde.&quot; &quot;Vous n&#39;avez pas le droit de m&#39;insulter.&quot;
+&quot;C&#39;est pas une insulte, la merde&quot; (petit rire).&lt;/p&gt;
+
+&lt;p&gt;C&#39;est fou comme la mémoire fonctionne bien quand on subit de pareilles
+agressions. Toutes les paroles, tout les détails de cette arrestation et de ma
+garde à vue resteront gravés à vie dans mes souvenirs, comme la douleur des
+coups subis dans ma chair. Je remarque que l&#39;on me vouvoie depuis que je ne suis
+plus entre les griffes des CRS.&lt;/p&gt;
+
+&lt;p&gt;Mais la violence physique a seulement fait place au mépris et à une forme
+d&#39;inhumanité plus sournoise. Je demande que l&#39;on m&#39;ôte les menottes qui m&#39;ont
+douloureusement entaillé les poignets et que l&#39;on appelle un docteur. On me dit
+de cesser de pleurnicher et que j&#39;aurais mieux fait de réfléchir avant de faire
+un scandale. Je tente de protester, on me coupe immédiatement la parole. Je
+comprends qu&#39;ici on ne peut pas s&#39;exprimer librement. Ils font volontairement
+traîner avant de m&#39;enlever les menottes. Font semblant de ne pas trouver les
+clés. Je ne sens plus ma main droite. Fouille intégrale. On me retire ce que
+j&#39;ai, bref inventaire, le tout est mis dans une petite boîte.&lt;/p&gt;
+
+&lt;p&gt;&quot;Enlevez vos vêtements!&quot; J&#39;ai tellement mal que je n&#39;y arrive presque pas.
+&quot;Dépêchez-vous, on n&#39;a pas que ça à faire. La boucle d&#39;oreille!&quot; J&#39;essaye de
+l&#39;ôter sans y parvenir.&lt;/p&gt;
+
+&lt;p&gt;&quot;Je ne l&#39;ai pas enlevée depuis des années. Elle n&#39;a plus de fermoir.&quot; &quot;Ma
+patience à des limites vous vous débrouillez pour l&#39;enlever, c&#39;est tout!&quot; Je
+force en tirant sur le lobe de l&#39;oreille, la boucle lâche. &quot;Baissez la culotte!&quot;
+Je m&#39;exécute. Après la fouille ils m&#39;amènent dans une petite cellule de garde à
+vue. 4 m de long par 2 m de large. Une petite couchette beige vissée au mur. Les
+parois sont taggées, grattées par les inscriptions griffonnées à la hâte par les
+détenus de passage. Au briquet ou gravé avec les ongles dans le crépis. Momo de
+Monclar, Ibrahim, Rachid... chacun laisse sa marque. L&#39;attente commence. Pas
+d&#39;eau, pas de nourriture. Je réclame en vain de la glace pour faire désenfler
+mon bras. Les murs et le sol sont souillés de tâches de sang, d&#39;urine et
+d&#39;excréments. Un méchant néon est allumé en permanence.&lt;/p&gt;
+
+&lt;p&gt;Le temps s&#39;étire.
+Rien ici qui permette de distinguer le jour de la nuit. La douleur lancinante
+m&#39;empêche de dormir. J&#39;ai l&#39;impression d&#39;avoir le coeur qui pulse dans ma main.
+D&#39;ailleurs alors que j&#39;écris ces lignes une semaine plus tard, je ne parviens
+toujours pas à dormir normalement. J&#39;écris tout cela en détails, non pas pour me
+lamenter sur mon sort. Je suis malheureusement bien conscient que ce qui m&#39;est
+arrivé est tristement banal, que plusieurs fois par jour et par nuit dans chaque
+ville de France des dizaines de personnes subissent des traitements bien pires
+que ce que j&#39;ai enduré. Je sais aussi que si j&#39;étais noir ou arabe je me serais
+fait cogner avec encore moins de retenue. C&#39;est pour cela que j&#39;écris et porte
+plainte. Car j&#39;estime que dans la police française et dans les CRS en
+particulier il existe de dangereux individus qui sous le couvert de l&#39;uniforme
+laissent libre cour à leurs plus bas instincts. (Evidemment il y a aussi des
+arrestations justifiées, et la police ne fait pas que des interventions
+abusives. Mais je parle des dérapages qui me semblent beaucoup trop fréquents.)
+Que ces dangers publics sévissent en toute impunité au sein d&#39;un service public
+qui serait censé protéger les citoyens est inadmissible dans un état de
+droit.&lt;/p&gt;
+
+&lt;p&gt;J&#39;ai un casier judiciaire vierge et suis quelqu&#39;un de profondément non violent,
+par conviction, ce type de mésaventure me renforce encore dans mes convictions,
 mais si je ne disposais pas des outils pour analyser la situation je pourrais
-aisément basculer dans la violence et l&#39;envie de vengeance. Je suis persuadé
-que ce type d&#39;action de la police nationale visant à instaurer la peur ne
-fait qu&#39;augmenter l&#39;insécurité en France et stimuler la suspicion et la haine
-d&#39;une partie de la population (des jeunes en particulier) face à la
-police.&lt;/p&gt; &lt;p&gt;En polarisant ainsi la population on crée une tension
-perpétuelle extrêmement perverse. Comme je suis un homme de culture et de
-communication je réponds à cette violence avec mes armes. L&#39;écriture et
-la parole. Durant les 16h qu&#39;a duré ma détention (avec les nouvelles lois,
-on aurait même pu me garder 48h en garde à vue), je n&#39;ai vu dans les cellules
-que des gens d&#39;origine africaine et des gitans. Nous étions tous traités avec
-un mépris hallucinant. Un exemple, mon voisin de cellule avait besoin d&#39;aller
-aux toilettes. Il appelait sans relâche depuis près d&#39;une demi-heure,
-personne ne venait. Il s&#39;est mis à taper contre la porte pour se faire
-entendre, personne. Il cognait de plus en plus fort, finalement un gardien
-exaspéré surgit. &quot;Qu&#39;est ce qu&#39;il y a ?&quot; &quot;J&#39;ai besoin d&#39;aller aux
-chiottes.&quot; &quot;Y a une coupure d&#39;eau.&quot; &quot;Mais j&#39;ai besoin.&quot; &quot;Y a pas d&#39;eau
-dans tout le commissariat, alors tu te la coinces pigé.&quot; Mon voisin qui
-n&#39;est pas seul dans sa cellule continue de se plaindre, disant qu&#39;il est
-malade, qu&#39;il va faire ses besoins dans la cellule. &quot;Si tu fais ça on te
-fait essuyer avec ton t-shirt.&quot; Les coups redoublent. Une voix féminine
-lance d&#39;un air moqueur. &quot;Vas-y avec la tête pendant que tu y es., ça nous en
-fera un de moins.&quot; Eclats de rire dans le couloir comme si elle avait fait
-une bonne plaisanterie.&lt;/p&gt; &lt;p&gt;Après une nuit blanche vers 9h du matin on
-vient me chercher pour prendre mon empreinte et faire ma photo. Face, profil,
-avec un petit écriteau, comme dans les films. La dame qui s&#39;occupe de cela
-est la première personne qui me parle avec humanité et un peu de compassion
-depuis le début de ce cauchemar. &quot;He bien, ils vous ont pas raté. C&#39;est les
-CRS, ah bien sûr. Faut dire qu&#39;on a aussi des sacrés cas sociaux chez nous.
-Mais ils sont pas tous comme ça.&quot; J&#39;aimerais la croire.&lt;/p&gt; &lt;p&gt;Un
-officier vient me chercher pour que je dépose ma version des faits et
-me faire connaître celle de ceux qui m&#39;ont interpellé. J&#39;apprends que je
-suis poursuivi pour: outrage, incitation à l&#39;émeute et violence envers
-des dépositaires de l&#39;autorité publique. C&#39;est vraiment le comble. Je les
-aurais soi-disant agressés verbalement et physiquement. Comment ces
-fonctionnaires assermentés peuvent ils mentir aussi éhontement? Je raconte ma
-version des faits à l&#39;officier. Je sens que sans vouloir l&#39;admettre devant
-moi, il se rend compte qu&#39;ils ont commis une gaffe. Ma déposition est
-transmise au procureur et vers midi je suis finalement
-libéré.&lt;/p&gt; &lt;p&gt;J&#39;erre dans la ville comme un boxeur sonné. Je marche
-péniblement. Un mistral à décorner les boeufs souffle sur la ville. Je
-trouve un avocat qui me dit d&#39;aller tout de suite à l&#39;hôpital faire un
-constat médical. Je marche longuement pour parvenir aux urgences où
-je patiente plus de 4 heures pour recevoir des soins hâtifs. Dans la
-salle d&#39;attente, je lis un journal qui m&#39;apprend que le gouvernement veut
-supprimer 200 hôpitaux dans le pays, on parle de couper 6000 emplois dans
-l&#39;éducation. Sur la façade du commissariat de St Roch j&#39;ai pu lire qu&#39;il
-allait être rénové pour 19 millions d&#39;Euros. Les budgets de la sécurité sont
-à la hausse, on diminue la santé, le social et l&#39;éducation. Pas de
-commentaires.  Je n&#39;écris pas ces lignes pour me faire mousser, mais pour
-clamer mon indignation face à un système qui tolère ce type de violence. Sans
-doute suis-je naïf de m&#39;indigner. La plupart des Français auxquels j&#39;ai
-raconté cette histoire ne semblaient pas du tout surpris, et avaient
-connaissance de nombreuses anecdotes du genre. Cela me semble d&#39;autant plus
-choquant.&lt;/p&gt; &lt;p&gt;Ma naïveté, je la revendique, comme je revendique le droit
-de m&#39;indigner face à l&#39;injustice. Même si cela peut paraître de petites
-injustices. C&#39;est la somme de nos petits silences et de nos petites lâchetés
-qui peut conduire à une démission collective et en dernier recours aux pires
-systèmes totalitaires (nous n&#39;en sommes bien évidement heureusement pas
-encore là).&lt;/p&gt; &lt;p&gt;Depuis ma sortie, nous sommes retournés sur la Place
-des Papes et nous avons réussi à trouver une douzaine de témoins qui ont
-accepté d&#39;écrire leur version des faits qui corroborent tous ce que j&#39;ai dit.
-Ils certifient tous que je n&#39;ai proféré aucunes insultes ni n&#39;ai commis
-aucune violence. Les témoignages soulignent l&#39;incroyable brutalité de
-l&#39;intervention des CRS et la totale disproportion de leur réaction face à
-mon intervention. J&#39;ai essayé de retrouver des images des faits,
-mais malheureusement les caméras qui surveillent la place sont gérées par la
-police et, comme par hasard elles sont en panne depuis début
-juillet.&lt;/p&gt; &lt;p&gt;Il y avait des centaines de personnes sur la place qui
-auraient pu témoigner, mais le temps de sortir de garde à vue, de me faire
-soigner et de récupérer suffisamment d&#39;énergie pour pouvoir tenter de les
-retrouver, je n&#39;ai pu en rassembler qu&#39;une douzaine. J&#39;espère toujours que
-peut être quelqu&#39;un a photographié ou même filmé la scène et que je parvienne
-à récupérer ces images qui prouveraient de manière définitive ce qui c&#39;est
-passé.&lt;/p&gt; &lt;p&gt;Après 5 jours soudain, un monsieur africain m&#39;a abordé, c&#39;était
-l&#39;un des musiciens qui avait été interpellé. Il était tout content de me
-retrouver car il me cherchait depuis plusieurs jours. Il se sentait mal de
-n&#39;avoir rien pu faire et de ne pas avoir pu me remercier d&#39;être intervenu en
-leur faveur. Il était profondément touché et surpris par mon intervention et
-m&#39;a dit qu&#39;il habitait Grenoble, qu&#39;il avait 3 enfants et qu&#39;il était
-français. Qu&#39;il viendrait témoigner pour moi. Qu&#39;il s&#39;appelait Moussa Sanou.
-&quot;Sanou , c&#39;est un nom de l&#39;ethnie Bobo.&quot; &quot;Vous êtes de Bobo-Dioulasso ?&quot;
-&quot;Oui.&quot; Nous nous sommes souri et je l&#39;ai salué dans sa langue en Dioula. Il
-se trouve que je vais justement créer un spectacle prochainement à
-Bobo-Dioulasso au Burkina-faso. La pièce qui est une adaptation de nouvelles
-de l&#39;auteur Mozambicain Mia Couto s&#39;appellera &quot;Chaque homme est une race&quot;
-et un des artistes avec lequel je vais collaborer se nomme justement Sanou.
-Coïncidence&amp;nbsp;? Je ne crois pas. Je suis content d&#39;avoir défendu un ami,
-même si je ne le connaissais pas encore. La pièce commence par ce dialogue
-prémonitoire&amp;nbsp;: &quot;quand on lui demanda de quelle race il était,
-il répondit&amp;nbsp;: &quot;Ma race c&#39;est moi.&quot; Invité à s&#39;expliquer il ajouta &quot;Ma
-race c&#39;est celui que je suis. Toute personne est à elle seule une humanité.
-Chaque homme est une race, monsieur le policier.&quot;»&lt;/p&gt;&lt;/p&gt;
+aisément basculer dans la violence et l&#39;envie de vengeance. Je suis persuadé que
+ce type d&#39;action de la police nationale visant à instaurer la peur ne fait
+qu&#39;augmenter l&#39;insécurité en France et stimuler la suspicion et la haine d&#39;une
+partie de la population (des jeunes en particulier) face à la police.&lt;/p&gt;
 
-&lt;p&gt;&lt;p&gt;Patrick Mohr,
-le 28 juillet 2008.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;En polarisant ainsi la population on crée une tension perpétuelle extrêmement
+perverse. Comme je suis un homme de culture et de communication je réponds à
+cette violence avec mes armes. L&#39;écriture et la parole. Durant les 16h qu&#39;a duré
+ma détention (avec les nouvelles lois, on aurait même pu me garder 48h en garde
+à vue), je n&#39;ai vu dans les cellules que des gens d&#39;origine africaine et des
+gitans. Nous étions tous traités avec un mépris hallucinant. Un exemple, mon
+voisin de cellule avait besoin d&#39;aller aux toilettes. Il appelait sans relâche
+depuis près d&#39;une demi-heure, personne ne venait. Il s&#39;est mis à taper contre la
+porte pour se faire entendre, personne. Il cognait de plus en plus fort,
+finalement un gardien exaspéré surgit. &quot;Qu&#39;est ce qu&#39;il y a ?&quot; &quot;J&#39;ai besoin
+d&#39;aller aux chiottes.&quot; &quot;Y a une coupure d&#39;eau.&quot; &quot;Mais j&#39;ai besoin.&quot; &quot;Y a pas
+d&#39;eau dans tout le commissariat, alors tu te la coinces pigé.&quot; Mon voisin qui
+n&#39;est pas seul dans sa cellule continue de se plaindre, disant qu&#39;il est malade,
+qu&#39;il va faire ses besoins dans la cellule. &quot;Si tu fais ça on te fait essuyer
+avec ton t-shirt.&quot; Les coups redoublent. Une voix féminine lance d&#39;un air
+moqueur. &quot;Vas-y avec la tête pendant que tu y es., ça nous en fera un de moins.&quot;
+Eclats de rire dans le couloir comme si elle avait fait une bonne
+plaisanterie.&lt;/p&gt;
 
-&lt;p&gt;[Antipaedo]: http://antipaedo.lip6.fr
-[CNAM]: http://www.cnam.fr
-[CÉDRIC]: http://cedric.cnam.fr
-[philippe]: http://deptinfo.cnam.fr/~rigaux/
-[LIP6]: http://www.lip6.fr
-[L2TI]: http://www-l2ti.univ-paris13.fr/
-[AMMICO]: http://www.ammico.fr
-[www-cn]: http://www.complexnetworks.fr
-[matthieu]: http://www-rp.lip6.fr/~latapy
-[emmanuel]: http://www-l2ti.univ-paris13.fr/~viennet/
-[lionel]: http://lioneltabourier.fr/
-[jekyll]: http://www.jekyll.org
-[github]: http://www.github.com
-[vim]: http://www.vim.org
-[archlinux]: http://www.archlinux.org&lt;/p&gt;
+&lt;p&gt;Après une nuit blanche vers 9h du matin on vient me chercher pour prendre mon
+empreinte et faire ma photo. Face, profil, avec un petit écriteau, comme dans
+les films. La dame qui s&#39;occupe de cela est la première personne qui me parle
+avec humanité et un peu de compassion depuis le début de ce cauchemar. &quot;He bien,
+ils vous ont pas raté. C&#39;est les CRS, ah bien sûr. Faut dire qu&#39;on a aussi des
+sacrés cas sociaux chez nous. Mais ils sont pas tous comme ça.&quot; J&#39;aimerais la
+croire.&lt;/p&gt;
 
-&lt;p&gt;[clochix]: http://www.clochix.net
-[vicnent]: http://www.vicnent.info/blog/&lt;/p&gt;
+&lt;p&gt;Un officier vient me chercher pour que je dépose ma version des faits et me
+faire connaître celle de ceux qui m&#39;ont interpellé. J&#39;apprends que je suis
+poursuivi pour: outrage, incitation à l&#39;émeute et violence envers des
+dépositaires de l&#39;autorité publique. C&#39;est vraiment le comble. Je les aurais
+soi-disant agressés verbalement et physiquement. Comment ces fonctionnaires
+assermentés peuvent ils mentir aussi éhontement? Je raconte ma version des faits
+à l&#39;officier. Je sens que sans vouloir l&#39;admettre devant moi, il se rend compte
+qu&#39;ils ont commis une gaffe. Ma déposition est transmise au procureur et vers
+midi je suis finalement libéré.&lt;/p&gt;
 
-&lt;p&gt;[@clochix]: http://twitter.com/clochix
-[@vicnent]: http://twitter.com/vicnent
-[@francoistaddei]: http://twitter.com/francoistaddei
-[@mysciencework]: http://twitter.com/mysciencework&lt;/p&gt;
+&lt;p&gt;J&#39;erre dans la ville comme un boxeur sonné. Je marche péniblement. Un mistral à
+décorner les boeufs souffle sur la ville. Je trouve un avocat qui me dit d&#39;aller
+tout de suite à l&#39;hôpital faire un constat médical. Je marche longuement pour
+parvenir aux urgences où je patiente plus de 4 heures pour recevoir des soins
+hâtifs. Dans la salle d&#39;attente, je lis un journal qui m&#39;apprend que le
+gouvernement veut supprimer 200 hôpitaux dans le pays, on parle de couper 6000
+emplois dans l&#39;éducation. Sur la façade du commissariat de St Roch j&#39;ai pu lire
+qu&#39;il allait être rénové pour 19 millions d&#39;Euros. Les budgets de la sécurité
+sont à la hausse, on diminue la santé, le social et l&#39;éducation. Pas de
+commentaires.  Je n&#39;écris pas ces lignes pour me faire mousser, mais pour clamer
+mon indignation face à un système qui tolère ce type de violence. Sans doute
+suis-je naïf de m&#39;indigner. La plupart des Français auxquels j&#39;ai raconté cette
+histoire ne semblaient pas du tout surpris, et avaient connaissance de
+nombreuses anecdotes du genre. Cela me semble d&#39;autant plus choquant.&lt;/p&gt;
 
-&lt;p&gt;[cv-pdf-fr]: ../files/FOURNIER-Raphael_CV-academique.pdf
-[cv-pdf-en]: ../files/FOURNIER-Raphael_AcademicResume.pdf
-[these]: ../files/These_FournierRaphael_vfinale.pdf&lt;/p&gt;
+&lt;p&gt;Ma naïveté, je la revendique, comme je revendique le droit de m&#39;indigner face à
+l&#39;injustice. Même si cela peut paraître de petites injustices. C&#39;est la somme de
+nos petits silences et de nos petites lâchetés qui peut conduire à une démission
+collective et en dernier recours aux pires systèmes totalitaires (nous n&#39;en
+sommes bien évidement heureusement pas encore là).&lt;/p&gt;
+
+&lt;p&gt;Depuis ma sortie, nous sommes retournés sur la Place des Papes et nous avons
+réussi à trouver une douzaine de témoins qui ont accepté d&#39;écrire leur version
+des faits qui corroborent tous ce que j&#39;ai dit. Ils certifient tous que je n&#39;ai
+proféré aucunes insultes ni n&#39;ai commis aucune violence. Les témoignages
+soulignent l&#39;incroyable brutalité de l&#39;intervention des CRS et la totale
+disproportion de leur réaction face à mon intervention. J&#39;ai essayé de retrouver
+des images des faits, mais malheureusement les caméras qui surveillent la place
+sont gérées par la police et, comme par hasard elles sont en panne depuis début
+juillet.&lt;/p&gt;
+
+&lt;p&gt;Il y avait des centaines de personnes sur la place qui auraient pu témoigner,
+mais le temps de sortir de garde à vue, de me faire soigner et de récupérer
+suffisamment d&#39;énergie pour pouvoir tenter de les retrouver, je n&#39;ai pu en
+rassembler qu&#39;une douzaine. J&#39;espère toujours que peut être quelqu&#39;un a
+photographié ou même filmé la scène et que je parvienne à récupérer ces images
+qui prouveraient de manière définitive ce qui c&#39;est passé.&lt;/p&gt;
+
+&lt;p&gt;Après 5 jours soudain, un monsieur africain m&#39;a abordé, c&#39;était l&#39;un des
+musiciens qui avait été interpellé. Il était tout content de me retrouver car il
+me cherchait depuis plusieurs jours. Il se sentait mal de n&#39;avoir rien pu faire
+et de ne pas avoir pu me remercier d&#39;être intervenu en leur faveur. Il était
+profondément touché et surpris par mon intervention et m&#39;a dit qu&#39;il habitait
+Grenoble, qu&#39;il avait 3 enfants et qu&#39;il était français. Qu&#39;il viendrait
+témoigner pour moi. Qu&#39;il s&#39;appelait Moussa Sanou. &quot;Sanou , c&#39;est un nom de
+l&#39;ethnie Bobo.&quot; &quot;Vous êtes de Bobo-Dioulasso ?&quot; &quot;Oui.&quot; Nous nous sommes souri et
+je l&#39;ai salué dans sa langue en Dioula. Il se trouve que je vais justement créer
+un spectacle prochainement à Bobo-Dioulasso au Burkina-faso. La pièce qui est
+une adaptation de nouvelles de l&#39;auteur Mozambicain Mia Couto s&#39;appellera
+&quot;Chaque homme est une race&quot; et un des artistes avec lequel je vais collaborer se
+nomme justement Sanou. Coïncidence&amp;nbsp;? Je ne crois pas. Je suis content
+d&#39;avoir défendu un ami, même si je ne le connaissais pas encore. La pièce
+commence par ce dialogue prémonitoire&amp;nbsp;: &quot;quand on lui demanda de quelle
+race il était, il répondit&amp;nbsp;: &quot;Ma race c&#39;est moi.&quot; Invité à s&#39;expliquer il
+ajouta &quot;Ma race c&#39;est celui que je suis. Toute personne est à elle seule une
+humanité. Chaque homme est une race, monsieur le policier.&quot;»&lt;/p&gt;
+
+&lt;p&gt;Patrick Mohr, le 28 juillet 2008.&lt;/p&gt;
 </content>
  </entry>
  
