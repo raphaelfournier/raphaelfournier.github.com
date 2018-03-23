@@ -1,0 +1,30 @@
+<div class="me">
+<img src="{{base}}/images/raphaelfournier3.jpg" style="-moz-border-radius: 15px;
+border-radius: 15px; margin:auto; margin-right: 15px; float:left;" alt="profile
+pic" height="80px"/>
+<h1>Raphaël <br/>Fournier-<br/>S'niehotta</h1>
+</div>
+        <ul class="tabs">
+          <li class="about{% if page.slug == 'about' %} actuel {% endif %}"><a rel="about me" title="about" href="{{base}}/">about <strong>me</strong></a></li>
+          <li class="research {% if page.slug == 'research' %}actuel{% endif %}"><a rel="research" title="research" href="{{base}}/research/">I do <strong>research</strong></a></li>
+          <li class="teaching {% if page.slug == 'teaching' %}actuel{% endif %}"><a rel="teaching" title="teaching" href="{{base}}/teaching/">and I <strong>teach</strong></a></li>
+          <li><a title="cv" href="{{base}}/files/FOURNIER-Raphael_AcademicResume.pdf">read my <strong>resume</strong> (PDF)</a></li>
+        </ul>
+
+        <ul class="tabs">
+          <li class="blog {% if page.slug == 'blog' %}actuel{% endif %}"><a rel="home page" title="homepage" href="{{base}}/blog">read my <strong>blog</strong></a></li>
+          <li> <a rel="rss feed" title="receive update via rss" href="{{base}}/feed/rss.xml">subscribe by <strong>rss</strong></a> </li>
+          <li><a rel="twitter" title="follow me on twitter!" href="http://www.twitter.com/fournier_r">follow me on <strong>Twitter</strong></a></li>
+        </ul>
+
+<ul class="button">
+  <li>
+    {% if page.locale == "en" %}
+      {% if page.trad %}
+        <a class="lang" href="{{base}}/{{ page.trad }}">Lire en <strong>français</a>
+      {% endif %}
+    {% else %}
+      <a class="lang" href="{{base}}/fr/">Lire en <strong>français</a>
+    {% endif %}
+  </li>
+</ul>

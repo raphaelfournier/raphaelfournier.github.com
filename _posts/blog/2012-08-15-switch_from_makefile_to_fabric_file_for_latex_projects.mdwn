@@ -1,0 +1,91 @@
+---
+layout: post
+title: Switch from Makefile to Fabric file for Latex projects
+date: 2012-08-15 11:41:52
+lang: en
+categories: blog
+tags: 
+ - python
+ - latex
+---
+
+While writing my Ph. D. thesis, I procrastinate by customizing my environment. I
+have managed to reuse Tikitu de Jager [LateX setup][Latex-setup] to compile
+individual chapters of the manuscript. This is very useful to obtain dated-pdf
+of a given chapter, with references, which can be send to friends/coworkers for
+reviewing, without sending the full document. 
+
+I also took the time to replace the Makefile I usually use by a [fab
+file][Fabric], which benefits from the Python syntax and is thus easier to
+tweak.
+
+Just put a file called `fabfile.py` in the folder where your .tex files reside.
+Here is an excerpt of my fabfile :
+
+    from fabric.api import local
+
+    # variables
+    SRC = "these"
+    FIGDIR = "figures"
+    PDFREADER = "zathura"
+    LATEXMODE = "pdflatex"
+    BIBTEX = "bibtex"
+
+    def execute(command):
+      local(command)
+      #local("echo %s"%command)
+
+    def move(output,chapter):
+      command = "mv %s %s.pdf"%(output,chapter)
+      execute(command)
+
+    def preview(chapter):
+      print("previewing...")
+      command1 = 'echo -e "awful.tag.viewmore({tags[1][6],awful.tag.selected(1)})" | awesome-client'
+      command2 = PDFREADER +" "+ chapter+".pdf"
+      execute(command1)
+      execute(command2)
+
+    def clean():
+      command = "rm -f *.aux *.log *.out *.ps *.toc *.nav *.snm *.dvi *.blg *.bbl *.nlo *.mtc* *.brf *.maf *.tdo"
+      execute(command)
+
+    def chapter1(bibtex=True,display=True):
+      chapter = "chapter1"
+      make(chapter,bibtex)
+      if display:
+        preview(chapter)
+
+    def make(chapter,bibtex):
+      command = LATEXMODE + " --output-directory=auxiliary " + chapter + "_wrapper.tex"
+      bibtexcommand = BIBTEX + " auxiliary/" + chapter + "_wrapper"
+      output = "auxiliary/" + chapter + "_wrapper" + ".pdf"
+      execute(command)
+      if bibtex == True:
+        execute(command)
+        execute(bibtexcommand)
+        execute(command)
+      move(output,chapter)
+
+Let's review the file :
+
+* The `execute()` function is just an alias for easier readibility of the code
+* The `clean()` function removes all the temporary files produced by a latex
+  compilation
+* The `make()` function lists the sequence of operations required for a full
+  compilation, using a switch whether I need to use `bibtex` to produce the list
+  of references or not
+* The `chapter1` function is called after one of my chapter. I can call it with
+  one of the following command:
+
+      $ fab chapter1:bibtex=True,preview=False 
+        # full compilation but no preview
+      $ fab chapter1:False,True 
+        # quick compilation and opens a pdf viewer immediately after
+      $ fab chapter1 
+        # defaults to bibtex=True and preview=True
+
+
+
+[Latex-setup]: http://www.logophile.org/LaTeX/MyThesisSetup
+[Fabric]: http://fabfile.org

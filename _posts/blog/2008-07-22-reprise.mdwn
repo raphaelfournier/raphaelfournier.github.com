@@ -1,0 +1,14 @@
+---
+layout: postfr
+title: "Reprise"
+date: 2008-07-22 20:00:54
+lang: fr
+categories: blog
+tags: 
+- jekyll
+---
+
+Après quelques longs mois d'absence, je relance un blog. L'envie d'écrire, de
+commenter, de faire partager. Ce que je pense, ce que je lis, entends ou vois,
+les petites choses que j'apprends. Peu à peu, les articles de mon ancien blog
+pourraient revenir, du moins ceux qui le méritent.

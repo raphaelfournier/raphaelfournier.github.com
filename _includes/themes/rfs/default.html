@@ -1,0 +1,21 @@
+{% include base.html %}
+<!doctype html>
+<html>
+  <head>
+{% include header.html %}
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        {% include nav.html %}
+      </header>
+      <section>
+        {{ content }}
+      </section>
+      <footer>
+        {% include footer.html %}
+      </footer>
+    </div>
+    <script src="{{base}}/javascripts/scale.fix.js"></script>
+  </body>
+</html>

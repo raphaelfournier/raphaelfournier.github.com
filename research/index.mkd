@@ -1,0 +1,77 @@
+---
+title: Research
+layout: page
+date: 2011-12-26
+trad: recherche
+locale: en
+slug: research
+---
+
+## Topics
+
+My research topics are related to data and graph mining, recommender systems,
+community detection and P2P networks. I have been funded by the [Antipaedo][]
+project, which aims at increasing knowledge on paedophile activity in P2P
+networks. Recently, I joined the [AMMICO][] project, in which we study
+contextual recommender systems in order to improve museum visiting assistant
+devices.
+
+## Publications
+
+<!-- [automatic list](publications.html) -->
+
+### Peer-reviewed journals
+
+- [j2] *Comparing paedophile activity in different P2P systems*. Raphaël
+Fournier, Thibault Cholez, Matthieu Latapy, Isabelle Chrisment, Clémence
+Magnien, Ivan Daniloff, Olivier Festor. Accepted in Social Sciences, May 2014.
+[[Preprint](../files/ComparingPaedoActP2P_FournierCholezLatapyMagnienChrismentDaniloffFestor.pdf)]
+
+- [j1] *Quantifying paedophile activity in a large P2P system*. Raphaël
+Fournier, Matthieu Latapy, Clémence Magnien. Published in [Information
+Processing and Management](http://dx.doi.org/10.1016/j.ipm.2012.02.008), 
+March 2012. [[PDF](../files/Quantifying-IPM-final.pdf)]
+
+### Peer-reviewed conferences
+
+- [c3] *AMMICO : recommandation sociale pour la visite de musée*. Raphaël Fournier,
+Emmanuel Viennet. AAFD14. [[PDF](../files/AMMICO-AAFD-FournierViennet.pdf)]
+
+- [c2] *Mining bipartite graphs to improve semantic paedophile activity detection*.
+Raphael Fournier, Maximilien Danisch. RCIS 2014.
+[[PDF](../files/Mining-RCIS2014-FournierDanisch.pdf)]
+
+- [c1] *Quantifying paedophile queries in a large P2P system*. Accepted for the
+[IEEE Infocom Mini-Conference 2011](http://www.ieee-infocom.org/), Shanghai,
+(acceptance rate : 23,42%). 
+[[Dedicated web page](./quantifying)] 
+[[PDF version](../files/InfocomMC11_LatapyMagnienFournier_QuantifyingPaedophileQueriesP2P.pdf)]
+
+### PhD Thesis
+
+1. *Détection et analyse d'une thématique rare dans de grands ensembles de requêtes : l'activité pédophile dans le P2P*. Written in French (most of its content is or will be available as articles), and defended on December 21st, 2012. 
+[[PDF version][these]]
+
+### Posters
+
+1. *Paedophile activity in large P2P systems*. Prepared for ANR STIC Conference 2012. Lyon, January 2012.
+
+2. *Paedophile activity in a large P2P system*.
+Prepared for the ["Online Child Protection Conference: Future Technologies for Policing the Internet"](http://www.comp.lancs.ac.uk/isis) (London, 27/10/2010).
+[[PDF Version (DIN-A0)](../files/poster_PaedophileActivityInALargeP2PSystem.pdf)], 
+[[PDF Version (A4)](../files/poster_PaedophileActivityInALargeP2PSystem_A4.pdf)]
+
+3. *Paedophile activity in eDonkey*. Antipaedo Conference. LIP6, Paris.
+    [[PDF](../files/poster_TracingPaedoUsersEDonkeyKeywords.pdf)]
+
+### Slides for talks
+
+1. *INTERPOL*. Special Group: Internet-facilitated crimes against children.
+INTERPOL World Headquarters, Lyon.
+[[PDF](../files/QuantifyingPaedoP2P_Interpol_Fournier.pdf)]
+
+### Plots
+
+1. *Quantifying paedophile users on a P2P system*. [[Link](http://complexnetworks.fr/plots.php?plot_id=53" target="_blank"), external, on the complexnetworks team website]
+
+

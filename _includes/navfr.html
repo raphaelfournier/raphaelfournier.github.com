@@ -1,0 +1,31 @@
+<div class="me">
+<img src="{{base}}/images/raphaelfournier3.jpg" style="-moz-border-radius: 15px;
+border-radius: 15px; margin:auto; margin-right: 15px; float:left;" alt="profile
+pic" height="80px"/>
+<h1>Raphaël <br/>Fournier-<br/>S'niehotta</h1>
+</div>
+        <ul class="tabs">
+          <li{% if page.slug == 'apropos' %} class="actuel"{% endif %}><a rel="apropos" title="apropos" href="{{base}}/apropos/">à propos</a></li>
+          <li{% if page.slug == 'recherche' %} class="actuel"{% endif %}><a rel="recherche this" title="recherche" href="{{base}}/recherche/">recherche</a></li>
+          <li{% if page.slug == 'enseignement' %} class="actuel"{% endif %}><a rel="enseignement" title="enseignement" href="{{base}}/enseignement/">enseignement</a></li>
+          <li><a title="cv" href="{{base}}/files/FOURNIER-Raphael_CV-academique.pdf">CV</a></li>
+        </ul>
+
+        <ul class="tabs">
+          <li{% if page.slug == 'blog' %} class="actuel"{% endif %}><a
+              rel="accueil du blog" title="accueil du blog" href="{{base}}/fr/blog">blog</a></li>
+          <li> <a rel="rss feed" title="receive update via rss" href="{{base}}/feed/rss.xml">rss</a> </li>
+          <li><a rel="twitter" title="Suivez-moi sur twitter" href="http://www.twitter.com/fournier_r">@fournier_r</a></li>
+        </ul>
+
+<ul class="button">
+  <li>
+    {% if page.locale == "fr" %}
+      {% if page.trad %}
+        <a class="lang" href="{{base}}/{{ page.trad }}">View in <strong>english</a>
+      {% endif %}
+    {% else %}
+      <a class="lang" href="{{base}}/index.html">View in <strong>english</a>
+    {% endif %}
+  </li>
+</ul>

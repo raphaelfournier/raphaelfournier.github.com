@@ -1,0 +1,73 @@
+---
+layout: post
+title: "Awesome: switch apps with dmenu"
+date: 2013-09-13
+lang: en
+categories: blog
+tags: 
+ - awesome
+ - dmenu
+ - commandline
+---
+
+I have been using [Awesome][] as a window manager for several years. It uses a
+tiling approach, and really _manages_ windows, maximizing available space on my
+12" laptop screen. A great addition is [dmenu][], created by the [suckless][]
+project. The first use is to pipe applications from the path, which dmenu
+presents as a horizontal/vertical list, with incremental search. 
+
+But dmenu is not limited to this, and wrote a small function which proposes a
+menu of currently running applications (or clients, as awesome calls them). The
+selection may be refined by typing a few character which appear in the name of
+the app or the tag. When selecting enter, the tab changes to the client and it
+is given focus.
+
+Here is the code:
+
+        local awful= require("awful")
+        local beautiful = require("beautiful")
+        local naughty   = require("naughty")
+        local client=client
+        local pairs=pairs
+        local table=table
+        local print=print
+
+        local dmenuhelpers = {}
+
+        dmenuopts = "-b -i -nf '"..beautiful.fg_normal.."' -nb '"..beautiful.bg_normal.."' -sf '"..beautiful.bg_urgent.."' -sb '"..beautiful.bg_focus.."' -fn '-*-dejavu sans mono-*-r-*-*-*-*-*-*-*-*-*-*'"
+
+        function dmenuhelpers.switchapp()
+          local allclients = client.get(mouse.screen)
+          clientsline = ""
+          for _,c in ipairs(allclients) do
+            clientsline = clientsline .. c:tags()[1].name .. " - " .. c.name .. "\n"
+          end
+          selected = awful.util.pread("echo '".. clientsline .."' | dmenu -l 10 " .. dmenuopts)
+          for _,c in ipairs(allclients) do
+            a = c:tags()[1].name .. " - " .. c.name 
+            if a == selected:gsub("\n", "") then
+              for i, v in ipairs(c:tags()) do
+                awful.tag.viewonly(v)
+                client.focus = c
+                c:raise()
+                c.minimized = false
+                return
+              end
+            end
+          end
+        end
+
+To use it, you need to add the following in your rc.lua:
+  
+* at the top
+
+        local dmenuhelpers = require("dmenu-helpers")
+
+* in the key table
+
+        awful.key({ modkey, "Control" }, "w", function () dmenuhelpers.switchapp()                                        end),
+
+
+[Awesome]: http://awesome.naquadah.org
+[dmenu]: http://tools.suckless.org/dmenu/
+[suckless]: http://suckless.org/

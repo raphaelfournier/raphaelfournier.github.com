@@ -1,0 +1,15 @@
+<h1>
+  <a href="{{ page.url }}">{{ page.title }}</a>
+</h1>
+<div class="authoring">
+  Published on {{ page.date | date: "%d-%m-%Y" }} 
+  {% if page.tags != empty %}
+  in
+   [
+   {% unless page.tags == empty %}
+      {% assign tags_list = page.tags %}
+      {% include JB/tags_list2 %}
+   {% endunless %}  
+   ]
+   {% endif %}
+</div>

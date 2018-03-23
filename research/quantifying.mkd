@@ -1,0 +1,38 @@
+---
+title: Quantifying paedophile activity in a large P2P network
+layout: page
+date: 2011-12-26
+slug: research
+categories:
+- research
+---
+
+  <ul class="related">
+<li>  <h3 class="intitule">Rationale</h3>
+<p class="contenu">
+  <ul class="normal">
+      <li>Many offenders / interested users</li>
+      <li>Danger for innocent users</li>
+      <li>Correlation between viewing and acting out</li>
+      <li>Policy making issues</li>
+  </ul>
+</p>
+  </li>
+
+  <li><h3 class="intitule">Links</h3>
+<p class="contenu">
+  <ul class="normal">
+    <li><a href="http://antipaedo.lip6.fr">Project page on the LIP6 (our CS laboratory)</a></li>
+    <li><a href="http://www-rp.lip6.fr/~latapy/antipaedo/">Supplementary material page</a> <span class="text">detailing our methods and providing source codes and samples of our datasets</span></li>
+  </ul>
+</p>
+  </li>
+
+<li><h3 class="intitule"><span class="categlink">Article</span>
+Quantifying paedophile queries in a large P2P system</h3>
+<p class="contenu">
+Accepted for the <a href="http://www.ieee-infocom.org/">IEEE Infocom Mini-Conference 2011</a>, Shanghaï, (acceptance rate : 23,42%). <br/>
+<a href="../files/InfocomMC11_LatapyMagnienFournier_QuantifyingPaedophileQueriesP2P.pdf">PDF version</a> <br/>
+</p>
+  </li>
+  </ul>

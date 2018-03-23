@@ -1,0 +1,14 @@
+---
+layout: postfr
+title: "Conversion d'une date unix en date lisible"
+date: 2009-09-04 10:43:12
+lang: fr
+categories: blog
+tags: 
+ - astuce
+ - unix
+---
+
+Pour tous les fichiers d'un dossier (nommés ls[unixtime].log), en bash :
+
+    for i in *; do bla=`echo $i | sed "s:ls::" | sed "s:\.log::"`; toto=`date -u -d "1970-01-01 UTC + $bla seconds"`; echo $i,$toto; done

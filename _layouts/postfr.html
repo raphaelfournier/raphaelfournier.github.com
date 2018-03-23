@@ -1,0 +1,13 @@
+---
+layout: defaultfr
+slug: blog
+---
+
+<div id="post">
+  {% include post_headerfr.html %}
+  {{ content }}
+</div>
+
+{% if post.category == 'news' %}
+coucou
+{% endif %}

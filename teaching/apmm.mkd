@@ -1,0 +1,26 @@
+---
+title: APMM
+layout: page
+date: 2011-12-26
+slug: apmm
+---
+
+Documents :
+
+* [Cours](../files/APMM_Cours.pdf)
+* [Sujets TD et TME](../files/APMM_TD.pdf)
+* [Correction du TD](../files/APMM_TD_correction.pdf)
+
+<!--
+  <ul class="related">
+  <li><h3 class="intitule"><span class="categlink">Documents</span>2010-2011</h3>
+<p class="contenu">
+  <ul class="normal">
+      <li><a href="../files/APMM_Cours.pdf">Cours</a></span></li>
+      <li><a href="../files/APMM_TD.pdf">Sujets TD et TME</a></span></li>
+      <li><a href="../files/APMM_TD_correction.pdf">Correction du TD</a></span></li>
+  </ul>
+Ces documents sont proviennent de <a href="http://jlguillaume.free.fr">J.-L. Guillaume</a>.
+</p>
+  </ul>
+-->

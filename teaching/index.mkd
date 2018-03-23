@@ -1,0 +1,26 @@
+---
+title: Teaching
+layout: page
+date: 2011-12-26
+trad: enseignement
+slug: teaching
+locale: en
+---
+
+### 2011-2012
+
+1. *Windows system administration*. Undergraduate, 30 hours.
+
+      Computer science introductory course on Windows system administration. Lectures and practical work. Objective: enable the students to completely set up and manage several machines with Active Directory (server and clients). Networking, data storage and backup, security and user management.
+
+### 2009-2010 and 2010-2011
+
+1. *Multimedia applications*. Master, 40 hours. [[Course documents](./apmm.html)]
+
+      For students in the Computer Networks Master, a course to overview several steps of processing multimedia data: encoding/decoding, compression, standards, etc. Text and image coding (Huffmann, DCT and jpeg), video presentations with SMILE, FEC. 
+
+2. *Web programming*. Undergraduate, 30 hours.
+
+      Computer science introductory course on web programming: html, php, css and SQL. Small project of a fake videoclub website.
+
+      Internship supervision of 4 students.

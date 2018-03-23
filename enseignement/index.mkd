@@ -1,0 +1,52 @@
+---
+title: Enseignement
+layout: pagefr
+date: 2011-12-26
+trad: teaching
+slug: enseignement
+locale: fr
+---
+
+### 2014-2015
+
+* NFE204 : Bases de données distribuées.
+  * [Le cours](http://b3d.bdpedia.fr)
+  * [La présentation de l'UE]()
+
+* RCP216 : Ingénierie de la fouille de données
+  * [Les cours](http://deptmedia.cnam.fr/new/spip.php?article1460)
+  * [Les travaux pratiques](http://cedric.cnam.fr/vertigo/Cours/RCP216/)
+  * [Les travaux pratiques sur ce site](/enseignement/rcp216/)
+  * [La présentation de l'UE](http://deptmedia.cnam.fr/new/spip.php?rubrique678)
+
+* NSY135 : Applications orientées données, patrons, frameworks, ORM
+  * [Le cours](http://orm.bdpedia.fr)
+  * [La présentation de l'UE](http://deptmedia.cnam.fr/new/spip.php?rubrique547)
+
+* NFA031 : Programmation avec Java, notions de base
+  * [La présentation de l'UE](http://deptmedia.cnam.fr/new/spip.php?rubrique615)
+
+* NSY104 : Architecture des systèmes informatiques
+  * [La présentation de l'UE](http://deptmedia.cnam.fr/new/spip.php?rubrique230)
+
+
+### 2011-2012
+
+1. *Introduction à l'administration système Windows*. Niveau L3, 30 heures.
+
+    Présentation de la gamme des systèmes Windows professionnels en versions Station et en versions Serveur - Configuration, démarrage, arrêt - Gestion de comptes (Stand alone, Domain, Active Directory) - Profils itinérants - Processus, installation et configuration de services, planning, utilitaires - Gestion de l'espace disque, NTFS, tolérance aux pannes, sécurisation des accès, partages - Configuration réseau: TCP/IP, DNS, DHCP, routage et accès à distance - Sécurité et stratégies, audits, administration avancée, scripts.
+
+    Machines virtuelles - Principes des systèmes d'exploitation - Protection et sécurité - Systèmes de fichiers - Gestion de réseaux -
+
+### 2009-2010 et 2010-2011
+
+1. *APMM Applications multimédias*. Niveau M2, 40 heures. [[Page dédiée](./apmm.html)]
+
+    Cette UE a pour objectif de donner aux étudiants un premier aperçu des différentes phases du traitement des données multimédia, telles que codage et décodage, compression, structuration et description, et applications. Applications du multimédia communicant : web, XML, HTML, VoIP, vidéo stockée, vidéo en temps réel, vidéoconférence, jeux interactives. Structuration des contenus multimédia. Stockage des données vidéo. Codage du texte et du son. Codage des images et des objets 3D. Compression et redondance (FEC).
+
+
+2. *Programmation web*. Niveau L2, 30 heures.
+
+    Travaux  sur machines encadrés (TP) visant à donner aux étudiants les bases de la programmation pour le Web : html, php et css. Liaison avec le cours sur les bases de données (SQL Server) et réalisation d'un petit projet de site web (vidéoclub). 
+
+    Suivi du stage en entreprise (3 mois) de 4 étudiants.

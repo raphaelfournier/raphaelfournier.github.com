@@ -1,0 +1,17 @@
+---
+layout: postfr
+title: Quotes
+date: 2008-10-15 22:11:43
+lang: fr
+categories: blog
+tags: 
+ - humour
+---
+
+Fred : - Vous êtes co-co-mmandant ?
+Omar : (voix suave) Non, je suis coco-bandant.
+
+## Citation du jour :
+
+En français, on a de la chance amour rime avec toujours. En anglais, always rime
+avec Coca-cola ! (Chérie).

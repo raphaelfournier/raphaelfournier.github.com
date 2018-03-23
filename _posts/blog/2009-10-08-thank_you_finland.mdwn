@@ -1,0 +1,12 @@
+---
+layout: post
+title: "Thank you, Finland!"
+date: 2009-10-08 19:50:28
+lang: en
+categories: blog
+tags: 
+ - politique
+ - internet
+---
+
+Internet is now a LEGAL RIGHT in Finland (<a href="http://www.intomobile.com/2009/10/14/finland-becomes-the-first-country-to-make-broadband-a-legal-right.html">source</a>).

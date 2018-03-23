@@ -1,0 +1,21 @@
+---
+layout: post
+title: Bash completion after sudo or man
+date: 2009-10-14 19:20:22
+lang: en
+categories: blog
+tags: 
+ - astuce
+ - bash
+ - commandline
+---
+
+While typing in a Bash shell, one may want to enable the [TAB] completion even
+when sudo or man was typed before the command. Just add the following lines to
+your ~/.bash_profile :
+
+    complete -cf sudo
+    complete -cf man
+
+and you're done ! There are plenty of powerful features in "bash-completion"
+package, we'll see that later on this blog, too much work at the moment.

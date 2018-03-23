@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+ {{ reference }}
+{{ entry.status }}
+<br/>
+{% if entry.file %}
+<a href="{{ entry.file }}">Author version</a>
+&nbsp;-&nbsp;
+{% endif %}
+<a href="#" onclick="toggle_visibility('bib{{ entry.key }}');">
+  Bibtex
+</a>
+<div id="bib{{ entry.key }}" class="bibtex" style="display:none;"><pre>{{ entry.bibtex }}</pre></div>
+
+{% if entry.abstract %}
+<a href="#" onclick="toggle_visibility('bibabstr{{ entry.key }}');">
+  abstract
+</a>
+<div id="bibabstr{{ entry.key }}" class="bibtex" style="display:none;">{{ entry.abstract }}</div>
+{% endif %}
+

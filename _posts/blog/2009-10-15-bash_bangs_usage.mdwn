@@ -1,0 +1,53 @@
+---
+layout: post
+title: Bash bangs usage
+date: 2009-10-15 08:10:27
+lang: en
+categories: blog
+tags: 
+ - bash
+ - astuce
+ - commandline
+---
+
+
+In Bash, one may use !!, !\* and !:2 to
+get quicker access to previously typed commands or part of commands. "!!"
+stands for the last command, "!\*" for the last command without the first term
+and !:2 is the third argument of the previous command. Let's have some
+examples:
+
+    raph@machine$ ls books/
+    foo.txt bar.txt
+
+    raph@machine$ !!
+    ls books/ ## you notice that Bash outputs immediately the expanded command ## 
+    foo.txt bar.txt
+
+    raph@machine$ ls books/foo.txt foo.txt 
+
+    raph@machine$ head !*
+    head books/foo.txt foo.txt
+    # first lines of foo.txt here # 
+
+    raph@machine$ wc -l !*
+    wc -l foo.txt
+    # number of lines in foo.txt # 
+
+    raph@machine$ file !:2
+    file foo.txt
+    # output of command file #
+
+As one may see, !:2 is useful when some options have been given between the
+command and the filename. If I had used "file !\*" instead of "file !:2", bash
+would have tried to execute command file on "-l" and "foo.txt". The "-l, file
+not found" error message would then occur. 
+
+I admit that !:2 -- or, more generally, !:n -- is a bit complicated if n greater
+than 2, because one would not want to manually count the number of options ...
+But it works like a charm in the sequence above with "wc -l" and "head". 
+
+The !! is very useful when you are the administrator of your computer and you
+forget to use sudo at the beginning of a command. Just type "sudo !!" after the
+"permission denied" message and you're done ... (indeed, CTRL+A may also help
+you).
